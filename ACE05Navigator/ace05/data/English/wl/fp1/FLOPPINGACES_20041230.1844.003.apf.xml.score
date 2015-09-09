@@ -1,0 +1,2090 @@
+command line (run on 2005 Aug 21 at 12:00:15):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score37291 -t /tmp/score37291
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E1 (VEH/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E1 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="plane" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E10 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E10 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Ore" (NAM/LOC/LIT)
+         ref name="Ore"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E100 (ORG/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E100 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="FBI" (NAM/ORG/LIT)
+      ref mention="FBI" (NAM/ORG/LIT)
+      ref mention="FBI" (NAM/ORG/LIT)
+      ref mention="FBI" (NAM/ORG/LIT)
+         ref name="FBI"
+         ref name="FBI"
+         ref name="FBI"
+         ref name="FBI"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E101 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E101 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="terrorists" (NOM/PER/LIT)
+      ref mention="terrorists" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E102 (WEA/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E102 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="lasers" (NOM/WEA/LIT)
+      ref mention="weapons" (NOM/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E104 (WEA/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E104 (WEA/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (WEA/NOM/USP)
+      ref mention="beams" (NOM/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E105 (VEH/NOM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E105 (VEH/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.50000 out of 0.50000  (VEH/NOM/SPC)
+      ref mention="cockpits" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E106 (VEH/NOM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E106 (VEH/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.50000 out of 0.50000  (VEH/NOM/SPC)
+      ref mention="airplanes" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E107 (WEA/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E107 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="beams" (NOM/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E108 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E108 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="pilots" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E11 (PER/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E11 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="enforcement" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E12 (PER/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E12 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="officials" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E13 (PER/PRO/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E13 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="whom" (PRO/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E14 (PER/NOM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E14 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="official" (NOM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E15 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E15 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="terrorist" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E16 (PER/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E16 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="pilots" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E17 (WEA/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E17 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="weapons" (NOM/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E18 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E18 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="kid" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E19 (PER/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E19 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Paul Rancatore" (NAM/PER/LIT)
+      ref mention="pilot" (NOM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+      ref mention="chairman" (NOM/PER/LIT)
+         ref name="Paul Rancatore"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E2 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E2 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Colorado Springs" (NAM/LOC/LIT)
+         ref name="Colorado Springs"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E21 (ORG/NOM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E21 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="committee" (NOM/ORG/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E22 (ORG/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E22 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Allied Pilots Association" (NAM/ORG/LIT)
+         ref name="Allied Pilots Association"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E23 (PER/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E23 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Loren Thompson" (NAM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="Thompson" (NAM/PER/LIT)
+      ref mention="Thompson" (NAM/PER/LIT)
+      ref mention="Thompson" (NAM/PER/LIT)
+         ref name="Loren Thompson"
+         ref name="Thompson"
+         ref name="Thompson"
+         ref name="Thompson"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E24 (ORG/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E24 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="military" (NOM/ORG/LIT)
+      ref mention="military" (NOM/ORG/LIT)
+      ref mention="military" (NOM/ORG/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E25 (ORG/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E25 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Georgetown University" (NAM/ORG/LIT)
+         ref name="Georgetown University"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E26 (PER/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E26 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Curt" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+         ref name="Curt"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E27 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E27 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="experts" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E28 (PER/PRO/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E28 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="we" (PRO/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E29 (WEA/NOM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E29 (WEA/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.50000 out of 0.50000  (WEA/NOM/SPC)
+      ref mention="laser" (NOM/WEA/LIT)
+      ref mention="That" (PRO/WEA/LIT)
+      ref mention="thing" (NOM/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E3 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E3 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Colo" (NAM/LOC/LIT)
+         ref name="Colo"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E30 (VEH/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E30 (VEH/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (VEH/NOM/USP)
+      ref mention="aircraft" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E31 (PER/PRO/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E31 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="you" (PRO/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E32 (FAC/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E32 (FAC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (FAC/NOM/GEN)
+      ref mention="store" (NOM/FAC/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E34 (PER/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E34 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Michelle Malkin" (NAM/PER/LIT)
+         ref name="Michelle Malkin"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E35 (FAC/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E35 (FAC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (FAC/NOM/USP)
+      ref mention="outlets" (NOM/FAC/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E36 (WEA/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E36 (WEA/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (WEA/NOM/USP)
+      ref mention="lasers" (NOM/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E37 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E37 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="people" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E38 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E38 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="loonies" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E39 (VEH/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E39 (VEH/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (VEH/NOM/USP)
+      ref mention="Airplanes" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E4 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E4 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Cleveland" (NAM/LOC/LIT)
+         ref name="Cleveland"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E40 (VEH/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E40 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="plane" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E41 (FAC/NAM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E41 (FAC/NAM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (FAC/NAM/GEN)
+      ref mention="wal-mart" (NAM/FAC/LIT)
+         ref name="wal-mart"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E42 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E42 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="terrorists" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E43 (WEA/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E43 (WEA/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (WEA/NOM/USP)
+      ref mention="blinder" (NOM/WEA/LIT)
+      ref mention="which" (PRO/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E44 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E44 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Chinese" (NAM/GPE/LIT)
+         ref name="Chinese"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E45 (ORG/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E45 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Aum Shinrikyo" (NAM/ORG/LIT)
+      ref mention="which" (PRO/ORG/LIT)
+      ref mention="Cult" (NOM/ORG/LIT)
+         ref name="Aum Shinrikyo"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E46 (PER/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E46 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="terrorist" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E47 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E47 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Japanese" (NAM/GPE/LIT)
+         ref name="Japanese"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E48 (WEA/NOM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E48 (WEA/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.50000 out of 0.50000  (WEA/NOM/SPC)
+      ref mention="gas" (NOM/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E49 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E49 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Tokyo" (NAM/GPE/LIT)
+      ref mention="Tokyo" (NAM/GPE/LIT)
+         ref name="Tokyo"
+         ref name="Tokyo"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E5 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E5 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Washington" (NAM/LOC/LIT)
+         ref name="Washington"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E50 (ORG/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E50 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Congress" (NAM/ORG/LIT)
+         ref name="Congress"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E51 (WEA/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E51 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="lasers" (NOM/WEA/LIT)
+      ref mention="weapons" (NOM/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E53 (ORG/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E53 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="The Asian Pacific Post" (NAM/ORG/LIT)
+         ref name="The Asian Pacific Post"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E54 (PER/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E54 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="members" (NOM/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+      ref mention="They" (PRO/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E56 (ORG/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E56 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="institutes" (NOM/ORG/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E57 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E57 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Russian" (NAM/GPE/LIT)
+         ref name="Russian"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E58 (WEA/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E58 (WEA/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (WEA/NOM/USP)
+      ref mention="weapon" (NOM/WEA/LIT)
+      ref mention="laser" (NOM/WEA/LIT)
+      ref mention="laser" (NOM/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E59 (VEH/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E59 (VEH/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (VEH/NOM/USP)
+      ref mention="truck" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E6 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E6 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Houston" (NAM/LOC/LIT)
+         ref name="Houston"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E60 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E60 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="policemen" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E62 (PER/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E62 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="PoliticAlex" (NAM/PER/LIT)
+         ref name="PoliticAlex"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E63 (WEA/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E63 (WEA/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (WEA/NOM/USP)
+      ref mention="missle" (NOM/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E64 (ORG/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E64 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="airliners" (NOM/ORG/LIT)
+      ref mention="airliners" (NOM/ORG/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E65 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E65 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="terrorists" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E66 (WEA/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E66 (WEA/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (WEA/NAM/SPC)
+      ref mention="missiles" (NOM/WEA/LIT)
+      ref mention="SAMs" (NAM/WEA/LIT)
+      ref mention="Man-Portable Air Defense Systems" (NAM/WEA/LIT)
+      ref mention="MANPADS" (NAM/WEA/LIT)
+         ref name="SAMs"
+         ref name="Man-Portable Air Defense Systems"
+         ref name="MANPADS"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E69 (VEH/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E69 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="aircraft" (NOM/VEH/LIT)
+      ref mention="aircraft" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E7 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E7 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Teterboro" (NAM/LOC/LIT)
+         ref name="Teterboro"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E70 (FAC/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E70 (FAC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (FAC/NOM/GEN)
+      ref mention="airport" (NOM/FAC/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E71 (WEA/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E71 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="missile" (NOM/WEA/LIT)
+      ref mention="missile" (NOM/WEA/LIT)
+      ref mention="missile" (NOM/WEA/LIT)
+      ref mention="missile" (NOM/WEA/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E73 (VEH/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E73 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="aircraft" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E74 (LOC/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E74 (LOC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (LOC/NOM/GEN)
+      ref mention="areas" (NOM/LOC/LIT)
+      ref mention="where" (PRO/LOC/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E75 (VEH/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E75 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="aircraft" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E76 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E76 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="terrorist" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E77 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E77 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="crew" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E78 (FAC/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E78 (FAC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (FAC/NOM/GEN)
+      ref mention="airports" (NOM/FAC/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E79 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E79 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="terrorist" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E8 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E8 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="N.J" (NAM/LOC/LIT)
+         ref name="N.J"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E80 (ORG/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E80 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="airliners" (NOM/ORG/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E81 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E81 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="U.S" (NAM/GPE/LIT)
+         ref name="U.S"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E82 (FAC/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E82 (FAC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (FAC/NOM/USP)
+      ref mention="airports" (NOM/FAC/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E83 (PER/NOM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E83 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="Congress" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E85 (VEH/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E85 (VEH/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (VEH/NOM/USP)
+      ref mention="aircraft" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E86 (ORG/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E86 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="carrier" (NOM/ORG/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E88 (VEH/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E88 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="aircraft" (NOM/VEH/LIT)
+      ref mention="aircraft" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E9 (GPE/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E9 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Medford" (NAM/LOC/LIT)
+         ref name="Medford"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E90 (ORG/NAM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E90 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Homeland Security" (NAM/ORG/LIT)
+      ref mention="Department of Homeland Security" (NAM/ORG/LIT)
+         ref name="Homeland Security"
+         ref name="Department of Homeland Security"
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E91 (PER/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E91 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="passenger" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E92 (VEH/NOM/GEN)
+    tst entity FLOPPINGACES_20041230.1844.003-E92 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="airline" (NOM/VEH/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E94 (PER/NOM/USP)
+    tst entity FLOPPINGACES_20041230.1844.003-E94 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="wackjob" (NOM/PER/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E96 (FAC/NOM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E96 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="system" (NOM/FAC/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E97 (LOC/NOM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E97 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="East" (NOM/LOC/LIT)
+      ref mention="coast" (NOM/LOC/LIT)
+--------
+    ref entity FLOPPINGACES_20041230.1844.003-E99 (LOC/NOM/SPC)
+    tst entity FLOPPINGACES_20041230.1844.003-E99 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="West" (NOM/LOC/LIT)
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    FAC     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+    GPE    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    43.75   0.00   0.00   0.00
+    LOC     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.12   0.00   0.00   0.00
+    ORG    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    23.44   0.00   0.00   0.00
+    PER    30     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.75   0.00   0.00   0.00
+    VEH    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.13   0.00   0.00   0.00
+    WEA    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.25   0.00   0.00   0.00
+  total    93     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    84.37   0.00   0.00   0.00
+    NOM    62     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.63   0.00   0.00   0.00
+    PRO     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    93     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2    56     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+0.2-0.5    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.62   0.00   0.00   0.00
+0.5-1.0    27     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    84.37   0.00   0.00   0.00
+  total    93     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    70     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    70.31   0.00   0.00   0.00
+      2    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.38   0.00   0.00   0.00
+    3-4     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.06   0.00   0.00   0.00
+    5-8     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.25   0.00   0.00   0.00
+  total    93     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    37     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP    20     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    93     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ weblog    93     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    93     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    Air    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+Airport     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Buildin     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Chemica     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+Commerc     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Educati     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.25   0.00   0.00   0.00
+Governm     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.37   0.00   0.00   0.00
+  Group    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+Indeter     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.19   0.00   0.00   0.00
+   Land     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Land-Re     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.12   0.00   0.00   0.00
+Medical     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+ Nation     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.50   0.00   0.00   0.00
+Non-Gov     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.81   0.00   0.00   0.00
+   Path     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+Populat     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.87   0.00   0.00   0.00
+Project     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.13   0.00   0.00   0.00
+Region-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Shootin     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+State-o     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.37   0.00   0.00   0.00
+Subarea     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+Undersp     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    93     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = FAC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Airport     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Buildin     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+   Path     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Nation     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.50   0.00   0.00   0.00
+Populat     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.87   0.00   0.00   0.00
+State-o     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.37   0.00   0.00   0.00
+  total    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    43.75   0.00   0.00   0.00
+
+Performance statistics for TYPE = LOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Land-Re     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.12   0.00   0.00   0.00
+Region-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.12   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Educati     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.25   0.00   0.00   0.00
+Governm     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.37   0.00   0.00   0.00
+Medical     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Non-Gov     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.81   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    23.44   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+Indeter     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.19   0.00   0.00   0.00
+  total    30     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.75   0.00   0.00   0.00
+
+Performance statistics for TYPE = VEH:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    Air    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+   Land     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Subarea     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.13   0.00   0.00   0.00
+
+Performance statistics for TYPE = WEA:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Chemica     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+Project     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.13   0.00   0.00   0.00
+Shootin     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.56   0.00   0.00   0.00
+Undersp     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.25   0.00   0.00   0.00
+
+Entity Type confusion matrix for "weblog" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            7     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    14     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     3     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    13     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    30     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0    13     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0    13        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=93/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         GEN         USP 
+             SPC    37/39.8%      -           -     
+             GEN      -         36/38.7%      -     
+             USP      -           -         20/21.5%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=93/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Group         Air  Individual Population- Indetermina Underspecif  Government      Nation  all others 
+           Group    15/16.1%      -           -           -           -           -           -           -           -     
+             Air      -         11/11.8%      -           -           -           -           -           -           -     
+      Individual      -           -          8/ 8.6%      -           -           -           -           -           -     
+  Population-Cen      -           -           -          7/ 7.5%      -           -           -           -           -     
+   Indeterminate      -           -           -           -          7/ 7.5%      -           -           -           -     
+  Underspecified      -           -           -           -           -          7/ 7.5%      -           -           -     
+      Government      -           -           -           -           -           -          4/ 4.3%      -           -     
+          Nation      -           -           -           -           -           -           -          4/ 4.3%      -     
+      all others      -           -           -           -           -           -           -           -         30/32.3%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=93/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        PER         GPE         WEA         VEH         ORG         FAC         LOC 
+             PER    30/32.3%      -           -           -           -           -           -     
+             GPE      -         14/15.1%      -           -           -           -           -     
+             WEA      -           -         13/14.0%      -           -           -           -     
+             VEH      -           -           -         13/14.0%      -           -           -     
+             ORG      -           -           -           -         13/14.0%      -           -     
+             FAC      -           -           -           -           -          7/ 7.5%      -     
+             LOC      -           -           -           -           -           -          3/ 3.2%
+
+Entity Class confusion matrix for "weblog" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           37     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0    36     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0    20        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0    15        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0    11        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0     8        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     3        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0    38        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    38        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    81        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0    18        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   137        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   137        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   137        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     7        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0     6        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0    14        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    22        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    47        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0    15        0.0   0.0      0.0   0.0 100.0
+  WEA       0     0        0     0    26        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   137        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "weblog" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            7     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     6     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    14     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    22     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    47     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0    15     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0    26        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Mention Style confusion matrix for "weblog" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          137     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R1 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R1 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E97 (LOC/Land-Re/NOM/SPC), head="coast"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E97 (LOC/Land-Re/NOM/SPC), head="coast"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E99 (LOC/Land-Re/NOM/SPC), head="West"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E99 (LOC/Land-Re/NOM/SPC), head="West"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref extent="the West to East coast"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R10 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R10 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E101 (PER/Group/NOM/GEN), head="terrorists"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E101 (PER/Group/NOM/GEN), head="terrorists"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E17 (WEA/Undersp/NOM/GEN), head="weapons"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E17 (WEA/Undersp/NOM/GEN), head="weapons"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref extent="But pilots are troubled by the incide..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R11 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R11 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E19 (PER/Individ/NAM/SPC), name="Paul Rancatore"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E19 (PER/Individ/NAM/SPC), name="Paul Rancatore"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E21 (ORG/Non-Gov/NOM/SPC), head="committee"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E21 (ORG/Non-Gov/NOM/SPC), head="committee"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.50000 out of 1.50000
+      ref extent="deputy chairman of the security commi..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R12 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R12 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E21 (ORG/Non-Gov/NOM/SPC), head="committee"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E21 (ORG/Non-Gov/NOM/SPC), head="committee"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E22 (ORG/Non-Gov/NAM/SPC), name="Allied Pilots Association"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E22 (ORG/Non-Gov/NAM/SPC), name="Allied Pilots Association"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.50000 out of 1.50000
+      ref extent="the security committee for the Allied..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R13 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R13 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E23 (PER/Individ/NAM/SPC), name="Loren Thompson"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E23 (PER/Individ/NAM/SPC), name="Loren Thompson"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E25 (ORG/Educati/NAM/SPC), name="Georgetown University"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E25 (ORG/Educati/NAM/SPC), name="Georgetown University"
+- in document FLOPPINGACES_20041230.1844.003:  score:  2.00000 out of 2.00000
+      ref extent="Loren Thompson, who teaches military ..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R14 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R14 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E44 (GPE/Nation/NAM/SPC), name="Chinese"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E44 (GPE/Nation/NAM/SPC), name="Chinese"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E43 (WEA/Undersp/NOM/USP), head="blinder"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E43 (WEA/Undersp/NOM/USP), head="blinder"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref extent="a Chinese-produced ZM-87 laser blinder"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R15 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R15 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E45 (ORG/Non-Gov/NAM/SPC), name="Aum Shinrikyo"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E45 (ORG/Non-Gov/NAM/SPC), name="Aum Shinrikyo"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E47 (GPE/Nation/NAM/SPC), name="Japanese"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E47 (GPE/Nation/NAM/SPC), name="Japanese"
+- in document FLOPPINGACES_20041230.1844.003:  score:  2.00000 out of 2.00000
+      ref extent="The Japanese terrorist cult Aum Shinr..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R16 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R16 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E96 (FAC/Path/NOM/SPC), head="system"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E96 (FAC/Path/NOM/SPC), head="system"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E49 (GPE/Populat/NAM/SPC), name="Tokyo"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E49 (GPE/Populat/NAM/SPC), name="Tokyo"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.50000 out of 1.50000
+      ref extent="Tokyo subway system"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R17 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+    tst relation FLOPPINGACES_20041230.1844.003-R17 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+      relation score:  1.70000 out of 1.70000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E45 (ORG/Non-Gov/NAM/SPC), name="Aum Shinrikyo"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E45 (ORG/Non-Gov/NAM/SPC), name="Aum Shinrikyo"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E48 (WEA/Chemica/NOM/SPC), head="gas"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E48 (WEA/Chemica/NOM/SPC), head="gas"
+      Time-Within ref arg: ID=FLOPPINGACES_20041230.1844.003-T8 (TIM/---), extent="1995"
+      Time-Within tst arg: ID=FLOPPINGACES_20041230.1844.003-T8 (TIM/---), extent="1995"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.70000 out of 1.70000
+      ref extent="The Japanese terrorist cult Aum Shinr..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R18 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+    tst relation FLOPPINGACES_20041230.1844.003-R18 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E45 (ORG/Non-Gov/NAM/SPC), name="Aum Shinrikyo"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E45 (ORG/Non-Gov/NAM/SPC), name="Aum Shinrikyo"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E51 (WEA/Undersp/NOM/GEN), head="weapons"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E51 (WEA/Undersp/NOM/GEN), head="weapons"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref extent="The Japanese terrorist cult Aum Shinr..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R19 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R19 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E56 (ORG/Medical/NOM/USP), head="institutes"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E56 (ORG/Medical/NOM/USP), head="institutes"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E57 (GPE/Nation/NAM/SPC), name="Russian"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E57 (GPE/Nation/NAM/SPC), name="Russian"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref extent="Russian institutes they visited"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R2 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R2 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E97 (LOC/Land-Re/NOM/SPC), head="coast"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E97 (LOC/Land-Re/NOM/SPC), head="coast"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E97 (LOC/Land-Re/NOM/SPC), head="coast"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E97 (LOC/Land-Re/NOM/SPC), head="coast"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref extent="the West to East coast"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R20 (PHYS/Located/Asserted/Past)
+    tst relation FLOPPINGACES_20041230.1844.003-R20 (PHYS/Located/Asserted/Past)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E54 (PER/Group/NOM/USP), head="members"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E54 (PER/Group/NOM/USP), head="members"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E57 (GPE/Nation/NAM/SPC), name="Russian"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E57 (GPE/Nation/NAM/SPC), name="Russian"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref extent="Russian institutes they visited"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R21 (PART-WHOLE/Artifact/Other/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R21 (PART-WHOLE/Artifact/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E58 (WEA/Shootin/NOM/USP), head="weapon"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E58 (WEA/Shootin/NOM/USP), head="weapon"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E59 (VEH/Land/NOM/USP), head="truck"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E59 (VEH/Land/NOM/USP), head="truck"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref extent="a laser weapon mounted on a truck"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R22 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R22 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E54 (PER/Group/NOM/USP), head="members"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E54 (PER/Group/NOM/USP), head="members"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E58 (WEA/Shootin/NOM/USP), head="weapon"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E58 (WEA/Shootin/NOM/USP), head="weapon"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref extent="They had planned to use the laser aga..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R23 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R23 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E60 (PER/Group/NOM/GEN), head="policemen"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E60 (PER/Group/NOM/GEN), head="policemen"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E49 (GPE/Populat/NAM/SPC), name="Tokyo"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E49 (GPE/Populat/NAM/SPC), name="Tokyo"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref extent="Tokyo policemen"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R24 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R24 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E65 (PER/Group/NOM/GEN), head="terrorists"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E65 (PER/Group/NOM/GEN), head="terrorists"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E66 (WEA/Project/NAM/SPC), name="Man-Portable Air Defense Systems"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E66 (WEA/Project/NAM/SPC), name="Man-Portable Air Defense Systems"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref extent="terrorists with shoulder fired surfac..."
+      ref extent="terrorists with shoulder fired surfac..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R26 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R26 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E80 (ORG/Commerc/NOM/USP), head="airliners"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E80 (ORG/Commerc/NOM/USP), head="airliners"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E81 (GPE/Nation/NAM/SPC), name="U.S"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E81 (GPE/Nation/NAM/SPC), name="U.S"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref extent="U.S. airliners"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R27 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R27 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E80 (ORG/Commerc/NOM/USP), head="airliners"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E80 (ORG/Commerc/NOM/USP), head="airliners"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E82 (FAC/Airport/NOM/USP), head="airports"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E82 (FAC/Airport/NOM/USP), head="airports"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref extent="However, these techniques by themselv..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R28 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R28 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E86 (ORG/Commerc/NOM/GEN), head="carrier"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E86 (ORG/Commerc/NOM/GEN), head="carrier"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E85 (VEH/Air/NOM/USP), head="aircraft"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E85 (VEH/Air/NOM/USP), head="aircraft"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref extent="all turbojet aircraft used in schedul..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R29 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R29 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E91 (PER/Indeter/NOM/GEN), head="passenger"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E91 (PER/Indeter/NOM/GEN), head="passenger"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E88 (VEH/Air/NOM/GEN), head="aircraft"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E88 (VEH/Air/NOM/GEN), head="aircraft"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref extent="commercial passenger aircraft"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R3 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R3 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E101 (PER/Group/NOM/GEN), head="terrorists"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E101 (PER/Group/NOM/GEN), head="terrorists"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E102 (WEA/Undersp/NOM/GEN), head="weapons"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E102 (WEA/Undersp/NOM/GEN), head="weapons"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref extent="The FBI, concerned that terrorists co..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R4 (PART-WHOLE/Artifact/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R4 (PART-WHOLE/Artifact/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E105 (VEH/Subarea/NOM/SPC), head="cockpits"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E105 (VEH/Subarea/NOM/SPC), head="cockpits"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E106 (VEH/Air/NOM/SPC), head="airplanes"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E106 (VEH/Air/NOM/SPC), head="airplanes"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref extent="the cockpits of seven airplanes in fl..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R5 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R5 (ART/User-Owner-Inventor-Manufacturer/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E108 (PER/Group/NOM/GEN), head="pilots"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E108 (PER/Group/NOM/GEN), head="pilots"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E1 (VEH/Air/NOM/GEN), head="plane"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E1 (VEH/Air/NOM/GEN), head="plane"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref extent="Laser beams can temporarily blind or ..."
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E2 (GPE/Populat/NAM/SPC), name="Colorado Springs"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E2 (GPE/Populat/NAM/SPC), name="Colorado Springs"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E3 (GPE/State-o/NAM/SPC), name="Colo"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E3 (GPE/State-o/NAM/SPC), name="Colo"
+- in document FLOPPINGACES_20041230.1844.003:  score:  2.00000 out of 2.00000
+      ref extent="Colorado Springs, Colo"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R7 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R7 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E7 (GPE/Populat/NAM/SPC), name="Teterboro"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E7 (GPE/Populat/NAM/SPC), name="Teterboro"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E8 (GPE/State-o/NAM/SPC), name="N.J"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E8 (GPE/State-o/NAM/SPC), name="N.J"
+- in document FLOPPINGACES_20041230.1844.003:  score:  2.00000 out of 2.00000
+      ref extent="Teterboro, N.J"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R8 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R8 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E9 (GPE/Populat/NAM/SPC), name="Medford"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E9 (GPE/Populat/NAM/SPC), name="Medford"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E10 (GPE/State-o/NAM/SPC), name="Ore"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E10 (GPE/State-o/NAM/SPC), name="Ore"
+- in document FLOPPINGACES_20041230.1844.003:  score:  2.00000 out of 2.00000
+      ref extent="Medford, Ore"
+--------
+    ref relation FLOPPINGACES_20041230.1844.003-R9 (PER-SOC/Business/Other/Unspecified)
+    tst relation FLOPPINGACES_20041230.1844.003-R9 (PER-SOC/Business/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=FLOPPINGACES_20041230.1844.003-E11 (PER/Group/NOM/USP), head="enforcement"
+            Arg-1 tst arg: ID=FLOPPINGACES_20041230.1844.003-E11 (PER/Group/NOM/USP), head="enforcement"
+            Arg-2 ref arg: ID=FLOPPINGACES_20041230.1844.003-E12 (PER/Group/NOM/USP), head="officials"
+            Arg-2 tst arg: ID=FLOPPINGACES_20041230.1844.003-E12 (PER/Group/NOM/USP), head="officials"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref extent="federal and local law enforcement and..."
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    ART    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.94   0.00   0.00   0.00
+GEN-AFF     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.27   0.00   0.00   0.00
+ORG-AFF     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.18   0.00   0.00   0.00
+PART-WH     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    45.80   0.00   0.00   0.00
+PER-SOC     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+   PHYS     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.82   0.00   0.00   0.00
+  total    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    96.18   0.00   0.00   0.00
+  Other    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.82   0.00   0.00   0.00
+  total    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ weblog    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Artifac     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.82   0.00   0.00   0.00
+Busines     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Employm     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.18   0.00   0.00   0.00
+Geograp     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.26   0.00   0.00   0.00
+Located     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.82   0.00   0.00   0.00
+Org-Loc     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.27   0.00   0.00   0.00
+Subsidi     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.73   0.00   0.00   0.00
+User-Ow    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.94   0.00   0.00   0.00
+  total    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ART:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+User-Ow    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.94   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.94   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Org-Loc     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.27   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.27   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.18   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.18   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Artifac     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.82   0.00   0.00   0.00
+Geograp     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.26   0.00   0.00   0.00
+Subsidi     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.73   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    45.80   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER-SOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.82   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.82   0.00   0.00   0.00
+
+Relation Type confusion matrix for "weblog" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART     11     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     3     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     3     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0     9     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     1     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+       PHYS      0     0     0     0     0     0     1        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "weblog" sources (for mapped relations):
+  type=ART   COUNT    PERCENT
+    ref\tst: User-      User- 
+User-Owner-     11      100.0
+
+Relation Subtype confusion matrix for "weblog" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      0     0        0.0   0.0
+Org-Locatio      0     3        0.0 100.0
+
+Relation Subtype confusion matrix for "weblog" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      3     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "weblog" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      2     0     0      100.0   0.0   0.0
+Geographica      0     6     0        0.0 100.0   0.0
+ Subsidiary      0     0     1        0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "weblog" sources (for mapped relations):
+  type=PER-S COUNT............    PERCENT............
+    ref\tst: Busin Famil Lasti      Busin Famil Lasti 
+   Business      1     0     0      100.0   0.0   0.0
+     Family      0     0     0        0.0   0.0   0.0
+Lasting-Per      0     0     0        0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "weblog" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      1     0      100.0   0.0
+       Near      0     0        0.0   0.0
+
+Relation Modality confusion matrix for "weblog" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     18     0     0      100.0   0.0   0.0
+      Other      0    10     0        0.0 100.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=28/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted    18/64.3%      -     
+           Other      -         10/35.7%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=28/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:User-Owner- Geographica  Employment Org-Locatio    Artifact     Located  Subsidiary    Business 
+  User-Owner-Inv    11/39.3%      -           -           -           -           -           -           -     
+    Geographical      -          6/21.4%      -           -           -           -           -           -     
+      Employment      -           -          3/10.7%      -           -           -           -           -     
+    Org-Location      -           -           -          3/10.7%      -           -           -           -     
+        Artifact      -           -           -           -          2/ 7.1%      -           -           -     
+         Located      -           -           -           -           -          1/ 3.6%      -           -     
+      Subsidiary      -           -           -           -           -           -          1/ 3.6%      -     
+        Business      -           -           -           -           -           -           -          1/ 3.6%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=28/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past 
+     Unspecified    25/89.3%      -     
+            Past      -          3/10.7%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=28/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        ART  PART-WHOLE     GEN-AFF     ORG-AFF        PHYS     PER-SOC 
+             ART    11/39.3%      -           -           -           -           -     
+      PART-WHOLE      -          9/32.1%      -           -           -           -     
+         GEN-AFF      -           -          3/10.7%      -           -           -     
+         ORG-AFF      -           -           -          3/10.7%      -           -     
+            PHYS      -           -           -           -          1/ 3.6%      -     
+         PER-SOC      -           -           -           -           -          1/ 3.6%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=57/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 Time-Within 
+           Arg-2    28/49.1%      -           -     
+           Arg-1      -         28/49.1%      -     
+     Time-Within      -           -          1/ 1.8%
+
+======== event mapping ========
+
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV1 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV1 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  0.70000 out of 0.70000
+            Place ref arg: ID=FLOPPINGACES_20041230.1844.003-E97 (LOC/Land-Re/NOM/SPC), head="coast"
+            Place tst arg: ID=FLOPPINGACES_20041230.1844.003-E97 (LOC/Land-Re/NOM/SPC), head="coast"
+       Time-After ref arg: ID=FLOPPINGACES_20041230.1844.003-T3 (TIM/---), extent="Christmas"
+       Time-After tst arg: ID=FLOPPINGACES_20041230.1844.003-T3 (TIM/---), extent="Christmas"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.70000 out of 0.70000
+      ref anchor="This recent news story is troubling i...", extent="This recent news story is troubling i..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV10 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV10 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+            Place ref arg: ID=FLOPPINGACES_20041230.1844.003-E9 (GPE/Populat/NAM/SPC), name="Medford"
+            Place tst arg: ID=FLOPPINGACES_20041230.1844.003-E9 (GPE/Populat/NAM/SPC), name="Medford"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref anchor="The FBI is looking into two incidents...", extent="The FBI is looking into two incidents..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV11 (Conflict/Attack/Generic/Other/Negative/Unspecified)
+    tst event FLOPPINGACES_20041230.1844.003-EV11 (Conflict/Attack/Generic/Other/Negative/Unspecified)
+      event score:  0.00000 out of 0.00000
+         Attacker ref arg: ID=FLOPPINGACES_20041230.1844.003-E15 (PER/Indeter/NOM/GEN), head="terrorist"
+         Attacker tst arg: ID=FLOPPINGACES_20041230.1844.003-E15 (PER/Indeter/NOM/GEN), head="terrorist"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref anchor="A federal law enforcement official, w...", extent="A federal law enforcement official, w..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV12 (Conflict/Attack/Generic/Other/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV12 (Conflict/Attack/Generic/Other/Positive/Past)
+      event score:  0.00000 out of 0.00000
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref anchor="But pilots are troubled by the incide...", extent="But pilots are troubled by the incide..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV13 (Conflict/Attack/Generic/Other/Positive/Future)
+    tst event FLOPPINGACES_20041230.1844.003-EV13 (Conflict/Attack/Generic/Other/Positive/Future)
+      event score:  0.00000 out of 0.00000
+         Attacker ref arg: ID=FLOPPINGACES_20041230.1844.003-E101 (PER/Group/NOM/GEN), head="terrorists"
+         Attacker tst arg: ID=FLOPPINGACES_20041230.1844.003-E101 (PER/Group/NOM/GEN), head="terrorists"
+       Instrument ref arg: ID=FLOPPINGACES_20041230.1844.003-E17 (WEA/Undersp/NOM/GEN), head="weapons"
+       Instrument tst arg: ID=FLOPPINGACES_20041230.1844.003-E17 (WEA/Undersp/NOM/GEN), head="weapons"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref anchor="But pilots are troubled by the incide...", extent="But pilots are troubled by the incide..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV14 (Transaction/Transfer-Ownership/Generic/Other/Positive/Unspecified)
+    tst event FLOPPINGACES_20041230.1844.003-EV14 (Transaction/Transfer-Ownership/Generic/Other/Positive/Unspecified)
+      event score:  0.50000 out of 0.50000
+         Artifact ref arg: ID=FLOPPINGACES_20041230.1844.003-E29 (WEA/Shootin/NOM/SPC), head="laser"
+         Artifact tst arg: ID=FLOPPINGACES_20041230.1844.003-E29 (WEA/Shootin/NOM/SPC), head="laser"
+      Beneficiary ref arg: ID=FLOPPINGACES_20041230.1844.003-E31 (PER/Indeter/PRO/GEN), head="you"
+      Beneficiary tst arg: ID=FLOPPINGACES_20041230.1844.003-E31 (PER/Indeter/PRO/GEN), head="you"
+            Buyer ref arg: ID=FLOPPINGACES_20041230.1844.003-E31 (PER/Indeter/PRO/GEN), head="you"
+            Buyer tst arg: ID=FLOPPINGACES_20041230.1844.003-E31 (PER/Indeter/PRO/GEN), head="you"
+            Place ref arg: ID=FLOPPINGACES_20041230.1844.003-E32 (FAC/Buildin/NOM/GEN), head="store"
+            Place tst arg: ID=FLOPPINGACES_20041230.1844.003-E32 (FAC/Buildin/NOM/GEN), head="store"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.50000 out of 0.50000
+      ref anchor="That's not the sort of thing you pick...", extent="That's not the sort of thing you pick..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV15 (Conflict/Attack/Generic/Other/Positive/Unspecified)
+    tst event FLOPPINGACES_20041230.1844.003-EV15 (Conflict/Attack/Generic/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+           Target ref arg: ID=FLOPPINGACES_20041230.1844.003-E92 (VEH/Air/NOM/GEN), head="airline"
+           Target tst arg: ID=FLOPPINGACES_20041230.1844.003-E92 (VEH/Air/NOM/GEN), head="airline"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref anchor="It sounds like an organized effort to...", extent="It sounds like an organized effort to..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV16 (Transaction/Transfer-Ownership/Generic/Other/Negative/Unspecified)
+    tst event FLOPPINGACES_20041230.1844.003-EV16 (Transaction/Transfer-Ownership/Generic/Other/Negative/Unspecified)
+      event score:  0.00000 out of 0.00000
+         Artifact ref arg: ID=FLOPPINGACES_20041230.1844.003-E36 (WEA/Undersp/NOM/USP), head="lasers"
+         Artifact tst arg: ID=FLOPPINGACES_20041230.1844.003-E36 (WEA/Undersp/NOM/USP), head="lasers"
+            Place ref arg: ID=FLOPPINGACES_20041230.1844.003-E35 (FAC/Buildin/NOM/USP), head="outlets"
+            Place tst arg: ID=FLOPPINGACES_20041230.1844.003-E35 (FAC/Buildin/NOM/USP), head="outlets"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref anchor="Michelle Malkin has a post about this...", extent="Michelle Malkin has a post about this..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV17 (Life/Injure/Generic/Other/Positive/Unspecified)
+    tst event FLOPPINGACES_20041230.1844.003-EV17 (Life/Injure/Generic/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+            Agent ref arg: ID=FLOPPINGACES_20041230.1844.003-E42 (PER/Group/NOM/GEN), head="terrorists"
+            Agent tst arg: ID=FLOPPINGACES_20041230.1844.003-E42 (PER/Group/NOM/GEN), head="terrorists"
+       Instrument ref arg: ID=FLOPPINGACES_20041230.1844.003-E43 (WEA/Undersp/NOM/USP), head="blinder"
+       Instrument tst arg: ID=FLOPPINGACES_20041230.1844.003-E43 (WEA/Undersp/NOM/USP), head="blinder"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref anchor="This Isn't Writing, It's Typing has a...", extent="This Isn't Writing, It's Typing has a..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV18 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV18 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  2.20000 out of 2.20000
+         Attacker ref arg: ID=FLOPPINGACES_20041230.1844.003-E45 (ORG/Non-Gov/NAM/SPC), name="Aum Shinrikyo"
+         Attacker tst arg: ID=FLOPPINGACES_20041230.1844.003-E45 (ORG/Non-Gov/NAM/SPC), name="Aum Shinrikyo"
+       Instrument ref arg: ID=FLOPPINGACES_20041230.1844.003-E48 (WEA/Chemica/NOM/SPC), head="gas"
+       Instrument tst arg: ID=FLOPPINGACES_20041230.1844.003-E48 (WEA/Chemica/NOM/SPC), head="gas"
+            Place ref arg: ID=FLOPPINGACES_20041230.1844.003-E96 (FAC/Path/NOM/SPC), head="system"
+            Place tst arg: ID=FLOPPINGACES_20041230.1844.003-E96 (FAC/Path/NOM/SPC), head="system"
+      Time-Within ref arg: ID=FLOPPINGACES_20041230.1844.003-T8 (TIM/---), extent="1995"
+      Time-Within tst arg: ID=FLOPPINGACES_20041230.1844.003-T8 (TIM/---), extent="1995"
+- in document FLOPPINGACES_20041230.1844.003:  score:  2.20000 out of 2.20000
+      ref anchor="The Japanese terrorist cult Aum Shinr...", extent="The Japanese terrorist cult Aum Shinr..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV19 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV19 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+      Destination ref arg: ID=FLOPPINGACES_20041230.1844.003-E57 (GPE/Nation/NAM/SPC), name="Russian"
+      Destination tst arg: ID=FLOPPINGACES_20041230.1844.003-E57 (GPE/Nation/NAM/SPC), name="Russian"
+           Person ref arg: ID=FLOPPINGACES_20041230.1844.003-E54 (PER/Group/NOM/USP), head="members"
+           Person tst arg: ID=FLOPPINGACES_20041230.1844.003-E54 (PER/Group/NOM/USP), head="members"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref anchor="Cult members apparently obtained lase...", extent="Cult members apparently obtained lase..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV2 (Conflict/Attack/Generic/Other/Positive/Unspecified)
+    tst event FLOPPINGACES_20041230.1844.003-EV2 (Conflict/Attack/Generic/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+         Attacker ref arg: ID=FLOPPINGACES_20041230.1844.003-E101 (PER/Group/NOM/GEN), head="terrorists"
+         Attacker tst arg: ID=FLOPPINGACES_20041230.1844.003-E101 (PER/Group/NOM/GEN), head="terrorists"
+       Instrument ref arg: ID=FLOPPINGACES_20041230.1844.003-E102 (WEA/Undersp/NOM/GEN), head="weapons"
+       Instrument tst arg: ID=FLOPPINGACES_20041230.1844.003-E102 (WEA/Undersp/NOM/GEN), head="weapons"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref anchor="The FBI, concerned that terrorists co...", extent="The FBI, concerned that terrorists co..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV20 (Conflict/Attack/Specific/Other/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV20 (Conflict/Attack/Specific/Other/Positive/Past)
+      event score:  1.00000 out of 1.00000
+         Attacker ref arg: ID=FLOPPINGACES_20041230.1844.003-E54 (PER/Group/NOM/USP), head="members"
+         Attacker tst arg: ID=FLOPPINGACES_20041230.1844.003-E54 (PER/Group/NOM/USP), head="members"
+       Instrument ref arg: ID=FLOPPINGACES_20041230.1844.003-E58 (WEA/Shootin/NOM/USP), head="weapon"
+       Instrument tst arg: ID=FLOPPINGACES_20041230.1844.003-E58 (WEA/Shootin/NOM/USP), head="weapon"
+            Place ref arg: ID=FLOPPINGACES_20041230.1844.003-E49 (GPE/Populat/NAM/SPC), name="Tokyo"
+            Place tst arg: ID=FLOPPINGACES_20041230.1844.003-E49 (GPE/Populat/NAM/SPC), name="Tokyo"
+           Target ref arg: ID=FLOPPINGACES_20041230.1844.003-E60 (PER/Group/NOM/GEN), head="policemen"
+           Target tst arg: ID=FLOPPINGACES_20041230.1844.003-E60 (PER/Group/NOM/GEN), head="policemen"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref anchor="They had planned to use the laser aga...", extent="They had planned to use the laser aga..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV21 (Conflict/Attack/Generic/Other/Positive/Unspecified)
+    tst event FLOPPINGACES_20041230.1844.003-EV21 (Conflict/Attack/Generic/Other/Positive/Unspecified)
+      event score:  1.00000 out of 1.00000
+         Attacker ref arg: ID=FLOPPINGACES_20041230.1844.003-E65 (PER/Group/NOM/GEN), head="terrorists"
+         Attacker tst arg: ID=FLOPPINGACES_20041230.1844.003-E65 (PER/Group/NOM/GEN), head="terrorists"
+       Instrument ref arg: ID=FLOPPINGACES_20041230.1844.003-E66 (WEA/Project/NAM/SPC), name="Man-Portable Air Defense Systems"
+       Instrument tst arg: ID=FLOPPINGACES_20041230.1844.003-E66 (WEA/Project/NAM/SPC), name="Man-Portable Air Defense Systems"
+           Target ref arg: ID=FLOPPINGACES_20041230.1844.003-E64 (ORG/Commerc/NOM/GEN), head="airliners"
+           Target tst arg: ID=FLOPPINGACES_20041230.1844.003-E64 (ORG/Commerc/NOM/GEN), head="airliners"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref anchor="I found the following report that was...", extent="I found the following report that was..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV22 (Conflict/Attack/Generic/Other/Positive/Unspecified)
+    tst event FLOPPINGACES_20041230.1844.003-EV22 (Conflict/Attack/Generic/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+         Attacker ref arg: ID=FLOPPINGACES_20041230.1844.003-E79 (PER/Indeter/NOM/GEN), head="terrorist"
+         Attacker tst arg: ID=FLOPPINGACES_20041230.1844.003-E79 (PER/Indeter/NOM/GEN), head="terrorist"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref anchor="Procedural improvements such as speci...", extent="Procedural improvements such as speci..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV23 (Movement/Transport/Generic/Other/Positive/Unspecified)
+    tst event FLOPPINGACES_20041230.1844.003-EV23 (Movement/Transport/Generic/Other/Positive/Unspecified)
+      event score:  1.00000 out of 1.00000
+            Agent ref arg: ID=FLOPPINGACES_20041230.1844.003-E80 (ORG/Commerc/NOM/USP), head="airliners"
+            Agent tst arg: ID=FLOPPINGACES_20041230.1844.003-E80 (ORG/Commerc/NOM/USP), head="airliners"
+      Destination ref arg: ID=FLOPPINGACES_20041230.1844.003-E82 (FAC/Airport/NOM/USP), head="airports"
+      Destination tst arg: ID=FLOPPINGACES_20041230.1844.003-E82 (FAC/Airport/NOM/USP), head="airports"
+           Origin ref arg: ID=FLOPPINGACES_20041230.1844.003-E81 (GPE/Nation/NAM/SPC), name="U.S"
+           Origin tst arg: ID=FLOPPINGACES_20041230.1844.003-E81 (GPE/Nation/NAM/SPC), name="U.S"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref anchor="However, these techniques by themselv...", extent="However, these techniques by themselv..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV24 (Transaction/Transfer-Money/Specific/Asserted/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV24 (Transaction/Transfer-Money/Specific/Asserted/Positive/Past)
+      event score:  3.40000 out of 3.40000
+            Giver ref arg: ID=FLOPPINGACES_20041230.1844.003-E90 (ORG/Governm/NAM/SPC), name="Department of Homeland Security"
+            Giver tst arg: ID=FLOPPINGACES_20041230.1844.003-E90 (ORG/Governm/NAM/SPC), name="Department of Homeland Security"
+            Money ref arg: ID=FLOPPINGACES_20041230.1844.003-V3 (Num/Money), extent="$60 million"
+            Money tst arg: ID=FLOPPINGACES_20041230.1844.003-V3 (Num/Money), extent="$60 million"
+            Money ref arg: ID=FLOPPINGACES_20041230.1844.003-V4 (Num/Money), extent="$61 million"
+            Money tst arg: ID=FLOPPINGACES_20041230.1844.003-V4 (Num/Money), extent="$61 million"
+       Time-Holds ref arg: ID=FLOPPINGACES_20041230.1844.003-T10 (TIM/---), extent="FY2004"
+       Time-Holds tst arg: ID=FLOPPINGACES_20041230.1844.003-T10 (TIM/---), extent="FY2004"
+       Time-Holds ref arg: ID=FLOPPINGACES_20041230.1844.003-T11 (TIM/---), extent="FY2005"
+       Time-Holds tst arg: ID=FLOPPINGACES_20041230.1844.003-T11 (TIM/---), extent="FY2005"
+- in document FLOPPINGACES_20041230.1844.003:  score:  3.40000 out of 3.40000
+      ref anchor="While this legislation is still under...", extent="While this legislation is still under..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV3 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV3 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  0.70000 out of 0.70000
+       Instrument ref arg: ID=FLOPPINGACES_20041230.1844.003-E104 (WEA/Undersp/NOM/USP), head="beams"
+       Instrument tst arg: ID=FLOPPINGACES_20041230.1844.003-E104 (WEA/Undersp/NOM/USP), head="beams"
+           Target ref arg: ID=FLOPPINGACES_20041230.1844.003-E105 (VEH/Subarea/NOM/SPC), head="cockpits"
+           Target tst arg: ID=FLOPPINGACES_20041230.1844.003-E105 (VEH/Subarea/NOM/SPC), head="cockpits"
+       Time-After ref arg: ID=FLOPPINGACES_20041230.1844.003-T4 (TIM/---), extent="Christmas"
+       Time-After tst arg: ID=FLOPPINGACES_20041230.1844.003-T4 (TIM/---), extent="Christmas"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.70000 out of 0.70000
+      ref anchor="The FBI, concerned that terrorists co...", extent="The FBI, concerned that terrorists co..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV4 (Life/Injure/Generic/Other/Positive/Unspecified)
+    tst event FLOPPINGACES_20041230.1844.003-EV4 (Life/Injure/Generic/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+       Instrument ref arg: ID=FLOPPINGACES_20041230.1844.003-E107 (WEA/Undersp/NOM/GEN), head="beams"
+       Instrument tst arg: ID=FLOPPINGACES_20041230.1844.003-E107 (WEA/Undersp/NOM/GEN), head="beams"
+           Victim ref arg: ID=FLOPPINGACES_20041230.1844.003-E108 (PER/Group/NOM/GEN), head="pilots"
+           Victim tst arg: ID=FLOPPINGACES_20041230.1844.003-E108 (PER/Group/NOM/GEN), head="pilots"
+- in document FLOPPINGACES_20041230.1844.003:  score:  0.00000 out of 0.00000
+      ref anchor="Laser beams can temporarily blind or ...", extent="Laser beams can temporarily blind or ..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV5 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV5 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+            Place ref arg: ID=FLOPPINGACES_20041230.1844.003-E2 (GPE/Populat/NAM/SPC), name="Colorado Springs"
+            Place tst arg: ID=FLOPPINGACES_20041230.1844.003-E2 (GPE/Populat/NAM/SPC), name="Colorado Springs"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref anchor="The FBI is looking into two incidents...", extent="The FBI is looking into two incidents..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV6 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV6 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+            Place ref arg: ID=FLOPPINGACES_20041230.1844.003-E4 (GPE/Populat/NAM/SPC), name="Cleveland"
+            Place tst arg: ID=FLOPPINGACES_20041230.1844.003-E4 (GPE/Populat/NAM/SPC), name="Cleveland"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref anchor="The FBI is looking into two incidents...", extent="The FBI is looking into two incidents..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV7 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV7 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+            Place ref arg: ID=FLOPPINGACES_20041230.1844.003-E5 (GPE/Populat/NAM/SPC), name="Washington"
+            Place tst arg: ID=FLOPPINGACES_20041230.1844.003-E5 (GPE/Populat/NAM/SPC), name="Washington"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref anchor="The FBI is looking into two incidents...", extent="The FBI is looking into two incidents..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV8 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV8 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+            Place ref arg: ID=FLOPPINGACES_20041230.1844.003-E6 (GPE/Populat/NAM/SPC), name="Houston"
+            Place tst arg: ID=FLOPPINGACES_20041230.1844.003-E6 (GPE/Populat/NAM/SPC), name="Houston"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref anchor="The FBI is looking into two incidents...", extent="The FBI is looking into two incidents..."
+--------
+    ref event FLOPPINGACES_20041230.1844.003-EV9 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event FLOPPINGACES_20041230.1844.003-EV9 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+            Place ref arg: ID=FLOPPINGACES_20041230.1844.003-E7 (GPE/Populat/NAM/SPC), name="Teterboro"
+            Place tst arg: ID=FLOPPINGACES_20041230.1844.003-E7 (GPE/Populat/NAM/SPC), name="Teterboro"
+- in document FLOPPINGACES_20041230.1844.003:  score:  1.00000 out of 1.00000
+      ref anchor="The FBI is looking into two incidents...", extent="The FBI is looking into two incidents..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Conflic    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    66.29   0.00   0.00   0.00
+   Life     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Movemen     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.43   0.00   0.00   0.00
+Transac     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.29   0.00   0.00   0.00
+  total    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    80.00   0.00   0.00   0.00
+  Other    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.00   0.00   0.00   0.00
+  total    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ weblog    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    66.29   0.00   0.00   0.00
+ Injure     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Transfe     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.43   0.00   0.00   0.00
+Transfe     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.86   0.00   0.00   0.00
+Transpo     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.43   0.00   0.00   0.00
+  total    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Conflict:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    66.29   0.00   0.00   0.00
+  total    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    66.29   0.00   0.00   0.00
+
+Performance statistics for TYPE = Life:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Injure     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Movement:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.43   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.43   0.00   0.00   0.00
+
+Performance statistics for TYPE = Transaction:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transfe     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.43   0.00   0.00   0.00
+Transfe     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.86   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.29   0.00   0.00   0.00
+
+Event Type confusion matrix for "weblog" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0    17     0     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     2     0     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     2     0     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Transaction      0     0     0     0     0     0     0     3        0.0   0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Event Subtype confusion matrix for "weblog" sources (for mapped events):
+  type=Confl COUNT......    PERCENT......
+    ref\tst: Attac Demon      Attac Demon 
+     Attack     17     0      100.0   0.0
+Demonstrate      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "weblog" sources (for mapped events):
+  type=Life  COUNT..............................    PERCENT..............................
+    ref\tst: Be-Bo  Date   Die Divor Injur Marry      Be-Bo  Date   Die Divor Injur Marry 
+    Be-Born      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+       Date      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+        Die      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+    Divorce      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+     Injure      0     0     0     0     2     0        0.0   0.0   0.0   0.0 100.0   0.0
+      Marry      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "weblog" sources (for mapped events):
+  type=Movem COUNT    PERCENT
+    ref\tst: Trans      Trans 
+  Transport      2      100.0
+
+Event Subtype confusion matrix for "weblog" sources (for mapped events):
+  type=Trans COUNT......    PERCENT......
+    ref\tst: Trans Trans      Trans Trans 
+Transfer-Mo      1     0      100.0   0.0
+Transfer-Ow      0     2        0.0 100.0
+
+Event Modality confusion matrix for "weblog" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted     11     0      100.0   0.0
+      Other      0    13        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific     Generic 
+        Specific    12/50.0%      -     
+         Generic      -         12/50.0%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Other    Asserted 
+           Other    13/54.2%      -     
+        Asserted      -         11/45.8%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive    Negative 
+        Positive    22/91.7%      -     
+        Negative      -          2/ 8.3%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Attack      Injure   Transport Transfer-Ow Transfer-Mo 
+          Attack    17/70.8%      -           -           -           -     
+          Injure      -          2/ 8.3%      -           -           -     
+       Transport      -           -          2/ 8.3%      -           -     
+  Transfer-Owner      -           -           -          2/ 8.3%      -     
+  Transfer-Money      -           -           -           -          1/ 4.2%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past Unspecified      Future 
+            Past    13/54.2%      -           -     
+     Unspecified      -         10/41.7%      -     
+          Future      -           -          1/ 4.2%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Conflict Transaction    Movement        Life 
+        Conflict    17/70.8%      -           -           -     
+     Transaction      -          3/12.5%      -           -     
+        Movement      -           -          2/ 8.3%      -     
+            Life      -           -           -          2/ 8.3%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=49/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Place  Instrument    Attacker      Target    Artifact       Agent       Money  Time-After  all others 
+           Place    11/22.4%      -           -           -           -           -           -           -           -     
+      Instrument      -          8/16.3%      -           -           -           -           -           -           -     
+        Attacker      -           -          7/14.3%      -           -           -           -           -           -     
+          Target      -           -           -          4/ 8.2%      -           -           -           -           -     
+        Artifact      -           -           -           -          2/ 4.1%      -           -           -           -     
+           Agent      -           -           -           -           -          2/ 4.1%      -           -           -     
+           Money      -           -           -           -           -           -          2/ 4.1%      -           -     
+      Time-After      -           -           -           -           -           -           -          2/ 4.1%      -     
+      all others      -           -           -           -           -           -           -           -         11/22.4%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T1, ID=FLOPPINGACES_20041230.1844.003-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T1, ID=FLOPPINGACES_20041230.1844.003-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="2004-12-30T18:44:00"
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T10, ID=FLOPPINGACES_20041230.1844.003-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T10, ID=FLOPPINGACES_20041230.1844.003-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="FY2004"
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T11, ID=FLOPPINGACES_20041230.1844.003-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T11, ID=FLOPPINGACES_20041230.1844.003-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="FY2005"
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T12, ID=FLOPPINGACES_20041230.1844.003-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T12, ID=FLOPPINGACES_20041230.1844.003-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="January 2006"
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T2, ID=FLOPPINGACES_20041230.1844.003-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T2, ID=FLOPPINGACES_20041230.1844.003-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="recent"
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T3, ID=FLOPPINGACES_20041230.1844.003-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T3, ID=FLOPPINGACES_20041230.1844.003-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="Christmas"
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T4, ID=FLOPPINGACES_20041230.1844.003-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T4, ID=FLOPPINGACES_20041230.1844.003-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="Christmas"
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T5, ID=FLOPPINGACES_20041230.1844.003-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T5, ID=FLOPPINGACES_20041230.1844.003-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="Thursday"
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T6, ID=FLOPPINGACES_20041230.1844.003-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T6, ID=FLOPPINGACES_20041230.1844.003-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="month"
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T7, ID=FLOPPINGACES_20041230.1844.003-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T7, ID=FLOPPINGACES_20041230.1844.003-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="today"
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T8, ID=FLOPPINGACES_20041230.1844.003-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T8, ID=FLOPPINGACES_20041230.1844.003-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="1995"
+--------
+    ref timex2 FLOPPINGACES_20041230.1844.003-T9, ID=FLOPPINGACES_20041230.1844.003-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 FLOPPINGACES_20041230.1844.003-T9, ID=FLOPPINGACES_20041230.1844.003-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="recently"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ weblog    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    12/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    12/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---    12/99.9%
+
+======== value mapping ========
+
+--------
+    ref value FLOPPINGACES_20041230.1844.003-V1, ID=FLOPPINGACES_20041230.1844.003-V1, SUBTYPE=Money, TYPE=Numeric
+    tst value FLOPPINGACES_20041230.1844.003-V1, ID=FLOPPINGACES_20041230.1844.003-V1, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="$1 million"
+--------
+    ref value FLOPPINGACES_20041230.1844.003-V2, ID=FLOPPINGACES_20041230.1844.003-V2, SUBTYPE=Money, TYPE=Numeric
+    tst value FLOPPINGACES_20041230.1844.003-V2, ID=FLOPPINGACES_20041230.1844.003-V2, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="$3 million"
+--------
+    ref value FLOPPINGACES_20041230.1844.003-V3, ID=FLOPPINGACES_20041230.1844.003-V3, SUBTYPE=Money, TYPE=Numeric
+    tst value FLOPPINGACES_20041230.1844.003-V3, ID=FLOPPINGACES_20041230.1844.003-V3, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="$60 million"
+--------
+    ref value FLOPPINGACES_20041230.1844.003-V4, ID=FLOPPINGACES_20041230.1844.003-V4, SUBTYPE=Money, TYPE=Numeric
+    tst value FLOPPINGACES_20041230.1844.003-V4, ID=FLOPPINGACES_20041230.1844.003-V4, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document FLOPPINGACES_20041230.1844.003:
+          mention="$61 million"
+
+======== value scoring ========
+
+Value Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ weblog     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Money 
+           Money     4/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Numeric 
+         Numeric     4/99.9%
+
+data input:               0.79 secs to load data
+entity eval:              0.12 secs to compute values,    0.02 secs to map,    0.11 secs to score
+relation eval:            0.19 secs to compute values,    0.01 secs to map,    0.05 secs to score
+event eval:               0.12 secs to compute values,    0.01 secs to map,    0.05 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.01 secs to compute values,    0.01 secs to map,    0.00 secs to score
+value eval:               0.01 secs to compute values,    0.00 secs to map,    0.00 secs to score
+########

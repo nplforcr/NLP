@@ -1,0 +1,19 @@
+Requires JAMA-1.0.2.jar from
+http://math.nist.gov/javanumerics/jama/
+
+Example classes to run:
+
+Examples - Calculates MUC, class-level B3, entity-level B3, mention-based CEAF, and entity-based CEAF
+takes two arguments - gold standard and system output, if the system output is not specified, read from stdin
+
+KAlphaExample - Calculates Krippendorff's alpha
+takes two or more arguments
+
+Each line in the command line argument specifies a pair.  Format:
+IDENT <TAB> <ID1> <TAB> <ID2>
+
+IDENT - a keyword marking an identity relation (other relations are ignored)
+<ID1> - sequential ID of one markable
+<ID2> - sequential ID of the other markable
+
+The IDs MUST be uniqe in the scope of all files, i.e. the same ID should refer to the same markable in all the files.  IDs are assumed to start from 1; any value that is not present in the files are treated as if they are not involved in coreference.

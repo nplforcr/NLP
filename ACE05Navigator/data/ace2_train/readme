@@ -1,0 +1,35 @@
+train the modelfiles and test the cr model with the following steps:
+1. run ProcessACETrainJdom.java --------> nemodel, newordmodel and neratio
+2. run WordModelBuilder.java ----------> wordmodel
+3. run PosTag2PosModel.java -----------> posWordmodel, posratio and tagged.tally (used to train d-tree model for determining pos of unknown words)
+4. run BuildOpPosmodel.java -----------> opmodel and posmodel
+5. run ProcessACEDevJdom.java ----------> input.entity and input.texts
+6. cd /home/dingcheng/Documents/NLPWorkspace/modelblocks/wsjpare
+7. run each above model with command cat ../../../Documents/OSU_corpora/ace_phase2/data/ace2_train/bnews_models/xmodel|perl scripts/relfeq.perl > acemodel/xmodel.train ----> modelfiles
+8. run hhmmparser-coref to do corference resolution with the following sample command:
+
+cat ../../../OSU_corpora/ace_phase2/data/ace2_devtest/bnews_text/ABC19981001.1830.1257.sgm|bin/hhmmparser-corefESACE -b 30 
+ace_bnewsmodel/copymodel.train 
+ace_bnewsmodel/genmodel.train 
+ace_bnewsmodel/indmodel.train 
+ace_bnewsmodel/nemodel.train 
+ace_bnewsmodel/neratio.train 
+ace_bnewsmodel/neWordmodel.train 
+ace_bnewsmodel/nummodel.train 
+ace_bnewsmodel/opmodel.train 
+ace_bnewsmodel/posmodel.train 
+ace_bnewsmodel/posWordmodel.train 
+ace_bnewsmodel/wordmodel.train 
+ace_bnewsmodel/ratiomodel.train 
+ace_bnewsmodel/supplements.train
+genmodel/POS.bnews.model  
+pronModels/wordGenNummodel.train 
+../../../OSU_corpora/ace_phase2/data/ace2_devtest/bnews_inputs/ABC19981001.1830.1257.sgm
+
+9. run evaluation code to get accuracy
+
+p.s. indmodel.train, nummodel.train, copymodel.train, ratiomodel.train, supplement.train, POS.bnews.model and wordGenNummodel.train can be shared by all three corpus
+
+
+All done, enjoy!
+

@@ -1,0 +1,1304 @@
+command line (run on 2005 Aug 21 at 13:08:42):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score74598 -t /tmp/score74598
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E1 (PER/PRO/USP)
+    tst entity rec.games.chess.politics_20050123.2203-E1 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="who" (PRO/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E10 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E10 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Glenn" (NAM/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+         ref name="Glenn"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E11 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E11 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="Charlie" (NAM/PER/LIT)
+         ref name="Charlie"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E13 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E13 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Sam Sloan" (NAM/PER/LIT)
+         ref name="Sam Sloan"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E14 (PER/NOM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E14 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="my" (NOM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E15 (PER/NOM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E15 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="Board" (NOM/PER/LIT)
+      ref mention="Board" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E16 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E16 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Schultz" (NAM/PER/LIT)
+         ref name="Schultz"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E17 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E17 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Brady" (NAM/PER/LIT)
+         ref name="Brady"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E18 (PER/PRO/USP)
+    tst entity rec.games.chess.politics_20050123.2203-E18 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="One" (PRO/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E19 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E19 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Tim Hanke" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (NOM/PER/LIT)
+      ref mention="Tim Hanke" (NAM/PER/LIT)
+      ref mention="Tim" (NAM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Tim" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+         ref name="Tim Hanke"
+         ref name="Tim Hanke"
+         ref name="Tim"
+         ref name="Tim"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E2 (PER/NOM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E2 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="membership" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E20 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E20 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Kalev Pehme" (NAM/PER/LIT)
+      ref mention="Kalev Pehme" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="guy" (NOM/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="Kalev Pehme" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Kalev Pehme" (NAM/PER/LIT)
+      ref mention="Kalev Pehme" (NAM/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="editor" (NOM/PER/LIT)
+      ref mention="Kalev Pehme" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="Pehme" (NAM/PER/LIT)
+      ref mention="Pehme" (NAM/PER/LIT)
+      ref mention="editor" (NOM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="editor" (NOM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+         ref name="Kalev Pehme"
+         ref name="Kalev Pehme"
+         ref name="Kalev Pehme"
+         ref name="Kalev Pehme"
+         ref name="Kalev Pehme"
+         ref name="Kalev Pehme"
+         ref name="Pehme"
+         ref name="Pehme"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E21 (PER/PRO/USP)
+    tst entity rec.games.chess.politics_20050123.2203-E21 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="number" (PRO/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E24 (PER/NOM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E24 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="crowd" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E26 (PER/NOM/GEN)
+    tst entity rec.games.chess.politics_20050123.2203-E26 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="players" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E27 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E27 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Susan Polgar" (NAM/PER/LIT)
+         ref name="Susan Polgar"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E28 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E28 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Paul Truong" (NAM/PER/LIT)
+         ref name="Paul Truong"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E29 (PER/NOM/GEN)
+    tst entity rec.games.chess.politics_20050123.2203-E29 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="reader" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E3 (ORG/NOM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E3 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="magazines" (NOM/ORG/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E30 (PER/NOM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E30 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="people" (NOM/PER/LIT)
+      ref mention="people" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E31 (ORG/NOM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E31 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="Federation" (NOM/ORG/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E32 (PER/NOM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E32 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="editor" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E33 (PER/PRO/USP)
+    tst entity rec.games.chess.politics_20050123.2203-E33 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="our" (PRO/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E37 (PER/NOM/USP)
+    tst entity rec.games.chess.politics_20050123.2203-E37 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="fools" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E38 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E38 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="replacement" (NOM/PER/LIT)
+      ref mention="Glenn Peterson" (NAM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="Glenn" (NAM/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+         ref name="Glenn Peterson"
+         ref name="Glenn"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E39 (PER/NOM/GEN)
+    tst entity rec.games.chess.politics_20050123.2203-E39 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="replacement" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E4 (PER/NOM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E4 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="body" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E41 (ORG/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E41 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="FIDE" (NAM/ORG/LIT)
+      ref mention="it" (PRO/ORG/LIT)
+      ref mention="FIDE" (NAM/ORG/LIT)
+         ref name="FIDE"
+         ref name="FIDE"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E43 (PER/NOM/GEN)
+    tst entity rec.games.chess.politics_20050123.2203-E43 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="Players" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E44 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E44 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Dr. Press" (NAM/PER/LIT)
+      ref mention="co-founder" (NOM/PER/LIT)
+         ref name="Dr. Press"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E46 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E46 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Liarry" (NAM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Liarry" (NAM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+         ref name="Liarry"
+         ref name="Liarry"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E49 (PER/PRO/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E49 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="I" (PRO/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E5 (PER/NOM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E5 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="writers" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E53 (ORG/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E53 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Chess Life" (NAM/ORG/LIT)
+      ref mention="magazine" (NOM/ORG/LIT)
+      ref mention="it" (PRO/ORG/LIT)
+      ref mention="it" (PRO/ORG/LIT)
+      ref mention="Mag" (NOM/ORG/LIT)
+      ref mention="Chess Life" (NAM/ORG/LIT)
+      ref mention="magazine" (NOM/ORG/LIT)
+      ref mention="magazine" (NOM/ORG/LIT)
+      ref mention="Chess Life" (NAM/ORG/LIT)
+         ref name="Chess Life"
+         ref name="Chess Life"
+         ref name="Chess Life"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E54 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E54 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Beatriz Marinello" (NAM/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+      ref mention="Beatriz Marinello" (NAM/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+      ref mention="Beatriz" (NAM/PER/LIT)
+         ref name="Beatriz Marinello"
+         ref name="Beatriz Marinello"
+         ref name="Beatriz"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E55 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E55 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="Phil Innes" (NAM/PER/LIT)
+         ref name="Phil Innes"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E56 (PER/PRO/USP)
+    tst entity rec.games.chess.politics_20050123.2203-E56 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="we" (PRO/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E57 (PER/NOM/USP)
+    tst entity rec.games.chess.politics_20050123.2203-E57 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="insiders" (NOM/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E58 (PER/PRO/USP)
+    tst entity rec.games.chess.politics_20050123.2203-E58 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="those" (PRO/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E59 (PER/NOM/GEN)
+    tst entity rec.games.chess.politics_20050123.2203-E59 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="Readers" (NOM/PER/LIT)
+      ref mention="readers" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E6 (PER/NOM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E6 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="public" (NOM/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E7 (PER/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E7 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Larry Parr" (NAM/PER/LIT)
+         ref name="Larry Parr"
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E8 (PER/PRO/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E8 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document rec.games.chess.politics_20050123.2203:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="I" (PRO/PER/LIT)
+--------
+    ref entity rec.games.chess.politics_20050123.2203-E9 (GPE/NAM/SPC)
+    tst entity rec.games.chess.politics_20050123.2203-E9 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Tennessee" (NAM/LOC/LIT)
+         ref name="Tennessee"
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    GPE     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.22   0.00   0.00   0.00
+    ORG     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.66   0.00   0.00   0.00
+    PER    39     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    83.12   0.00   0.00   0.00
+  total    44     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.95   0.00   0.00   0.00
+    NOM    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    23.21   0.00   0.00   0.00
+    PRO     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.84   0.00   0.00   0.00
+  total    44     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.84   0.00   0.00   0.00
+0.2-0.5    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    23.21   0.00   0.00   0.00
+0.5-1.0    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.95   0.00   0.00   0.00
+  total    44     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    26     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    47.26   0.00   0.00   0.00
+      2     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.88   0.00   0.00   0.00
+    3-4     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.66   0.00   0.00   0.00
+    5-8     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.55   0.00   0.00   0.00
+     >8     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.66   0.00   0.00   0.00
+  total    44     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    44     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet    44     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    44     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.77   0.00   0.00   0.00
+Individ    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    68.35   0.00   0.00   0.00
+  Media     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.33   0.00   0.00   0.00
+Non-Gov     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.33   0.00   0.00   0.00
+State-o     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.22   0.00   0.00   0.00
+  total    44     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+State-o     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.22   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.22   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Media     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.33   0.00   0.00   0.00
+Non-Gov     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.33   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.66   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.77   0.00   0.00   0.00
+Individ    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    68.35   0.00   0.00   0.00
+  total    39     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    83.12   0.00   0.00   0.00
+
+Entity Type confusion matrix for "usenet" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     1     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     4     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    39     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=44/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         USP         GEN 
+             SPC    31/70.5%      -           -     
+             USP      -          8/18.2%      -     
+             GEN      -           -          5/11.4%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=44/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: Individual       Group Non-Governm       Media State-or-Pr 
+      Individual    22/50.0%      -           -           -           -     
+           Group      -         17/38.6%      -           -           -     
+  Non-Government      -           -          2/ 4.5%      -           -     
+           Media      -           -           -          2/ 4.5%      -     
+  State-or-Provi      -           -           -           -          1/ 2.3%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=44/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        PER         ORG         GPE 
+             PER    39/88.6%      -           -     
+             ORG      -          4/ 9.1%      -     
+             GPE      -           -          1/ 2.3%
+
+Entity Class confusion matrix for "usenet" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           31     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     5     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0     8        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0     5        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    29        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    35        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    35        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    32        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0    58        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   125        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   125        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   125        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  LOC       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    14        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0   110        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   125        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "usenet" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     1     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    14     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0   110     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "usenet" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          125     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation rec.games.chess.politics_20050123.2203-R1 (PER-SOC/Business/Asserted/Past)
+    tst relation rec.games.chess.politics_20050123.2203-R1 (PER-SOC/Business/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+            Arg-1 tst arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+            Arg-2 ref arg: ID=rec.games.chess.politics_20050123.2203-E54 (PER/Individ/NAM/SPC), name="Beatriz Marinello"
+            Arg-2 tst arg: ID=rec.games.chess.politics_20050123.2203-E54 (PER/Individ/NAM/SPC), name="Beatriz Marinello"
+- in document rec.games.chess.politics_20050123.2203:  score:  2.00000 out of 2.00000
+      ref extent="Kalev Pehme has been fired as editor ..."
+--------
+    ref relation rec.games.chess.politics_20050123.2203-R2 (ORG-AFF/Employment/Asserted/Past)
+    tst relation rec.games.chess.politics_20050123.2203-R2 (ORG-AFF/Employment/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+            Arg-1 tst arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+            Arg-2 ref arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+            Arg-2 tst arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+- in document rec.games.chess.politics_20050123.2203:  score:  2.00000 out of 2.00000
+      ref extent="Kalev Pehme has been fired as editor ..."
+      ref extent="Pity on him, what a horrible magazine..."
+--------
+    ref relation rec.games.chess.politics_20050123.2203-R4 (PHYS/Located/Other/Unspecified)
+    tst relation rec.games.chess.politics_20050123.2203-R4 (PHYS/Located/Other/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=rec.games.chess.politics_20050123.2203-E54 (PER/Individ/NAM/SPC), name="Beatriz Marinello"
+            Arg-1 tst arg: ID=rec.games.chess.politics_20050123.2203-E54 (PER/Individ/NAM/SPC), name="Beatriz Marinello"
+            Arg-2 ref arg: ID=rec.games.chess.politics_20050123.2203-E9 (GPE/State-o/NAM/SPC), name="Tennessee"
+            Arg-2 tst arg: ID=rec.games.chess.politics_20050123.2203-E9 (GPE/State-o/NAM/SPC), name="Tennessee"
+- in document rec.games.chess.politics_20050123.2203:  score:  2.00000 out of 2.00000
+      ref extent="I thought she was in Tennessee"
+--------
+    ref relation rec.games.chess.politics_20050123.2203-R5 (ORG-AFF/Employment/Asserted/Past)
+    tst relation rec.games.chess.politics_20050123.2203-R5 (ORG-AFF/Employment/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=rec.games.chess.politics_20050123.2203-E38 (PER/Individ/NAM/SPC), name="Glenn Peterson"
+            Arg-1 tst arg: ID=rec.games.chess.politics_20050123.2203-E38 (PER/Individ/NAM/SPC), name="Glenn Peterson"
+            Arg-2 ref arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+            Arg-2 tst arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+- in document rec.games.chess.politics_20050123.2203:  score:  2.00000 out of 2.00000
+      ref extent="former editor Glenn Peterson, who put..."
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ORG-AFF     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    50.00   0.00   0.00   0.00
+PER-SOC     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+   PHYS     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.00   0.00   0.00   0.00
+  Other     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+Employm     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    50.00   0.00   0.00   0.00
+Located     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    50.00   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    50.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER-SOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+
+Relation Type confusion matrix for "usenet" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     2     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     1     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+       PHYS      0     0     0     0     0     0     1        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      2     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=PER-S COUNT............    PERCENT............
+    ref\tst: Busin Famil Lasti      Busin Famil Lasti 
+   Business      1     0     0      100.0   0.0   0.0
+     Family      0     0     0        0.0   0.0   0.0
+Lasting-Per      0     0     0        0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      1     0      100.0   0.0
+       Near      0     0        0.0   0.0
+
+Relation Modality confusion matrix for "usenet" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted      3     0     0      100.0   0.0   0.0
+      Other      0     1     0        0.0 100.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted     3/75.0%      -     
+           Other      -          1/25.0%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: Employment    Business     Located 
+      Employment     2/50.0%      -           -     
+        Business      -          1/25.0%      -     
+         Located      -           -          1/25.0%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past Unspecified 
+            Past     3/75.0%      -     
+     Unspecified      -          1/25.0%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    ORG-AFF        PHYS     PER-SOC 
+         ORG-AFF     2/50.0%      -           -     
+            PHYS      -          1/25.0%      -     
+         PER-SOC      -           -          1/25.0%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=8/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 
+           Arg-2     4/50.0%      -     
+           Arg-1      -          4/50.0%
+
+======== event mapping ========
+
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV1 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event rec.games.chess.politics_20050123.2203-EV1 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  3.00000 out of 3.00000
+           Entity ref arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+           Entity tst arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+           Person ref arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+           Person tst arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+         Position ref arg: ID=rec.games.chess.politics_20050123.2203-V1 (Job/---), extent="editor of Chess Life"
+         Position tst arg: ID=rec.games.chess.politics_20050123.2203-V1 (Job/---), extent="editor of Chess Life"
+- in document rec.games.chess.politics_20050123.2203:  score:  3.00000 out of 3.00000
+      ref anchor="fired", extent="Kalev Pehme fired"
+      ref anchor="fired", extent="Kalev Pehme has been fired as editor ..."
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV10 (Personnel/End-Position/Specific/Other/Positive/Unspecified)
+    tst event rec.games.chess.politics_20050123.2203-EV10 (Personnel/End-Position/Specific/Other/Positive/Unspecified)
+      event score:  2.00000 out of 2.00000
+           Entity ref arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+           Entity tst arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+         Position ref arg: ID=rec.games.chess.politics_20050123.2203-V3 (Job/---), extent="editor"
+         Position tst arg: ID=rec.games.chess.politics_20050123.2203-V3 (Job/---), extent="editor"
+- in document rec.games.chess.politics_20050123.2203:  score:  2.00000 out of 2.00000
+      ref anchor="fire", extent="fire means he will not be working for..."
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV11 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event rec.games.chess.politics_20050123.2203-EV11 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+           Person ref arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+           Person tst arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+         Position ref arg: ID=rec.games.chess.politics_20050123.2203-V5 (Job/---), extent="editor"
+         Position tst arg: ID=rec.games.chess.politics_20050123.2203-V5 (Job/---), extent="editor"
+- in document rec.games.chess.politics_20050123.2203:  score:  2.00000 out of 2.00000
+      ref anchor="the ax", extent="he got the ax because the scholastic ..."
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV12 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event rec.games.chess.politics_20050123.2203-EV12 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  3.00000 out of 3.00000
+           Entity ref arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+           Entity tst arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+           Person ref arg: ID=rec.games.chess.politics_20050123.2203-E38 (PER/Individ/NAM/SPC), name="Glenn Peterson"
+           Person tst arg: ID=rec.games.chess.politics_20050123.2203-E38 (PER/Individ/NAM/SPC), name="Glenn Peterson"
+         Position ref arg: ID=rec.games.chess.politics_20050123.2203-V4 (Job/---), extent="editor"
+         Position tst arg: ID=rec.games.chess.politics_20050123.2203-V4 (Job/---), extent="editor"
+- in document rec.games.chess.politics_20050123.2203:  score:  3.00000 out of 3.00000
+      ref anchor="former", extent="former editor Glenn Peterson, who put..."
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV13 (Life/Die/Specific/Other/Positive/Unspecified)
+    tst event rec.games.chess.politics_20050123.2203-EV13 (Life/Die/Specific/Other/Positive/Unspecified)
+      event score:  2.00000 out of 2.00000
+            Agent ref arg: ID=rec.games.chess.politics_20050123.2203-E54 (PER/Individ/NAM/SPC), name="Beatriz Marinello"
+            Agent tst arg: ID=rec.games.chess.politics_20050123.2203-E54 (PER/Individ/NAM/SPC), name="Beatriz Marinello"
+           Victim ref arg: ID=rec.games.chess.politics_20050123.2203-E38 (PER/Individ/NAM/SPC), name="Glenn Peterson"
+           Victim tst arg: ID=rec.games.chess.politics_20050123.2203-E38 (PER/Individ/NAM/SPC), name="Glenn Peterson"
+- in document rec.games.chess.politics_20050123.2203:  score:  2.00000 out of 2.00000
+      ref anchor="kill", extent="Beatriz will kill him"
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV2 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+    tst event rec.games.chess.politics_20050123.2203-EV2 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+           Person ref arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+           Person tst arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000
+      ref anchor="hired", extent="he was hired"
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV3 (Contact/Meet/Specific/Asserted/Positive/Past)
+    tst event rec.games.chess.politics_20050123.2203-EV3 (Contact/Meet/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+           Entity ref arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+           Entity tst arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+           Entity ref arg: ID=rec.games.chess.politics_20050123.2203-E58 (PER/Group/PRO/USP), head="those"
+           Entity tst arg: ID=rec.games.chess.politics_20050123.2203-E58 (PER/Group/PRO/USP), head="those"
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000
+      ref anchor="meetings", extent="who had interviewed him and proposed ..."
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV4 (Personnel/Start-Position/Specific/Other/Positive/Future)
+    tst event rec.games.chess.politics_20050123.2203-EV4 (Personnel/Start-Position/Specific/Other/Positive/Future)
+      event score:  1.00000 out of 1.00000
+           Person ref arg: ID=rec.games.chess.politics_20050123.2203-E10 (PER/Individ/NAM/SPC), name="Glenn"
+           Person tst arg: ID=rec.games.chess.politics_20050123.2203-E10 (PER/Individ/NAM/SPC), name="Glenn"
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000
+      ref anchor="hire", extent="hire him"
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV5 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event rec.games.chess.politics_20050123.2203-EV5 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+           Person ref arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+           Person tst arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000
+      ref anchor="fired", extent="Kalev Pehme did not deserve to be fired"
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV6 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event rec.games.chess.politics_20050123.2203-EV6 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+           Person ref arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+           Person tst arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000
+      ref anchor="fired", extent="fired Kalev Pehme"
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV7 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event rec.games.chess.politics_20050123.2203-EV7 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+           Person ref arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+           Person tst arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+         Position ref arg: ID=rec.games.chess.politics_20050123.2203-V2 (Job/---), extent="the editor"
+         Position tst arg: ID=rec.games.chess.politics_20050123.2203-V2 (Job/---), extent="the editor"
+- in document rec.games.chess.politics_20050123.2203:  score:  2.00000 out of 2.00000
+      ref anchor="fired", extent="the editor was fired"
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV8 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event rec.games.chess.politics_20050123.2203-EV8 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+           Person ref arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+           Person tst arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+- in document rec.games.chess.politics_20050123.2203:  score:  1.00000 out of 1.00000
+      ref anchor="firing", extent="his firing"
+--------
+    ref event rec.games.chess.politics_20050123.2203-EV9 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event rec.games.chess.politics_20050123.2203-EV9 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+           Entity ref arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+           Entity tst arg: ID=rec.games.chess.politics_20050123.2203-E53 (ORG/Media/NAM/SPC), name="Chess Life"
+           Person ref arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+           Person tst arg: ID=rec.games.chess.politics_20050123.2203-E20 (PER/Individ/NAM/SPC), name="Kalev Pehme"
+- in document rec.games.chess.politics_20050123.2203:  score:  2.00000 out of 2.00000
+      ref anchor="fired", extent="he fired because the average reader d..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Contact     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.55   0.00   0.00   0.00
+   Life     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+Personn    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    86.36   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    77.27   0.00   0.00   0.00
+  Other     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.73   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    Die     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+End-Pos     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    77.27   0.00   0.00   0.00
+   Meet     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.55   0.00   0.00   0.00
+Start-P     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Contact:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Meet     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.55   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.55   0.00   0.00   0.00
+
+Performance statistics for TYPE = Life:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    Die     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+
+Performance statistics for TYPE = Personnel:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+End-Pos     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    77.27   0.00   0.00   0.00
+Start-P     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    86.36   0.00   0.00   0.00
+
+Event Type confusion matrix for "usenet" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     1     0     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     1     0     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Personnel      0     0     0     0     0     0    11     0        0.0   0.0   0.0   0.0   0.0   0.0 100.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "usenet" sources (for mapped events):
+  type=Conta COUNT......    PERCENT......
+    ref\tst:  Meet Phone       Meet Phone 
+       Meet      1     0      100.0   0.0
+Phone-Write      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "usenet" sources (for mapped events):
+  type=Life  COUNT..............................    PERCENT..............................
+    ref\tst: Be-Bo  Date   Die Divor Injur Marry      Be-Bo  Date   Die Divor Injur Marry 
+    Be-Born      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+       Date      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+        Die      0     0     1     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0
+    Divorce      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+     Injure      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+      Marry      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "usenet" sources (for mapped events):
+  type=Perso COUNT..................    PERCENT..................
+    ref\tst: Elect End-P Nomin Start      Elect End-P Nomin Start 
+      Elect      0     0     0     0        0.0   0.0   0.0   0.0
+End-Positio      0     9     0     0        0.0 100.0   0.0   0.0
+   Nominate      0     0     0     0        0.0   0.0   0.0   0.0
+Start-Posit      0     0     0     2        0.0   0.0   0.0 100.0
+
+Event Modality confusion matrix for "usenet" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted     10     0      100.0   0.0
+      Other      0     3        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific 
+        Specific    13/99.9%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted    10/76.9%      -     
+           Other      -          3/23.1%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive 
+        Positive    13/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:End-Positio Start-Posit         Die        Meet 
+    End-Position     9/69.2%      -           -           -     
+  Start-Position      -          2/15.4%      -           -     
+             Die      -           -          1/ 7.7%      -     
+            Meet      -           -           -          1/ 7.7%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past Unspecified      Future 
+            Past    10/76.9%      -           -     
+     Unspecified      -          2/15.4%      -     
+          Future      -           -          1/ 7.7%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:  Personnel     Contact        Life 
+       Personnel    11/84.6%      -           -     
+         Contact      -          1/ 7.7%      -     
+            Life      -           -          1/ 7.7%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=23/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Person      Entity    Position      Victim       Agent 
+          Person    10/43.5%      -           -           -           -     
+          Entity      -          6/26.1%      -           -           -     
+        Position      -           -          5/21.7%      -           -     
+          Victim      -           -           -          1/ 4.3%      -     
+           Agent      -           -           -           -          1/ 4.3%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 rec.games.chess.politics_20050123.2203-T1, ID=rec.games.chess.politics_20050123.2203-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.games.chess.politics_20050123.2203-T1, ID=rec.games.chess.politics_20050123.2203-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="2005-01-23T22:03:00"
+--------
+    ref timex2 rec.games.chess.politics_20050123.2203-T2, ID=rec.games.chess.politics_20050123.2203-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.games.chess.politics_20050123.2203-T2, ID=rec.games.chess.politics_20050123.2203-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="Mon, 24 Jan 2005 03:03:42 GMT"
+--------
+    ref timex2 rec.games.chess.politics_20050123.2203-T3, ID=rec.games.chess.politics_20050123.2203-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.games.chess.politics_20050123.2203-T3, ID=rec.games.chess.politics_20050123.2203-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="Mon, 24 Jan 2005 03:48:18 GMT"
+--------
+    ref timex2 rec.games.chess.politics_20050123.2203-T4, ID=rec.games.chess.politics_20050123.2203-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.games.chess.politics_20050123.2203-T4, ID=rec.games.chess.politics_20050123.2203-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="Last summer"
+--------
+    ref timex2 rec.games.chess.politics_20050123.2203-T5, ID=rec.games.chess.politics_20050123.2203-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.games.chess.politics_20050123.2203-T5, ID=rec.games.chess.politics_20050123.2203-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="the Fall"
+--------
+    ref timex2 rec.games.chess.politics_20050123.2203-T6, ID=rec.games.chess.politics_20050123.2203-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.games.chess.politics_20050123.2203-T6, ID=rec.games.chess.politics_20050123.2203-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="Sun, 23 Jan 2005 23:02:49 -0500"
+--------
+    ref timex2 rec.games.chess.politics_20050123.2203-T7, ID=rec.games.chess.politics_20050123.2203-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.games.chess.politics_20050123.2203-T7, ID=rec.games.chess.politics_20050123.2203-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="former"
+--------
+    ref timex2 rec.games.chess.politics_20050123.2203-T8, ID=rec.games.chess.politics_20050123.2203-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.games.chess.politics_20050123.2203-T8, ID=rec.games.chess.politics_20050123.2203-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="25 Jan 2005 00:48:35 GMT"
+--------
+    ref timex2 rec.games.chess.politics_20050123.2203-T9, ID=rec.games.chess.politics_20050123.2203-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.games.chess.politics_20050123.2203-T9, ID=rec.games.chess.politics_20050123.2203-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="24 Jan 2005 08:06:51 GMT"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=9/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     9/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=9/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     9/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=9/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---     9/99.9%
+
+======== value mapping ========
+
+--------
+    ref value rec.games.chess.politics_20050123.2203-V1, ID=rec.games.chess.politics_20050123.2203-V1, TYPE=Job-Title
+    tst value rec.games.chess.politics_20050123.2203-V1, ID=rec.games.chess.politics_20050123.2203-V1, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="editor of Chess Life"
+--------
+    ref value rec.games.chess.politics_20050123.2203-V2, ID=rec.games.chess.politics_20050123.2203-V2, TYPE=Job-Title
+    tst value rec.games.chess.politics_20050123.2203-V2, ID=rec.games.chess.politics_20050123.2203-V2, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="the editor"
+--------
+    ref value rec.games.chess.politics_20050123.2203-V3, ID=rec.games.chess.politics_20050123.2203-V3, TYPE=Job-Title
+    tst value rec.games.chess.politics_20050123.2203-V3, ID=rec.games.chess.politics_20050123.2203-V3, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="editor"
+--------
+    ref value rec.games.chess.politics_20050123.2203-V4, ID=rec.games.chess.politics_20050123.2203-V4, TYPE=Job-Title
+    tst value rec.games.chess.politics_20050123.2203-V4, ID=rec.games.chess.politics_20050123.2203-V4, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="editor"
+--------
+    ref value rec.games.chess.politics_20050123.2203-V5, ID=rec.games.chess.politics_20050123.2203-V5, TYPE=Job-Title
+    tst value rec.games.chess.politics_20050123.2203-V5, ID=rec.games.chess.politics_20050123.2203-V5, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document rec.games.chess.politics_20050123.2203:
+          mention="editor"
+
+======== value scoring ========
+
+Value Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:  Job-Title 
+       Job-Title     5/99.9%
+
+data input:               0.45 secs to load data
+entity eval:              0.10 secs to compute values,    0.02 secs to map,    0.06 secs to score
+relation eval:            0.01 secs to compute values,    0.00 secs to map,    0.01 secs to score
+event eval:               0.06 secs to compute values,    0.01 secs to map,    0.03 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.01 secs to compute values,    0.00 secs to map,    0.00 secs to score
+value eval:               0.01 secs to compute values,    0.00 secs to map,    0.01 secs to score
+########

@@ -1,0 +1,1536 @@
+command line (run on 2005 Aug 19 at 15:24:47):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score59311 -t /tmp/score59311
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity VOM20001026.1800.0795-E1 (GPE/NOM/SPC)
+    tst entity VOM20001026.1800.0795-E1 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document VOM20001026.1800.0795:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="我们" (PRO/PER/LIT)
+      ref mention="我们" (PRO/GPE/LIT)
+      ref mention="国家" (NOM/GPE/LIT)
+      ref mention="我 们" (PRO/PER/LIT)
+      ref mention="国" (NOM/GPE/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E10 (GPE/PRO/SPC)
+    tst entity VOM20001026.1800.0795-E10 (GPE/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document VOM20001026.1800.0795:  score:  0.10000 out of 0.10000  (GPE/PRO/SPC)
+      ref mention="双方" (PRO/GPE/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E11 (LOC/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E11 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="烧岛" (NAM/LOC/LIT)
+         ref name="烧岛"
+--------
+    ref entity VOM20001026.1800.0795-E12 (PER/NOM/GEN)
+    tst entity VOM20001026.1800.0795-E12 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document VOM20001026.1800.0795:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="部长" (NOM/PER/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E13 (GPE/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E13 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="美国" (NAM/GPE/LIT)
+      ref mention="美国" (NAM/GPE/LIT)
+      ref mention="美国" (NAM/GPE/LIT)
+      ref mention="美" (NAM/GPE/LIT)
+      ref mention="美国" (NAM/GPE/LIT)
+      ref mention="美国" (NAM/GPE/LIT)
+      ref mention="美国" (NAM/GPE/LIT)
+      ref mention="美国" (NAM/GPE/LIT)
+         ref name="美国"
+         ref name="美国"
+         ref name="美国"
+         ref name="美"
+         ref name="美国"
+         ref name="美国"
+         ref name="美国"
+         ref name="美国"
+--------
+    ref entity VOM20001026.1800.0795-E14 (PER/NOM/GEN)
+    tst entity VOM20001026.1800.0795-E14 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document VOM20001026.1800.0795:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="部长" (NOM/PER/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E15 (PER/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E15 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="部长" (NOM/PER/LIT)
+      ref mention="迟浩田" (NAM/PER/LIT)
+      ref mention="迟浩田" (NAM/PER/LIT)
+      ref mention="陈 浩田" (NAM/PER/LIT)
+         ref name="迟浩田"
+         ref name="迟浩田"
+         ref name="陈 浩田"
+--------
+    ref entity VOM20001026.1800.0795-E17 (GPE/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E17 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="中国" (NAM/GPE/LIT)
+      ref mention="中国" (NAM/GPE/LIT)
+      ref mention="中国" (NAM/GPE/LIT)
+      ref mention="中国" (NAM/GPE/LIT)
+         ref name="中国"
+         ref name="中国"
+         ref name="中国"
+         ref name="中国"
+--------
+    ref entity VOM20001026.1800.0795-E18 (PER/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E18 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="国务卿" (NOM/PER/LIT)
+      ref mention="奥尔布赖特" (NAM/PER/LIT)
+      ref mention="奥尔布赖特" (NAM/PER/LIT)
+      ref mention="奥布 莱特" (NAM/PER/LIT)
+      ref mention="奥尔布莱" (NAM/PER/LIT)
+      ref mention="奥尔布莱特" (NAM/PER/LIT)
+      ref mention="他" (PRO/PER/LIT)
+      ref mention="奥尔布莱 特" (NAM/PER/LIT)
+      ref mention="国务卿" (NOM/PER/LIT)
+      ref mention="国务卿" (NOM/PER/LIT)
+      ref mention="奥尔布莱特" (NAM/PER/LIT)
+         ref name="奥尔布赖特"
+         ref name="奥尔布赖特"
+         ref name="奥布 莱特"
+         ref name="奥尔布莱"
+         ref name="奥尔布莱特"
+         ref name="奥尔布莱 特"
+         ref name="奥尔布莱特"
+--------
+    ref entity VOM20001026.1800.0795-E19 (PER/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E19 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="领导人" (NOM/PER/LIT)
+      ref mention="金正日" (NAM/PER/LIT)
+      ref mention="他" (PRO/PER/LIT)
+         ref name="金正日"
+--------
+    ref entity VOM20001026.1800.0795-E2 (PER/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E2 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="克林顿" (NAM/PER/LIT)
+      ref mention="总统" (NOM/PER/LIT)
+      ref mention="克林顿" (NAM/PER/LIT)
+      ref mention="总统" (NOM/PER/LIT)
+         ref name="克林顿"
+         ref name="克林顿"
+--------
+    ref entity VOM20001026.1800.0795-E21 (GPE/NOM/SPC)
+    tst entity VOM20001026.1800.0795-E21 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document VOM20001026.1800.0795:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="国" (NOM/GPE/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E22 (PER/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E22 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="金大 中" (NAM/PER/LIT)
+      ref mention="总统" (NOM/PER/LIT)
+      ref mention="金大中" (NAM/PER/LIT)
+      ref mention="金大中" (NAM/PER/LIT)
+         ref name="金大 中"
+         ref name="金大中"
+         ref name="金大中"
+--------
+    ref entity VOM20001026.1800.0795-E23 (LOC/NOM/SPC)
+    tst entity VOM20001026.1800.0795-E23 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document VOM20001026.1800.0795:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="国际" (NOM/LOC/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E24 (LOC/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E24 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="群 山自由贸易区" (NAM/LOC/LIT)
+      ref mention="群山自由贸易区" (NAM/LOC/LIT)
+      ref mention="自由贸易区" (NOM/LOC/LIT)
+      ref mention="群山贸易区" (NAM/LOC/LIT)
+      ref mention="桥梁" (NOM/LOC/MET)
+      ref mention="地点" (NOM/LOC/LIT)
+         ref name="群 山自由贸易区"
+         ref name="群山自由贸易区"
+         ref name="群山贸易区"
+--------
+    ref entity VOM20001026.1800.0795-E25 (LOC/NOM/SPC)
+    tst entity VOM20001026.1800.0795-E25 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document VOM20001026.1800.0795:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="西南部" (NOM/LOC/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E26 (ORG/NOM/GEN)
+    tst entity VOM20001026.1800.0795-E26 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document VOM20001026.1800.0795:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="公司" (NOM/ORG/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E27 (LOC/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E27 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="群山港" (NAM/LOC/LIT)
+         ref name="群山港"
+--------
+    ref entity VOM20001026.1800.0795-E29 (GPE/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E29 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="上 海" (NAM/LOC/LIT)
+         ref name="上 海"
+--------
+    ref entity VOM20001026.1800.0795-E3 (GPE/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E3 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="华盛顿" (NAM/LOC/LIT)
+      ref mention="华盛顿" (NAM/LOC/LIT)
+         ref name="华盛顿"
+         ref name="华盛顿"
+--------
+    ref entity VOM20001026.1800.0795-E30 (LOC/NOM/SPC)
+    tst entity VOM20001026.1800.0795-E30 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document VOM20001026.1800.0795:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="港口" (NOM/GPE/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E31 (GPE/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E31 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="天津" (NAM/LOC/LIT)
+         ref name="天津"
+--------
+    ref entity VOM20001026.1800.0795-E33 (GPE/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E33 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="东北亚" (NAM/GPE/LIT)
+         ref name="东北亚"
+--------
+    ref entity VOM20001026.1800.0795-E34 (LOC/NOM/SPC)
+    tst entity VOM20001026.1800.0795-E34 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document VOM20001026.1800.0795:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="地区" (NOM/LOC/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E35 (LOC/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E35 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="太平洋" (NAM/LOC/LIT)
+         ref name="太平洋"
+--------
+    ref entity VOM20001026.1800.0795-E37 (PER/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E37 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="记者" (NOM/PER/LIT)
+      ref mention="郑玉文" (NAM/PER/LIT)
+         ref name="郑玉文"
+--------
+    ref entity VOM20001026.1800.0795-E39 (ORG/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E39 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="美国之音" (NAM/ORG/LIT)
+         ref name="美国之音"
+--------
+    ref entity VOM20001026.1800.0795-E4 (PER/NOM/SPC)
+    tst entity VOM20001026.1800.0795-E4 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document VOM20001026.1800.0795:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="人士" (NOM/PER/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E40 (GPE/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E40 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/LOC/LIT)
+      ref mention="北 韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/LOC/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="政府" (NOM/ORG/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="政府" (NOM/ORG/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+      ref mention="北韩" (NAM/GPE/LIT)
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北 韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+         ref name="北韩"
+--------
+    ref entity VOM20001026.1800.0795-E41 (PER/PRO/USP)
+    tst entity VOM20001026.1800.0795-E41 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document VOM20001026.1800.0795:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="您" (PRO/PER/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E42 (LOC/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E42 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="朝 鲜半岛" (NAM/LOC/LIT)
+      ref mention="朝鲜半岛" (NAM/LOC/LIT)
+         ref name="朝 鲜半岛"
+         ref name="朝鲜半岛"
+--------
+    ref entity VOM20001026.1800.0795-E45 (GPE/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E45 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="韩国" (NAM/LOC/LIT)
+      ref mention="韩国" (NAM/GPE/LIT)
+      ref mention="韩国" (NAM/GPE/LIT)
+      ref mention="韩" (NAM/GPE/LIT)
+      ref mention="韩国" (NAM/GPE/LIT)
+      ref mention="韩国" (NAM/GPE/LIT)
+      ref mention="韩国" (NAM/GPE/LIT)
+      ref mention="韩国" (NAM/GPE/LIT)
+      ref mention="韩 国" (NAM/GPE/LIT)
+      ref mention="韩国" (NAM/GPE/LIT)
+      ref mention="政府" (NOM/ORG/LIT)
+      ref mention="韩国" (NAM/GPE/LIT)
+      ref mention="韩国" (NAM/LOC/LIT)
+      ref mention="韩国" (NAM/GPE/LIT)
+      ref mention="韩国" (NAM/GPE/LIT)
+      ref mention="政府" (NOM/ORG/LIT)
+         ref name="韩国"
+         ref name="韩国"
+         ref name="韩国"
+         ref name="韩"
+         ref name="韩国"
+         ref name="韩国"
+         ref name="韩国"
+         ref name="韩国"
+         ref name="韩 国"
+         ref name="韩国"
+         ref name="韩国"
+         ref name="韩国"
+         ref name="韩国"
+         ref name="韩国"
+--------
+    ref entity VOM20001026.1800.0795-E46 (GPE/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E46 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="首都" (NOM/LOC/LIT)
+      ref mention="汉城" (NAM/LOC/LIT)
+      ref mention="汉城" (NAM/GPE/LIT)
+         ref name="汉城"
+         ref name="汉城"
+--------
+    ref entity VOM20001026.1800.0795-E48 (PER/NOM/SPC)
+    tst entity VOM20001026.1800.0795-E48 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document VOM20001026.1800.0795:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="官 员" (NOM/PER/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E49 (GPE/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E49 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="日本" (NAM/GPE/LIT)
+      ref mention="日本" (NAM/GPE/LIT)
+      ref mention="日" (NAM/GPE/LIT)
+         ref name="日本"
+         ref name="日本"
+         ref name="日"
+--------
+    ref entity VOM20001026.1800.0795-E5 (PER/NOM/GEN)
+    tst entity VOM20001026.1800.0795-E5 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document VOM20001026.1800.0795:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="家庭" (NOM/PER/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E6 (PER/NAM/SPC)
+    tst entity VOM20001026.1800.0795-E6 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="部 长" (NOM/PER/LIT)
+      ref mention="朴赛圭" (NAM/PER/LIT)
+      ref mention="朴赛圭" (NAM/PER/LIT)
+         ref name="朴赛圭"
+         ref name="朴赛圭"
+--------
+    ref entity VOM20001026.1800.0795-E8 (ORG/NOM/SPC)
+    tst entity VOM20001026.1800.0795-E8 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document VOM20001026.1800.0795:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="方面" (NOM/ORG/LIT)
+--------
+    ref entity VOM20001026.1800.0795-E9 (PER/NOM/USP)
+    tst entity VOM20001026.1800.0795-E9 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document VOM20001026.1800.0795:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="人员" (NOM/PER/LIT)
+      ref mention="人员" (NOM/PER/LIT)
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    GPE    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    40.22   0.00   0.00   0.00
+    LOC     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.36   0.00   0.00   0.00
+    ORG     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.43   0.00   0.00   0.00
+    PER    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.99   0.00   0.00   0.00
+  total    39     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    83.33   0.00   0.00   0.00
+    NOM    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.30   0.00   0.00   0.00
+    PRO     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.36   0.00   0.00   0.00
+  total    39     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.36   0.00   0.00   0.00
+0.2-0.5     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.30   0.00   0.00   0.00
+0.5-1.0    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    83.33   0.00   0.00   0.00
+  total    39     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    40.22   0.00   0.00   0.00
+      2     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.87   0.00   0.00   0.00
+    3-4     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.99   0.00   0.00   0.00
+    5-8     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.06   0.00   0.00   0.00
+     >8     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.87   0.00   0.00   0.00
+  total    39     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    33     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    39     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    39     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    39     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+GPE-Clu     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.62   0.00   0.00   0.00
+Governm     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.81   0.00   0.00   0.00
+  Group     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.62   0.00   0.00   0.00
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.36   0.00   0.00   0.00
+Land-Re     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.25   0.00   0.00   0.00
+  Media     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.62   0.00   0.00   0.00
+ Nation     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.10   0.00   0.00   0.00
+Populat     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.49   0.00   0.00   0.00
+Region-     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.87   0.00   0.00   0.00
+Region-     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.62   0.00   0.00   0.00
+Water-B     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.62   0.00   0.00   0.00
+  total    39     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+GPE-Clu     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.62   0.00   0.00   0.00
+ Nation     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.10   0.00   0.00   0.00
+Populat     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.49   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    40.22   0.00   0.00   0.00
+
+Performance statistics for TYPE = LOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Land-Re     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.25   0.00   0.00   0.00
+Region-     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.87   0.00   0.00   0.00
+Region-     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.62   0.00   0.00   0.00
+Water-B     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.62   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.36   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Governm     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.81   0.00   0.00   0.00
+  Media     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.62   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.43   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.62   0.00   0.00   0.00
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.36   0.00   0.00   0.00
+  total    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.99   0.00   0.00   0.00
+
+Entity Type confusion matrix for "broadcast news" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    13     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     9     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     3     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    14     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=39/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         GEN         USP 
+             SPC    33/84.6%      -           -     
+             GEN      -          4/10.3%      -     
+             USP      -           -          2/ 5.1%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=39/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: Individual      Nation       Group Region-Gene Population- Region-Inte Land-Region GPE-Cluster  all others 
+      Individual     8/20.5%      -           -           -           -           -           -           -           -     
+          Nation      -          8/20.5%      -           -           -           -           -           -           -     
+           Group      -           -          5/12.8%      -           -           -           -           -           -     
+  Region-General      -           -           -          4/10.3%      -           -           -           -           -     
+  Population-Cen      -           -           -           -          4/10.3%      -           -           -           -     
+  Region-Interna      -           -           -           -           -          2/ 5.1%      -           -           -     
+  Land-Region-Na      -           -           -           -           -           -          2/ 5.1%      -           -     
+     GPE-Cluster      -           -           -           -           -           -           -          1/ 2.6%      -     
+      all others      -           -           -           -           -           -           -           -          5/12.8%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=39/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        PER         GPE         LOC         ORG 
+             PER    14/35.9%      -           -           -     
+             GPE      -         13/33.3%      -           -     
+             LOC      -           -          9/23.1%      -     
+             ORG      -           -           -          3/ 7.7%
+
+Entity Class confusion matrix for "broadcast news" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           33     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     4     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0     2        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0    53        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     8        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    19        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    81        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    81        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    34        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0     7        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   122        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   121        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   122        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0    50        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0    24        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0     7        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    41        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   122        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "broadcast news" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    50     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    24     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     7     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    41     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "broadcast news" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          121     0      100.0   0.0
+METON            0     1        0.0 100.0
+
+======== relation mapping ========
+
+--------
+    ref relation VOM20001026.1800.0795-R1 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R1 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E13 (GPE/Nation/NAM/SPC), name="美国"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E13 (GPE/Nation/NAM/SPC), name="美国"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref extent="美国国务卿"
+      ref extent="美国国务卿"
+--------
+    ref relation VOM20001026.1800.0795-R10 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R10 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E4 (PER/Group/NOM/SPC), head="人士"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E4 (PER/Group/NOM/SPC), head="人士"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+- in document VOM20001026.1800.0795:  score:  1.50000 out of 1.50000
+      ref extent="韩国一些人士"
+--------
+    ref relation VOM20001026.1800.0795-R11 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R11 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E6 (PER/Individ/NAM/SPC), name="朴赛圭"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E6 (PER/Individ/NAM/SPC), name="朴赛圭"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref extent="韩 国统一部 长"
+--------
+    ref relation VOM20001026.1800.0795-R12 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R12 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E9 (PER/Indeter/NOM/USP), head="人员"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E9 (PER/Indeter/NOM/USP), head="人员"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+- in document VOM20001026.1800.0795:  score:  1.00000 out of 1.00000
+      ref extent="备忘录称这是因为北韩 欠缺..."
+      ref extent="虽然北韩政府表示缺乏足够�..."
+--------
+    ref relation VOM20001026.1800.0795-R14 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R14 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E15 (PER/Individ/NAM/SPC), name="陈 浩田"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E15 (PER/Individ/NAM/SPC), name="陈 浩田"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E17 (GPE/Nation/NAM/SPC), name="中国"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E17 (GPE/Nation/NAM/SPC), name="中国"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref extent="中国国防部长"
+--------
+    ref relation VOM20001026.1800.0795-R16 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R16 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E19 (PER/Individ/NAM/SPC), name="金正日"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E19 (PER/Individ/NAM/SPC), name="金正日"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref extent="北韩领导人"
+--------
+    ref relation VOM20001026.1800.0795-R17 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R17 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E25 (LOC/Region-/NOM/SPC), head="西南部"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E25 (LOC/Region-/NOM/SPC), head="西南部"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+- in document VOM20001026.1800.0795:  score:  1.50000 out of 1.50000
+      ref extent="韩国西南部"
+--------
+    ref relation VOM20001026.1800.0795-R18 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R18 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E25 (LOC/Region-/NOM/SPC), head="西南部"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E25 (LOC/Region-/NOM/SPC), head="西南部"
+- in document VOM20001026.1800.0795:  score:  1.50000 out of 1.50000
+      ref extent="韩国西南部的群 山自由贸易区"
+--------
+    ref relation VOM20001026.1800.0795-R19 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R19 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E27 (LOC/Region-/NAM/SPC), name="群山港"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E27 (LOC/Region-/NAM/SPC), name="群山港"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref extent="届时 在群山港将形成一个自..."
+--------
+    ref relation VOM20001026.1800.0795-R2 (PHYS/Located/Asserted/Past)
+    tst relation VOM20001026.1800.0795-R2 (PHYS/Located/Asserted/Past)
+      relation score:  2.20000 out of 2.20000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+       Time-Holds ref arg: ID=VOM20001026.1800.0795-T2 (TIM/---), extent="两天"
+       Time-Holds tst arg: ID=VOM20001026.1800.0795-T2 (TIM/---), extent="两天"
+- in document VOM20001026.1800.0795:  score:  2.20000 out of 2.20000
+      ref extent="美国国务卿奥尔布赖特在结�..."
+--------
+    ref relation VOM20001026.1800.0795-R20 (PHYS/Near/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R20 (PHYS/Near/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E27 (LOC/Region-/NAM/SPC), name="群山港"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E27 (LOC/Region-/NAM/SPC), name="群山港"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E30 (LOC/Region-/NOM/SPC), head="港口"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E30 (LOC/Region-/NOM/SPC), head="港口"
+- in document VOM20001026.1800.0795:  score:  1.50000 out of 1.50000
+      ref extent="届时 在群山港将形成一个自..."
+--------
+    ref relation VOM20001026.1800.0795-R21 (PHYS/Near/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R21 (PHYS/Near/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E33 (GPE/GPE-Clu/NAM/SPC), name="东北亚"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E33 (GPE/GPE-Clu/NAM/SPC), name="东北亚"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref extent="金大中表示群山贸易区将成�..."
+--------
+    ref relation VOM20001026.1800.0795-R22 (PHYS/Near/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R22 (PHYS/Near/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E34 (LOC/Region-/NOM/SPC), head="地区"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E34 (LOC/Region-/NOM/SPC), head="地区"
+- in document VOM20001026.1800.0795:  score:  1.50000 out of 1.50000
+      ref extent="金大中表示群山贸易区将成�..."
+--------
+    ref relation VOM20001026.1800.0795-R23 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R23 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E24 (LOC/Region-/NAM/SPC), name="群 山自由贸易区"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref extent="金大中表示群山贸易区将成�..."
+--------
+    ref relation VOM20001026.1800.0795-R24 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R24 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E37 (PER/Individ/NAM/SPC), name="郑玉文"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E37 (PER/Individ/NAM/SPC), name="郑玉文"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E39 (ORG/Media/NAM/SPC), name="美国之音"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E39 (ORG/Media/NAM/SPC), name="美国之音"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref extent="美国之音记者"
+--------
+    ref relation VOM20001026.1800.0795-R25 (PHYS/Located/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R25 (PHYS/Located/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E37 (PER/Individ/NAM/SPC), name="郑玉文"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E37 (PER/Individ/NAM/SPC), name="郑玉文"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E3 (GPE/Populat/NAM/SPC), name="华盛顿"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E3 (GPE/Populat/NAM/SPC), name="华盛顿"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref extent="以上是 美国之音记者郑玉文..."
+--------
+    ref relation VOM20001026.1800.0795-R3 (PHYS/Located/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R3 (PHYS/Located/Asserted/Unspecified)
+      relation score:  2.20000 out of 2.20000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+      Time-Starti ref arg: ID=VOM20001026.1800.0795-T3 (TIM/---), extent="星期三"
+      Time-Starti tst arg: ID=VOM20001026.1800.0795-T3 (TIM/---), extent="星期三"
+- in document VOM20001026.1800.0795:  score:  2.20000 out of 2.20000
+      ref extent="美国国务卿奥尔布赖特在结�..."
+--------
+    ref relation VOM20001026.1800.0795-R4 (PHYS/Located/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R4 (PHYS/Located/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E46 (GPE/Populat/NAM/SPC), name="汉城"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E46 (GPE/Populat/NAM/SPC), name="汉城"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref extent="美国国务卿奥尔布赖特在结�..."
+--------
+    ref relation VOM20001026.1800.0795-R5 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R5 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E48 (PER/Group/NOM/SPC), head="官 员"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E48 (PER/Group/NOM/SPC), head="官 员"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E49 (GPE/Nation/NAM/SPC), name="日本"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E49 (GPE/Nation/NAM/SPC), name="日本"
+- in document VOM20001026.1800.0795:  score:  1.50000 out of 1.50000
+      ref extent="日本和韩国官 员"
+--------
+    ref relation VOM20001026.1800.0795-R6 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R6 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E48 (PER/Group/NOM/SPC), head="官 员"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E48 (PER/Group/NOM/SPC), head="官 员"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+- in document VOM20001026.1800.0795:  score:  1.50000 out of 1.50000
+      ref extent="日本和韩国官 员"
+--------
+    ref relation VOM20001026.1800.0795-R7 (PHYS/Located/Other/Unspecified)
+    tst relation VOM20001026.1800.0795-R7 (PHYS/Located/Other/Unspecified)
+      relation score:  2.20000 out of 2.20000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E2 (PER/Individ/NAM/SPC), name="克林顿"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E2 (PER/Individ/NAM/SPC), name="克林顿"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+      Time-Within ref arg: ID=VOM20001026.1800.0795-T4 (TIM/---), extent="近期"
+      Time-Within tst arg: ID=VOM20001026.1800.0795-T4 (TIM/---), extent="近期"
+- in document VOM20001026.1800.0795:  score:  2.20000 out of 2.20000
+      ref extent="至于克林顿总统会不会在近�..."
+--------
+    ref relation VOM20001026.1800.0795-R8 (PHYS/Located/Other/Unspecified)
+    tst relation VOM20001026.1800.0795-R8 (PHYS/Located/Other/Unspecified)
+      relation score:  2.20000 out of 2.20000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E3 (GPE/Populat/NAM/SPC), name="华盛顿"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E3 (GPE/Populat/NAM/SPC), name="华盛顿"
+      Time-Within ref arg: ID=VOM20001026.1800.0795-T5 (TIM/---), extent="星期四"
+      Time-Within tst arg: ID=VOM20001026.1800.0795-T5 (TIM/---), extent="星期四"
+- in document VOM20001026.1800.0795:  score:  2.20000 out of 2.20000
+      ref extent="至于克林顿总统会不会在近�..."
+--------
+    ref relation VOM20001026.1800.0795-R9 (PER-SOC/Business/Asserted/Unspecified)
+    tst relation VOM20001026.1800.0795-R9 (PER-SOC/Business/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=VOM20001026.1800.0795-E2 (PER/Individ/NAM/SPC), name="克林顿"
+            Arg-1 tst arg: ID=VOM20001026.1800.0795-E2 (PER/Individ/NAM/SPC), name="克林顿"
+            Arg-2 ref arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+            Arg-2 tst arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref extent="至于克林顿总统会不会在近�..."
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+GEN-AFF     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.55   0.00   0.00   0.00
+ORG-AFF     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    33.10   0.00   0.00   0.00
+PART-WH     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.55   0.00   0.00   0.00
+PER-SOC     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.73   0.00   0.00   0.00
+   PHYS     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.08   0.00   0.00   0.00
+  total    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    89.60   0.00   0.00   0.00
+  Other     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.40   0.00   0.00   0.00
+  total    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.73   0.00   0.00   0.00
+Citizen     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.55   0.00   0.00   0.00
+Employm     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    33.10   0.00   0.00   0.00
+Geograp     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.55   0.00   0.00   0.00
+Located     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.26   0.00   0.00   0.00
+   Near     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.82   0.00   0.00   0.00
+  total    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.55   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.55   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    33.10   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    33.10   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.55   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.55   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER-SOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.73   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.73   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.26   0.00   0.00   0.00
+   Near     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.82   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.08   0.00   0.00   0.00
+
+Relation Type confusion matrix for "broadcast news" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     1     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     8     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0     4     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     1     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+       PHYS      0     0     0     0     0     0     9        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      1     0      100.0   0.0
+Org-Locatio      0     0        0.0   0.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      8     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     4     0        0.0 100.0   0.0
+ Subsidiary      0     0     0        0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=PER-S COUNT............    PERCENT............
+    ref\tst: Busin Famil Lasti      Busin Famil Lasti 
+   Business      1     0     0      100.0   0.0   0.0
+     Family      0     0     0        0.0   0.0   0.0
+Lasting-Per      0     0     0        0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      6     0      100.0   0.0
+       Near      0     3        0.0 100.0
+
+Relation Modality confusion matrix for "broadcast news" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     21     0     0      100.0   0.0   0.0
+      Other      0     2     0        0.0 100.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=23/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted    21/91.3%      -     
+           Other      -          2/ 8.7%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=23/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: Employment     Located Geographica        Near    Business Citizen-Res 
+      Employment     8/34.8%      -           -           -           -           -     
+         Located      -          6/26.1%      -           -           -           -     
+    Geographical      -           -          4/17.4%      -           -           -     
+            Near      -           -           -          3/13.0%      -           -     
+        Business      -           -           -           -          1/ 4.3%      -     
+  Citizen-Reside      -           -           -           -           -          1/ 4.3%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=23/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past 
+     Unspecified    22/95.7%      -     
+            Past      -          1/ 4.3%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=23/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       PHYS     ORG-AFF  PART-WHOLE     GEN-AFF     PER-SOC 
+            PHYS     9/39.1%      -           -           -           -     
+         ORG-AFF      -          8/34.8%      -           -           -     
+      PART-WHOLE      -           -          4/17.4%      -           -     
+         GEN-AFF      -           -           -          1/ 4.3%      -     
+         PER-SOC      -           -           -           -          1/ 4.3%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=50/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 Time-Within Time-Starti  Time-Holds 
+           Arg-2    23/46.0%      -           -           -           -     
+           Arg-1      -         23/46.0%      -           -           -     
+     Time-Within      -           -          2/ 4.0%      -           -     
+   Time-Starting      -           -           -          1/ 2.0%      -     
+      Time-Holds      -           -           -           -          1/ 2.0%
+
+======== event mapping ========
+
+--------
+    ref event VOM20001026.1800.0795-EV1 (Movement/Transport/Specific/Other/Positive/Future)
+    tst event VOM20001026.1800.0795-EV1 (Movement/Transport/Specific/Other/Positive/Future)
+      event score:  2.20000 out of 2.20000
+      Destination ref arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+      Destination tst arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+           Person ref arg: ID=VOM20001026.1800.0795-E2 (PER/Individ/NAM/SPC), name="克林顿"
+           Person tst arg: ID=VOM20001026.1800.0795-E2 (PER/Individ/NAM/SPC), name="克林顿"
+      Time-Within ref arg: ID=VOM20001026.1800.0795-T4 (TIM/---), extent="近期"
+      Time-Within tst arg: ID=VOM20001026.1800.0795-T4 (TIM/---), extent="近期"
+- in document VOM20001026.1800.0795:  score:  2.20000 out of 2.20000
+      ref anchor="访问", extent="克林顿总统会不会在近期内�..."
+--------
+    ref event VOM20001026.1800.0795-EV2 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event VOM20001026.1800.0795-EV2 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  2.20000 out of 2.20000
+           Origin ref arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+           Origin tst arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+           Person ref arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+           Person tst arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+       Time-Holds ref arg: ID=VOM20001026.1800.0795-T2 (TIM/---), extent="两天"
+       Time-Holds tst arg: ID=VOM20001026.1800.0795-T2 (TIM/---), extent="两天"
+- in document VOM20001026.1800.0795:  score:  2.20000 out of 2.20000
+      ref anchor="访 问", extent="奥尔布赖特在结束了两天的�..."
+--------
+    ref event VOM20001026.1800.0795-EV3 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event VOM20001026.1800.0795-EV3 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  2.20000 out of 2.20000
+      Destination ref arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+      Destination tst arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+           Person ref arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+           Person tst arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+      Time-Within ref arg: ID=VOM20001026.1800.0795-T3 (TIM/---), extent="星期三"
+      Time-Within tst arg: ID=VOM20001026.1800.0795-T3 (TIM/---), extent="星期三"
+- in document VOM20001026.1800.0795:  score:  2.20000 out of 2.20000
+      ref anchor="转往", extent="奥尔布赖特在结束了两天的�..."
+--------
+    ref event VOM20001026.1800.0795-EV4 (Contact/Meet/Specific/Asserted/Positive/Unspecified)
+    tst event VOM20001026.1800.0795-EV4 (Contact/Meet/Specific/Asserted/Positive/Unspecified)
+      event score:  2.50000 out of 2.50000
+           Entity ref arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+           Entity tst arg: ID=VOM20001026.1800.0795-E18 (PER/Individ/NAM/SPC), name="奥尔布莱 特"
+           Entity ref arg: ID=VOM20001026.1800.0795-E48 (PER/Group/NOM/SPC), head="官 员"
+           Entity tst arg: ID=VOM20001026.1800.0795-E48 (PER/Group/NOM/SPC), head="官 员"
+            Place ref arg: ID=VOM20001026.1800.0795-E46 (GPE/Populat/NAM/SPC), name="汉城"
+            Place tst arg: ID=VOM20001026.1800.0795-E46 (GPE/Populat/NAM/SPC), name="汉城"
+- in document VOM20001026.1800.0795:  score:  2.50000 out of 2.50000
+      ref anchor="会见", extent="奥尔布赖特在结束了两天的�..."
+--------
+    ref event VOM20001026.1800.0795-EV5 (Contact/Phone-Write/Specific/Asserted/Positive/Past)
+    tst event VOM20001026.1800.0795-EV5 (Contact/Phone-Write/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+           Entity ref arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+           Entity tst arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+           Entity ref arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+           Entity tst arg: ID=VOM20001026.1800.0795-E45 (GPE/Nation/NAM/SPC), name="韩 国"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref anchor="备忘 录", extent="北韩在最近发给韩国政府的�..."
+      ref anchor="备忘录", extent="备忘录称这是因为北韩"
+--------
+    ref event VOM20001026.1800.0795-EV6 (Movement/Transport/Specific/Asserted/Positive/Unspecified)
+    tst event VOM20001026.1800.0795-EV6 (Movement/Transport/Specific/Asserted/Positive/Unspecified)
+      event score:  2.00000 out of 2.00000
+      Destination ref arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+      Destination tst arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+           Person ref arg: ID=VOM20001026.1800.0795-E15 (PER/Individ/NAM/SPC), name="陈 浩田"
+           Person tst arg: ID=VOM20001026.1800.0795-E15 (PER/Individ/NAM/SPC), name="陈 浩田"
+- in document VOM20001026.1800.0795:  score:  2.00000 out of 2.00000
+      ref anchor="来访", extent="北韩 政府 对于来访的中国�..."
+--------
+    ref event VOM20001026.1800.0795-EV7 (Contact/Meet/Specific/Asserted/Positive/Unspecified)
+    tst event VOM20001026.1800.0795-EV7 (Contact/Meet/Specific/Asserted/Positive/Unspecified)
+      event score:  3.00000 out of 3.00000
+           Entity ref arg: ID=VOM20001026.1800.0795-E15 (PER/Individ/NAM/SPC), name="陈 浩田"
+           Entity tst arg: ID=VOM20001026.1800.0795-E15 (PER/Individ/NAM/SPC), name="陈 浩田"
+           Entity ref arg: ID=VOM20001026.1800.0795-E19 (PER/Individ/NAM/SPC), name="金正日"
+           Entity tst arg: ID=VOM20001026.1800.0795-E19 (PER/Individ/NAM/SPC), name="金正日"
+            Place ref arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+            Place tst arg: ID=VOM20001026.1800.0795-E40 (GPE/Nation/NAM/SPC), name="北 韩"
+- in document VOM20001026.1800.0795:  score:  3.00000 out of 3.00000
+      ref anchor="接见", extent="北韩领导人金正日在接见陈 ..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Contact     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    46.58   0.00   0.00   0.00
+Movemen     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    53.42   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    86.34   0.00   0.00   0.00
+  Other     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.66   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Meet     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.16   0.00   0.00   0.00
+Phone-W     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.42   0.00   0.00   0.00
+Transpo     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    53.42   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Contact:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Meet     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.16   0.00   0.00   0.00
+Phone-W     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.42   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    46.58   0.00   0.00   0.00
+
+Performance statistics for TYPE = Movement:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    53.42   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    53.42   0.00   0.00   0.00
+
+Event Type confusion matrix for "broadcast news" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     3     0     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     4     0     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "broadcast news" sources (for mapped events):
+  type=Conta COUNT......    PERCENT......
+    ref\tst:  Meet Phone       Meet Phone 
+       Meet      2     0      100.0   0.0
+Phone-Write      0     1        0.0 100.0
+
+Event Subtype confusion matrix for "broadcast news" sources (for mapped events):
+  type=Movem COUNT    PERCENT
+    ref\tst: Trans      Trans 
+  Transport      4      100.0
+
+Event Modality confusion matrix for "broadcast news" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted      6     0      100.0   0.0
+      Other      0     1        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific 
+        Specific     7/99.9%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted     6/85.7%      -     
+           Other      -          1/14.3%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive 
+        Positive     7/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:  Transport        Meet Phone-Write 
+       Transport     4/57.1%      -           -     
+            Meet      -          2/28.6%      -     
+     Phone-Write      -           -          1/14.3%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past      Future 
+     Unspecified     3/42.9%      -           -     
+            Past      -          3/42.9%      -     
+          Future      -           -          1/14.3%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Movement     Contact 
+        Movement     4/57.1%      -     
+         Contact      -          3/42.9%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=19/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Entity      Person Destination       Place Time-Within  Time-Holds      Origin 
+          Entity     6/31.6%      -           -           -           -           -           -     
+          Person      -          4/21.1%      -           -           -           -           -     
+     Destination      -           -          3/15.8%      -           -           -           -     
+           Place      -           -           -          2/10.5%      -           -           -     
+     Time-Within      -           -           -           -          2/10.5%      -           -     
+      Time-Holds      -           -           -           -           -          1/ 5.3%      -     
+          Origin      -           -           -           -           -           -          1/ 5.3%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 VOM20001026.1800.0795-T1, ID=VOM20001026.1800.0795-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T1, ID=VOM20001026.1800.0795-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="10/26/2000 18:13:15.62"
+--------
+    ref timex2 VOM20001026.1800.0795-T10, ID=VOM20001026.1800.0795-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T10, ID=VOM20001026.1800.0795-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="50年前"
+--------
+    ref timex2 VOM20001026.1800.0795-T11, ID=VOM20001026.1800.0795-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T11, ID=VOM20001026.1800.0795-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="星期四"
+--------
+    ref timex2 VOM20001026.1800.0795-T12, ID=VOM20001026.1800.0795-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T12, ID=VOM20001026.1800.0795-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="前7年"
+--------
+    ref timex2 VOM20001026.1800.0795-T13, ID=VOM20001026.1800.0795-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T13, ID=VOM20001026.1800.0795-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="三年内"
+--------
+    ref timex2 VOM20001026.1800.0795-T14, ID=VOM20001026.1800.0795-T14, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T14, ID=VOM20001026.1800.0795-T14, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="2003年"
+--------
+    ref timex2 VOM20001026.1800.0795-T2, ID=VOM20001026.1800.0795-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T2, ID=VOM20001026.1800.0795-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="两天"
+--------
+    ref timex2 VOM20001026.1800.0795-T3, ID=VOM20001026.1800.0795-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T3, ID=VOM20001026.1800.0795-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="星期三"
+--------
+    ref timex2 VOM20001026.1800.0795-T4, ID=VOM20001026.1800.0795-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T4, ID=VOM20001026.1800.0795-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="近期"
+--------
+    ref timex2 VOM20001026.1800.0795-T5, ID=VOM20001026.1800.0795-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T5, ID=VOM20001026.1800.0795-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="星期四"
+--------
+    ref timex2 VOM20001026.1800.0795-T6, ID=VOM20001026.1800.0795-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T6, ID=VOM20001026.1800.0795-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="最近"
+--------
+    ref timex2 VOM20001026.1800.0795-T7, ID=VOM20001026.1800.0795-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T7, ID=VOM20001026.1800.0795-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="明年春天"
+--------
+    ref timex2 VOM20001026.1800.0795-T8, ID=VOM20001026.1800.0795-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T8, ID=VOM20001026.1800.0795-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="明年"
+--------
+    ref timex2 VOM20001026.1800.0795-T9, ID=VOM20001026.1800.0795-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 VOM20001026.1800.0795-T9, ID=VOM20001026.1800.0795-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document VOM20001026.1800.0795:
+          mention="星期三"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=14/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    14/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=14/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    14/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=14/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---    14/99.9%
+
+======== value mapping ========
+
+--------
+    ref value VOM20001026.1800.0795-V1, ID=VOM20001026.1800.0795-V1, SUBTYPE=Percent, TYPE=Numeric
+    tst value VOM20001026.1800.0795-V1, ID=VOM20001026.1800.0795-V1, SUBTYPE=Percent, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document VOM20001026.1800.0795:
+          mention="50%"
+
+======== value scoring ========
+
+Value Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=1/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Percent 
+         Percent     1/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=1/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Numeric 
+         Numeric     1/99.9%
+
+data input:               0.55 secs to load data
+entity eval:              0.09 secs to compute values,    0.03 secs to map,    0.07 secs to score
+relation eval:            0.16 secs to compute values,    0.02 secs to map,    0.05 secs to score
+event eval:               0.03 secs to compute values,    0.00 secs to map,    0.02 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.02 secs to compute values,    0.00 secs to map,    0.01 secs to score
+value eval:               0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+########

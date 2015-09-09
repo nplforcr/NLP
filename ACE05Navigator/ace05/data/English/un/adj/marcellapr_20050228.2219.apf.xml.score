@@ -1,0 +1,894 @@
+command line (run on 2005 Aug 21 at 13:04:31):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score72577 -t /tmp/score72577
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity marcellapr_20050228.2219-E1 (FAC/NAM/SPC)
+    tst entity marcellapr_20050228.2219-E1 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Welsh" (NAM/FAC/LIT)
+      ref mention="Welsh" (NAM/FAC/LIT)
+         ref name="Welsh"
+         ref name="Welsh"
+--------
+    ref entity marcellapr_20050228.2219-E10 (FAC/NAM/SPC)
+    tst entity marcellapr_20050228.2219-E10 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="St. Mary" (NAM/FAC/LIT)
+         ref name="St. Mary"
+--------
+    ref entity marcellapr_20050228.2219-E11 (PER/PRO/USP)
+    tst entity marcellapr_20050228.2219-E11 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document marcellapr_20050228.2219:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+--------
+    ref entity marcellapr_20050228.2219-E12 (PER/PRO/USP)
+    tst entity marcellapr_20050228.2219-E12 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document marcellapr_20050228.2219:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="Everyone" (PRO/PER/LIT)
+--------
+    ref entity marcellapr_20050228.2219-E13 (PER/NAM/USP)
+    tst entity marcellapr_20050228.2219-E13 (PER/NAM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document marcellapr_20050228.2219:  score:  0.00000 out of 0.00000  (PER/NAM/USP)
+      ref mention="PR" (NAM/PER/LIT)
+         ref name="PR"
+--------
+    ref entity marcellapr_20050228.2219-E14 (FAC/NAM/SPC)
+    tst entity marcellapr_20050228.2219-E14 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Texas Ave" (NAM/FAC/LIT)
+      ref mention="Texas Ave" (NAM/FAC/LIT)
+         ref name="Texas Ave"
+         ref name="Texas Ave"
+--------
+    ref entity marcellapr_20050228.2219-E15 (FAC/NAM/SPC)
+    tst entity marcellapr_20050228.2219-E15 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Bryan" (NAM/FAC/LIT)
+         ref name="Bryan"
+--------
+    ref entity marcellapr_20050228.2219-E16 (FAC/NAM/SPC)
+    tst entity marcellapr_20050228.2219-E16 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="South West Parkway" (NAM/FAC/LIT)
+      ref mention="SW Parkway" (NAM/FAC/LIT)
+      ref mention="SW Parkway" (NAM/FAC/LIT)
+         ref name="South West Parkway"
+         ref name="SW Parkway"
+         ref name="SW Parkway"
+--------
+    ref entity marcellapr_20050228.2219-E2 (FAC/NOM/SPC)
+    tst entity marcellapr_20050228.2219-E2 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document marcellapr_20050228.2219:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="complex" (NOM/FAC/LIT)
+      ref mention="complex" (NOM/FAC/LIT)
+--------
+    ref entity marcellapr_20050228.2219-E3 (FAC/NOM/SPC)
+    tst entity marcellapr_20050228.2219-E3 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document marcellapr_20050228.2219:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="building" (NOM/FAC/LIT)
+--------
+    ref entity marcellapr_20050228.2219-E4 (FAC/NOM/SPC)
+    tst entity marcellapr_20050228.2219-E4 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document marcellapr_20050228.2219:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="pool" (NOM/FAC/LIT)
+--------
+    ref entity marcellapr_20050228.2219-E5 (PER/PRO/USP)
+    tst entity marcellapr_20050228.2219-E5 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document marcellapr_20050228.2219:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="We" (PRO/PER/LIT)
+      ref mention="We" (PRO/PER/LIT)
+      ref mention="We" (PRO/PER/LIT)
+      ref mention="We" (PRO/PER/LIT)
+--------
+    ref entity marcellapr_20050228.2219-E6 (PER/PRO/NEG)
+    tst entity marcellapr_20050228.2219-E6 (PER/PRO/NEG)
+      entity score:  0.00000 out of 0.00000
+- in document marcellapr_20050228.2219:  score:  0.00000 out of 0.00000  (PER/PRO/NEG)
+      ref mention="one" (PRO/PER/LIT)
+--------
+    ref entity marcellapr_20050228.2219-E7 (FAC/NOM/SPC)
+    tst entity marcellapr_20050228.2219-E7 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document marcellapr_20050228.2219:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="apartment" (NOM/FAC/LIT)
+--------
+    ref entity marcellapr_20050228.2219-E8 (FAC/NOM/SPC)
+    tst entity marcellapr_20050228.2219-E8 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document marcellapr_20050228.2219:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="house" (NOM/FAC/LIT)
+      ref mention="house" (NOM/FAC/LIT)
+      ref mention="apartment" (NOM/FAC/LIT)
+--------
+    ref entity marcellapr_20050228.2219-E9 (PER/PRO/SPC)
+    tst entity marcellapr_20050228.2219-E9 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document marcellapr_20050228.2219:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    FAC    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    98.68   0.00   0.00   0.00
+    PER     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    65.79   0.00   0.00   0.00
+    NOM     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    32.89   0.00   0.00   0.00
+    PRO     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+0.2-0.5     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    32.89   0.00   0.00   0.00
+0.5-1.0     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    65.79   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    46.05   0.00   0.00   0.00
+      2     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    32.89   0.00   0.00   0.00
+    3-4     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.05   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    NEG     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Buildin     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    39.47   0.00   0.00   0.00
+  Group     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Indeter     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+   Path     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    52.63   0.00   0.00   0.00
+Subarea     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.58   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = FAC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Buildin     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    39.47   0.00   0.00   0.00
+   Path     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    52.63   0.00   0.00   0.00
+Subarea     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.58   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    98.68   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Indeter     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+  total     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+
+Entity Type confusion matrix for "usenet" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC           10     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  PER            0     0     0     0     6     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=16/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         USP         NEG 
+             SPC    11/68.8%      -           -     
+             USP      -          4/25.0%      -     
+             NEG      -           -          1/ 6.2%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=16/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Building-Gr        Path       Group Indetermina  Individual Subarea-Fac 
+  Building-Groun     5/31.2%      -           -           -           -           -     
+            Path      -          4/25.0%      -           -           -           -     
+           Group      -           -          3/18.8%      -           -           -     
+   Indeterminate      -           -           -          2/12.5%      -           -     
+      Individual      -           -           -           -          1/ 6.2%      -     
+  Subarea-Facili      -           -           -           -           -          1/ 6.2%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=16/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        FAC         PER 
+             FAC    10/62.5%      -     
+             PER      -          6/37.5%
+
+Entity Class confusion matrix for "usenet" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           11     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     0     0     0        0.0   0.0   0.0   0.0
+  NEG            0     0     1     0        0.0   0.0 100.0   0.0
+  USP            0     0     0     4        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     9        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  PER       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    10        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    10        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0     8        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0    13        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0    31        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0    31        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    31        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0    17        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  PER       0     0        0     0    14        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    31        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "usenet" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC           17     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  PER            0     0     0     0    14     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "usenet" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER           31     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation marcellapr_20050228.2219-R1 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation marcellapr_20050228.2219-R1 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  0.60000 out of 0.60000
+            Arg-1 ref arg: ID=marcellapr_20050228.2219-E9 (PER/Individ/PRO/SPC), head="my"
+            Arg-1 tst arg: ID=marcellapr_20050228.2219-E9 (PER/Individ/PRO/SPC), head="my"
+            Arg-2 ref arg: ID=marcellapr_20050228.2219-E8 (FAC/Buildin/NOM/SPC), head="apartment"
+            Arg-2 tst arg: ID=marcellapr_20050228.2219-E8 (FAC/Buildin/NOM/SPC), head="apartment"
+- in document marcellapr_20050228.2219:  score:  0.60000 out of 0.60000
+      ref extent="my house"
+      ref extent="my house"
+      ref extent="I am in building 24 apartment #241"
+--------
+    ref relation marcellapr_20050228.2219-R10 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation marcellapr_20050228.2219-R10 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=marcellapr_20050228.2219-E8 (FAC/Buildin/NOM/SPC), head="apartment"
+            Arg-1 tst arg: ID=marcellapr_20050228.2219-E8 (FAC/Buildin/NOM/SPC), head="apartment"
+            Arg-2 ref arg: ID=marcellapr_20050228.2219-E3 (FAC/Buildin/NOM/SPC), head="building"
+            Arg-2 tst arg: ID=marcellapr_20050228.2219-E3 (FAC/Buildin/NOM/SPC), head="building"
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000
+      ref extent="building 24 apartment #241"
+--------
+    ref relation marcellapr_20050228.2219-R11 (PHYS/Near/Other/Unspecified)
+    tst relation marcellapr_20050228.2219-R11 (PHYS/Near/Other/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=marcellapr_20050228.2219-E5 (PER/Group/PRO/USP), head="We"
+            Arg-1 tst arg: ID=marcellapr_20050228.2219-E5 (PER/Group/PRO/USP), head="We"
+            Arg-2 ref arg: ID=marcellapr_20050228.2219-E4 (FAC/Buildin/NOM/SPC), head="pool"
+            Arg-2 tst arg: ID=marcellapr_20050228.2219-E4 (FAC/Buildin/NOM/SPC), head="pool"
+- in document marcellapr_20050228.2219:  score:  0.50000 out of 0.50000
+      ref extent="We will possibly be out back around p..."
+--------
+    ref relation marcellapr_20050228.2219-R3 (PHYS/Near/Asserted/Unspecified)
+    tst relation marcellapr_20050228.2219-R3 (PHYS/Near/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=marcellapr_20050228.2219-E14 (FAC/Path/NAM/SPC), name="Texas Ave"
+            Arg-1 tst arg: ID=marcellapr_20050228.2219-E14 (FAC/Path/NAM/SPC), name="Texas Ave"
+            Arg-2 ref arg: ID=marcellapr_20050228.2219-E16 (FAC/Path/NAM/SPC), name="South West Parkway"
+            Arg-2 tst arg: ID=marcellapr_20050228.2219-E16 (FAC/Path/NAM/SPC), name="South West Parkway"
+- in document marcellapr_20050228.2219:  score:  2.00000 out of 2.00000
+      ref extent="Go down Texas Ave. until you come to ..."
+--------
+    ref relation marcellapr_20050228.2219-R4 (PHYS/Located/Other/Unspecified)
+    tst relation marcellapr_20050228.2219-R4 (PHYS/Located/Other/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=marcellapr_20050228.2219-E11 (PER/Indeter/PRO/USP), head="you"
+            Arg-1 tst arg: ID=marcellapr_20050228.2219-E11 (PER/Indeter/PRO/USP), head="you"
+            Arg-2 ref arg: ID=marcellapr_20050228.2219-E16 (FAC/Path/NAM/SPC), name="South West Parkway"
+            Arg-2 tst arg: ID=marcellapr_20050228.2219-E16 (FAC/Path/NAM/SPC), name="South West Parkway"
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000
+      ref extent="Go down Texas Ave. until you come to ..."
+      ref extent="Go down SW Parkway until you come to ..."
+--------
+    ref relation marcellapr_20050228.2219-R5 (PHYS/Located/Other/Unspecified)
+    tst relation marcellapr_20050228.2219-R5 (PHYS/Located/Other/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=marcellapr_20050228.2219-E11 (PER/Indeter/PRO/USP), head="you"
+            Arg-1 tst arg: ID=marcellapr_20050228.2219-E11 (PER/Indeter/PRO/USP), head="you"
+            Arg-2 ref arg: ID=marcellapr_20050228.2219-E14 (FAC/Path/NAM/SPC), name="Texas Ave"
+            Arg-2 tst arg: ID=marcellapr_20050228.2219-E14 (FAC/Path/NAM/SPC), name="Texas Ave"
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000
+      ref extent="Go down Texas Ave. until you come to ..."
+--------
+    ref relation marcellapr_20050228.2219-R6 (PHYS/Located/Asserted/Unspecified)
+    tst relation marcellapr_20050228.2219-R6 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=marcellapr_20050228.2219-E11 (PER/Indeter/PRO/USP), head="you"
+            Arg-1 tst arg: ID=marcellapr_20050228.2219-E11 (PER/Indeter/PRO/USP), head="you"
+            Arg-2 ref arg: ID=marcellapr_20050228.2219-E1 (FAC/Path/NAM/SPC), name="Welsh"
+            Arg-2 tst arg: ID=marcellapr_20050228.2219-E1 (FAC/Path/NAM/SPC), name="Welsh"
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000
+      ref extent="Go down SW Parkway until you come to ..."
+--------
+    ref relation marcellapr_20050228.2219-R8 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation marcellapr_20050228.2219-R8 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=marcellapr_20050228.2219-E7 (FAC/Subarea/NOM/SPC), head="apartment"
+            Arg-1 tst arg: ID=marcellapr_20050228.2219-E7 (FAC/Subarea/NOM/SPC), head="apartment"
+            Arg-2 ref arg: ID=marcellapr_20050228.2219-E2 (FAC/Buildin/NOM/SPC), head="complex"
+            Arg-2 tst arg: ID=marcellapr_20050228.2219-E2 (FAC/Buildin/NOM/SPC), head="complex"
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000
+      ref extent="The apartment complex"
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    ART     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.41   0.00   0.00   0.00
+PART-WH     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.69   0.00   0.00   0.00
+   PHYS     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    67.90   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    69.14   0.00   0.00   0.00
+  Other     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.86   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.69   0.00   0.00   0.00
+Located     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    37.04   0.00   0.00   0.00
+   Near     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.86   0.00   0.00   0.00
+User-Ow     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.41   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ART:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+User-Ow     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.41   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.41   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.69   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.69   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    37.04   0.00   0.00   0.00
+   Near     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.86   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    67.90   0.00   0.00   0.00
+
+Relation Type confusion matrix for "usenet" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      1     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0     2     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       PHYS      0     0     0     0     0     0     5        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=ART   COUNT    PERCENT
+    ref\tst: User-      User- 
+User-Owner-      1      100.0
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     2     0        0.0 100.0   0.0
+ Subsidiary      0     0     0        0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      3     0      100.0   0.0
+       Near      0     2        0.0 100.0
+
+Relation Modality confusion matrix for "usenet" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted      5     0     0      100.0   0.0   0.0
+      Other      0     3     0        0.0 100.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=8/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted     5/62.5%      -     
+           Other      -          3/37.5%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=8/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Located        Near Geographica User-Owner- 
+         Located     3/37.5%      -           -           -     
+            Near      -          2/25.0%      -           -     
+    Geographical      -           -          2/25.0%      -     
+  User-Owner-Inv      -           -           -          1/12.5%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=8/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified 
+     Unspecified     8/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=8/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       PHYS  PART-WHOLE         ART 
+            PHYS     5/62.5%      -           -     
+      PART-WHOLE      -          2/25.0%      -     
+             ART      -           -          1/12.5%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=16/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 
+           Arg-2     8/50.0%      -     
+           Arg-1      -          8/50.0%
+
+======== event mapping ========
+
+--------
+    ref event marcellapr_20050228.2219-EV1 (Contact/Meet/Generic/Asserted/Positive/Unspecified)
+    tst event marcellapr_20050228.2219-EV1 (Contact/Meet/Generic/Asserted/Positive/Unspecified)
+      event score:  1.00000 out of 1.00000
+           Entity ref arg: ID=marcellapr_20050228.2219-E5 (PER/Group/PRO/USP), head="We"
+           Entity tst arg: ID=marcellapr_20050228.2219-E5 (PER/Group/PRO/USP), head="We"
+            Place ref arg: ID=marcellapr_20050228.2219-E10 (FAC/Buildin/NAM/SPC), name="St. Mary"
+            Place tst arg: ID=marcellapr_20050228.2219-E10 (FAC/Buildin/NAM/SPC), name="St. Mary"
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000
+      ref anchor="meeting", extent="We are going to be having a sock pain..."
+--------
+    ref event marcellapr_20050228.2219-EV2 (Movement/Transport/Specific/Other/Positive/Unspecified)
+    tst event marcellapr_20050228.2219-EV2 (Movement/Transport/Specific/Other/Positive/Unspecified)
+      event score:  1.00000 out of 1.00000
+           Origin ref arg: ID=marcellapr_20050228.2219-E14 (FAC/Path/NAM/SPC), name="Texas Ave"
+           Origin tst arg: ID=marcellapr_20050228.2219-E14 (FAC/Path/NAM/SPC), name="Texas Ave"
+- in document marcellapr_20050228.2219:  score:  1.00000 out of 1.00000
+      ref anchor="head", extent="Texas Ave. and head"
+--------
+    ref event marcellapr_20050228.2219-EV3 (Movement/Transport/Specific/Other/Positive/Unspecified)
+    tst event marcellapr_20050228.2219-EV3 (Movement/Transport/Specific/Other/Positive/Unspecified)
+      event score:  2.00000 out of 2.00000
+      Destination ref arg: ID=marcellapr_20050228.2219-E16 (FAC/Path/NAM/SPC), name="South West Parkway"
+      Destination tst arg: ID=marcellapr_20050228.2219-E16 (FAC/Path/NAM/SPC), name="South West Parkway"
+           Origin ref arg: ID=marcellapr_20050228.2219-E14 (FAC/Path/NAM/SPC), name="Texas Ave"
+           Origin tst arg: ID=marcellapr_20050228.2219-E14 (FAC/Path/NAM/SPC), name="Texas Ave"
+           Person ref arg: ID=marcellapr_20050228.2219-E11 (PER/Indeter/PRO/USP), head="you"
+           Person tst arg: ID=marcellapr_20050228.2219-E11 (PER/Indeter/PRO/USP), head="you"
+- in document marcellapr_20050228.2219:  score:  2.00000 out of 2.00000
+      ref anchor="come", extent="Texas Ave. until you come to South We..."
+--------
+    ref event marcellapr_20050228.2219-EV4 (Movement/Transport/Specific/Other/Positive/Unspecified)
+    tst event marcellapr_20050228.2219-EV4 (Movement/Transport/Specific/Other/Positive/Unspecified)
+      event score:  2.00000 out of 2.00000
+      Destination ref arg: ID=marcellapr_20050228.2219-E1 (FAC/Path/NAM/SPC), name="Welsh"
+      Destination tst arg: ID=marcellapr_20050228.2219-E1 (FAC/Path/NAM/SPC), name="Welsh"
+           Origin ref arg: ID=marcellapr_20050228.2219-E16 (FAC/Path/NAM/SPC), name="South West Parkway"
+           Origin tst arg: ID=marcellapr_20050228.2219-E16 (FAC/Path/NAM/SPC), name="South West Parkway"
+           Person ref arg: ID=marcellapr_20050228.2219-E11 (PER/Indeter/PRO/USP), head="you"
+           Person tst arg: ID=marcellapr_20050228.2219-E11 (PER/Indeter/PRO/USP), head="you"
+- in document marcellapr_20050228.2219:  score:  2.00000 out of 2.00000
+      ref anchor="come", extent="SW Parkway until you come to Welsh"
+--------
+    ref event marcellapr_20050228.2219-EV5 (Movement/Transport/Specific/Other/Positive/Unspecified)
+    tst event marcellapr_20050228.2219-EV5 (Movement/Transport/Specific/Other/Positive/Unspecified)
+      event score:  0.50000 out of 0.50000
+      Destination ref arg: ID=marcellapr_20050228.2219-E2 (FAC/Buildin/NOM/SPC), head="complex"
+      Destination tst arg: ID=marcellapr_20050228.2219-E2 (FAC/Buildin/NOM/SPC), head="complex"
+- in document marcellapr_20050228.2219:  score:  0.50000 out of 0.50000
+      ref anchor="Go", extent="Go into second entrance of the complex"
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Contact     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.38   0.00   0.00   0.00
+Movemen     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    84.62   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.38   0.00   0.00   0.00
+  Other     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    84.62   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Meet     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.38   0.00   0.00   0.00
+Transpo     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    84.62   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Contact:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Meet     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.38   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.38   0.00   0.00   0.00
+
+Performance statistics for TYPE = Movement:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    84.62   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    84.62   0.00   0.00   0.00
+
+Event Type confusion matrix for "usenet" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     1     0     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     4     0     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "usenet" sources (for mapped events):
+  type=Conta COUNT......    PERCENT......
+    ref\tst:  Meet Phone       Meet Phone 
+       Meet      1     0      100.0   0.0
+Phone-Write      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "usenet" sources (for mapped events):
+  type=Movem COUNT    PERCENT
+    ref\tst: Trans      Trans 
+  Transport      4      100.0
+
+Event Modality confusion matrix for "usenet" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted      1     0      100.0   0.0
+      Other      0     4        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific     Generic 
+        Specific     4/80.0%      -     
+         Generic      -          1/20.0%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Other    Asserted 
+           Other     4/80.0%      -     
+        Asserted      -          1/20.0%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive 
+        Positive     5/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:  Transport        Meet 
+       Transport     4/80.0%      -     
+            Meet      -          1/20.0%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified 
+     Unspecified     5/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Movement     Contact 
+        Movement     4/80.0%      -     
+         Contact      -          1/20.0%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Origin Destination      Person       Place      Entity 
+          Origin     3/30.0%      -           -           -           -     
+     Destination      -          3/30.0%      -           -           -     
+          Person      -           -          2/20.0%      -           -     
+           Place      -           -           -          1/10.0%      -     
+          Entity      -           -           -           -          1/10.0%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 marcellapr_20050228.2219-T1, ID=marcellapr_20050228.2219-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 marcellapr_20050228.2219-T1, ID=marcellapr_20050228.2219-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document marcellapr_20050228.2219:
+          mention="2005-02-28T22:19:00"
+--------
+    ref timex2 marcellapr_20050228.2219-T2, ID=marcellapr_20050228.2219-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 marcellapr_20050228.2219-T2, ID=marcellapr_20050228.2219-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document marcellapr_20050228.2219:
+          mention="Mon, 28 Feb 2005 19:19:14 -0800"
+--------
+    ref timex2 marcellapr_20050228.2219-T3, ID=marcellapr_20050228.2219-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 marcellapr_20050228.2219-T3, ID=marcellapr_20050228.2219-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document marcellapr_20050228.2219:
+          mention="Wednesday"
+--------
+    ref timex2 marcellapr_20050228.2219-T4, ID=marcellapr_20050228.2219-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 marcellapr_20050228.2219-T4, ID=marcellapr_20050228.2219-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document marcellapr_20050228.2219:
+          mention="5 till 10"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     4/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     4/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---     4/99.9%
+
+data input:               0.14 secs to load data
+entity eval:              0.02 secs to compute values,    0.00 secs to map,    0.03 secs to score
+relation eval:            0.02 secs to compute values,    0.01 secs to map,    0.02 secs to score
+event eval:               0.01 secs to compute values,    0.00 secs to map,    0.02 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.00 secs to compute values,    0.01 secs to map,    0.00 secs to score
+value eval:               0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+########

@@ -1,0 +1,1424 @@
+command line (run on 2005 Aug 21 at 11:12:35):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score97809 -t /tmp/score97809
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity CNN_ENG_20030408_140615.11-E1 (ORG/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E1 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="central command" (NAM/ORG/LIT)
+      ref mention="they" (PRO/ORG/LIT)
+      ref mention="they" (PRO/ORG/LIT)
+      ref mention="central command" (NAM/ORG/LIT)
+         ref name="central command"
+         ref name="central command"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E10 (ORG/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E10 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="abu dhabi" (NAM/ORG/LIT)
+         ref name="abu dhabi"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E11 (FAC/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E11 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="office" (NOM/FAC/LIT)
+      ref mention="which" (PRO/FAC/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E12 (GPE/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E12 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="u.s" (NAM/ORG/LIT)
+      ref mention="u.s" (NAM/GPE/LIT)
+      ref mention="u.s" (NAM/ORG/LIT)
+      ref mention="american" (NAM/GPE/LIT)
+         ref name="u.s"
+         ref name="u.s"
+         ref name="u.s"
+         ref name="american"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E13 (FAC/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E13 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="palestine hotel" (NAM/FAC/LIT)
+      ref mention="where" (PRO/FAC/LIT)
+      ref mention="palestine hotel" (NAM/FAC/LIT)
+      ref mention="base" (NOM/FAC/LIT)
+      ref mention="hotel" (NOM/FAC/LIT)
+         ref name="palestine hotel"
+         ref name="palestine hotel"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E14 (PER/NOM/USP)
+    tst entity CNN_ENG_20030408_140615.11-E14 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="journalists" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E15 (PER/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E15 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="photographer" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E16 (PER/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E16 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="specialist" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E17 (PER/NOM/USP)
+    tst entity CNN_ENG_20030408_140615.11-E17 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="people" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E18 (PER/NOM/GEN)
+    tst entity CNN_ENG_20030408_140615.11-E18 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="man" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E2 (GPE/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E2 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="iraqi" (NAM/GPE/LIT)
+         ref name="iraqi"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E20 (WEA/NOM/GEN)
+    tst entity CNN_ENG_20030408_140615.11-E20 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="weapons" (NOM/WEA/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E21 (FAC/NOM/GEN)
+    tst entity CNN_ENG_20030408_140615.11-E21 (FAC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (FAC/NOM/GEN)
+      ref mention="shelter" (NOM/FAC/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E22 (PER/NOM/USP)
+    tst entity CNN_ENG_20030408_140615.11-E22 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="others" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E23 (PER/PRO/GEN)
+    tst entity CNN_ENG_20030408_140615.11-E23 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="everyone" (PRO/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E24 (PER/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E24 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="translator" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E25 (PER/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E25 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="journalists" (NOM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E26 (VEH/NOM/GEN)
+    tst entity CNN_ENG_20030408_140615.11-E26 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="tank" (NOM/VEH/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E27 (PER/NOM/USP)
+    tst entity CNN_ENG_20030408_140615.11-E27 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="journalists" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E28 (PER/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E28 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="dead" (NOM/PER/LIT)
+      ref mention="men" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E3 (ORG/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E3 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="military" (NOM/ORG/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E30 (PER/PRO/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E30 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document CNN_ENG_20030408_140615.11:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="one" (PRO/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E31 (PER/PRO/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E31 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document CNN_ENG_20030408_140615.11:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="one" (PRO/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E32 (GPE/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E32 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="spain" (NAM/GPE/LIT)
+         ref name="spain"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E33 (PER/NOM/USP)
+    tst entity CNN_ENG_20030408_140615.11-E33 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="reporters" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E34 (PER/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E34 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="journalists" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E36 (PER/PRO/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E36 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document CNN_ENG_20030408_140615.11:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="me" (PRO/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E37 (GPE/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E37 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="here" (PRO/LOC/LIT)
+      ref mention="kuwait city" (NAM/LOC/LIT)
+         ref name="kuwait city"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E38 (PER/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E38 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="journalist" (NOM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+      ref mention="correspondent" (NOM/PER/LIT)
+      ref mention="christian a manpower" (NAM/PER/LIT)
+      ref mention="your" (PRO/PER/LIT)
+      ref mention="i" (PRO/PER/LIT)
+         ref name="christian a manpower"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E39 (PER/PRO/USP)
+    tst entity CNN_ENG_20030408_140615.11-E39 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="our" (PRO/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E4 (ORG/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E4 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="network" (NOM/ORG/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E42 (PER/PRO/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E42 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document CNN_ENG_20030408_140615.11:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="i" (PRO/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E44 (PER/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E44 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="men" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E45 (LOC/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E45 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="locations" (NOM/LOC/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E46 (PER/NOM/USP)
+    tst entity CNN_ENG_20030408_140615.11-E46 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="journalist" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E47 (PER/PRO/USP)
+    tst entity CNN_ENG_20030408_140615.11-E47 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="they" (PRO/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E48 (ORG/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E48 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="pentagon" (NOM/ORG/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E49 (ORG/NOM/GEN)
+    tst entity CNN_ENG_20030408_140615.11-E49 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="military" (NOM/ORG/LIT)
+      ref mention="military" (NOM/ORG/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E5 (ORG/NOM/GEN)
+    tst entity CNN_ENG_20030408_140615.11-E5 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="media" (NOM/ORG/LIT)
+      ref mention="media" (NOM/ORG/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E50 (PER/NOM/USP)
+    tst entity CNN_ENG_20030408_140615.11-E50 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="spokesmen" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E51 (GPE/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E51 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="baghdad" (NAM/LOC/LIT)
+      ref mention="baghdad" (NAM/LOC/LIT)
+      ref mention="baghdad" (NAM/LOC/LIT)
+      ref mention="city" (NOM/GPE/LIT)
+      ref mention="baghdad" (NAM/LOC/LIT)
+         ref name="baghdad"
+         ref name="baghdad"
+         ref name="baghdad"
+         ref name="baghdad"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E52 (PER/NOM/USP)
+    tst entity CNN_ENG_20030408_140615.11-E52 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="colleagues" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E54 (PER/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E54 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="journalists" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E55 (PER/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E55 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="one" (PRO/PER/LIT)
+      ref mention="cameraman" (NOM/PER/LIT)
+      ref mention="colleague" (NOM/PER/LIT)
+      ref mention="reporter" (NOM/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E59 (ORG/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E59 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="spanish television" (NAM/ORG/LIT)
+         ref name="spanish television"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E6 (PER/PRO/USP)
+    tst entity CNN_ENG_20030408_140615.11-E6 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="whose" (PRO/PER/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E61 (FAC/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E61 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="facilities" (NOM/FAC/LIT)
+      ref mention="office" (NOM/FAC/LIT)
+      ref mention="office" (NOM/FAC/LIT)
+      ref mention="al jazeera" (NAM/FAC/LIT)
+         ref name="al jazeera"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E7 (ORG/NAM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E7 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="al jazeera" (NAM/ORG/LIT)
+      ref mention="al jazeera" (NAM/ORG/LIT)
+      ref mention="it" (PRO/ORG/LIT)
+      ref mention="al jazeera" (NAM/ORG/LIT)
+      ref mention="al jazeera" (NAM/ORG/LIT)
+      ref mention="al jazeera" (NAM/ORG/LIT)
+      ref mention="they" (PRO/ORG/LIT)
+      ref mention="al jazeera" (NAM/ORG/LIT)
+         ref name="al jazeera"
+         ref name="al jazeera"
+         ref name="al jazeera"
+         ref name="al jazeera"
+         ref name="al jazeera"
+         ref name="al jazeera"
+--------
+    ref entity CNN_ENG_20030408_140615.11-E8 (VEH/NOM/SPC)
+    tst entity CNN_ENG_20030408_140615.11-E8 (VEH/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000  (VEH/NOM/SPC)
+      ref mention="tanks" (NOM/VEH/LIT)
+--------
+    ref entity CNN_ENG_20030408_140615.11-E9 (ORG/NOM/USP)
+    tst entity CNN_ENG_20030408_140615.11-E9 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="others" (NOM/ORG/LIT)
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    FAC     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.56   0.00   0.00   0.00
+    GPE     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.13   0.00   0.00   0.00
+    LOC     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.51   0.00   0.00   0.00
+    ORG    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.64   0.00   0.00   0.00
+    PER    27     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.65   0.00   0.00   0.00
+    VEH     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.51   0.00   0.00   0.00
+    WEA     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    50     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    60.30   0.00   0.00   0.00
+    NOM    30     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    37.69   0.00   0.00   0.00
+    PRO     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.01   0.00   0.00   0.00
+  total    50     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.01   0.00   0.00   0.00
+0.2-0.5    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    37.69   0.00   0.00   0.00
+0.5-1.0    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    60.30   0.00   0.00   0.00
+  total    50     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    35     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    49.75   0.00   0.00   0.00
+      2     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.56   0.00   0.00   0.00
+    3-4     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.59   0.00   0.00   0.00
+    5-8     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.10   0.00   0.00   0.00
+  total    50     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    50     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    50     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    50     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Buildin     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.56   0.00   0.00   0.00
+Governm     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.05   0.00   0.00   0.00
+  Group    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.56   0.00   0.00   0.00
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.09   0.00   0.00   0.00
+   Land     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.51   0.00   0.00   0.00
+  Media     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.59   0.00   0.00   0.00
+ Nation     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.08   0.00   0.00   0.00
+Populat     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.05   0.00   0.00   0.00
+Region-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.51   0.00   0.00   0.00
+Undersp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    50     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = FAC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Buildin     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.56   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.56   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Nation     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.08   0.00   0.00   0.00
+Populat     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.05   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.13   0.00   0.00   0.00
+
+Performance statistics for TYPE = LOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Region-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.51   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.51   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Governm     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.05   0.00   0.00   0.00
+  Media     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.59   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.64   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.56   0.00   0.00   0.00
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.09   0.00   0.00   0.00
+  total    27     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.65   0.00   0.00   0.00
+
+Performance statistics for TYPE = VEH:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Land     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.51   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.51   0.00   0.00   0.00
+
+Performance statistics for TYPE = WEA:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Undersp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+
+Entity Type confusion matrix for "broadcast news" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            4     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     5     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     1     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    10     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    27     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     2     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     1        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=50/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         USP         GEN 
+             SPC    31/62.0%      -           -     
+             USP      -         12/24.0%      -     
+             GEN      -           -          7/14.0%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=50/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Group  Individual       Media  Government Building-Gr      Nation        Land Population-  all others 
+           Group    16/32.0%      -           -           -           -           -           -           -           -     
+      Individual      -         10/20.0%      -           -           -           -           -           -           -     
+           Media      -           -          6/12.0%      -           -           -           -           -           -     
+      Government      -           -           -          4/ 8.0%      -           -           -           -           -     
+  Building-Groun      -           -           -           -          4/ 8.0%      -           -           -           -     
+          Nation      -           -           -           -           -          3/ 6.0%      -           -           -     
+            Land      -           -           -           -           -           -          2/ 4.0%      -           -     
+  Population-Cen      -           -           -           -           -           -           -          2/ 4.0%      -     
+      all others      -           -           -           -           -           -           -           -          3/ 6.0%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=50/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        PER         ORG         GPE         FAC         VEH         WEA         LOC 
+             PER    27/54.0%      -           -           -           -           -           -     
+             ORG      -         10/20.0%      -           -           -           -           -     
+             GPE      -           -          5/10.0%      -           -           -           -     
+             FAC      -           -           -          4/ 8.0%      -           -           -     
+             VEH      -           -           -           -          2/ 4.0%      -           -     
+             WEA      -           -           -           -           -          1/ 2.0%      -     
+             LOC      -           -           -           -           -           -          1/ 2.0%
+
+Entity Class confusion matrix for "broadcast news" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           31     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     7     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0    12        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     3        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0    11        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0    10        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    25        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    25        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    43        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0    21        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0    89        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0    89        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    89        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0    12        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0     5        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     7        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    24        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    38        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     2        0.0   0.0      0.0   0.0 100.0
+  WEA       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0    89        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "broadcast news" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC           12     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     5     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     7     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    24     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    38     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     2     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     1        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Mention Style confusion matrix for "broadcast news" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER           89     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation CNN_ENG_20030408_140615.11-R1 (PHYS/Located/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R1 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E46 (PER/Group/NOM/USP), head="journalist"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E46 (PER/Group/NOM/USP), head="journalist"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E51 (GPE/Populat/NAM/SPC), name="baghdad"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E51 (GPE/Populat/NAM/SPC), name="baghdad"
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000
+      ref extent="journalist held a candle light vigil ..."
+--------
+    ref relation CNN_ENG_20030408_140615.11-R10 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R10 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E10 (ORG/Media/NAM/SPC), name="abu dhabi"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E10 (ORG/Media/NAM/SPC), name="abu dhabi"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E11 (FAC/Buildin/NOM/SPC), head="office"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E11 (FAC/Buildin/NOM/SPC), head="office"
+- in document CNN_ENG_20030408_140615.11:  score:  1.50000 out of 1.50000
+      ref extent="the abu dhabi office which is also ve..."
+--------
+    ref relation CNN_ENG_20030408_140615.11-R11 (METONYMY/Unspecified/Unspecified/---)
+    tst relation CNN_ENG_20030408_140615.11-R11 (METONYMY/Unspecified/Unspecified/---)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E7 (ORG/Media/NAM/SPC), name="al jazeera"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E7 (ORG/Media/NAM/SPC), name="al jazeera"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E61 (FAC/Buildin/NAM/SPC), name="al jazeera"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E61 (FAC/Buildin/NAM/SPC), name="al jazeera"
+- in document CNN_ENG_20030408_140615.11:  score:  2.00000 out of 2.00000
+--------
+    ref relation CNN_ENG_20030408_140615.11-R12 (PHYS/Near/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R12 (PHYS/Near/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E11 (FAC/Buildin/NOM/SPC), head="office"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E11 (FAC/Buildin/NOM/SPC), head="office"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E61 (FAC/Buildin/NAM/SPC), name="al jazeera"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E61 (FAC/Buildin/NAM/SPC), name="al jazeera"
+- in document CNN_ENG_20030408_140615.11:  score:  1.50000 out of 1.50000
+      ref extent="the abu dhabi office which is also ve..."
+--------
+    ref relation CNN_ENG_20030408_140615.11-R13 (PHYS/Located/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R13 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E14 (PER/Group/NOM/USP), head="journalists"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E14 (PER/Group/NOM/USP), head="journalists"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000
+      ref extent="the palestine hotel where many journa..."
+--------
+    ref relation CNN_ENG_20030408_140615.11-R14 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R14 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E18 (PER/Individ/NOM/GEN), head="man"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E18 (PER/Individ/NOM/GEN), head="man"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E5 (ORG/Media/NOM/GEN), head="media"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E5 (ORG/Media/NOM/GEN), head="media"
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000
+      ref extent="the media man"
+--------
+    ref relation CNN_ENG_20030408_140615.11-R15 (PHYS/Located/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R15 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E25 (PER/Group/NOM/SPC), head="journalists"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E25 (PER/Group/NOM/SPC), head="journalists"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+- in document CNN_ENG_20030408_140615.11:  score:  1.50000 out of 1.50000
+      ref extent="that report from al jazeera through a..."
+--------
+    ref relation CNN_ENG_20030408_140615.11-R16 (PHYS/Located/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R16 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E27 (PER/Group/NOM/USP), head="journalists"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E27 (PER/Group/NOM/USP), head="journalists"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000
+      ref extent="a base for international journalists ..."
+--------
+    ref relation CNN_ENG_20030408_140615.11-R17 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R17 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E51 (GPE/Populat/NAM/SPC), name="baghdad"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E51 (GPE/Populat/NAM/SPC), name="baghdad"
+- in document CNN_ENG_20030408_140615.11:  score:  2.00000 out of 2.00000
+      ref extent="a base for international journalists ..."
+--------
+    ref relation CNN_ENG_20030408_140615.11-R18 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R18 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.10000 out of 1.10000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E31 (PER/Individ/PRO/SPC), head="one"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E31 (PER/Individ/PRO/SPC), head="one"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E32 (GPE/Nation/NAM/SPC), name="spain"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E32 (GPE/Nation/NAM/SPC), name="spain"
+- in document CNN_ENG_20030408_140615.11:  score:  1.10000 out of 1.10000
+      ref extent="one with spain"
+--------
+    ref relation CNN_ENG_20030408_140615.11-R19 (PHYS/Located/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R19 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.10000 out of 1.10000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E36 (PER/Individ/PRO/SPC), head="me"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E36 (PER/Individ/PRO/SPC), head="me"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E37 (GPE/Populat/NAM/SPC), name="kuwait city"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E37 (GPE/Populat/NAM/SPC), name="kuwait city"
+- in document CNN_ENG_20030408_140615.11:  score:  1.10000 out of 1.10000
+      ref extent="joining me here in kuwait city a jour..."
+--------
+    ref relation CNN_ENG_20030408_140615.11-R2 (PHYS/Located/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R2 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E54 (PER/Group/NOM/SPC), head="journalists"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E54 (PER/Group/NOM/SPC), head="journalists"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E51 (GPE/Populat/NAM/SPC), name="baghdad"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E51 (GPE/Populat/NAM/SPC), name="baghdad"
+- in document CNN_ENG_20030408_140615.11:  score:  1.50000 out of 1.50000
+      ref extent="military fire killed three journalist..."
+--------
+    ref relation CNN_ENG_20030408_140615.11-R20 (PHYS/Located/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R20 (PHYS/Located/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E38 (PER/Individ/NAM/SPC), name="christian a manpower"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E38 (PER/Individ/NAM/SPC), name="christian a manpower"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E37 (GPE/Populat/NAM/SPC), name="kuwait city"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E37 (GPE/Populat/NAM/SPC), name="kuwait city"
+- in document CNN_ENG_20030408_140615.11:  score:  2.00000 out of 2.00000
+      ref extent="joining me here in kuwait city a jour..."
+--------
+    ref relation CNN_ENG_20030408_140615.11-R22 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R22 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E50 (PER/Group/NOM/USP), head="spokesmen"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E50 (PER/Group/NOM/USP), head="spokesmen"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E49 (ORG/Governm/NOM/GEN), head="military"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E49 (ORG/Governm/NOM/GEN), head="military"
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000
+      ref extent="the military spokesmen"
+--------
+    ref relation CNN_ENG_20030408_140615.11-R4 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R4 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E55 (PER/Individ/NOM/SPC), head="colleague"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E55 (PER/Individ/NOM/SPC), head="colleague"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E7 (ORG/Media/NAM/SPC), name="al jazeera"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E7 (ORG/Media/NAM/SPC), name="al jazeera"
+- in document CNN_ENG_20030408_140615.11:  score:  1.50000 out of 1.50000
+      ref extent="an al jazeera cameraman"
+      ref extent="colleague from al jazeera and others"
+      ref extent="this al jazeera reporter"
+--------
+    ref relation CNN_ENG_20030408_140615.11-R5 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R5 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E7 (ORG/Media/NAM/SPC), name="al jazeera"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E7 (ORG/Media/NAM/SPC), name="al jazeera"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E61 (FAC/Buildin/NAM/SPC), name="al jazeera"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E61 (FAC/Buildin/NAM/SPC), name="al jazeera"
+- in document CNN_ENG_20030408_140615.11:  score:  2.00000 out of 2.00000
+      ref extent="its facilities in baghdad"
+      ref extent="the al jazeera office"
+--------
+    ref relation CNN_ENG_20030408_140615.11-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E61 (FAC/Buildin/NAM/SPC), name="al jazeera"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E61 (FAC/Buildin/NAM/SPC), name="al jazeera"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E51 (GPE/Populat/NAM/SPC), name="baghdad"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E51 (GPE/Populat/NAM/SPC), name="baghdad"
+- in document CNN_ENG_20030408_140615.11:  score:  2.00000 out of 2.00000
+      ref extent="its facilities in baghdad"
+--------
+    ref relation CNN_ENG_20030408_140615.11-R7 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R7 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E3 (ORG/Governm/NOM/SPC), head="military"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E3 (ORG/Governm/NOM/SPC), head="military"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E2 (GPE/Nation/NAM/SPC), name="iraqi"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E2 (GPE/Nation/NAM/SPC), name="iraqi"
+- in document CNN_ENG_20030408_140615.11:  score:  1.50000 out of 1.50000
+      ref extent="the iraqi military"
+--------
+    ref relation CNN_ENG_20030408_140615.11-R9 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNN_ENG_20030408_140615.11-R9 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=CNN_ENG_20030408_140615.11-E55 (PER/Individ/NOM/SPC), head="colleague"
+            Arg-1 tst arg: ID=CNN_ENG_20030408_140615.11-E55 (PER/Individ/NOM/SPC), head="colleague"
+            Arg-2 ref arg: ID=CNN_ENG_20030408_140615.11-E9 (ORG/Media/NOM/USP), head="others"
+            Arg-2 tst arg: ID=CNN_ENG_20030408_140615.11-E9 (ORG/Media/NOM/USP), head="others"
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000
+      ref extent="colleague from al jazeera and others"
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    ART     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.17   0.00   0.00   0.00
+GEN-AFF     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.45   0.00   0.00   0.00
+METONYM     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.10   0.00   0.00   0.00
+ORG-AFF     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.10   0.00   0.00   0.00
+PART-WH     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.27   0.00   0.00   0.00
+   PHYS     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.91   0.00   0.00   0.00
+  total    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    91.90   0.00   0.00   0.00
+Unspeci     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.10   0.00   0.00   0.00
+  total    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.45   0.00   0.00   0.00
+Employm     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.10   0.00   0.00   0.00
+Geograp     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.19   0.00   0.00   0.00
+Located     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.84   0.00   0.00   0.00
+   Near     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.07   0.00   0.00   0.00
+Subsidi     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.07   0.00   0.00   0.00
+User-Ow     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.17   0.00   0.00   0.00
+  total    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ART:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+User-Ow     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.17   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.17   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.45   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.45   0.00   0.00   0.00
+
+Performance statistics for TYPE = METONYMY:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.10   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.10   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.10   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.19   0.00   0.00   0.00
+Subsidi     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.07   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.27   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.84   0.00   0.00   0.00
+   Near     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.07   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.91   0.00   0.00   0.00
+
+Relation Type confusion matrix for "broadcast news" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      2     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     1     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     1     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     4     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0     3     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       PHYS      0     0     0     0     0     0     8        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=ART   COUNT    PERCENT
+    ref\tst: User-      User- 
+User-Owner-      2      100.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      1     0      100.0   0.0
+Org-Locatio      0     0        0.0   0.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=METON COUNT    PERCENT
+    ref\tst:      
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      4     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     2     0        0.0 100.0   0.0
+ Subsidiary      0     0     1        0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      7     0      100.0   0.0
+       Near      0     1        0.0 100.0
+
+Relation Modality confusion matrix for "broadcast news" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     18     0     0      100.0   0.0   0.0
+      Other      0     0     0        0.0   0.0   0.0
+Unspecified      0     0     1        0.0   0.0 100.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=19/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted Unspecified 
+        Asserted    18/94.7%      -     
+     Unspecified      -          1/ 5.3%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=19/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Located  Employment Geographica User-Owner-        Near Unspecified  Subsidiary Citizen-Res 
+         Located     7/36.8%      -           -           -           -           -           -           -     
+      Employment      -          4/21.1%      -           -           -           -           -           -     
+    Geographical      -           -          2/10.5%      -           -           -           -           -     
+  User-Owner-Inv      -           -           -          2/10.5%      -           -           -           -     
+            Near      -           -           -           -          1/ 5.3%      -           -           -     
+     Unspecified      -           -           -           -           -          1/ 5.3%      -           -     
+      Subsidiary      -           -           -           -           -           -          1/ 5.3%      -     
+  Citizen-Reside      -           -           -           -           -           -           -          1/ 5.3%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=18/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified 
+     Unspecified    18/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=19/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       PHYS     ORG-AFF  PART-WHOLE         ART     GEN-AFF    METONYMY 
+            PHYS     8/42.1%      -           -           -           -           -     
+         ORG-AFF      -          4/21.1%      -           -           -           -     
+      PART-WHOLE      -           -          3/15.8%      -           -           -     
+             ART      -           -           -          2/10.5%      -           -     
+         GEN-AFF      -           -           -           -          1/ 5.3%      -     
+        METONYMY      -           -           -           -           -          1/ 5.3%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=38/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 
+           Arg-2    19/50.0%      -     
+           Arg-1      -         19/50.0%
+
+======== event mapping ========
+
+--------
+    ref event CNN_ENG_20030408_140615.11-EV1 (Life/Die/Specific/Asserted/Positive/Past)
+    tst event CNN_ENG_20030408_140615.11-EV1 (Life/Die/Specific/Asserted/Positive/Past)
+      event score:  2.70000 out of 2.70000
+            Agent ref arg: ID=CNN_ENG_20030408_140615.11-E49 (ORG/Governm/NOM/GEN), head="military"
+            Agent tst arg: ID=CNN_ENG_20030408_140615.11-E49 (ORG/Governm/NOM/GEN), head="military"
+            Place ref arg: ID=CNN_ENG_20030408_140615.11-E51 (GPE/Populat/NAM/SPC), name="baghdad"
+            Place tst arg: ID=CNN_ENG_20030408_140615.11-E51 (GPE/Populat/NAM/SPC), name="baghdad"
+      Time-Within ref arg: ID=CNN_ENG_20030408_140615.11-T2 (TIM/---), extent="today"
+      Time-Within tst arg: ID=CNN_ENG_20030408_140615.11-T2 (TIM/---), extent="today"
+           Victim ref arg: ID=CNN_ENG_20030408_140615.11-E44 (PER/Group/NOM/SPC), head="men"
+           Victim tst arg: ID=CNN_ENG_20030408_140615.11-E44 (PER/Group/NOM/SPC), head="men"
+           Victim ref arg: ID=CNN_ENG_20030408_140615.11-E52 (PER/Group/NOM/USP), head="colleagues"
+           Victim tst arg: ID=CNN_ENG_20030408_140615.11-E52 (PER/Group/NOM/USP), head="colleagues"
+           Victim ref arg: ID=CNN_ENG_20030408_140615.11-E54 (PER/Group/NOM/SPC), head="journalists"
+           Victim tst arg: ID=CNN_ENG_20030408_140615.11-E54 (PER/Group/NOM/SPC), head="journalists"
+           Victim ref arg: ID=CNN_ENG_20030408_140615.11-E55 (PER/Individ/NOM/SPC), head="colleague"
+           Victim tst arg: ID=CNN_ENG_20030408_140615.11-E55 (PER/Individ/NOM/SPC), head="colleague"
+- in document CNN_ENG_20030408_140615.11:  score:  2.70000 out of 2.70000
+      ref anchor="deaths", extent="deaths of their colleagues"
+      ref anchor="killed", extent="military fire killed three journalist..."
+      ref anchor="matry come", extent="matry come of colleague from al jazee..."
+      ref anchor="death", extent="death of this al jazeera reporter and..."
+--------
+    ref event CNN_ENG_20030408_140615.11-EV10 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event CNN_ENG_20030408_140615.11-EV10 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  0.00000 out of 0.00000
+           Target ref arg: ID=CNN_ENG_20030408_140615.11-E47 (PER/Group/PRO/USP), head="they"
+           Target tst arg: ID=CNN_ENG_20030408_140615.11-E47 (PER/Group/PRO/USP), head="they"
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000
+      ref anchor="hit", extent="they were hit"
+--------
+    ref event CNN_ENG_20030408_140615.11-EV2 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event CNN_ENG_20030408_140615.11-EV2 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  0.00000 out of 0.00000
+         Attacker ref arg: ID=CNN_ENG_20030408_140615.11-E49 (ORG/Governm/NOM/GEN), head="military"
+         Attacker tst arg: ID=CNN_ENG_20030408_140615.11-E49 (ORG/Governm/NOM/GEN), head="military"
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000
+      ref anchor="fire", extent="military fire"
+      ref anchor="shelling", extent="shelling"
+--------
+    ref event CNN_ENG_20030408_140615.11-EV3 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event CNN_ENG_20030408_140615.11-EV3 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.50000 out of 1.50000
+       Instrument ref arg: ID=CNN_ENG_20030408_140615.11-E8 (VEH/Land/NOM/SPC), head="tanks"
+       Instrument tst arg: ID=CNN_ENG_20030408_140615.11-E8 (VEH/Land/NOM/SPC), head="tanks"
+           Target ref arg: ID=CNN_ENG_20030408_140615.11-E61 (FAC/Buildin/NAM/SPC), name="al jazeera"
+           Target tst arg: ID=CNN_ENG_20030408_140615.11-E61 (FAC/Buildin/NAM/SPC), name="al jazeera"
+- in document CNN_ENG_20030408_140615.11:  score:  1.50000 out of 1.50000
+      ref anchor="shelling", extent="the tanks went on shelling the office"
+--------
+    ref event CNN_ENG_20030408_140615.11-EV4 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event CNN_ENG_20030408_140615.11-EV4 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  0.50000 out of 0.50000
+           Target ref arg: ID=CNN_ENG_20030408_140615.11-E11 (FAC/Buildin/NOM/SPC), head="office"
+           Target tst arg: ID=CNN_ENG_20030408_140615.11-E11 (FAC/Buildin/NOM/SPC), head="office"
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000
+      ref anchor="hit", extent="hit, in fact, targeted the abu dhabi ..."
+--------
+    ref event CNN_ENG_20030408_140615.11-EV5 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event CNN_ENG_20030408_140615.11-EV5 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+           Target ref arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+           Target tst arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+- in document CNN_ENG_20030408_140615.11:  score:  1.00000 out of 1.00000
+      ref anchor="hit", extent="hit was targeted to the palestine hot..."
+--------
+    ref event CNN_ENG_20030408_140615.11-EV6 (Life/Die/Specific/Asserted/Positive/Past)
+    tst event CNN_ENG_20030408_140615.11-EV6 (Life/Die/Specific/Asserted/Positive/Past)
+      event score:  1.50000 out of 1.50000
+       Instrument ref arg: ID=CNN_ENG_20030408_140615.11-E26 (VEH/Land/NOM/GEN), head="tank"
+       Instrument tst arg: ID=CNN_ENG_20030408_140615.11-E26 (VEH/Land/NOM/GEN), head="tank"
+            Place ref arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+            Place tst arg: ID=CNN_ENG_20030408_140615.11-E13 (FAC/Buildin/NAM/SPC), name="palestine hotel"
+           Victim ref arg: ID=CNN_ENG_20030408_140615.11-E25 (PER/Group/NOM/SPC), head="journalists"
+           Victim tst arg: ID=CNN_ENG_20030408_140615.11-E25 (PER/Group/NOM/SPC), head="journalists"
+- in document CNN_ENG_20030408_140615.11:  score:  1.50000 out of 1.50000
+      ref anchor="killed", extent="the two journalists who were killed t..."
+      ref anchor="killed", extent="who were killed today in that tank sh..."
+--------
+    ref event CNN_ENG_20030408_140615.11-EV7 (Life/Injure/Specific/Asserted/Positive/Past)
+    tst event CNN_ENG_20030408_140615.11-EV7 (Life/Injure/Specific/Asserted/Positive/Past)
+      event score:  0.50000 out of 0.50000
+           Victim ref arg: ID=CNN_ENG_20030408_140615.11-E34 (PER/Group/NOM/SPC), head="journalists"
+           Victim tst arg: ID=CNN_ENG_20030408_140615.11-E34 (PER/Group/NOM/SPC), head="journalists"
+- in document CNN_ENG_20030408_140615.11:  score:  0.50000 out of 0.50000
+      ref anchor="wound ned", extent="three journalists were wound ned"
+--------
+    ref event CNN_ENG_20030408_140615.11-EV8 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event CNN_ENG_20030408_140615.11-EV8 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  0.00000 out of 0.00000
+- in document CNN_ENG_20030408_140615.11:  score:  0.00000 out of 0.00000
+      ref anchor="fire", extent="fire"
+--------
+    ref event CNN_ENG_20030408_140615.11-EV9 (Contact/Meet/Specific/Asserted/Positive/Present)
+    tst event CNN_ENG_20030408_140615.11-EV9 (Contact/Meet/Specific/Asserted/Positive/Present)
+      event score:  2.10000 out of 2.10000
+           Entity ref arg: ID=CNN_ENG_20030408_140615.11-E36 (PER/Individ/PRO/SPC), head="me"
+           Entity tst arg: ID=CNN_ENG_20030408_140615.11-E36 (PER/Individ/PRO/SPC), head="me"
+           Entity ref arg: ID=CNN_ENG_20030408_140615.11-E38 (PER/Individ/NAM/SPC), name="christian a manpower"
+           Entity tst arg: ID=CNN_ENG_20030408_140615.11-E38 (PER/Individ/NAM/SPC), name="christian a manpower"
+            Place ref arg: ID=CNN_ENG_20030408_140615.11-E37 (GPE/Populat/NAM/SPC), name="kuwait city"
+            Place tst arg: ID=CNN_ENG_20030408_140615.11-E37 (GPE/Populat/NAM/SPC), name="kuwait city"
+- in document CNN_ENG_20030408_140615.11:  score:  2.10000 out of 2.10000
+      ref anchor="joining", extent="joining me here in kuwait city a jour..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Conflic     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.61   0.00   0.00   0.00
+Contact     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.43   0.00   0.00   0.00
+   Life     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    47.96   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.61   0.00   0.00   0.00
+    Die     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.86   0.00   0.00   0.00
+ Injure     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.10   0.00   0.00   0.00
+   Meet     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.43   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Conflict:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.61   0.00   0.00   0.00
+  total     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.61   0.00   0.00   0.00
+
+Performance statistics for TYPE = Contact:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Meet     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.43   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.43   0.00   0.00   0.00
+
+Performance statistics for TYPE = Life:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    Die     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.86   0.00   0.00   0.00
+ Injure     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.10   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    47.96   0.00   0.00   0.00
+
+Event Type confusion matrix for "broadcast news" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     6     0     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     1     0     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     3     0     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "broadcast news" sources (for mapped events):
+  type=Confl COUNT......    PERCENT......
+    ref\tst: Attac Demon      Attac Demon 
+     Attack      6     0      100.0   0.0
+Demonstrate      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "broadcast news" sources (for mapped events):
+  type=Conta COUNT......    PERCENT......
+    ref\tst:  Meet Phone       Meet Phone 
+       Meet      1     0      100.0   0.0
+Phone-Write      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "broadcast news" sources (for mapped events):
+  type=Life  COUNT..............................    PERCENT..............................
+    ref\tst: Be-Bo  Date   Die Divor Injur Marry      Be-Bo  Date   Die Divor Injur Marry 
+    Be-Born      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+       Date      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+        Die      0     0     2     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0
+    Divorce      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+     Injure      0     0     0     0     1     0        0.0   0.0   0.0   0.0 100.0   0.0
+      Marry      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Modality confusion matrix for "broadcast news" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted     10     0      100.0   0.0
+      Other      0     0        0.0   0.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific 
+        Specific    10/99.9%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted    10/99.9%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive 
+        Positive    10/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Attack         Die      Injure        Meet 
+          Attack     6/60.0%      -           -           -     
+             Die      -          2/20.0%      -           -     
+          Injure      -           -          1/10.0%      -     
+            Meet      -           -           -          1/10.0%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past     Present 
+            Past     9/90.0%      -     
+         Present      -          1/10.0%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Conflict        Life     Contact 
+        Conflict     6/60.0%      -           -     
+            Life      -          3/30.0%      -     
+         Contact      -           -          1/10.0%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=20/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Victim      Target       Place  Instrument      Entity    Attacker Time-Within       Agent 
+          Victim     6/30.0%      -           -           -           -           -           -           -     
+          Target      -          4/20.0%      -           -           -           -           -           -     
+           Place      -           -          3/15.0%      -           -           -           -           -     
+      Instrument      -           -           -          2/10.0%      -           -           -           -     
+          Entity      -           -           -           -          2/10.0%      -           -           -     
+        Attacker      -           -           -           -           -          1/ 5.0%      -           -     
+     Time-Within      -           -           -           -           -           -          1/ 5.0%      -     
+           Agent      -           -           -           -           -           -           -          1/ 5.0%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 CNN_ENG_20030408_140615.11-T1, ID=CNN_ENG_20030408_140615.11-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNN_ENG_20030408_140615.11-T1, ID=CNN_ENG_20030408_140615.11-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNN_ENG_20030408_140615.11:
+          mention="2003-04-08 14:28:56"
+--------
+    ref timex2 CNN_ENG_20030408_140615.11-T2, ID=CNN_ENG_20030408_140615.11-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNN_ENG_20030408_140615.11-T2, ID=CNN_ENG_20030408_140615.11-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNN_ENG_20030408_140615.11:
+          mention="today"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=2/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     2/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=2/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     2/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=2/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---     2/99.9%
+
+data input:               0.40 secs to load data
+entity eval:              0.07 secs to compute values,    0.02 secs to map,    0.07 secs to score
+relation eval:            0.09 secs to compute values,    0.01 secs to map,    0.04 secs to score
+event eval:               0.03 secs to compute values,    0.00 secs to map,    0.02 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+value eval:               0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+########

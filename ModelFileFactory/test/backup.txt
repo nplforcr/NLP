@@ -1,0 +1,683 @@
+	/**
+	 * The logic here is that if the space between two words are larger than 1, we need to shorten it to 1 since Stanford MaxenTagger tokenize the text
+	 * and the word in each sentence is only separated by one byte.
+	 * Now, we need to split punctuation marks for the same reason, Stanford MaxentTagger also split punctuation marks as well. 
+	 *      
+	 */
+	public static void adjustACEBytespan(String filename,StringBuffer docBuf,HashMap<Pair,String> bytespanIdM,HashMap<String, Mention> idMentionM,HashMap<String,List<Pair>> idMentionListM, List<Pair> mentionSpanList){
+		//Pattern pattern = Pattern.compile("[\\w!\\"\\#\\$\\%\\&\\'\\(\\)*+\\,\\.\/\:;<=>?@\^_`{|}~-]\\s+");
+		Collections.sort(mentionSpanList);
+		CorefUser.consAbbreList();
+		//I remember. \\s+ means that more than one white space. I don't remember 
+		//why expressions before \\s+ can refer to digits. But obviously, it can. I will think about it later. 
+		Pattern pattern = Pattern.compile("[-\\w!,?:;.\"\'%]\\s+");
+		System.out.println(docBuf.toString());
+		//Matcher matcher = pattern.matcher(docBuf.toString());
+		String tempDoc = docBuf.toString();
+		StringBuffer shorterBuf = new StringBuffer();
+		Matcher matcher = pattern.matcher(tempDoc);
+		boolean found = matcher.find();
+		int countFound = 0;
+		////the while loop finish one thing: remove extra space between words. 
+		while(found){
+			//note: match here includes white spaces. So, we are not confused by what we see. "9   " in fact, the length is 4.
+			String match = matcher.group();
+			//for example, match is "S " in the following tempDoc: "1   NEWS STORY"
+			//then, spaceStart is the index of the match, which is 7 here. 
+			int matchLength = match.length();
+			//here, the method is kind of stupid since in Java, it has a good method indexOf(string, fromIndex);
+			//but I forgot about it and then each time, I form a new string by cutting tempDoc shorter. But anyway, it is a good 
+			//training for me to figure out how to find bytes accurately.
+			int spaceStart = tempDoc.substring(1).indexOf(match)+1;
+			if(countFound>0){
+				StringBuffer firstPart = new StringBuffer();				
+				//firstPart.append(tempDoc.charAt(0));
+				Pattern firstL = Pattern.compile("[-\\$\\w!,\\[?:;.\"\'%]");
+				//Pattern firstL = Pattern.compile("w");
+				//Pattern firstL = Pattern.compile("\\w!,.\"\'%.*");
+				//Matcher matchFirstL = firstL.matcher("word");
+				Matcher matchFirstL = firstL.matcher(tempDoc.substring(1));
+				boolean foundLetter = matchFirstL.find();
+				if(foundLetter){
+					String matchedFl = matchFirstL.group();
+					//System.out.println("matchedF1 in foundLetter : "+matchedFl+" the first index: "+tempDoc.substring(1).indexOf(matchedFl)+" spaceStart: "+spaceStart+" "+tempDoc);
+					//firstPart.append(tempDoc.substring(tempDoc.substring(1).indexOf(matchedFl)-1));
+					//note: since matchedFl starts from the last letter of each word. So,tempDoc.substring(1).indexOf(matchedFl) will start from 
+					//the space. If we add 1 to it, we will get the full word after the space.
+					String appendToken = tempDoc.substring(tempDoc.substring(1).indexOf(matchedFl)+1,spaceStart+1);
+					if(appendToken.equals(".")){
+						firstPart.append(appendToken);
+					}else{
+						firstPart.append(" "+appendToken);
+					}
+//					if(debugBytesMatch){
+//						System.out.println("appendToken: "+appendToken+" firstPart: "+firstPart.toString());
+//					}
+					
+					//tempDoc.
+				}	
+				shorterBuf.append(firstPart);
+			}else{
+				//it seems that tempDoc should start from 1 since there is always a white space before the first letter like the following: 
+				//<DOCNO> CNN19981012.2130.0981 </DOCNO>
+				String firstToken = tempDoc.substring(2,spaceStart+1);
+				shorterBuf.append(firstToken);
+				//no problem to add 2 bytes here since now countFound == 0. It means that the two bytes are added to the first match. 
+				matchLength+=2;
+			}
+			//matchLength is larger than 2, this means that there is at least 1 white space should be removed.
+			if(matchLength>2){
+				//the following lines aims at replacing mentionSpanPair from idMentionListM. 
+				//so, mentionSpanList and bytespanIdM are a pair
+				for(int i=0;i<mentionSpanList.size();i++){
+					Pair mentionSpanPair = mentionSpanList.get(i);
+					String menId = bytespanIdM.get(mentionSpanPair);
+					String neId = menId.substring(0,menId.indexOf("-"));
+					Mention mention = idMentionM.get(menId);
+					String refphrase = mention.getExtentCoveredText();
+					//System.out.println(refphrase);
+					List<Pair> menList = idMentionListM.get(neId);
+					//pos here means position
+					int posInmenList = -1;
+					for(int j=0;j<menList.size();j++){
+						Pair menBytePair = menList.get(j);
+						if(menBytePair.equals(mentionSpanPair)){
+							posInmenList = j;
+							break;
+						}
+					}
+					bytespanIdM.remove(mentionSpanPair);
+					int menStart =Integer.parseInt(mentionSpanPair.o1.toString());
+					int menEnd =Integer.parseInt(mentionSpanPair.o2.toString());
+					//System.out.println("before reducing in adjustACEBytesspan: match length: "+match.length()+" "+menStart+" "+menEnd);
+					if(menStart>shorterBuf.length()-1){
+						//menStart = menStart - match.length()+2;
+						//menEnd = menEnd - match.length()+2;
+						//since matchLength is the length of space between two words plus one letter from the previous word.
+						//therefore, after menStart or menEnd subtract the matchLength, two more bytes should be added back
+						menStart = menStart - matchLength+2;
+						menEnd = menEnd - matchLength+2;
+					}
+					//System.out.println("after reducing in adjustACEBytesspan: shorterBuf length: "+shorterBuf.length()+" "+menStart+" "+menEnd);
+					mentionSpanPair = new Pair(menStart,menEnd);
+					//therefore, mentionSpanList should set the new mentionSpanPair and we should put the new mentionSpanPair
+					//its menId into bytespanIdM. Meanwhile, idMentionListM also replace new menList in which the new mentionSpanPair is set.
+					mentionSpanList.set(i, mentionSpanPair);
+					bytespanIdM.put(mentionSpanPair, menId);
+					if(posInmenList>=0){
+						menList.set(posInmenList, mentionSpanPair);
+						idMentionListM.put(neId, menList);
+					}
+				}
+			}
+			tempDoc = tempDoc.substring(spaceStart);
+			//System.out.println(tempDoc.toString());
+			//System.out.println("shorterBuf: "+shorterBuf.toString());
+			found = matcher.find();
+			countFound++;
+		}
+		
+		System.out.println("shorterBuf leng: "+shorterBuf.length());
+		System.out.println(shorterBuf);
+		//after we get shorterBuf, we need to further revise it to map to stanford sentence format. 
+		//so far, the punctuations are not split yet. 
+		//that is, the following for loop aims at split punctuation marks. 
+		String[] bufArray = shorterBuf.toString().split("\\s");
+		String cutShortBuf = shorterBuf.toString();
+		StringBuffer matchBuf2Stanform = new StringBuffer(); 
+		int bufleng = 0;
+		int preIndPunc = 0;
+		//bufArray loops each word in the shorterBuf and find punctuation marks and then, separate them from words.
+		for(int i=0;i<bufArray.length;i++){
+			//in order to guarantee the word doesn't have extra space, we remove the possible white space though there may not be. 
+			String word = bufArray[i].replace("\\s+", "");
+			//bufleng needs to add the byte of white space
+			//meanwhile, we should count from 0 since although it is the length of buf, we compare it with the byteStart or bytesEnd.
+			//So, we need to deduct the length to 1 in order to avoid missing.
+			if(i==0){
+				bufleng+=word.length();
+			}else{
+				bufleng+=word.length()+1;
+			}
+			
+			//it seems that [\\w] also include punctuation marks, oh, I seem probably, because I didn't add + after ].
+			//note: if we change to w+, there will be some errors. Not sure why. probably, due to the complex interactions here
+			Pattern puncP = Pattern.compile("[\\w][!,?:;.\"\'%]+$");
+			//Pattern puncP = Pattern.compile("[a-zA-z]+[!,?:;.\"\'%]+$");
+			Matcher matchPunc = puncP.matcher(word);
+			boolean foundPunc = matchPunc.find();
+			//for example, like "corridor" in 9801.139.sgm in ace2_train/three2one/
+			Pattern puncP2 = Pattern.compile("\"\\w+[\"]*$");
+			Matcher matchPunc2 = puncP2.matcher(word);
+			boolean foundPunc2 = matchPunc2.find();
+			
+			Pattern puncP3 = Pattern.compile("\\w+\'\\w+$");
+			Matcher matchPunc3 = puncP3.matcher(word);
+			boolean foundPunc3 = matchPunc3.find();
+			
+			Pattern puncP4 = Pattern.compile("\\$\\w+");
+			Matcher matchPunc4 = puncP4.matcher(word);
+			boolean foundPunc4 = matchPunc4.find();
+			
+			Pattern puncP5 = Pattern.compile("\\d+-$");
+			Matcher matchPunc5 = puncP5.matcher(word);
+			boolean foundPunc5 = matchPunc5.find();
+			
+			Pattern puncP6 = Pattern.compile("[.,?:;][\"\'%]+$");
+			Matcher matchPunc6 = puncP6.matcher(word);
+			boolean foundPunc6 = matchPunc6.find();
+			
+			Pattern puncP7 = Pattern.compile("[\\[]\\w+$");
+			Matcher matchPunc7 = puncP7.matcher(word);
+			boolean foundPunc7 = matchPunc7.find();
+			
+			Pattern puncP8 = Pattern.compile("\\w+[\\]]$");
+			Matcher matchPunc8 = puncP8.matcher(word);
+			boolean foundPunc8 = matchPunc8.find();
+			
+			Pattern puncP9 = Pattern.compile("[\\(]+\\w+$");
+			Matcher matchPunc9 = puncP9.matcher(word);
+			boolean foundPunc9 = matchPunc9.find();
+			
+			Pattern puncP10 = Pattern.compile("\\w+[\\)+]$");
+			Matcher matchPunc10 = puncP10.matcher(word);
+			boolean foundPunc10 = matchPunc10.find();
+			
+			int countSent = 0;
+			if(foundPunc || foundPunc2 ||foundPunc3 || foundPunc4 || foundPunc5||foundPunc6||foundPunc7||foundPunc8){
+				//////////////////////////////////
+				/// Dingcheng! working from here. You must finish this tonight!
+				///////////////////////////////////
+				String match = "";
+				if(foundPunc){
+					match=matchPunc.group();
+				}else if(foundPunc2){
+					match=matchPunc2.group();
+				}else if(foundPunc3){
+					match=matchPunc3.group();
+				}else if(foundPunc4){
+					match=matchPunc4.group();
+				}else if(foundPunc5){
+					match=matchPunc5.group();
+				}else if(foundPunc6){
+					match=matchPunc6.group();
+				}else if(foundPunc7){
+					match=matchPunc7.group();
+				}else if(foundPunc8){
+					match=matchPunc8.group();
+				}else if(foundPunc9){
+					match=matchPunc9.group();
+				}else if(foundPunc10){
+					match=matchPunc10.group();
+				}
+				
+				//it seems that 
+				//the following conditions now only works for outputing sentences, I need add more code to change the bytes span.
+				//match starts with a letter and then follows a punctuation mark. like "l.", but I should change it to include numbers and another 
+				//punctuation marks
+				//I have added. It is good.
+				//the following conditional clauses change the bufleng. Then, the for loop right after the if clauses, will change the bytespans
+				//relevant. Namely, bytes span after the punctuation marks will add bytes.
+				if(match.matches("\\w+[.?!]$")){
+					int indexPeriod = shorterBuf.indexOf(match,preIndPunc)+1;
+					//String sent = shorterBuf.substring(preIndPunc+1,indexPeriod+1);
+					//cutShortBuf = cutShortBuf.substring(indexPeriod);
+					//System.out.println("print out from adjustACEByteSpan match.matches(\\w[.?!]): "+preIndPunc+" "+indexPeriod+" "+sent);
+					//keep preIndPunc for outputing next sentence which should be a string between preIndPunc and indexPeriod
+					preIndPunc = indexPeriod+1;
+					//"\"" means ". Don't confuse \. If we want to print out \, we need \\.
+					//bufleng++ is due to that when we split a punc like ",", we need to add one white space. 
+					//bufleng++; we should add bufleng here since the byte number is not adding. 
+					//in this case, word is like "extravagant.". then, we split it as "extravagant" and "." and connected by a white space.
+					//but note: in this case, bytes number are the same. Only add one to the byte index of "."
+					matchBuf2Stanform.append(word.substring(0, word.length()-1)+" "+word.charAt(word.length()-1));
+				}
+				else if(match.matches("\\w+[.],")){
+					int indexPeriod = shorterBuf.indexOf(match,preIndPunc)+1;
+					//String sent = shorterBuf.substring(preIndPunc+1,indexPeriod+1);
+					//cutShortBuf = cutShortBuf.substring(indexPeriod);
+					//System.out.println("print out from adjustACEByteSpan match.matches(\\w[.?!]): "+preIndPunc+" "+indexPeriod+" "+sent);
+					//keep preIndPunc for outputing next sentence which should be a string between preIndPunc and indexPeriod
+					preIndPunc = indexPeriod+1;
+					bufleng++;
+					//"\"" means ". Don't confuse \. If we want to print out \, we need \\.
+					//bufleng++ is due to that when we split a punc like ",", we need to add one white space. 
+					//bufleng++; we should add bufleng here since the byte number is not adding. 
+					//in this case, word is like "extravagant.". then, we split it as "extravagant" and "." and connected by a white space.
+					//but note: in this case, bytes number are the same. Only add one to the byte index of "."
+					matchBuf2Stanform.append(word.substring(0, word.length()-1)+" "+word.charAt(word.length()-1));
+				}
+				//the second case would consider cases as "working ahead."
+				else if(match.endsWith("\"") && match.charAt(match.length()-2)=='.'){
+					//the match is d.". therefore, indexQuote should be match index + 2;
+					int indexQuote = shorterBuf.indexOf(match,preIndPunc)+2;
+					String sent = shorterBuf.substring(preIndPunc+1,indexQuote+1);
+					//cutShortBuf = cutShortBuf.substring(indexPeriod);
+					//System.out.println("word : "+word);
+					//System.out.println(preIndPunc+" "+indexQuote+" "+sent);
+					preIndPunc = indexQuote+1;
+					bufleng+=2; //since " becomes '', don't know why
+					//matchBuf2Stanform.append(word.substring(0, word.length()-2)+" "+word.charAt(word.length()-2)+" "+word.charAt(word.length()-1));
+					matchBuf2Stanform.append(word.substring(0, word.length()-2)+" "+word.charAt(word.length()-2)+" "+"\'\'");
+				}else if(match.matches("\\w[,:;]")){
+					int indexComma = shorterBuf.indexOf(match,preIndPunc)+1;
+					String sent = shorterBuf.substring(preIndPunc+1,indexComma+1);
+					//cutShortBuf = cutShortBuf.substring(indexPeriod);
+					//System.out.println(preIndPunc+" "+indexComma+" "+sent);
+					preIndPunc = indexComma+1;
+					bufleng++;
+					matchBuf2Stanform.append(word.substring(0, word.length()-1)+" "+word.charAt(word.length()-1)+" ");
+				}
+				else if(word.matches("\\w+\"$")){
+					int indexLq = shorterBuf.indexOf(match,preIndPunc)+1;
+					String sent = shorterBuf.substring(preIndPunc+1,indexLq+1);
+					//System.out.println(preIndPunc+" "+indexLq+" "+sent);
+					preIndPunc = indexLq+1;
+					bufleng+=2;
+					//matchBuf2Stanform.append(word.charAt(0)+" "+word.substring(1)+" ");
+					matchBuf2Stanform.append("\'\'"+" "+word.substring(1)+" ");
+				}else if(word.matches("\"\\w+[\"]*$")){
+					int indexLq = shorterBuf.indexOf(match,preIndPunc)+1;
+					String sent = shorterBuf.substring(preIndPunc+1,indexLq+1);
+					//System.out.println(preIndPunc+" "+indexLq+" "+sent);
+					preIndPunc = indexLq+1;
+					bufleng+=2;
+					//matchBuf2Stanform.append(word.charAt(0)+" "+word.substring(1)+" ");
+					matchBuf2Stanform.append("\'\'"+" "+word.substring(1)+" ");
+				}
+				//not done yet for this case. 
+				else if(word.startsWith("\"") && match.endsWith("\"")){
+					//look at the following for explanations
+					int indexLb = shorterBuf.indexOf(match,preIndPunc)+2;
+					int indexRb = shorterBuf.indexOf(match,indexLb)+2;
+					bufleng+=4;
+					matchBuf2Stanform.append("\'\'"+" "+word.substring(1,word.length()-2)+"\'\'");
+				}else if(word.startsWith("\"") && word.endsWith("\".")){
+					int indexLb = shorterBuf.indexOf(match,preIndPunc)+2;
+					int indexRb = shorterBuf.indexOf(match,indexLb)+2;
+					bufleng+=4;
+					matchBuf2Stanform.append("\'\'"+" "+word.substring(1,word.length()-2)+"\'\'.");
+				}
+				//in the following, we didn't handle the case where doesn't correctly since it is split as doesn and 't not the does and n't.
+				else if(match.matches("\\w+\'\\w+$")){
+					int indMatch = shorterBuf.indexOf(match,preIndPunc);
+					int indSq = word.indexOf("\'");
+					int indexSq = shorterBuf.indexOf("\'",preIndPunc);
+					String sent = shorterBuf.substring(preIndPunc+1,indexSq+1);
+					//System.out.println(preIndPunc+" "+indexSq+" "+sent);
+					preIndPunc = indexSq+1;
+					bufleng++;
+					//matchBuf2Stanform.append(word.charAt(0)+" "+word.substring(1)+" ");
+					matchBuf2Stanform.append(word.substring(0,indSq)+" "+word.substring(indSq)+" ");
+				}else if(match.matches("\\d+-$")){
+					int indMatch = shorterBuf.indexOf(match,preIndPunc);
+					int indSq = word.indexOf("-");
+					int indexSq = shorterBuf.indexOf("-",preIndPunc);
+					//String sent = shorterBuf.substring(preIndPunc+1,indexSq+1);
+					//System.out.println(preIndPunc+" "+indexSq+" "+sent);
+					preIndPunc = indexSq+1;
+					bufleng++;
+					//matchBuf2Stanform.append(word.charAt(0)+" "+word.substring(1)+" ");
+					matchBuf2Stanform.append(word.substring(0,indSq)+" - ");
+				}else if(match.matches("\\w+%")){
+					//84% is split into 84 and %. This is in fact not correct. But the stanford output looks like this.
+					//so, I just follow it for consistency.
+					bufleng++;
+					matchBuf2Stanform.append(word.substring(0,word.length()-1)+" "+word.charAt(word.length()-1)+" ");
+				}else if(match.matches("\\$\\w+")){
+					//similarly, $3,000 is split as $ and 3,000. This is not correct. But for consistency.
+					bufleng++;
+					matchBuf2Stanform.append(word.charAt(0)+" "+word.substring(1)+" ");
+				}
+				else if(match.endsWith(",\"")){
+					//similarly, $3,000 is split as $ and 3,000. This is not correct. But for consistency.
+					bufleng+=3;
+					matchBuf2Stanform.append("\'\'"+" "+word.substring(1,word.length()-2)+" ,\'\'");
+				}else if(word.contains("[")){
+					bufleng+=5;
+					matchBuf2Stanform.append("-LRB-"+word.substring(1)+" ");
+				}else if(word.contains("]")){
+					bufleng+=5;
+					matchBuf2Stanform.append("-RRB-"+word.substring(1)+" ");
+				}else if(word.contains("(")){
+					bufleng+=5;
+					matchBuf2Stanform.append("-LRB-"+word.substring(1)+" ");
+				}else if(word.contains(")")){
+					bufleng+=5;
+					matchBuf2Stanform.append("-RRB-"+word.substring(1)+" ");
+				}else if(word.contains("{")){
+					bufleng++;
+					matchBuf2Stanform.append("{"+word.substring(1)+" ");
+				}else if(word.contains("}")){
+					bufleng++;
+					matchBuf2Stanform.append("}"+word.substring(1)+" ");
+				}
+				
+				//I am afraid that I need to take [word] into considerations
+				
+				//in the following, based on bufleng, we decide how many bytes should be added to mention spans. 
+				//here, we always add bytes since, in the first while loop, we have removed all extra white spaces between words.
+				//now, what we are doing is to split punctuation marks from the word. thus, bytes spans should become large.
+				//but bufleng is the length where a punctuation is discovered. Thus, before that punctuation mark, the bytes span 
+				//cannot change. After that punctuation, the bytes span should become large. 
+				//it seems wordy. But I have to since after some time, it is always hard for me to remember that I have done. poor memory.
+				
+				for(int j=0;j<mentionSpanList.size();j++){
+					//I think that I have found the true bug here. In this step, menBytePair may be called more than once. so, 
+					//some items are added more bytes
+					Pair mentionSpanPair = mentionSpanList.get(j);
+					String menId = bytespanIdM.get(mentionSpanPair);
+//					if(menId==null){
+//						System.out.println(mentionSpanPair);
+//					}else{
+//						System.out.println(menId);
+//					}
+					
+					String neId = menId.substring(0,menId.indexOf("-"));
+					Mention mention = idMentionM.get(menId);
+					String refword = mention.getExtentCoveredText();
+					//System.out.println(refword);
+					List<Pair> menList = idMentionListM.get(neId);
+					//find the position in the menList
+					int posInmenList = -1;
+					for(int k=0;k<menList.size();k++){
+						Pair menBytePair = menList.get(k);
+						if(menBytePair.equals(mentionSpanPair)){
+							posInmenList = k;
+							break;
+						}
+					}
+					bytespanIdM.remove(mentionSpanPair);
+					int menStart =Integer.parseInt(mentionSpanPair.o1.toString());
+					int menEnd =Integer.parseInt(mentionSpanPair.o2.toString());
+					if(debugBytesMatch){
+						System.out.println(filename+" index i: "+i+" "+bufArray[i]+" j: "+j+" before reducing in adjustACEBytesspan: match length: bufleng: "+bufleng+" mention: "+mention.getHeadCoveredText()+" menStart: "+menStart+" menEnd: "+menEnd);
+					}
+					//it seems that the following line should not be needed since the ending punctuation mark will not change the byte number.
+//					if(menStart>bufleng && !match.matches("\\w[!?.]$")){
+//						menStart = menStart+1;
+//						menEnd = menEnd+1;
+//					}else 
+					//therefore, menStart should only add 2 bytes, cases like "ahead."" should change as "ahead . "". Namely, bytes number changes from 7 to 9. 	
+					if(menStart>=bufleng-word.length()-2){
+						//the first if is unnecessary say, U.S. Troops will be changed as U.S .Troops. In this case, the bytes no changes at all
+						//if(match.matches("\\w[.?!]")){
+							//continue;
+						//}else 
+						//firstly, it is the single quote cases: 
+						if(match.endsWith("'") && match.charAt(match.length()-2)=='.'){
+							if(menStart>=bufleng){
+								menStart+=1;
+								menEnd+=1;
+							}	
+						}
+						else if(match.matches("\\w+\\.,")){
+							if(menStart>=bufleng){
+								menStart+=1;
+								menEnd+=1;
+							}
+						}
+						//note: this is a special case. In sgm file, ... is writeent as . . . . together with the period of previous sentence.
+						//while stanford parser convert . . . . to ... Therefore, menStart and menEnd should reduce 3 rather than adding like other punctuations.
+						else if(word.endsWith("....")){
+							if(menStart>=bufleng){
+								menStart-=3;
+								menEnd-=3;
+							}
+						}
+						//the following else if is the same the next one, so it is right
+						//else if(match.matches("\"\\w+[\"]*$")){
+						else if(word.matches("'\\w+$")){
+							//current token need changes as well
+							menStart+=1;
+							menEnd+=1;
+						}else if(word.endsWith("'")){
+							//should only increase by 2 since "what" becomes '' what ''. The right quotes only add one. 
+							//current token will not change at all.
+							if(menStart>=bufleng){
+								menStart+=1;
+								menEnd+=1;
+							}
+						}else if(word.startsWith("'") && word.endsWith("'")){
+							//should only increase by 4 since "what" becomes '' what '' . The right quotes add 2. (but 
+							//if it is the end of sentence, it only adds one). 
+							//note: current token will only increase by 2 since current token only changes due to the left quotes.
+							if(menStart>=bufleng){
+								menStart+=3;
+								menEnd+=3;
+							}else{
+								menStart+=1;
+								menEnd+=1;
+							}
+						}
+
+						else if(word.startsWith("'") && word.endsWith("'.")){
+							//should only increase by 4 since "what" becomes '' what '' . The right quotes add 2. (but 
+							//if it is the end of sentence, it only adds one).
+							//note: begin bytes only increase by 2 and end byte should increase by 3. for the same reason as below
+							if(menStart>=bufleng){
+								menStart+=1;
+								menEnd+=1;
+							}
+						}
+						//now go to the double quotes cases:
+						else if(match.endsWith("\"") && match.charAt(match.length()-2)=='.'){
+							if(menStart>=bufleng){
+								menStart+=2;
+								menEnd+=2;
+							}	
+						}else if(match.matches("\\w[,:;]")){
+							if(menStart>=bufleng){
+								menStart++;
+								menEnd++;
+							}
+						}
+						//the following else if is the same the next one, so it is right
+						//else if(match.matches("\"\\w+[\"]*$")){
+						else if(match.matches("\"\\w+$")){
+							//current token need changes as well
+							menStart+=2;
+							menEnd+=2;
+						}
+						else if(!word.startsWith("\"") &&match.endsWith("\"") && match.matches("\\w+\"")){
+							//should only increase by 2 since "what" becomes '' what ''. The right quotes only add one. 
+							//current token will not change at all.
+							if(menStart>=bufleng){
+								menStart+=2;
+								menEnd+=2;
+							}
+						}
+						else if(word.startsWith("\"") && word.endsWith("\"")){
+							//should only increase by 4 since "what" becomes '' what '' . The right quotes add 2. (but 
+							//if it is the end of sentence, it only adds one). 
+							//note: current token will only increase by 2 since current token only changes due to the left quotes.
+							if(menStart>=bufleng){
+								menStart+=4;
+								menEnd+=4;
+							}else{
+								menStart+=2;
+								menEnd+=2;
+							}
+						}else if(match.endsWith("\".")){
+							//should only increase by 2 since "what" becomes '' what ''. The right quotes only add one. 
+							//the current one will not change since the quite is at the end of the token rather than before.
+							if(menStart>=bufleng){
+								menStart+=1;
+								menEnd+=1;
+							}
+						}else if(match.startsWith("\"") && match.endsWith("\".")){
+							//should only increase by 4 since "what" becomes '' what '' . The right quotes add 2. (but 
+							//if it is the end of sentence, it only adds one).
+							//note: begin bytes only increase by 2 and end byte should increase by 3. for the same reason as below
+							if(menStart>=bufleng){
+								menStart+=3;
+								menEnd+=3;
+							}else{
+								menStart+=2;
+								menEnd+=2;
+							}
+							
+						}else if(word.matches("\\w+\'\\w+$")){
+							//because the quote is in the middle, so, the right of bytes will increase, namely, the endByte increases
+							//but the beginByte is intact.
+							if(menStart>=bufleng){
+								menStart++;
+								menEnd++;
+							}
+						}else if(word.matches("\\d+-$")){
+							menStart++;
+							menEnd++;
+						}else if(word.matches("\\w+%")){
+							menStart++;
+							menEnd++;
+						}else if(word.matches("\\$\\w+")){
+							menStart++;
+							menEnd++;
+						}
+						else if(match.endsWith(".")&&abbreList.contains(word)){
+							menStart++;
+							menEnd++;
+						}else if(match.endsWith(",\"")){
+							menStart+=3;
+							menEnd+=3;
+						}else if(word.startsWith("[{]")){
+							menStart++;
+							menEnd++;
+						}else if(word.startsWith("[}]")){
+							if(menStart>=bufleng){
+								menStart++;
+								menEnd++;
+							}
+						}else if(word.contains("[")){
+							menStart+=5;
+							menEnd+=5;
+						}else if(word.contains("]")){
+							if(menStart>=bufleng){
+								menStart+=5;
+								menEnd+=5;
+							}
+						}else if(word.contains("(")){
+							menStart+=5;
+							menEnd+=5;
+						}else if(word.contains(")")){
+							if(menStart>=bufleng){
+								menStart+=5;
+								menEnd+=5;
+							}
+						}
+					}
+//						else if(menStart<=bufleng && menEnd>=bufleng-word.length()-2){
+//						//the first if is unnecessary
+//						//if(match.matches("\\w[.?!]")){
+//							//continue;
+//						//}else 
+//						
+//						//single quote
+//						if(match.endsWith("'") && match.charAt(match.length()-2)=='.'){
+//							menEnd+=1;	
+//						}
+//						//the following else if is the same the next one, so it is right
+//						//else if(match.matches("\"\\w+[\"]*$")){
+//						else if(word.matches("'\\w+$")){
+//							menEnd+=1;
+//						}else if(word.startsWith("'") && word.endsWith("'")){
+//							//should only increase by 3 since "what" becomes '' what ''. The right quotes only add one. 
+//							menEnd+=2;
+//						}
+//						//now come to double quotes cases:
+//						else if(word.endsWith("\"") && match.charAt(match.length()-2)=='.'){
+//							menEnd+=2;	
+//						}else if(word.matches("\\w[,:;]")){
+//							menEnd++;
+//						}
+//						//the following else if is the same the next one, so it is right
+//						//else if(match.matches("\"\\w+[\"]*$")){
+//						else if(word.matches("\"\\w+$")){
+//							menEnd+=2;
+//						}else if(word.startsWith("\"") && word.endsWith("\"")){
+//							//should only increase by 3 since "what" becomes '' what ''. The right quotes only add one. 
+//							menEnd+=3;
+//						}else if(word.matches("\\w+\'\\w+$")){
+//							menEnd++;
+//						}else if(word.matches("\\d+-$")){
+//							menEnd++;
+//						}else if(word.matches("\\w+%")){
+//							menEnd++;
+//						}else if(word.matches("\\$\\w+")){
+//							menEnd++;
+//						}else if(word.endsWith(".")&&abbreList.contains(word)){
+//							menEnd++;
+//						}else if(word.endsWith(",\"")){
+//							menEnd+=3;
+//						}else if(word.startsWith("[\\[({]")){
+//							menStart++;
+//							menEnd++;
+//						}else if(word.startsWith("[\\])}]")){
+//							menStart++;
+//							menEnd++;
+//						}
+//					}
+						
+					//else if(menStart>bufleng && match.) //please consider cases like he's, in stanford parser, it is split as he 's. 
+						//Dingchegn Li smart guy though slow guys as well sometimes. 
+						//&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+					if(debugBytesMatch){
+						System.out.println("after reducing in adjustACEBytesspan: shorterBuf length: "+shorterBuf.length()+" bufleng: "+bufleng+" mention: "+mention.getHeadCoveredText()+" "+menStart+" "+menEnd);
+					}
+					
+					mentionSpanPair = new Pair(menStart,menEnd);
+					mentionSpanList.set(j, mentionSpanPair);
+					bytespanIdM.put(mentionSpanPair, menId);
+					if(posInmenList>=0){
+						menList.set(posInmenList, mentionSpanPair);
+						idMentionListM.put(neId, menList);
+					}
+				}
+			}else{
+				matchBuf2Stanform.append(word+" ");
+			}
+			
+			int testleng = bufleng;
+			testleng = 0;
+			testleng ++;
+			//System.out.println(i);
+		}
+		if(debugBytesMatch){
+			System.out.println("bufleng: "+bufleng+" matchBuf2Stanform length: "+matchBuf2Stanform.length());
+			System.out.println(matchBuf2Stanform.toString());
+		}
+		
+		Pattern resultPuncP = Pattern.compile("[\\s\'][!,?:;.\"\'%]\\w");
+		Matcher matchResultPunc = resultPuncP.matcher(matchBuf2Stanform);
+		boolean foundResultPunc = matchResultPunc.find();
+		//repeat to use the same variable, preIndPunc, I don't think that this will lead to any problem as long as 
+		//I reassign the value to it.
+		preIndPunc = 0;
+		while(foundResultPunc){
+			String resultPunc = matchResultPunc.group();
+			int indexPeriod = matchBuf2Stanform.indexOf(resultPunc,preIndPunc)+1;
+			String sent = matchBuf2Stanform.substring(preIndPunc,indexPeriod+1);
+			//cutShortBuf = cutShortBuf.substring(indexPeriod);
+			//System.out.println(preIndPunc+" "+indexPeriod+" "+sent);
+			//keep preIndPunc for outputing next sentence which should be a string between preIndPunc and indexPeriod
+			preIndPunc = indexPeriod+1;
+//			if(resultPunc.matches("\\s.\\w")){
+//				int indexPeriod = matchBuf2Stanform.indexOf(resultPunc,preIndPunc)+1;
+//				String sent = matchBuf2Stanform.substring(preIndPunc,indexPeriod+1);
+//				//cutShortBuf = cutShortBuf.substring(indexPeriod);
+//				System.out.println(preIndPunc+" "+indexPeriod+" "+sent);
+//				//keep preIndPunc for outputing next sentence which should be a string between preIndPunc and indexPeriod
+//				preIndPunc = indexPeriod+1;
+//				//"\"" means ". Don't confuse \. If we want to print out \, we need \\.
+//			}else if(resultPunc.matches("\\s\"\\w") && resultPunc.charAt(resultPunc.length()-2)=='.'){
+//				int indexQuote = matchBuf2Stanform.indexOf(resultPunc,preIndPunc)+2;
+//				String sent = matchBuf2Stanform.substring(preIndPunc,indexQuote+1);
+//				//cutShortBuf = cutShortBuf.substring(indexPeriod);
+//				System.out.println(preIndPunc+" "+indexQuote+" "+sent);
+//				preIndPunc = indexQuote+1;
+//			}
+			//although we can use indexOfPunc as an argument of find. It seems that we don't need to do so.
+			//foundPunc = matchResultPunc.find(indexOfPunc);
+			foundResultPunc = matchResultPunc.find();
+		}
+	}

@@ -1,0 +1,61 @@
+<!--
+ * Copyright (c) 2002-5 Gregor Heinrich. All rights reserved. Redistribution and
+ * use in source and binary forms, with or without modification, are permitted
+ * provided that the following conditions are met: 1. Redistributions of source
+ * code must retain the above copyright notice, this list of conditions and the
+ * following disclaimer. 2. Redistributions in binary form must reproduce the
+ * above copyright notice, this list of conditions and the following disclaimer
+ * in the documentation and/or other materials provided with the distribution.
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESSED OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+ * EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+ * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<project default="jar">
+	<target name="init">
+		<tstamp>
+			<format property="DSTAMP" pattern="yyyyMMdd" />
+			<format property="TSTAMP" pattern="HHmmss" />
+		</tstamp>
+	</target>
+
+	<target name="jar" depends="init">
+		<jar jarfile="./knowceans-ilda.jar" basedir="./bin" excludes="**/*.java" />
+	</target>
+
+	<target name="doc">
+		<javadoc author="true" private="true" sourcepath="./src" destdir="doc" />
+	</target>
+
+
+	<target name="source-distribution" depends="jar">
+		<zip destfile="knowceans-ilda-${DSTAMP}.zip">
+			<fileset dir=".">
+				<include name="src/org/knowceans/**/*.java" />
+				<exclude name="src/org/knowceans/**/sandbox/**" />
+				<include name=".classpath" />
+				<include name=".project" />
+				<include name="knowceans-ilda.iml" />
+				<include name="knowceans-ilda.jar" />
+				<include name="*.pdf" />
+				<include name="nips/*" />
+				<include name="build.xml" />
+				<include name="readme.txt" />
+			</fileset>
+		</zip>
+	</target>
+
+
+	<target name="clean">
+		<delete file="knowceans-ilda.jar">
+		</delete>
+	</target>
+
+
+</project>

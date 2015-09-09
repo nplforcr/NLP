@@ -1,0 +1,833 @@
+command line (run on 2005 Aug 21 at 02:32:23):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score58559 -t /tmp/score58559
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity CTS20001114.1800.0837-E1 (VEH/NOM/SPC)
+    tst entity CTS20001114.1800.0837-E1 (VEH/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CTS20001114.1800.0837:  score:  0.50000 out of 0.50000  (VEH/NOM/SPC)
+      ref mention="箱行车" (NOM/VEH/LIT)
+      ref mention="箱行车" (NOM/VEH/LIT)
+--------
+    ref entity CTS20001114.1800.0837-E10 (FAC/NOM/SPC)
+    tst entity CTS20001114.1800.0837-E10 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CTS20001114.1800.0837:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="路" (NOM/FAC/LIT)
+--------
+    ref entity CTS20001114.1800.0837-E11 (VEH/NOM/GEN)
+    tst entity CTS20001114.1800.0837-E11 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CTS20001114.1800.0837:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="车" (NOM/VEH/LIT)
+      ref mention="汽车" (NOM/VEH/LIT)
+      ref mention="车" (NOM/VEH/LIT)
+      ref mention="车" (NOM/VEH/LIT)
+--------
+    ref entity CTS20001114.1800.0837-E2 (FAC/NOM/SPC)
+    tst entity CTS20001114.1800.0837-E2 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CTS20001114.1800.0837:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="店" (NOM/FAC/LIT)
+      ref mention="电脑店" (NOM/FAC/LIT)
+      ref mention="公司" (NOM/FAC/LIT)
+--------
+    ref entity CTS20001114.1800.0837-E3 (PER/NOM/SPC)
+    tst entity CTS20001114.1800.0837-E3 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CTS20001114.1800.0837:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="商" (NOM/PER/LIT)
+      ref mention="商" (NOM/PER/LIT)
+--------
+    ref entity CTS20001114.1800.0837-E4 (ORG/PRO/USP)
+    tst entity CTS20001114.1800.0837-E4 (ORG/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CTS20001114.1800.0837:  score:  0.00000 out of 0.00000  (ORG/PRO/USP)
+      ref mention="我们" (PRO/ORG/LIT)
+--------
+    ref entity CTS20001114.1800.0837-E5 (VEH/NOM/GEN)
+    tst entity CTS20001114.1800.0837-E5 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CTS20001114.1800.0837:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="车子" (NOM/VEH/LIT)
+--------
+    ref entity CTS20001114.1800.0837-E6 (GPE/NAM/SPC)
+    tst entity CTS20001114.1800.0837-E6 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CTS20001114.1800.0837:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="嘉义" (NAM/LOC/LIT)
+         ref name="嘉义"
+--------
+    ref entity CTS20001114.1800.0837-E7 (PER/NAM/SPC)
+    tst entity CTS20001114.1800.0837-E7 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CTS20001114.1800.0837:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="驾驭人" (NOM/PER/LIT)
+      ref mention="车主" (NOM/PER/LIT)
+      ref mention="车主" (NOM/PER/LIT)
+      ref mention="张振清" (NAM/PER/LIT)
+         ref name="张振清"
+--------
+    ref entity CTS20001114.1800.0837-E8 (VEH/NOM/SPC)
+    tst entity CTS20001114.1800.0837-E8 (VEH/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CTS20001114.1800.0837:  score:  0.50000 out of 0.50000  (VEH/NOM/SPC)
+      ref mention="轿车" (NOM/VEH/LIT)
+      ref mention="车" (NOM/VEH/LIT)
+      ref mention="车子" (NOM/VEH/LIT)
+      ref mention="车子" (NOM/VEH/LIT)
+      ref mention="轿车" (NOM/VEH/LIT)
+      ref mention="车" (NOM/VEH/LIT)
+      ref mention="轿车" (NOM/VEH/LIT)
+--------
+    ref entity CTS20001114.1800.0837-E9 (ORG/NAM/SPC)
+    tst entity CTS20001114.1800.0837-E9 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CTS20001114.1800.0837:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="富豪" (NAM/ORG/LIT)
+      ref mention="富豪公司" (NAM/ORG/LIT)
+      ref mention="富豪" (NAM/ORG/LIT)
+         ref name="富豪"
+         ref name="富豪公司"
+         ref name="富豪"
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    FAC     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+    GPE     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+    ORG     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+    PER     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.27   0.00   0.00   0.00
+    VEH     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    54.55   0.00   0.00   0.00
+    NOM     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    45.45   0.00   0.00   0.00
+    PRO     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+0.2-0.5     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    45.45   0.00   0.00   0.00
+0.5-1.0     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    54.55   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.27   0.00   0.00   0.00
+      2     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+    3-4     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    45.45   0.00   0.00   0.00
+    5-8     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Buildin     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+Commerc     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+Individ     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+   Land     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+   Path     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+Populat     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = FAC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Buildin     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+   Path     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Populat     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+Individ     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.27   0.00   0.00   0.00
+
+Performance statistics for TYPE = VEH:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Land     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+
+Entity Type confusion matrix for "broadcast news" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            2     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     1     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     2     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0     2     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     4     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=11/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         GEN         USP 
+             SPC     8/72.7%      -           -     
+             GEN      -          2/18.2%      -     
+             USP      -           -          1/ 9.1%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=11/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Land  Commercial  Individual        Path Population- Indetermina Building-Gr 
+            Land     4/36.4%      -           -           -           -           -           -     
+      Commercial      -          2/18.2%      -           -           -           -           -     
+      Individual      -           -          1/ 9.1%      -           -           -           -     
+            Path      -           -           -          1/ 9.1%      -           -           -     
+  Population-Cen      -           -           -           -          1/ 9.1%      -           -     
+   Indeterminate      -           -           -           -           -          1/ 9.1%      -     
+  Building-Groun      -           -           -           -           -           -          1/ 9.1%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=11/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        VEH         ORG         PER         FAC         GPE 
+             VEH     4/36.4%      -           -           -           -     
+             ORG      -          2/18.2%      -           -           -     
+             PER      -           -          2/18.2%      -           -     
+             FAC      -           -           -          2/18.2%      -     
+             GPE      -           -           -           -          1/ 9.1%
+
+Entity Class confusion matrix for "broadcast news" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC            8     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     2     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0     1        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0     3        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0     5        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0     5        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    23        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0    29        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0    29        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    29        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     4        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  LOC       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0     4        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0     6        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0    14        0.0   0.0      0.0   0.0 100.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    29        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "broadcast news" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            4     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     1     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     4     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0     6     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0    14     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "broadcast news" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER           29     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation CTS20001114.1800.0837-R1 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation CTS20001114.1800.0837-R1 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CTS20001114.1800.0837-E9 (ORG/Commerc/NAM/SPC), name="富豪公司"
+            Arg-1 tst arg: ID=CTS20001114.1800.0837-E9 (ORG/Commerc/NAM/SPC), name="富豪公司"
+            Arg-2 ref arg: ID=CTS20001114.1800.0837-E8 (VEH/Land/NOM/SPC), head="轿车"
+            Arg-2 tst arg: ID=CTS20001114.1800.0837-E8 (VEH/Land/NOM/SPC), head="轿车"
+- in document CTS20001114.1800.0837:  score:  1.50000 out of 1.50000
+      ref extent="进口的富豪轿车"
+      ref extent="这辆富豪轿车"
+--------
+    ref relation CTS20001114.1800.0837-R10 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation CTS20001114.1800.0837-R10 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=CTS20001114.1800.0837-E3 (PER/Indeter/NOM/SPC), head="商"
+            Arg-1 tst arg: ID=CTS20001114.1800.0837-E3 (PER/Indeter/NOM/SPC), head="商"
+            Arg-2 ref arg: ID=CTS20001114.1800.0837-E5 (VEH/Land/NOM/GEN), head="车子"
+            Arg-2 tst arg: ID=CTS20001114.1800.0837-E5 (VEH/Land/NOM/GEN), head="车子"
+- in document CTS20001114.1800.0837:  score:  0.50000 out of 0.50000
+      ref extent="车商表示保了险的车子可以�..."
+--------
+    ref relation CTS20001114.1800.0837-R2 (PHYS/Located/Asserted/Past)
+    tst relation CTS20001114.1800.0837-R2 (PHYS/Located/Asserted/Past)
+      relation score:  2.20000 out of 2.20000
+            Arg-1 ref arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+            Arg-1 tst arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+            Arg-2 ref arg: ID=CTS20001114.1800.0837-E6 (GPE/Populat/NAM/SPC), name="嘉义"
+            Arg-2 tst arg: ID=CTS20001114.1800.0837-E6 (GPE/Populat/NAM/SPC), name="嘉义"
+      Time-Within ref arg: ID=CTS20001114.1800.0837-T2 (TIM/---), extent="今天"
+      Time-Within tst arg: ID=CTS20001114.1800.0837-T2 (TIM/---), extent="今天"
+- in document CTS20001114.1800.0837:  score:  2.20000 out of 2.20000
+      ref extent="嘉义有一名驾驭人今天开着�..."
+--------
+    ref relation CTS20001114.1800.0837-R3 (PHYS/Located/Asserted/Past)
+    tst relation CTS20001114.1800.0837-R3 (PHYS/Located/Asserted/Past)
+      relation score:  1.70000 out of 1.70000
+            Arg-1 ref arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+            Arg-1 tst arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+            Arg-2 ref arg: ID=CTS20001114.1800.0837-E10 (FAC/Path/NOM/SPC), head="路"
+            Arg-2 tst arg: ID=CTS20001114.1800.0837-E10 (FAC/Path/NOM/SPC), head="路"
+      Time-Within ref arg: ID=CTS20001114.1800.0837-T2 (TIM/---), extent="今天"
+      Time-Within tst arg: ID=CTS20001114.1800.0837-T2 (TIM/---), extent="今天"
+- in document CTS20001114.1800.0837:  score:  1.70000 out of 1.70000
+      ref extent="嘉义有一名驾驭人今天开着�..."
+--------
+    ref relation CTS20001114.1800.0837-R4 (PHYS/Located/Asserted/Past)
+    tst relation CTS20001114.1800.0837-R4 (PHYS/Located/Asserted/Past)
+      relation score:  1.70000 out of 1.70000
+            Arg-1 ref arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+            Arg-1 tst arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+            Arg-2 ref arg: ID=CTS20001114.1800.0837-E2 (FAC/Buildin/NOM/SPC), head="电脑店"
+            Arg-2 tst arg: ID=CTS20001114.1800.0837-E2 (FAC/Buildin/NOM/SPC), head="电脑店"
+      Time-Within ref arg: ID=CTS20001114.1800.0837-T2 (TIM/---), extent="今天"
+      Time-Within tst arg: ID=CTS20001114.1800.0837-T2 (TIM/---), extent="今天"
+- in document CTS20001114.1800.0837:  score:  1.70000 out of 1.70000
+      ref extent="嘉义有一名驾驭人今天开着�..."
+--------
+    ref relation CTS20001114.1800.0837-R5 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation CTS20001114.1800.0837-R5 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+            Arg-1 tst arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+            Arg-2 ref arg: ID=CTS20001114.1800.0837-E8 (VEH/Land/NOM/SPC), head="轿车"
+            Arg-2 tst arg: ID=CTS20001114.1800.0837-E8 (VEH/Land/NOM/SPC), head="轿车"
+- in document CTS20001114.1800.0837:  score:  1.50000 out of 1.50000
+      ref extent="嘉义有一名驾驭人今天开着�..."
+      ref extent="驾驭这辆富豪轿车的车主"
+--------
+    ref relation CTS20001114.1800.0837-R8 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation CTS20001114.1800.0837-R8 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=CTS20001114.1800.0837-E3 (PER/Indeter/NOM/SPC), head="商"
+            Arg-1 tst arg: ID=CTS20001114.1800.0837-E3 (PER/Indeter/NOM/SPC), head="商"
+            Arg-2 ref arg: ID=CTS20001114.1800.0837-E11 (VEH/Land/NOM/GEN), head="汽车"
+            Arg-2 tst arg: ID=CTS20001114.1800.0837-E11 (VEH/Land/NOM/GEN), head="汽车"
+- in document CTS20001114.1800.0837:  score:  0.50000 out of 0.50000
+      ref extent="车商"
+      ref extent="车商"
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    ART     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    41.67   0.00   0.00   0.00
+   PHYS     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    58.33   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    58.33   0.00   0.00   0.00
+User-Ow     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    41.67   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ART:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+User-Ow     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    41.67   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    41.67   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    58.33   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    58.33   0.00   0.00   0.00
+
+Relation Type confusion matrix for "broadcast news" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      4     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       PHYS      0     0     0     0     0     0     3        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=ART   COUNT    PERCENT
+    ref\tst: User-      User- 
+User-Owner-      4      100.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      3     0      100.0   0.0
+       Near      0     0        0.0   0.0
+
+Relation Modality confusion matrix for "broadcast news" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted      7     0     0      100.0   0.0   0.0
+      Other      0     0     0        0.0   0.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted     7/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:User-Owner-     Located 
+  User-Owner-Inv     4/57.1%      -     
+         Located      -          3/42.9%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past 
+     Unspecified     4/57.1%      -     
+            Past      -          3/42.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        ART        PHYS 
+             ART     4/57.1%      -     
+            PHYS      -          3/42.9%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=17/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 Time-Within 
+           Arg-2     7/41.2%      -           -     
+           Arg-1      -          7/41.2%      -     
+     Time-Within      -           -          3/17.6%
+
+======== event mapping ========
+
+--------
+    ref event CTS20001114.1800.0837-EV1 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event CTS20001114.1800.0837-EV1 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  2.70000 out of 2.70000
+      Destination ref arg: ID=CTS20001114.1800.0837-E2 (FAC/Buildin/NOM/SPC), head="电脑店"
+      Destination tst arg: ID=CTS20001114.1800.0837-E2 (FAC/Buildin/NOM/SPC), head="电脑店"
+           Origin ref arg: ID=CTS20001114.1800.0837-E10 (FAC/Path/NOM/SPC), head="路"
+           Origin tst arg: ID=CTS20001114.1800.0837-E10 (FAC/Path/NOM/SPC), head="路"
+           Person ref arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+           Person tst arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+      Time-Within ref arg: ID=CTS20001114.1800.0837-T2 (TIM/---), extent="今天"
+      Time-Within tst arg: ID=CTS20001114.1800.0837-T2 (TIM/---), extent="今天"
+          Vehicle ref arg: ID=CTS20001114.1800.0837-E8 (VEH/Land/NOM/SPC), head="轿车"
+          Vehicle tst arg: ID=CTS20001114.1800.0837-E8 (VEH/Land/NOM/SPC), head="轿车"
+- in document CTS20001114.1800.0837:  score:  2.70000 out of 2.70000
+      ref anchor="撞进", extent="一名驾驭人今天开着进口的�..."
+--------
+    ref event CTS20001114.1800.0837-EV2 (Movement/Transport/Specific/Other/Positive/Past)
+    tst event CTS20001114.1800.0837-EV2 (Movement/Transport/Specific/Other/Positive/Past)
+      event score:  1.70000 out of 1.70000
+           Person ref arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+           Person tst arg: ID=CTS20001114.1800.0837-E7 (PER/Individ/NAM/SPC), name="张振清"
+      Time-Within ref arg: ID=CTS20001114.1800.0837-T4 (TIM/---), extent="早上9点半"
+      Time-Within tst arg: ID=CTS20001114.1800.0837-T4 (TIM/---), extent="早上9点半"
+          Vehicle ref arg: ID=CTS20001114.1800.0837-E8 (VEH/Land/NOM/SPC), head="轿车"
+          Vehicle tst arg: ID=CTS20001114.1800.0837-E8 (VEH/Land/NOM/SPC), head="轿车"
+- in document CTS20001114.1800.0837:  score:  1.70000 out of 1.70000
+      ref anchor="离开", extent="早上9点半驾驭这辆富豪轿车..."
+--------
+    ref event CTS20001114.1800.0837-EV3 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event CTS20001114.1800.0837-EV3 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  0.50000 out of 0.50000
+           Person ref arg: ID=CTS20001114.1800.0837-E3 (PER/Indeter/NOM/SPC), head="商"
+           Person tst arg: ID=CTS20001114.1800.0837-E3 (PER/Indeter/NOM/SPC), head="商"
+- in document CTS20001114.1800.0837:  score:  0.50000 out of 0.50000
+      ref anchor="赶来", extent="车商也赶来"
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Movemen     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    65.31   0.00   0.00   0.00
+  Other     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.69   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Movement:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Event Type confusion matrix for "broadcast news" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     3     0     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "broadcast news" sources (for mapped events):
+  type=Movem COUNT    PERCENT
+    ref\tst: Trans      Trans 
+  Transport      3      100.0
+
+Event Modality confusion matrix for "broadcast news" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted      2     0      100.0   0.0
+      Other      0     1        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=3/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific 
+        Specific     3/99.9%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=3/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted     2/66.7%      -     
+           Other      -          1/33.3%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=3/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive 
+        Positive     3/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=3/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:  Transport 
+       Transport     3/99.9%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=3/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past 
+            Past     3/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=3/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Movement 
+        Movement     3/99.9%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=9/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Person     Vehicle Time-Within      Origin Destination 
+          Person     3/33.3%      -           -           -           -     
+         Vehicle      -          2/22.2%      -           -           -     
+     Time-Within      -           -          2/22.2%      -           -     
+          Origin      -           -           -          1/11.1%      -     
+     Destination      -           -           -           -          1/11.1%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 CTS20001114.1800.0837-T1, ID=CTS20001114.1800.0837-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CTS20001114.1800.0837-T1, ID=CTS20001114.1800.0837-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CTS20001114.1800.0837:
+          mention="11/14/2000 18:13:57.45"
+--------
+    ref timex2 CTS20001114.1800.0837-T2, ID=CTS20001114.1800.0837-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CTS20001114.1800.0837-T2, ID=CTS20001114.1800.0837-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CTS20001114.1800.0837:
+          mention="今天"
+--------
+    ref timex2 CTS20001114.1800.0837-T3, ID=CTS20001114.1800.0837-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CTS20001114.1800.0837-T3, ID=CTS20001114.1800.0837-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CTS20001114.1800.0837:
+          mention="以往"
+--------
+    ref timex2 CTS20001114.1800.0837-T4, ID=CTS20001114.1800.0837-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CTS20001114.1800.0837-T4, ID=CTS20001114.1800.0837-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CTS20001114.1800.0837:
+          mention="早上9点半"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     4/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     4/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---     4/99.9%
+
+data input:               0.12 secs to load data
+entity eval:              0.02 secs to compute values,    0.01 secs to map,    0.03 secs to score
+relation eval:            0.02 secs to compute values,    0.01 secs to map,    0.02 secs to score
+event eval:               0.00 secs to compute values,    0.00 secs to map,    0.02 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.01 secs to compute values,    0.00 secs to map,    0.00 secs to score
+value eval:               0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+########

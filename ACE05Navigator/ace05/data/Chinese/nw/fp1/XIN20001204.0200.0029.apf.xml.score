@@ -1,0 +1,1840 @@
+command line (run on 2005 Aug 21 at 01:12:15):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score20567 -t /tmp/score20567
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity XIN20001204.0200.0029-E1 (PER/NOM/GEN)
+    tst entity XIN20001204.0200.0029-E1 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="人员" (NOM/PER/LIT)
+      ref mention="人员" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E10 (ORG/NOM/GEN)
+    tst entity XIN20001204.0200.0029-E10 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="企业" (NOM/ORG/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E11 (PER/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E11 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="所长" (NOM/PER/LIT)
+      ref mention="唐安明" (NAM/PER/LIT)
+      ref mention="唐安明" (NAM/PER/LIT)
+      ref mention="唐安明" (NAM/PER/LIT)
+         ref name="唐安明"
+         ref name="唐安明"
+         ref name="唐安明"
+--------
+    ref entity XIN20001204.0200.0029-E13 (ORG/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E13 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="烟草专管所" (NOM/ORG/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E14 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E14 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="双河镇" (NAM/GPE/LIT)
+         ref name="双河镇"
+--------
+    ref entity XIN20001204.0200.0029-E15 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E15 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="重庆市" (NAM/GPE/LIT)
+         ref name="重庆市"
+--------
+    ref entity XIN20001204.0200.0029-E16 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E16 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="嫌疑人" (NOM/PER/LIT)
+      ref mention="其" (PRO/PER/LIT)
+      ref mention="嫌疑人" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E17 (VEH/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E17 (VEH/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (VEH/NOM/SPC)
+      ref mention="摩托车" (NOM/VEH/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E18 (FAC/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E18 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="医院" (NOM/FAC/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E19 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E19 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="驾驶员" (NOM/PER/LIT)
+      ref mention="驾驶员" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E2 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E2 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="荣昌县" (NAM/GPE/LIT)
+         ref name="荣昌县"
+--------
+    ref entity XIN20001204.0200.0029-E20 (VEH/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E20 (VEH/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (VEH/NOM/SPC)
+      ref mention="车" (NOM/VEH/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E21 (WEA/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E21 (WEA/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (WEA/NOM/SPC)
+      ref mention="匕 首" (NOM/WEA/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E23 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E23 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="人员" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E24 (PER/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E24 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="赵金" (NAM/PER/LIT)
+         ref name="赵金"
+--------
+    ref entity XIN20001204.0200.0029-E25 (PER/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E25 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="邓全" (NAM/PER/LIT)
+         ref name="邓全"
+--------
+    ref entity XIN20001204.0200.0029-E26 (ORG/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E26 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="市场" (NOM/ORG/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E27 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E27 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="玉林市" (NAM/GPE/LIT)
+      ref mention="玉 林市" (NAM/GPE/LIT)
+         ref name="玉林市"
+         ref name="玉 林市"
+--------
+    ref entity XIN20001204.0200.0029-E28 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E28 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="广西" (NAM/GPE/LIT)
+         ref name="广西"
+--------
+    ref entity XIN20001204.0200.0029-E29 (FAC/NOM/GEN)
+    tst entity XIN20001204.0200.0029-E29 (FAC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (FAC/NOM/GEN)
+      ref mention="仓库" (NOM/FAC/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E3 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E3 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="人" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E30 (WEA/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E30 (WEA/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (WEA/NOM/SPC)
+      ref mention="刀" (NOM/WEA/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E31 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E31 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="人员" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E32 (ORG/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E32 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="质量技术监督局" (NOM/ORG/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E33 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E33 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="陕西" (NAM/GPE/LIT)
+         ref name="陕西"
+--------
+    ref entity XIN20001204.0200.0029-E34 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E34 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="西安" (NAM/GPE/LIT)
+         ref name="西安"
+--------
+    ref entity XIN20001204.0200.0029-E35 (FAC/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E35 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="野玫瑰电脑城" (NAM/FAC/LIT)
+         ref name="野玫瑰电脑城"
+--------
+    ref entity XIN20001204.0200.0029-E36 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E36 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="人员" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E37 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E37 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="记者" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E38 (PER/NOM/USP)
+    tst entity XIN20001204.0200.0029-E38 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="人员" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E39 (ORG/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E39 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="中央电视台" (NAM/ORG/LIT)
+         ref name="中央电视台"
+--------
+    ref entity XIN20001204.0200.0029-E4 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E4 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="人" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E40 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E40 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="分子" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E41 (PER/NOM/GEN)
+    tst entity XIN20001204.0200.0029-E41 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="人员" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E42 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E42 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="云南" (NAM/GPE/LIT)
+         ref name="云南"
+--------
+    ref entity XIN20001204.0200.0029-E43 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E43 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="昆明市" (NAM/GPE/LIT)
+         ref name="昆明市"
+--------
+    ref entity XIN20001204.0200.0029-E44 (ORG/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E44 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="质量技术监督局" (NOM/ORG/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E45 (FAC/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E45 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="窝点" (NOM/FAC/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E46 (PER/PRO/USP)
+    tst entity XIN20001204.0200.0029-E46 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="他人" (PRO/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E47 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E47 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="分子" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E48 (WEA/NOM/GEN)
+    tst entity XIN20001204.0200.0029-E48 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="斧" (NOM/WEA/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E49 (WEA/NOM/GEN)
+    tst entity XIN20001204.0200.0029-E49 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="刀" (NOM/WEA/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E5 (ORG/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E5 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="质量技术监督局" (NAM/ORG/LIT)
+      ref mention="质监局" (NOM/ORG/LIT)
+         ref name="质量技术监督局"
+--------
+    ref entity XIN20001204.0200.0029-E50 (WEA/NOM/GEN)
+    tst entity XIN20001204.0200.0029-E50 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="棒" (NOM/WEA/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E51 (WEA/NOM/GEN)
+    tst entity XIN20001204.0200.0029-E51 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="凶器" (NOM/WEA/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E52 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E52 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="河南省" (NAM/GPE/LIT)
+         ref name="河南省"
+--------
+    ref entity XIN20001204.0200.0029-E53 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E53 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="漯河市" (NAM/GPE/LIT)
+         ref name="漯河市"
+--------
+    ref entity XIN20001204.0200.0029-E54 (ORG/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E54 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="打假办" (NOM/ORG/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E55 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E55 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="人员" (NOM/PER/LIT)
+      ref mention="人员" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E56 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E56 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="舞阳县" (NAM/GPE/LIT)
+         ref name="舞阳县"
+--------
+    ref entity XIN20001204.0200.0029-E57 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E57 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="侯集乡" (NAM/LOC/LIT)
+         ref name="侯集乡"
+--------
+    ref entity XIN20001204.0200.0029-E58 (FAC/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E58 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="窝点" (NOM/FAC/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E59 (PER/NOM/USP)
+    tst entity XIN20001204.0200.0029-E59 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="干部" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E6 (LOC/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E6 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="农村" (NOM/LOC/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E60 (GPE/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E60 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="村" (NOM/GPE/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E61 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E61 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="分子" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E62 (WEA/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E62 (WEA/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (WEA/NOM/SPC)
+      ref mention="棍" (NOM/WEA/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E63 (WEA/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E63 (WEA/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (WEA/NOM/SPC)
+      ref mention="棒" (NOM/WEA/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E64 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E64 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="负责人" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E65 (PER/NOM/GEN)
+    tst entity XIN20001204.0200.0029-E65 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="造假者" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E66 (PER/PRO/GEN)
+    tst entity XIN20001204.0200.0029-E66 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="的" (PRO/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E67 (ORG/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E67 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="新华社" (NAM/ORG/LIT)
+         ref name="新华社"
+--------
+    ref entity XIN20001204.0200.0029-E68 (GPE/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E68 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="北京" (NAM/LOC/LIT)
+         ref name="北京"
+--------
+    ref entity XIN20001204.0200.0029-E69 (PER/NAM/SPC)
+    tst entity XIN20001204.0200.0029-E69 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="记者" (NOM/PER/LIT)
+      ref mention="邹清丽" (NAM/PER/LIT)
+      ref mention="记者" (NOM/PER/LIT)
+         ref name="邹清丽"
+--------
+    ref entity XIN20001204.0200.0029-E7 (LOC/NOM/GEN)
+    tst entity XIN20001204.0200.0029-E7 (LOC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (LOC/NOM/GEN)
+      ref mention="地区" (NOM/LOC/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E71 (GPE/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E71 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="全国" (NOM/GPE/LIT)
+      ref mention="全国" (NOM/LOC/LIT)
+      ref mention="国家" (NOM/GPE/LIT)
+      ref mention="国家" (NOM/GPE/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E72 (LOC/NOM/USP)
+    tst entity XIN20001204.0200.0029-E72 (LOC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (LOC/NOM/USP)
+      ref mention="地方" (NOM/LOC/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E73 (PER/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E73 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="造假者" (NOM/PER/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E8 (ORG/NOM/GEN)
+    tst entity XIN20001204.0200.0029-E8 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="工厂" (NOM/ORG/LIT)
+--------
+    ref entity XIN20001204.0200.0029-E9 (GPE/NOM/SPC)
+    tst entity XIN20001204.0200.0029-E9 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="城市" (NOM/LOC/LIT)
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    FAC     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.58   0.00   0.00   0.00
+    GPE    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    40.79   0.00   0.00   0.00
+    LOC     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+    ORG    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.47   0.00   0.00   0.00
+    PER    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.95   0.00   0.00   0.00
+    VEH     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.63   0.00   0.00   0.00
+    WEA     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.26   0.00   0.00   0.00
+  total    70     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    57.89   0.00   0.00   0.00
+    NOM    46     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.11   0.00   0.00   0.00
+    PRO     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    70     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+0.2-0.5    32     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.11   0.00   0.00   0.00
+0.5-1.0    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    57.89   0.00   0.00   0.00
+  total    70     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    61     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    84.21   0.00   0.00   0.00
+      2     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.89   0.00   0.00   0.00
+    3-4     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.89   0.00   0.00   0.00
+  total    70     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    54     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    70     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    70     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    70     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Blunt     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.63   0.00   0.00   0.00
+Buildin     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.58   0.00   0.00   0.00
+Commerc     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+Governm     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.89   0.00   0.00   0.00
+  Group    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.16   0.00   0.00   0.00
+Indeter     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+Individ     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.47   0.00   0.00   0.00
+   Land     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.63   0.00   0.00   0.00
+  Media     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.26   0.00   0.00   0.00
+ Nation     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+Populat    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.95   0.00   0.00   0.00
+Region-     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+  Sharp     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.63   0.00   0.00   0.00
+State-o     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.53   0.00   0.00   0.00
+Undersp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    70     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = FAC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Buildin     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.58   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.58   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Nation     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+Populat    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.95   0.00   0.00   0.00
+State-o     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.53   0.00   0.00   0.00
+  total    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    40.79   0.00   0.00   0.00
+
+Performance statistics for TYPE = LOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Region-     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+Governm     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.89   0.00   0.00   0.00
+  Media     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.26   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.47   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.16   0.00   0.00   0.00
+Indeter     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.32   0.00   0.00   0.00
+Individ     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.47   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.95   0.00   0.00   0.00
+
+Performance statistics for TYPE = VEH:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Land     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.63   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.63   0.00   0.00   0.00
+
+Performance statistics for TYPE = WEA:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Blunt     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.63   0.00   0.00   0.00
+  Sharp     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.63   0.00   0.00   0.00
+Undersp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.26   0.00   0.00   0.00
+
+Entity Type confusion matrix for "newswire" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            5     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    17     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     3     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    10     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    25     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     2     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     8        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=70/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         GEN         USP 
+             SPC    54/77.1%      -           -     
+             GEN      -         12/17.1%      -     
+             USP      -           -          4/ 5.7%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=70/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Group Population-  Individual Building-Gr  Government       Sharp State-or-Pr  Commercial  all others 
+           Group    14/20.0%      -           -           -           -           -           -           -           -     
+  Population-Cen      -         12/17.1%      -           -           -           -           -           -           -     
+      Individual      -           -          8/11.4%      -           -           -           -           -           -     
+  Building-Groun      -           -           -          5/ 7.1%      -           -           -           -           -     
+      Government      -           -           -           -          5/ 7.1%      -           -           -           -     
+           Sharp      -           -           -           -           -          4/ 5.7%      -           -           -     
+  State-or-Provi      -           -           -           -           -           -          4/ 5.7%      -           -     
+      Commercial      -           -           -           -           -           -           -          3/ 4.3%      -     
+      all others      -           -           -           -           -           -           -           -         15/21.4%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=70/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        PER         GPE         ORG         WEA         FAC         LOC         VEH 
+             PER    25/35.7%      -           -           -           -           -           -     
+             GPE      -         17/24.3%      -           -           -           -           -     
+             ORG      -           -         10/14.3%      -           -           -           -     
+             WEA      -           -           -          8/11.4%      -           -           -     
+             FAC      -           -           -           -          5/ 7.1%      -           -     
+             LOC      -           -           -           -           -          3/ 4.3%      -     
+             VEH      -           -           -           -           -           -          2/ 2.9%
+
+Entity Class confusion matrix for "newswire" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           54     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0    12     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0     4        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0    15        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0     3        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0     6        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    25        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    25        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    57        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0     3        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0    85        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0    85        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    85        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     5        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0    17        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     7        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    11        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    35        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     2        0.0   0.0      0.0   0.0 100.0
+  WEA       0     0        0     0     8        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0    85        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "newswire" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            5     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    17     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     7     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    11     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    35     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     2     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     8        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Mention Style confusion matrix for "newswire" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER           85     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation XIN20001204.0200.0029-R1 (GEN-AFF/Org-Location/Asserted/Present)
+    tst relation XIN20001204.0200.0029-R1 (GEN-AFF/Org-Location/Asserted/Present)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E67 (ORG/Media/NAM/SPC), name="新华社"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E67 (ORG/Media/NAM/SPC), name="新华社"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E68 (GPE/Populat/NAM/SPC), name="北京"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E68 (GPE/Populat/NAM/SPC), name="北京"
+- in document XIN20001204.0200.0029:  score:  2.00000 out of 2.00000
+      ref extent="新华社北京"
+--------
+    ref relation XIN20001204.0200.0029-R10 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+    tst relation XIN20001204.0200.0029-R10 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+      relation score:  1.20000 out of 1.20000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E17 (VEH/Land/NOM/SPC), head="摩托车"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E17 (VEH/Land/NOM/SPC), head="摩托车"
+      Time-Within ref arg: ID=XIN20001204.0200.0029-T7 (TIM/---), extent="１１月６日"
+      Time-Within tst arg: ID=XIN20001204.0200.0029-T7 (TIM/---), extent="１１月６日"
+- in document XIN20001204.0200.0029:  score:  1.20000 out of 1.20000
+      ref extent="１１月６日，重庆市荣昌县�..."
+--------
+    ref relation XIN20001204.0200.0029-R11 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R11 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E11 (PER/Individ/NAM/SPC), name="唐安明"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E11 (PER/Individ/NAM/SPC), name="唐安明"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E20 (VEH/Land/NOM/SPC), head="车"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E20 (VEH/Land/NOM/SPC), head="车"
+- in document XIN20001204.0200.0029:  score:  1.50000 out of 1.50000
+      ref extent="唐安明和同来的驾驶员开车�..."
+--------
+    ref relation XIN20001204.0200.0029-R12 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R12 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E19 (PER/Individ/NOM/SPC), head="驾驶员"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E19 (PER/Individ/NOM/SPC), head="驾驶员"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E20 (VEH/Land/NOM/SPC), head="车"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E20 (VEH/Land/NOM/SPC), head="车"
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000
+      ref extent="唐安明和同来的驾驶员开车�..."
+--------
+    ref relation XIN20001204.0200.0029-R13 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R13 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E20 (VEH/Land/NOM/SPC), head="车"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E20 (VEH/Land/NOM/SPC), head="车"
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000
+      ref extent="唐安明和同来的驾驶员开车�..."
+--------
+    ref relation XIN20001204.0200.0029-R14 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R14 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E21 (WEA/Sharp/NOM/SPC), head="匕 首"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E21 (WEA/Sharp/NOM/SPC), head="匕 首"
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000
+      ref extent="唐安明和同来的驾驶员开车�..."
+--------
+    ref relation XIN20001204.0200.0029-R15 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R15 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E27 (GPE/Populat/NAM/SPC), name="玉 林市"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E27 (GPE/Populat/NAM/SPC), name="玉 林市"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E28 (GPE/State-o/NAM/SPC), name="广西"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E28 (GPE/State-o/NAM/SPC), name="广西"
+- in document XIN20001204.0200.0029:  score:  2.00000 out of 2.00000
+      ref extent="广西玉林市"
+--------
+    ref relation XIN20001204.0200.0029-R16 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R16 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E26 (ORG/Commerc/NOM/SPC), head="市场"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E26 (ORG/Commerc/NOM/SPC), head="市场"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E27 (GPE/Populat/NAM/SPC), name="玉 林市"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E27 (GPE/Populat/NAM/SPC), name="玉 林市"
+- in document XIN20001204.0200.0029:  score:  1.50000 out of 1.50000
+      ref extent="广西玉林市粮 油市场"
+--------
+    ref relation XIN20001204.0200.0029-R17 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R17 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E26 (ORG/Commerc/NOM/SPC), head="市场"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E26 (ORG/Commerc/NOM/SPC), head="市场"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E29 (FAC/Buildin/NOM/GEN), head="仓库"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E29 (FAC/Buildin/NOM/GEN), head="仓库"
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000
+      ref extent="广西玉林市粮 油市场仓库"
+--------
+    ref relation XIN20001204.0200.0029-R18 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R18 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E23 (PER/Group/NOM/SPC), head="人员"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E23 (PER/Group/NOM/SPC), head="人员"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E26 (ORG/Commerc/NOM/SPC), head="市场"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E26 (ORG/Commerc/NOM/SPC), head="市场"
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000
+      ref extent="广西玉林市粮 油市场仓库管..."
+--------
+    ref relation XIN20001204.0200.0029-R19 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R19 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E32 (ORG/Governm/NOM/SPC), head="质量技术监督局"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E32 (ORG/Governm/NOM/SPC), head="质量技术监督局"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E27 (GPE/Populat/NAM/SPC), name="玉 林市"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E27 (GPE/Populat/NAM/SPC), name="玉 林市"
+- in document XIN20001204.0200.0029:  score:  1.50000 out of 1.50000
+      ref extent="玉 林市质量技术监督局"
+--------
+    ref relation XIN20001204.0200.0029-R2 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R2 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E5 (ORG/Governm/NAM/SPC), name="质量技术监督局"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E5 (ORG/Governm/NAM/SPC), name="质量技术监督局"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E71 (GPE/Nation/NOM/SPC), head="国家"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E71 (GPE/Nation/NOM/SPC), head="国家"
+- in document XIN20001204.0200.0029:  score:  1.50000 out of 1.50000
+      ref extent="国家质量技术监督局"
+      ref extent="国家质监局"
+--------
+    ref relation XIN20001204.0200.0029-R20 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R20 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E31 (PER/Group/NOM/SPC), head="人员"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E31 (PER/Group/NOM/SPC), head="人员"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E32 (ORG/Governm/NOM/SPC), head="质量技术监督局"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E32 (ORG/Governm/NOM/SPC), head="质量技术监督局"
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000
+      ref extent="前来执行公务的玉 林市质量..."
+--------
+    ref relation XIN20001204.0200.0029-R21 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+    tst relation XIN20001204.0200.0029-R21 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+      relation score:  1.70000 out of 1.70000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E24 (PER/Individ/NAM/SPC), name="赵金"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E24 (PER/Individ/NAM/SPC), name="赵金"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E30 (WEA/Sharp/NOM/SPC), head="刀"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E30 (WEA/Sharp/NOM/SPC), head="刀"
+      Time-Within ref arg: ID=XIN20001204.0200.0029-T8 (TIM/---), extent="１１月９日"
+      Time-Within tst arg: ID=XIN20001204.0200.0029-T8 (TIM/---), extent="１１月９日"
+- in document XIN20001204.0200.0029:  score:  1.70000 out of 1.70000
+      ref extent="１１月９日，广西玉林市粮 ..."
+--------
+    ref relation XIN20001204.0200.0029-R22 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+    tst relation XIN20001204.0200.0029-R22 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+      relation score:  1.70000 out of 1.70000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E25 (PER/Individ/NAM/SPC), name="邓全"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E25 (PER/Individ/NAM/SPC), name="邓全"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E30 (WEA/Sharp/NOM/SPC), head="刀"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E30 (WEA/Sharp/NOM/SPC), head="刀"
+      Time-Within ref arg: ID=XIN20001204.0200.0029-T8 (TIM/---), extent="１１月９日"
+      Time-Within tst arg: ID=XIN20001204.0200.0029-T8 (TIM/---), extent="１１月９日"
+- in document XIN20001204.0200.0029:  score:  1.70000 out of 1.70000
+      ref extent="１１月９日，广西玉林市粮 ..."
+--------
+    ref relation XIN20001204.0200.0029-R23 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R23 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E34 (GPE/Populat/NAM/SPC), name="西安"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E34 (GPE/Populat/NAM/SPC), name="西安"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E33 (GPE/State-o/NAM/SPC), name="陕西"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E33 (GPE/State-o/NAM/SPC), name="陕西"
+- in document XIN20001204.0200.0029:  score:  2.00000 out of 2.00000
+      ref extent="陕西西安"
+--------
+    ref relation XIN20001204.0200.0029-R24 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R24 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E35 (FAC/Buildin/NAM/SPC), name="野玫瑰电脑城"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E35 (FAC/Buildin/NAM/SPC), name="野玫瑰电脑城"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E34 (GPE/Populat/NAM/SPC), name="西安"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E34 (GPE/Populat/NAM/SPC), name="西安"
+- in document XIN20001204.0200.0029:  score:  2.00000 out of 2.00000
+      ref extent="陕西西安野玫瑰电脑城"
+--------
+    ref relation XIN20001204.0200.0029-R25 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R25 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E43 (GPE/Populat/NAM/SPC), name="昆明市"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E43 (GPE/Populat/NAM/SPC), name="昆明市"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E42 (GPE/State-o/NAM/SPC), name="云南"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E42 (GPE/State-o/NAM/SPC), name="云南"
+- in document XIN20001204.0200.0029:  score:  2.00000 out of 2.00000
+      ref extent="云南昆明市"
+--------
+    ref relation XIN20001204.0200.0029-R26 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R26 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E44 (ORG/Governm/NOM/SPC), head="质量技术监督局"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E44 (ORG/Governm/NOM/SPC), head="质量技术监督局"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E43 (GPE/Populat/NAM/SPC), name="昆明市"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E43 (GPE/Populat/NAM/SPC), name="昆明市"
+- in document XIN20001204.0200.0029:  score:  1.50000 out of 1.50000
+      ref extent="云南昆明市质量技术监督局"
+--------
+    ref relation XIN20001204.0200.0029-R27 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+    tst relation XIN20001204.0200.0029-R27 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+      relation score:  0.70000 out of 0.70000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E47 (PER/Group/NOM/SPC), head="分子"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E47 (PER/Group/NOM/SPC), head="分子"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E51 (WEA/Undersp/NOM/GEN), head="凶器"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E51 (WEA/Undersp/NOM/GEN), head="凶器"
+      Time-Within ref arg: ID=XIN20001204.0200.0029-T11 (TIM/---), extent="１１月３日"
+      Time-Within tst arg: ID=XIN20001204.0200.0029-T11 (TIM/---), extent="１１月３日"
+- in document XIN20001204.0200.0029:  score:  0.70000 out of 0.70000
+      ref extent="１１月３日，３０多名不法�..."
+--------
+    ref relation XIN20001204.0200.0029-R28 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R28 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E53 (GPE/Populat/NAM/SPC), name="漯河市"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E53 (GPE/Populat/NAM/SPC), name="漯河市"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E52 (GPE/State-o/NAM/SPC), name="河南省"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E52 (GPE/State-o/NAM/SPC), name="河南省"
+- in document XIN20001204.0200.0029:  score:  2.00000 out of 2.00000
+      ref extent="河南省漯河市"
+--------
+    ref relation XIN20001204.0200.0029-R29 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R29 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E54 (ORG/Governm/NOM/SPC), head="打假办"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E54 (ORG/Governm/NOM/SPC), head="打假办"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E53 (GPE/Populat/NAM/SPC), name="漯河市"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E53 (GPE/Populat/NAM/SPC), name="漯河市"
+- in document XIN20001204.0200.0029:  score:  1.50000 out of 1.50000
+      ref extent="河南省漯河市 打假办"
+--------
+    ref relation XIN20001204.0200.0029-R3 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R3 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E8 (ORG/Commerc/NOM/GEN), head="工厂"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E8 (ORG/Commerc/NOM/GEN), head="工厂"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E6 (LOC/Region-/NOM/SPC), head="农村"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E6 (LOC/Region-/NOM/SPC), head="农村"
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000
+      ref extent="农村或偏远地区地下工厂"
+--------
+    ref relation XIN20001204.0200.0029-R30 (PHYS/Located/Asserted/Past)
+    tst relation XIN20001204.0200.0029-R30 (PHYS/Located/Asserted/Past)
+      relation score:  1.70000 out of 1.70000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E55 (PER/Group/NOM/SPC), head="人员"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E55 (PER/Group/NOM/SPC), head="人员"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E57 (GPE/Populat/NAM/SPC), name="侯集乡"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E57 (GPE/Populat/NAM/SPC), name="侯集乡"
+      Time-Within ref arg: ID=XIN20001204.0200.0029-T12 (TIM/---), extent="１１月３日"
+      Time-Within tst arg: ID=XIN20001204.0200.0029-T12 (TIM/---), extent="１１月３日"
+- in document XIN20001204.0200.0029:  score:  1.70000 out of 1.70000
+      ref extent="１１月３日，河南省漯河市 ..."
+--------
+    ref relation XIN20001204.0200.0029-R31 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R31 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E55 (PER/Group/NOM/SPC), head="人员"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E55 (PER/Group/NOM/SPC), head="人员"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E54 (ORG/Governm/NOM/SPC), head="打假办"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E54 (ORG/Governm/NOM/SPC), head="打假办"
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000
+      ref extent="１１月３日，河南省漯河市 ..."
+--------
+    ref relation XIN20001204.0200.0029-R32 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R32 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E57 (GPE/Populat/NAM/SPC), name="侯集乡"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E57 (GPE/Populat/NAM/SPC), name="侯集乡"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E56 (GPE/Populat/NAM/SPC), name="舞阳县"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E56 (GPE/Populat/NAM/SPC), name="舞阳县"
+- in document XIN20001204.0200.0029:  score:  2.00000 out of 2.00000
+      ref extent="舞阳县侯集乡"
+--------
+    ref relation XIN20001204.0200.0029-R33 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R33 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E59 (PER/Indeter/NOM/USP), head="干部"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E59 (PER/Indeter/NOM/USP), head="干部"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E60 (GPE/Populat/NOM/SPC), head="村"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E60 (GPE/Populat/NOM/SPC), head="村"
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000
+      ref extent="个别村干部"
+--------
+    ref relation XIN20001204.0200.0029-R34 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+    tst relation XIN20001204.0200.0029-R34 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E61 (PER/Group/NOM/SPC), head="分子"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E61 (PER/Group/NOM/SPC), head="分子"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E62 (WEA/Blunt/NOM/SPC), head="棍"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E62 (WEA/Blunt/NOM/SPC), head="棍"
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000
+      ref extent="在个别村干部的带动下，造�..."
+--------
+    ref relation XIN20001204.0200.0029-R35 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+    tst relation XIN20001204.0200.0029-R35 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E61 (PER/Group/NOM/SPC), head="分子"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E61 (PER/Group/NOM/SPC), head="分子"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E63 (WEA/Blunt/NOM/SPC), head="棒"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E63 (WEA/Blunt/NOM/SPC), head="棒"
+- in document XIN20001204.0200.0029:  score:  1.00000 out of 1.00000
+      ref extent="在个别村干部的带动下，造�..."
+--------
+    ref relation XIN20001204.0200.0029-R37 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R37 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E64 (PER/Indeter/NOM/SPC), head="负责人"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E64 (PER/Indeter/NOM/SPC), head="负责人"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E5 (ORG/Governm/NAM/SPC), name="质量技术监督局"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E5 (ORG/Governm/NAM/SPC), name="质量技术监督局"
+- in document XIN20001204.0200.0029:  score:  1.50000 out of 1.50000
+      ref extent="国家质监局有关负责人"
+--------
+    ref relation XIN20001204.0200.0029-R4 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R4 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E8 (ORG/Commerc/NOM/GEN), head="工厂"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E8 (ORG/Commerc/NOM/GEN), head="工厂"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E7 (LOC/Region-/NOM/GEN), head="地区"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E7 (LOC/Region-/NOM/GEN), head="地区"
+- in document XIN20001204.0200.0029:  score:  0.00000 out of 0.00000
+      ref extent="农村或偏远地区地下工厂"
+--------
+    ref relation XIN20001204.0200.0029-R5 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R5 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E10 (ORG/Commerc/NOM/GEN), head="企业"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E10 (ORG/Commerc/NOM/GEN), head="企业"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E9 (GPE/Populat/NOM/SPC), head="城市"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E9 (GPE/Populat/NOM/SPC), head="城市"
+- in document XIN20001204.0200.0029:  score:  0.50000 out of 0.50000
+      ref extent="一些大城市的正规注册企业"
+--------
+    ref relation XIN20001204.0200.0029-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E2 (GPE/Populat/NAM/SPC), name="荣昌县"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E2 (GPE/Populat/NAM/SPC), name="荣昌县"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E15 (GPE/Populat/NAM/SPC), name="重庆市"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E15 (GPE/Populat/NAM/SPC), name="重庆市"
+- in document XIN20001204.0200.0029:  score:  2.00000 out of 2.00000
+      ref extent="重庆市荣昌县"
+--------
+    ref relation XIN20001204.0200.0029-R7 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R7 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E14 (GPE/Populat/NAM/SPC), name="双河镇"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E14 (GPE/Populat/NAM/SPC), name="双河镇"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E2 (GPE/Populat/NAM/SPC), name="荣昌县"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E2 (GPE/Populat/NAM/SPC), name="荣昌县"
+- in document XIN20001204.0200.0029:  score:  2.00000 out of 2.00000
+      ref extent="重庆市荣昌县双河镇"
+--------
+    ref relation XIN20001204.0200.0029-R8 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R8 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E13 (ORG/Governm/NOM/SPC), head="烟草专管所"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E13 (ORG/Governm/NOM/SPC), head="烟草专管所"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E14 (GPE/Populat/NAM/SPC), name="双河镇"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E14 (GPE/Populat/NAM/SPC), name="双河镇"
+- in document XIN20001204.0200.0029:  score:  1.50000 out of 1.50000
+      ref extent="重庆市荣昌县双河镇烟草专�..."
+--------
+    ref relation XIN20001204.0200.0029-R9 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation XIN20001204.0200.0029-R9 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=XIN20001204.0200.0029-E11 (PER/Individ/NAM/SPC), name="唐安明"
+            Arg-1 tst arg: ID=XIN20001204.0200.0029-E11 (PER/Individ/NAM/SPC), name="唐安明"
+            Arg-2 ref arg: ID=XIN20001204.0200.0029-E13 (ORG/Governm/NOM/SPC), head="烟草专管所"
+            Arg-2 tst arg: ID=XIN20001204.0200.0029-E13 (ORG/Governm/NOM/SPC), head="烟草专管所"
+- in document XIN20001204.0200.0029:  score:  1.50000 out of 1.50000
+      ref extent="重庆市荣昌县双河镇烟草专�..."
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    ART    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.36   0.00   0.00   0.00
+GEN-AFF     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.19   0.00   0.00   0.00
+ORG-AFF     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.40   0.00   0.00   0.00
+PART-WH    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    51.55   0.00   0.00   0.00
+   PHYS     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.51   0.00   0.00   0.00
+  total    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.40   0.00   0.00   0.00
+Geograp     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    32.99   0.00   0.00   0.00
+Located     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.51   0.00   0.00   0.00
+Org-Loc     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.19   0.00   0.00   0.00
+Subsidi     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.56   0.00   0.00   0.00
+User-Ow    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.36   0.00   0.00   0.00
+  total    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ART:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+User-Ow    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.36   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.36   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Org-Loc     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.19   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.19   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.40   0.00   0.00   0.00
+  total     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.40   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    32.99   0.00   0.00   0.00
+Subsidi     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.56   0.00   0.00   0.00
+  total    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    51.55   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.51   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.51   0.00   0.00   0.00
+
+Relation Type confusion matrix for "newswire" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART     11     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     4     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     6     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0    14     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       PHYS      0     0     0     0     0     0     1        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=ART   COUNT    PERCENT
+    ref\tst: User-      User- 
+User-Owner-     11      100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      0     0        0.0   0.0
+Org-Locatio      0     4        0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      6     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     8     0        0.0 100.0   0.0
+ Subsidiary      0     0     6        0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      1     0      100.0   0.0
+       Near      0     0        0.0   0.0
+
+Relation Modality confusion matrix for "newswire" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     36     0     0      100.0   0.0   0.0
+      Other      0     0     0        0.0   0.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=36/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted    36/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=36/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:User-Owner- Geographica  Employment  Subsidiary Org-Locatio     Located 
+  User-Owner-Inv    11/30.6%      -           -           -           -           -     
+    Geographical      -          8/22.2%      -           -           -           -     
+      Employment      -           -          6/16.7%      -           -           -     
+      Subsidiary      -           -           -          6/16.7%      -           -     
+    Org-Location      -           -           -           -          4/11.1%      -     
+         Located      -           -           -           -           -          1/ 2.8%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=36/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past     Present 
+     Unspecified    28/77.8%      -           -     
+            Past      -          7/19.4%      -     
+         Present      -           -          1/ 2.8%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=36/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: PART-WHOLE         ART     ORG-AFF     GEN-AFF        PHYS 
+      PART-WHOLE    14/38.9%      -           -           -           -     
+             ART      -         11/30.6%      -           -           -     
+         ORG-AFF      -           -          6/16.7%      -           -     
+         GEN-AFF      -           -           -          4/11.1%      -     
+            PHYS      -           -           -           -          1/ 2.8%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=77/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 Time-Within 
+           Arg-2    36/46.8%      -           -     
+           Arg-1      -         36/46.8%      -     
+     Time-Within      -           -          5/ 6.5%
+
+======== event mapping ========
+
+--------
+    ref event XIN20001204.0200.0029-EV1 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV1 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  0.70000 out of 0.70000
+            Place ref arg: ID=XIN20001204.0200.0029-E71 (GPE/Nation/NOM/SPC), head="国家"
+            Place tst arg: ID=XIN20001204.0200.0029-E71 (GPE/Nation/NOM/SPC), head="国家"
+           Target ref arg: ID=XIN20001204.0200.0029-E1 (PER/Group/NOM/GEN), head="人员"
+           Target tst arg: ID=XIN20001204.0200.0029-E1 (PER/Group/NOM/GEN), head="人员"
+      Time-At-End ref arg: ID=XIN20001204.0200.0029-T4 (TIM/---), extent="１ １月２１日"
+      Time-At-End tst arg: ID=XIN20001204.0200.0029-T4 (TIM/---), extent="１ １月２１日"
+- in document XIN20001204.0200.0029:  score:  0.70000 out of 0.70000
+      ref anchor="殴打", extent="１ １月２１日，全国发生１..."
+--------
+    ref event XIN20001204.0200.0029-EV10 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV10 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  3.20000 out of 3.20000
+         Attacker ref arg: ID=XIN20001204.0200.0029-E24 (PER/Individ/NAM/SPC), name="赵金"
+         Attacker tst arg: ID=XIN20001204.0200.0029-E24 (PER/Individ/NAM/SPC), name="赵金"
+         Attacker ref arg: ID=XIN20001204.0200.0029-E25 (PER/Individ/NAM/SPC), name="邓全"
+         Attacker tst arg: ID=XIN20001204.0200.0029-E25 (PER/Individ/NAM/SPC), name="邓全"
+       Instrument ref arg: ID=XIN20001204.0200.0029-E30 (WEA/Sharp/NOM/SPC), head="刀"
+       Instrument tst arg: ID=XIN20001204.0200.0029-E30 (WEA/Sharp/NOM/SPC), head="刀"
+            Place ref arg: ID=XIN20001204.0200.0029-E29 (FAC/Buildin/NOM/GEN), head="仓库"
+            Place tst arg: ID=XIN20001204.0200.0029-E29 (FAC/Buildin/NOM/GEN), head="仓库"
+           Target ref arg: ID=XIN20001204.0200.0029-E23 (PER/Group/NOM/SPC), head="人员"
+           Target tst arg: ID=XIN20001204.0200.0029-E23 (PER/Group/NOM/SPC), head="人员"
+      Time-Within ref arg: ID=XIN20001204.0200.0029-T8 (TIM/---), extent="１１月９日"
+      Time-Within tst arg: ID=XIN20001204.0200.0029-T8 (TIM/---), extent="１１月９日"
+- in document XIN20001204.0200.0029:  score:  3.20000 out of 3.20000
+      ref anchor="攻击", extent="１１月９日，广西玉林市粮 ..."
+--------
+    ref event XIN20001204.0200.0029-EV11 (Life/Injure/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV11 (Life/Injure/Specific/Asserted/Positive/Past)
+      event score:  1.70000 out of 1.70000
+            Place ref arg: ID=XIN20001204.0200.0029-E35 (FAC/Buildin/NAM/SPC), name="野玫瑰电脑城"
+            Place tst arg: ID=XIN20001204.0200.0029-E35 (FAC/Buildin/NAM/SPC), name="野玫瑰电脑城"
+      Time-Within ref arg: ID=XIN20001204.0200.0029-T9 (TIM/---), extent="不久"
+      Time-Within tst arg: ID=XIN20001204.0200.0029-T9 (TIM/---), extent="不久"
+           Victim ref arg: ID=XIN20001204.0200.0029-E37 (PER/Group/NOM/SPC), head="记者"
+           Victim tst arg: ID=XIN20001204.0200.0029-E37 (PER/Group/NOM/SPC), head="记者"
+           Victim ref arg: ID=XIN20001204.0200.0029-E38 (PER/Indeter/NOM/USP), head="人员"
+           Victim tst arg: ID=XIN20001204.0200.0029-E38 (PER/Indeter/NOM/USP), head="人员"
+- in document XIN20001204.0200.0029:  score:  1.70000 out of 1.70000
+      ref anchor="受伤", extent="不久前，在陕西西安野玫瑰�..."
+--------
+    ref event XIN20001204.0200.0029-EV12 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV12 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+         Attacker ref arg: ID=XIN20001204.0200.0029-E61 (PER/Group/NOM/SPC), head="分子"
+         Attacker tst arg: ID=XIN20001204.0200.0029-E61 (PER/Group/NOM/SPC), head="分子"
+       Instrument ref arg: ID=XIN20001204.0200.0029-E62 (WEA/Blunt/NOM/SPC), head="棍"
+       Instrument tst arg: ID=XIN20001204.0200.0029-E62 (WEA/Blunt/NOM/SPC), head="棍"
+       Instrument ref arg: ID=XIN20001204.0200.0029-E63 (WEA/Blunt/NOM/SPC), head="棒"
+       Instrument tst arg: ID=XIN20001204.0200.0029-E63 (WEA/Blunt/NOM/SPC), head="棒"
+           Target ref arg: ID=XIN20001204.0200.0029-E55 (PER/Group/NOM/SPC), head="人员"
+           Target tst arg: ID=XIN20001204.0200.0029-E55 (PER/Group/NOM/SPC), head="人员"
+- in document XIN20001204.0200.0029:  score:  2.00000 out of 2.00000
+      ref anchor="威胁", extent="造假分子手持棍棒威胁执法�..."
+--------
+    ref event XIN20001204.0200.0029-EV2 (Life/Die/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV2 (Life/Die/Specific/Asserted/Positive/Past)
+      event score:  0.70000 out of 0.70000
+            Place ref arg: ID=XIN20001204.0200.0029-E71 (GPE/Nation/NOM/SPC), head="国家"
+            Place tst arg: ID=XIN20001204.0200.0029-E71 (GPE/Nation/NOM/SPC), head="国家"
+      Time-At-End ref arg: ID=XIN20001204.0200.0029-T4 (TIM/---), extent="１ １月２１日"
+      Time-At-End tst arg: ID=XIN20001204.0200.0029-T4 (TIM/---), extent="１ １月２１日"
+           Victim ref arg: ID=XIN20001204.0200.0029-E1 (PER/Group/NOM/GEN), head="人员"
+           Victim tst arg: ID=XIN20001204.0200.0029-E1 (PER/Group/NOM/GEN), head="人员"
+- in document XIN20001204.0200.0029:  score:  0.70000 out of 0.70000
+      ref anchor="杀害", extent="１ １月２１日，全国发生１..."
+--------
+    ref event XIN20001204.0200.0029-EV3 (Life/Injure/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV3 (Life/Injure/Specific/Asserted/Positive/Past)
+      event score:  0.20000 out of 0.20000
+      Time-At-End ref arg: ID=XIN20001204.0200.0029-T4 (TIM/---), extent="１ １月２１日"
+      Time-At-End tst arg: ID=XIN20001204.0200.0029-T4 (TIM/---), extent="１ １月２１日"
+           Victim ref arg: ID=XIN20001204.0200.0029-E1 (PER/Group/NOM/GEN), head="人员"
+           Victim tst arg: ID=XIN20001204.0200.0029-E1 (PER/Group/NOM/GEN), head="人员"
+- in document XIN20001204.0200.0029:  score:  0.20000 out of 0.20000
+      ref anchor="打伤", extent="１ １月２１日，全国发生１..."
+--------
+    ref event XIN20001204.0200.0029-EV4 (Life/Die/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV4 (Life/Die/Specific/Asserted/Positive/Past)
+      event score:  0.70000 out of 0.70000
+      Time-At-End ref arg: ID=XIN20001204.0200.0029-T4 (TIM/---), extent="１ １月２１日"
+      Time-At-End tst arg: ID=XIN20001204.0200.0029-T4 (TIM/---), extent="１ １月２１日"
+           Victim ref arg: ID=XIN20001204.0200.0029-E3 (PER/Individ/NOM/SPC), head="人"
+           Victim tst arg: ID=XIN20001204.0200.0029-E3 (PER/Individ/NOM/SPC), head="人"
+- in document XIN20001204.0200.0029:  score:  0.70000 out of 0.70000
+      ref anchor="杀死", extent="１ １月２１日，全国发生１..."
+--------
+    ref event XIN20001204.0200.0029-EV5 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV5 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  3.00000 out of 3.00000
+            Agent ref arg: ID=XIN20001204.0200.0029-E11 (PER/Individ/NAM/SPC), name="唐安明"
+            Agent tst arg: ID=XIN20001204.0200.0029-E11 (PER/Individ/NAM/SPC), name="唐安明"
+            Agent ref arg: ID=XIN20001204.0200.0029-E19 (PER/Individ/NOM/SPC), head="驾驶员"
+            Agent tst arg: ID=XIN20001204.0200.0029-E19 (PER/Individ/NOM/SPC), head="驾驶员"
+      Destination ref arg: ID=XIN20001204.0200.0029-E18 (FAC/Buildin/NOM/SPC), head="医院"
+      Destination tst arg: ID=XIN20001204.0200.0029-E18 (FAC/Buildin/NOM/SPC), head="医院"
+           Person ref arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+           Person tst arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+          Vehicle ref arg: ID=XIN20001204.0200.0029-E20 (VEH/Land/NOM/SPC), head="车"
+          Vehicle tst arg: ID=XIN20001204.0200.0029-E20 (VEH/Land/NOM/SPC), head="车"
+- in document XIN20001204.0200.0029:  score:  3.00000 out of 3.00000
+      ref anchor="唐安明和同来的驾驶员开车�...", extent="唐安明和同来的驾驶员开车�..."
+--------
+    ref event XIN20001204.0200.0029-EV6 (Life/Die/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV6 (Life/Die/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+            Agent ref arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+            Agent tst arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+       Instrument ref arg: ID=XIN20001204.0200.0029-E21 (WEA/Sharp/NOM/SPC), head="匕 首"
+       Instrument tst arg: ID=XIN20001204.0200.0029-E21 (WEA/Sharp/NOM/SPC), head="匕 首"
+           Victim ref arg: ID=XIN20001204.0200.0029-E11 (PER/Individ/NAM/SPC), name="唐安明"
+           Victim tst arg: ID=XIN20001204.0200.0029-E11 (PER/Individ/NAM/SPC), name="唐安明"
+- in document XIN20001204.0200.0029:  score:  2.00000 out of 2.00000
+      ref anchor="刺死", extent="嫌疑人用匕 首将唐安明刺死"
+--------
+    ref event XIN20001204.0200.0029-EV7 (Life/Injure/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV7 (Life/Injure/Specific/Asserted/Positive/Past)
+      event score:  1.50000 out of 1.50000
+            Agent ref arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+            Agent tst arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+       Instrument ref arg: ID=XIN20001204.0200.0029-E21 (WEA/Sharp/NOM/SPC), head="匕 首"
+       Instrument tst arg: ID=XIN20001204.0200.0029-E21 (WEA/Sharp/NOM/SPC), head="匕 首"
+           Victim ref arg: ID=XIN20001204.0200.0029-E19 (PER/Individ/NOM/SPC), head="驾驶员"
+           Victim tst arg: ID=XIN20001204.0200.0029-E19 (PER/Individ/NOM/SPC), head="驾驶员"
+- in document XIN20001204.0200.0029:  score:  1.50000 out of 1.50000
+      ref anchor="重伤", extent="嫌疑人用匕 首将唐安明刺死..."
+--------
+    ref event XIN20001204.0200.0029-EV8 (Life/Injure/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV8 (Life/Injure/Specific/Asserted/Positive/Past)
+      event score:  1.70000 out of 1.70000
+            Place ref arg: ID=XIN20001204.0200.0029-E14 (GPE/Populat/NAM/SPC), name="双河镇"
+            Place tst arg: ID=XIN20001204.0200.0029-E14 (GPE/Populat/NAM/SPC), name="双河镇"
+      Time-Within ref arg: ID=XIN20001204.0200.0029-T7 (TIM/---), extent="１１月６日"
+      Time-Within tst arg: ID=XIN20001204.0200.0029-T7 (TIM/---), extent="１１月６日"
+           Victim ref arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+           Victim tst arg: ID=XIN20001204.0200.0029-E16 (PER/Individ/NOM/SPC), head="嫌疑人"
+- in document XIN20001204.0200.0029:  score:  1.70000 out of 1.70000
+      ref anchor="摔伤", extent="１１月６日，重庆市荣昌县�..."
+--------
+    ref event XIN20001204.0200.0029-EV9 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event XIN20001204.0200.0029-EV9 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  2.70000 out of 2.70000
+         Attacker ref arg: ID=XIN20001204.0200.0029-E24 (PER/Individ/NAM/SPC), name="赵金"
+         Attacker tst arg: ID=XIN20001204.0200.0029-E24 (PER/Individ/NAM/SPC), name="赵金"
+         Attacker ref arg: ID=XIN20001204.0200.0029-E25 (PER/Individ/NAM/SPC), name="邓全"
+         Attacker tst arg: ID=XIN20001204.0200.0029-E25 (PER/Individ/NAM/SPC), name="邓全"
+            Place ref arg: ID=XIN20001204.0200.0029-E29 (FAC/Buildin/NOM/GEN), head="仓库"
+            Place tst arg: ID=XIN20001204.0200.0029-E29 (FAC/Buildin/NOM/GEN), head="仓库"
+           Target ref arg: ID=XIN20001204.0200.0029-E31 (PER/Group/NOM/SPC), head="人员"
+           Target tst arg: ID=XIN20001204.0200.0029-E31 (PER/Group/NOM/SPC), head="人员"
+      Time-Within ref arg: ID=XIN20001204.0200.0029-T8 (TIM/---), extent="１１月９日"
+      Time-Within tst arg: ID=XIN20001204.0200.0029-T8 (TIM/---), extent="１１月９日"
+- in document XIN20001204.0200.0029:  score:  2.70000 out of 2.70000
+      ref anchor="殴打", extent="１１月９日，广西玉林市粮 ..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Conflic     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.79   0.00   0.00   0.00
+   Life     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.29   0.00   0.00   0.00
+Movemen     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.93   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.79   0.00   0.00   0.00
+    Die     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.92   0.00   0.00   0.00
+ Injure     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.37   0.00   0.00   0.00
+Transpo     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.93   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Conflict:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.79   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.79   0.00   0.00   0.00
+
+Performance statistics for TYPE = Life:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    Die     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.92   0.00   0.00   0.00
+ Injure     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.37   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.29   0.00   0.00   0.00
+
+Performance statistics for TYPE = Movement:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.93   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.93   0.00   0.00   0.00
+
+Event Type confusion matrix for "newswire" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     4     0     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     7     0     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     1     0     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Confl COUNT......    PERCENT......
+    ref\tst: Attac Demon      Attac Demon 
+     Attack      4     0      100.0   0.0
+Demonstrate      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Life  COUNT..............................    PERCENT..............................
+    ref\tst: Be-Bo  Date   Die Divor Injur Marry      Be-Bo  Date   Die Divor Injur Marry 
+    Be-Born      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+       Date      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+        Die      0     0     3     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0
+    Divorce      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+     Injure      0     0     0     0     4     0        0.0   0.0   0.0   0.0 100.0   0.0
+      Marry      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Movem COUNT    PERCENT
+    ref\tst: Trans      Trans 
+  Transport      1      100.0
+
+Event Modality confusion matrix for "newswire" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted     12     0      100.0   0.0
+      Other      0     0        0.0   0.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific 
+        Specific    12/99.9%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted    12/99.9%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive 
+        Positive    12/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Injure      Attack         Die   Transport 
+          Injure     4/33.3%      -           -           -     
+          Attack      -          4/33.3%      -           -     
+             Die      -           -          3/25.0%      -     
+       Transport      -           -           -          1/ 8.3%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past 
+            Past    12/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Life    Conflict    Movement 
+            Life     7/58.3%      -           -     
+        Conflict      -          4/33.3%      -     
+        Movement      -           -          1/ 8.3%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=43/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Victim       Place    Attacker  Instrument      Target Time-Within Time-At-End       Agent  all others 
+          Victim     8/18.6%      -           -           -           -           -           -           -           -     
+           Place      -          6/14.0%      -           -           -           -           -           -           -     
+        Attacker      -           -          5/11.6%      -           -           -           -           -           -     
+      Instrument      -           -           -          5/11.6%      -           -           -           -           -     
+          Target      -           -           -           -          4/ 9.3%      -           -           -           -     
+     Time-Within      -           -           -           -           -          4/ 9.3%      -           -           -     
+     Time-At-End      -           -           -           -           -           -          4/ 9.3%      -           -     
+           Agent      -           -           -           -           -           -           -          4/ 9.3%      -     
+      all others      -           -           -           -           -           -           -           -          3/ 7.0%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 XIN20001204.0200.0029-T1, ID=XIN20001204.0200.0029-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T1, ID=XIN20001204.0200.0029-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="2000-12-04"
+--------
+    ref timex2 XIN20001204.0200.0029-T10, ID=XIN20001204.0200.0029-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T10, ID=XIN20001204.0200.0029-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="１０月１ ９日"
+--------
+    ref timex2 XIN20001204.0200.0029-T11, ID=XIN20001204.0200.0029-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T11, ID=XIN20001204.0200.0029-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="１１月３日"
+--------
+    ref timex2 XIN20001204.0200.0029-T12, ID=XIN20001204.0200.0029-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T12, ID=XIN20001204.0200.0029-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="１１月３日"
+--------
+    ref timex2 XIN20001204.0200.0029-T2, ID=XIN20001204.0200.0029-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T2, ID=XIN20001204.0200.0029-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="１２月４日"
+--------
+    ref timex2 XIN20001204.0200.0029-T3, ID=XIN20001204.0200.0029-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T3, ID=XIN20001204.0200.0029-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="一 个多月"
+--------
+    ref timex2 XIN20001204.0200.0029-T4, ID=XIN20001204.0200.0029-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T4, ID=XIN20001204.0200.0029-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="１ １月２１日"
+--------
+    ref timex2 XIN20001204.0200.0029-T5, ID=XIN20001204.0200.0029-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T5, ID=XIN20001204.0200.0029-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="今天"
+--------
+    ref timex2 XIN20001204.0200.0029-T6, ID=XIN20001204.0200.0029-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T6, ID=XIN20001204.0200.0029-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="目 前"
+--------
+    ref timex2 XIN20001204.0200.0029-T7, ID=XIN20001204.0200.0029-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T7, ID=XIN20001204.0200.0029-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="１１月６日"
+--------
+    ref timex2 XIN20001204.0200.0029-T8, ID=XIN20001204.0200.0029-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T8, ID=XIN20001204.0200.0029-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="１１月９日"
+--------
+    ref timex2 XIN20001204.0200.0029-T9, ID=XIN20001204.0200.0029-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 XIN20001204.0200.0029-T9, ID=XIN20001204.0200.0029-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document XIN20001204.0200.0029:
+          mention="不久"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    12/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    12/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---    12/99.9%
+
+======== value mapping ========
+
+--------
+    ref value XIN20001204.0200.0029-V1, ID=XIN20001204.0200.0029-V1, SUBTYPE=Money, TYPE=Numeric
+    tst value XIN20001204.0200.0029-V1, ID=XIN20001204.0200.0029-V1, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:
+          mention="５７万元"
+--------
+    ref value XIN20001204.0200.0029-V2, ID=XIN20001204.0200.0029-V2, SUBTYPE=Money, TYPE=Numeric
+    tst value XIN20001204.0200.0029-V2, ID=XIN20001204.0200.0029-V2, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document XIN20001204.0200.0029:
+          mention="１６万多元"
+
+======== value scoring ========
+
+Value Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=2/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Money 
+           Money     2/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=2/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Numeric 
+         Numeric     2/99.9%
+
+data input:               0.55 secs to load data
+entity eval:              0.08 secs to compute values,    0.02 secs to map,    0.08 secs to score
+relation eval:            0.33 secs to compute values,    0.02 secs to map,    0.06 secs to score
+event eval:               0.07 secs to compute values,    0.01 secs to map,    0.03 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.01 secs to compute values,    0.01 secs to map,    0.00 secs to score
+value eval:               0.00 secs to compute values,    0.00 secs to map,    0.01 secs to score
+########

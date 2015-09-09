@@ -1,0 +1,2889 @@
+command line (run on 2005 Aug 21 at 10:39:51):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score74910 -t /tmp/score74910
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity APW_ENG_20030415.0742-E1 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E1 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Shiite Muslim" (NAM/ORG/LIT)
+      ref mention="groups" (NOM/ORG/LIT)
+         ref name="Shiite Muslim"
+--------
+    ref entity APW_ENG_20030415.0742-E10 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E10 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="administration" (NOM/ORG/LIT)
+      ref mention="administration" (NOM/ORG/LIT)
+      ref mention="administration" (NOM/ORG/LIT)
+      ref mention="administration" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E101 (LOC/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E101 (LOC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (LOC/NOM/USP)
+      ref mention="Iraq" (NOM/LOC/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E102 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E102 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="group" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E103 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E103 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Baghdad" (NAM/LOC/LIT)
+         ref name="Baghdad"
+--------
+    ref entity APW_ENG_20030415.0742-E104 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E104 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="forces" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E105 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E105 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="coalition" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E106 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E106 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="leaders" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E107 (ORG/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E107 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="groups" (NOM/ORG/LIT)
+      ref mention="they" (PRO/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E109 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E109 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="delegates" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E11 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E11 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="American" (NAM/GPE/LIT)
+      ref mention="United States" (NAM/GPE/LIT)
+      ref mention="We" (PRO/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="America" (NAM/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="United States" (NAM/GPE/LIT)
+      ref mention="United States" (NAM/GPE/LIT)
+      ref mention="United States" (NAM/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="Americans" (NAM/PER/LIT)
+      ref mention="American" (NAM/GPE/LIT)
+      ref mention="American" (NAM/GPE/LIT)
+      ref mention="American" (NAM/GPE/LIT)
+         ref name="U.S"
+         ref name="U.S"
+         ref name="U.S"
+         ref name="American"
+         ref name="United States"
+         ref name="U.S"
+         ref name="U.S"
+         ref name="America"
+         ref name="U.S"
+         ref name="U.S"
+         ref name="United States"
+         ref name="United States"
+         ref name="United States"
+         ref name="U.S"
+         ref name="U.S"
+         ref name="Americans"
+         ref name="American"
+         ref name="American"
+         ref name="American"
+--------
+    ref entity APW_ENG_20030415.0742-E110 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E110 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="Iraqis" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+      ref mention="protesters" (NOM/PER/LIT)
+      ref mention="them" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E111 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E111 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Hawza" (NAM/ORG/LIT)
+      ref mention="seminary" (NOM/ORG/LIT)
+         ref name="Hawza"
+--------
+    ref entity APW_ENG_20030415.0742-E114 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E114 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Najaf" (NAM/LOC/LIT)
+         ref name="Najaf"
+--------
+    ref entity APW_ENG_20030415.0742-E115 (PER/PRO/USP)
+    tst entity APW_ENG_20030415.0742-E115 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="some" (PRO/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E116 (PER/PRO/USP)
+    tst entity APW_ENG_20030415.0742-E116 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="those" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E117 (PER/PRO/GEN)
+    tst entity APW_ENG_20030415.0742-E117 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="We" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E118 (ORG/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E118 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="administration" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E119 (PER/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E119 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="civilian" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E12 (FAC/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E12 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="tent" (NOM/FAC/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E121 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E121 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Mowaffak al-Rubaie" (NAM/PER/LIT)
+      ref mention="physician" (NOM/PER/LIT)
+      ref mention="activist" (NOM/PER/LIT)
+      ref mention="He" (PRO/PER/LIT)
+         ref name="Mowaffak al-Rubaie"
+--------
+    ref entity APW_ENG_20030415.0742-E123 (ORG/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E123 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="ministry" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E124 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E124 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Office of Reconstruction and Humanita..." (NAM/ORG/LIT)
+         ref name="Office of Reconstruction and Humanita..."
+--------
+    ref entity APW_ENG_20030415.0742-E125 (PER/NOM/GEN)
+    tst entity APW_ENG_20030415.0742-E125 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="civilian" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E126 (ORG/NOM/GEN)
+    tst entity APW_ENG_20030415.0742-E126 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="military" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E127 (PER/NAM/USP)
+    tst entity APW_ENG_20030415.0742-E127 (PER/NAM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NAM/USP)
+      ref mention="American" (NAM/PER/LIT)
+      ref mention="minister" (NOM/PER/LIT)
+         ref name="American"
+--------
+    ref entity APW_ENG_20030415.0742-E128 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E128 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="deputies" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E129 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E129 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="advisers" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E13 (FAC/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E13 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="ziggurat" (NOM/FAC/LIT)
+      ref mention="temple" (NOM/FAC/LIT)
+      ref mention="platform" (NOM/FAC/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E132 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E132 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="advisers" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E134 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E134 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="exiles" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E136 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E136 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="writer" (NOM/PER/LIT)
+      ref mention="Patrick McDowell" (NAM/PER/LIT)
+         ref name="Patrick McDowell"
+--------
+    ref entity APW_ENG_20030415.0742-E138 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E138 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Associated Press" (NAM/ORG/LIT)
+         ref name="Associated Press"
+--------
+    ref entity APW_ENG_20030415.0742-E139 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E139 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Kuwait City" (NAM/LOC/LIT)
+         ref name="Kuwait City"
+--------
+    ref entity APW_ENG_20030415.0742-E14 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E14 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Ur" (NAM/LOC/LIT)
+      ref mention="where" (PRO/LOC/LIT)
+         ref name="Ur"
+--------
+    ref entity APW_ENG_20030415.0742-E141 (PER/PRO/USP)
+    tst entity APW_ENG_20030415.0742-E141 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="members" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E145 (PER/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E145 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="Iraqis" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E146 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E146 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="leaders" (NOM/PER/LIT)
+      ref mention="delegates" (NOM/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="your" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="other" (PRO/PER/LIT)
+      ref mention="leaders" (NOM/PER/LIT)
+      ref mention="them" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E149 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E149 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="government" (NOM/ORG/LIT)
+      ref mention="government" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E151 (LOC/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E151 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="birthplace" (NOM/LOC/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E152 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E152 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="prophet" (NOM/PER/LIT)
+      ref mention="Abraham" (NAM/PER/LIT)
+         ref name="Abraham"
+--------
+    ref entity APW_ENG_20030415.0742-E154 (ORG/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E154 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="factions" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E16 (PER/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E16 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="Sumerians" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E17 (PER/NOM/GEN)
+    tst entity APW_ENG_20030415.0742-E17 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="man" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E18 (LOC/PRO/USP)
+    tst entity APW_ENG_20030415.0742-E18 (LOC/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (LOC/PRO/USP)
+      ref mention="where" (PRO/LOC/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E20 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E20 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="country" (NOM/GPE/LIT)
+      ref mention="Iraq" (NAM/GPE/LIT)
+      ref mention="Iraq" (NAM/GPE/LIT)
+      ref mention="country" (NOM/GPE/LIT)
+      ref mention="Iraq" (NAM/GPE/LIT)
+      ref mention="Iraq" (NAM/LOC/LIT)
+      ref mention="Iraq" (NAM/GPE/LIT)
+      ref mention="Iraq" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraq" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="country" (NOM/LOC/LIT)
+      ref mention="Iraq" (NAM/GPE/LIT)
+      ref mention="Iraq" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqis" (NAM/PER/MET)
+      ref mention="Iraq" (NAM/LOC/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqis" (NAM/PER/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqis" (NAM/PER/LIT)
+      ref mention="Iraq" (NAM/LOC/LIT)
+      ref mention="country" (NOM/GPE/LIT)
+      ref mention="country" (NOM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="country" (NOM/LOC/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+         ref name="Iraqi"
+         ref name="Iraq"
+         ref name="Iraq"
+         ref name="Iraq"
+         ref name="Iraq"
+         ref name="Iraq"
+         ref name="Iraq"
+         ref name="Iraqi"
+         ref name="Iraq"
+         ref name="Iraqi"
+         ref name="Iraq"
+         ref name="Iraq"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraq"
+         ref name="Iraqi"
+         ref name="Iraqis"
+         ref name="Iraqi"
+         ref name="Iraqis"
+         ref name="Iraq"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraqi"
+--------
+    ref entity APW_ENG_20030415.0742-E21 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E21 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Zalmay Khalilzad" (NAM/PER/LIT)
+      ref mention="Khalilzad" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+         ref name="Zalmay Khalilzad"
+         ref name="Khalilzad"
+--------
+    ref entity APW_ENG_20030415.0742-E22 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E22 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="White House" (NAM/ORG/MET)
+--------
+    ref entity APW_ENG_20030415.0742-E23 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E23 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="delegates" (NOM/PER/LIT)
+      ref mention="Participants" (NOM/PER/LIT)
+      ref mention="delegates" (NOM/PER/LIT)
+      ref mention="delegates" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E25 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E25 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="U.N" (NAM/ORG/LIT)
+         ref name="U.N"
+--------
+    ref entity APW_ENG_20030415.0742-E26 (PER/NAM/USP)
+    tst entity APW_ENG_20030415.0742-E26 (PER/NAM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NAM/USP)
+      ref mention="Kurds" (NAM/PER/LIT)
+      ref mention="Kurdish" (NAM/PER/LIT)
+      ref mention="Kurdish" (NAM/PER/LIT)
+      ref mention="Kurdish" (NAM/PER/LIT)
+      ref mention="Kurds" (NAM/PER/LIT)
+         ref name="Kurds"
+         ref name="Kurdish"
+         ref name="Kurdish"
+         ref name="Kurdish"
+         ref name="Kurds"
+--------
+    ref entity APW_ENG_20030415.0742-E27 (PER/NAM/USP)
+    tst entity APW_ENG_20030415.0742-E27 (PER/NAM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NAM/USP)
+      ref mention="Sunnis" (NAM/PER/LIT)
+         ref name="Sunnis"
+--------
+    ref entity APW_ENG_20030415.0742-E28 (PER/NAM/USP)
+    tst entity APW_ENG_20030415.0742-E28 (PER/NAM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NAM/USP)
+      ref mention="Shiites" (NAM/PER/LIT)
+      ref mention="Shiites" (NAM/PER/LIT)
+      ref mention="Shiite" (NAM/PER/LIT)
+      ref mention="Shiite" (NAM/PER/LIT)
+      ref mention="Shiite" (NAM/PER/LIT)
+         ref name="Shiites"
+         ref name="Shiites"
+         ref name="Shiite"
+         ref name="Shiite"
+         ref name="Shiite"
+--------
+    ref entity APW_ENG_20030415.0742-E29 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E29 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="others" (NOM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E3 (PER/PRO/USP)
+    tst entity APW_ENG_20030415.0742-E3 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="thousands" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E30 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E30 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="officials" (NOM/PER/LIT)
+      ref mention="officials" (NOM/PER/LIT)
+      ref mention="officials" (NOM/PER/LIT)
+      ref mention="officials" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E32 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E32 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="government" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E33 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E33 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Sheik" (NOM/PER/LIT)
+      ref mention="Ayad Jamal Al Din" (NAM/PER/LIT)
+      ref mention="leader" (NOM/PER/LIT)
+         ref name="Ayad Jamal Al Din"
+--------
+    ref entity APW_ENG_20030415.0742-E35 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E35 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="groups" (NOM/ORG/LIT)
+      ref mention="which" (PRO/ORG/LIT)
+      ref mention="their" (PRO/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E36 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E36 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="representatives" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E39 (PER/PRO/USP)
+    tst entity APW_ENG_20030415.0742-E39 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="Thousands" (PRO/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E4 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E4 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Baath Party" (NAM/ORG/LIT)
+         ref name="Baath Party"
+--------
+    ref entity APW_ENG_20030415.0742-E40 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E40 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="group" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E41 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E41 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Nasiriyah" (NAM/LOC/LIT)
+         ref name="Nasiriyah"
+--------
+    ref entity APW_ENG_20030415.0742-E42 (PER/NOM/GEN)
+    tst entity APW_ENG_20030415.0742-E42 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="leadership" (NOM/PER/LIT)
+      ref mention="itself" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E43 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E43 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="government" (NOM/ORG/LIT)
+      ref mention="this" (PRO/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E44 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E44 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Nasiriyah" (NAM/LOC/LIT)
+         ref name="Nasiriyah"
+--------
+    ref entity APW_ENG_20030415.0742-E46 (PER/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E46 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="people" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E48 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E48 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Abdul Aziz Hakim" (NAM/PER/LIT)
+      ref mention="leader" (NOM/PER/LIT)
+         ref name="Abdul Aziz Hakim"
+--------
+    ref entity APW_ENG_20030415.0742-E49 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E49 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="group" (NOM/ORG/LIT)
+      ref mention="Supreme Council for Islamic Revolutio..." (NAM/ORG/LIT)
+         ref name="Supreme Council for Islamic Revolutio..."
+--------
+    ref entity APW_ENG_20030415.0742-E5 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E5 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Saddam" (NAM/PER/LIT)
+      ref mention="Saddam Hussein" (NAM/PER/LIT)
+      ref mention="Saddam" (NAM/PER/LIT)
+      ref mention="Saddam" (NAM/PER/LIT)
+      ref mention="Saddam" (NAM/PER/LIT)
+      ref mention="Saddam" (NAM/PER/LIT)
+         ref name="Saddam"
+         ref name="Saddam Hussein"
+         ref name="Saddam"
+         ref name="Saddam"
+         ref name="Saddam"
+         ref name="Saddam"
+--------
+    ref entity APW_ENG_20030415.0742-E53 (ORG/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E53 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="government" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E54 (ORG/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E54 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="administration" (NOM/ORG/LIT)
+      ref mention="administration" (NOM/ORG/LIT)
+      ref mention="administration" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E55 (PER/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E55 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="official" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E57 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E57 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Nassar Hussein Musawi" (NAM/PER/LIT)
+      ref mention="schoolteacher" (NOM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+         ref name="Nassar Hussein Musawi"
+--------
+    ref entity APW_ENG_20030415.0742-E58 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E58 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="officials" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E6 (ORG/NOM/GEN)
+    tst entity APW_ENG_20030415.0742-E6 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="church" (NOM/ORG/LIT)
+      ref mention="religion" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E60 (ORG/NOM/GEN)
+    tst entity APW_ENG_20030415.0742-E60 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="government" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E61 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E61 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Gen" (NOM/PER/LIT)
+      ref mention="Tim Cross" (NAM/PER/LIT)
+      ref mention="member" (NOM/PER/LIT)
+      ref mention="Cross" (NAM/PER/LIT)
+         ref name="Tim Cross"
+         ref name="Cross"
+--------
+    ref entity APW_ENG_20030415.0742-E63 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E63 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="team" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E64 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E64 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="British" (NAM/GPE/LIT)
+         ref name="British"
+--------
+    ref entity APW_ENG_20030415.0742-E65 (PER/PRO/GEN)
+    tst entity APW_ENG_20030415.0742-E65 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="One" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E66 (PER/PRO/GEN)
+    tst entity APW_ENG_20030415.0742-E66 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="Those" (PRO/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E67 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E67 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="exile" (NOM/PER/LIT)
+      ref mention="Hatem Mukhliss" (NOM/PER/LIT)
+      ref mention="He" (PRO/PER/LIT)
+      ref mention="Mukhliss" (NAM/PER/LIT)
+         ref name="Mukhliss"
+--------
+    ref entity APW_ENG_20030415.0742-E7 (GPE/NOM/GEN)
+    tst entity APW_ENG_20030415.0742-E7 (GPE/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (GPE/NOM/GEN)
+      ref mention="state" (NOM/ORG/LIT)
+      ref mention="state" (NOM/GPE/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E70 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E70 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="President" (NOM/PER/LIT)
+      ref mention="John F. Kennedy" (NAM/PER/LIT)
+         ref name="John F. Kennedy"
+--------
+    ref entity APW_ENG_20030415.0742-E72 (GPE/NOM/GEN)
+    tst entity APW_ENG_20030415.0742-E72 (GPE/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (GPE/NOM/GEN)
+      ref mention="country" (NOM/GPE/LIT)
+      ref mention="country" (NOM/GPE/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E73 (PER/PRO/GEN)
+    tst entity APW_ENG_20030415.0742-E73 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="your" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="your" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E74 (ORG/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E74 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="army" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E75 (FAC/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E75 (FAC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (FAC/NOM/USP)
+      ref mention="hospitals" (NOM/FAC/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E76 (PER/NOM/GEN)
+    tst entity APW_ENG_20030415.0742-E76 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="people" (NOM/PER/LIT)
+      ref mention="personal" (NOM/PER/LIT)
+      ref mention="our" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E78 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E78 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="factions" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E8 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E8 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Gen" (NOM/PER/LIT)
+      ref mention="Jay Garner" (NAM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+      ref mention="Garner" (NAM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+      ref mention="Garner" (NAM/PER/LIT)
+      ref mention="Garner" (NAM/PER/LIT)
+      ref mention="Garner" (NAM/PER/LIT)
+      ref mention="Garner" (NAM/PER/LIT)
+      ref mention="Garner" (NAM/PER/LIT)
+      ref mention="Garner" (NAM/PER/LIT)
+         ref name="Jay Garner"
+         ref name="Garner"
+         ref name="Garner"
+         ref name="Garner"
+         ref name="Garner"
+         ref name="Garner"
+         ref name="Garner"
+         ref name="Garner"
+--------
+    ref entity APW_ENG_20030415.0742-E80 (PER/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E80 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="groups" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E82 (LOC/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E82 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="border" (NOM/LOC/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E83 (GPE/NOM/SPC)
+    tst entity APW_ENG_20030415.0742-E83 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="area" (NOM/LOC/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E84 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E84 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="city" (NOM/LOC/LIT)
+      ref mention="Kirkuk" (NAM/GPE/LIT)
+      ref mention="Kirkuk" (NAM/GPE/LIT)
+         ref name="Kirkuk"
+         ref name="Kirkuk"
+--------
+    ref entity APW_ENG_20030415.0742-E86 (GPE/PRO/SPC)
+    tst entity APW_ENG_20030415.0742-E86 (GPE/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document APW_ENG_20030415.0742:  score:  0.10000 out of 0.10000  (GPE/PRO/SPC)
+      ref mention="parts" (PRO/LOC/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E87 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E87 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="city" (NOM/GPE/LIT)
+      ref mention="Mosul" (NAM/GPE/LIT)
+         ref name="Mosul"
+--------
+    ref entity APW_ENG_20030415.0742-E90 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E90 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Turkey" (NAM/GPE/LIT)
+      ref mention="Turkey" (NAM/LOC/LIT)
+         ref name="Turkey"
+         ref name="Turkey"
+--------
+    ref entity APW_ENG_20030415.0742-E93 (PER/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E93 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Ahmed Chalabi" (NAM/PER/LIT)
+      ref mention="head" (NOM/PER/LIT)
+      ref mention="leader" (NOM/PER/LIT)
+      ref mention="Chalabi" (NAM/PER/LIT)
+      ref mention="leader" (NOM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Chalabi" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="Chalabi" (NAM/PER/LIT)
+         ref name="Ahmed Chalabi"
+         ref name="Chalabi"
+         ref name="Chalabi"
+         ref name="Chalabi"
+--------
+    ref entity APW_ENG_20030415.0742-E94 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E94 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Iraqi National Congress" (NAM/ORG/LIT)
+         ref name="Iraqi National Congress"
+--------
+    ref entity APW_ENG_20030415.0742-E95 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030415.0742-E95 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="London" (NAM/GPE/LIT)
+         ref name="London"
+--------
+    ref entity APW_ENG_20030415.0742-E96 (ORG/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E96 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="administration" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030415.0742-E99 (ORG/NOM/USP)
+    tst entity APW_ENG_20030415.0742-E99 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="military" (NOM/ORG/LIT)
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    FAC     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.24   0.00   0.00   0.00
+    GPE    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.49   0.00   0.00   0.00
+    LOC     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.24   0.00   0.00   0.00
+    ORG    30     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.27   0.00   0.00   0.00
+    PER    51     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.75   0.00   0.00   0.00
+  total   105     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    39     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    78.48   0.00   0.00   0.00
+    NOM    55     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.30   0.00   0.00   0.00
+    PRO    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.22   0.00   0.00   0.00
+  total   105     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2    51     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.22   0.00   0.00   0.00
+0.2-0.5    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.30   0.00   0.00   0.00
+0.5-1.0    35     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    78.48   0.00   0.00   0.00
+  total   105     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    58     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    45.07   0.00   0.00   0.00
+      2    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.66   0.00   0.00   0.00
+    3-4    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.06   0.00   0.00   0.00
+    5-8     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.24   0.00   0.00   0.00
+     >8     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.97   0.00   0.00   0.00
+  total   105     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    55     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP    37     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total   105     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir   105     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total   105     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Boundar     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.12   0.00   0.00   0.00
+Buildin     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.24   0.00   0.00   0.00
+Educati     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.24   0.00   0.00   0.00
+Governm    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.73   0.00   0.00   0.00
+  Group    29     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.36   0.00   0.00   0.00
+Indeter     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.12   0.00   0.00   0.00
+Individ    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.27   0.00   0.00   0.00
+  Media     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.24   0.00   0.00   0.00
+ Nation     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.97   0.00   0.00   0.00
+Non-Gov    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.45   0.00   0.00   0.00
+Populat    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.40   0.00   0.00   0.00
+Region-     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.12   0.00   0.00   0.00
+Religio     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.61   0.00   0.00   0.00
+Special     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.12   0.00   0.00   0.00
+  total   105     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = FAC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Buildin     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.24   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.24   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Nation     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.97   0.00   0.00   0.00
+Populat    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.40   0.00   0.00   0.00
+Special     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.12   0.00   0.00   0.00
+  total    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.49   0.00   0.00   0.00
+
+Performance statistics for TYPE = LOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Boundar     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.12   0.00   0.00   0.00
+Region-     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.12   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.24   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Educati     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.24   0.00   0.00   0.00
+Governm    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.73   0.00   0.00   0.00
+  Media     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.24   0.00   0.00   0.00
+Non-Gov    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.45   0.00   0.00   0.00
+Religio     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.61   0.00   0.00   0.00
+  total    30     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.27   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    29     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.36   0.00   0.00   0.00
+Indeter     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.12   0.00   0.00   0.00
+Individ    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.27   0.00   0.00   0.00
+  total    51     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.75   0.00   0.00   0.00
+
+Entity Type confusion matrix for "newswire" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            3     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    17     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     4     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    30     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    51     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=105/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         USP         GEN 
+             SPC    55/52.4%      -           -     
+             USP      -         37/35.2%      -     
+             GEN      -           -         13/12.4%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=105/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Group  Individual  Government Non-Governm Population-      Nation   Religious Indetermina  all others 
+           Group    29/27.6%      -           -           -           -           -           -           -           -     
+      Individual      -         18/17.1%      -           -           -           -           -           -           -     
+      Government      -           -         14/13.3%      -           -           -           -           -           -     
+  Non-Government      -           -           -         10/ 9.5%      -           -           -           -           -     
+  Population-Cen      -           -           -           -         10/ 9.5%      -           -           -           -     
+          Nation      -           -           -           -           -          6/ 5.7%      -           -           -     
+       Religious      -           -           -           -           -           -          4/ 3.8%      -           -     
+   Indeterminate      -           -           -           -           -           -           -          4/ 3.8%      -     
+      all others      -           -           -           -           -           -           -           -         10/ 9.5%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=105/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        PER         ORG         GPE         LOC         FAC 
+             PER    51/48.6%      -           -           -           -     
+             ORG      -         30/28.6%      -           -           -     
+             GPE      -           -         17/16.2%      -           -     
+             LOC      -           -           -          4/ 3.8%      -     
+             FAC      -           -           -           -          3/ 2.9%
+
+Entity Class confusion matrix for "newswire" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           55     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0    13     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0    37        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0    61        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0     8        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    42        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   111        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0   113        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0   105        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0    44        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   262        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   260        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     2        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   262        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     5        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0    57        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0    20        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    45        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0   135        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   262        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "newswire" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            5     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    57     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    20     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    45     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0   135     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "newswire" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          260     0      100.0   0.0
+METON            0     2        0.0 100.0
+
+======== relation mapping ========
+
+--------
+    ref relation APW_ENG_20030415.0742-R1 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R1 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="Kurds, Sunnis and Shiites from inside..."
+--------
+    ref relation APW_ENG_20030415.0742-R10 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R10 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E46 (PER/Group/NOM/SPC), head="people"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E46 (PER/Group/NOM/SPC), head="people"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="the Iraqi people"
+--------
+    ref relation APW_ENG_20030415.0742-R11 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R11 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E28 (PER/Group/NAM/USP), name="Shiites"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E28 (PER/Group/NAM/USP), name="Shiites"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E49 (ORG/Religio/NAM/SPC), name="Supreme Council for Islamic Revolutio..."
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E49 (ORG/Religio/NAM/SPC), name="Supreme Council for Islamic Revolutio..."
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="the largest Iraqi Shiite group"
+--------
+    ref relation APW_ENG_20030415.0742-R12 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R12 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="Iraqi opposition leaders"
+      ref extent="Iraqi opposition leaders"
+--------
+    ref relation APW_ENG_20030415.0742-R13 (PART-WHOLE/Subsidiary/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R13 (PART-WHOLE/Subsidiary/Other/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E149 (ORG/Governm/NOM/SPC), head="government"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E149 (ORG/Governm/NOM/SPC), head="government"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="the country's postwar government"
+--------
+    ref relation APW_ENG_20030415.0742-R14 (PHYS/Located/Asserted/Past)
+    tst relation APW_ENG_20030415.0742-R14 (PHYS/Located/Asserted/Past)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E152 (PER/Individ/NAM/SPC), name="Abraham"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E152 (PER/Individ/NAM/SPC), name="Abraham"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E151 (LOC/Region-/NOM/SPC), head="birthplace"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E151 (LOC/Region-/NOM/SPC), head="birthplace"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="the biblical birthplace of the prophe..."
+--------
+    ref relation APW_ENG_20030415.0742-R15 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R15 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E49 (ORG/Religio/NAM/SPC), name="Supreme Council for Islamic Revolutio..."
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E49 (ORG/Religio/NAM/SPC), name="Supreme Council for Islamic Revolutio..."
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="the largest Iraqi Shiite group"
+--------
+    ref relation APW_ENG_20030415.0742-R16 (PHYS/Located/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R16 (PHYS/Located/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E151 (LOC/Region-/NOM/SPC), head="birthplace"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E151 (LOC/Region-/NOM/SPC), head="birthplace"
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000
+      ref extent="Meeting in the biblical birthplace of..."
+--------
+    ref relation APW_ENG_20030415.0742-R17 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R17 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E154 (ORG/Non-Gov/NOM/USP), head="factions"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E154 (ORG/Non-Gov/NOM/USP), head="factions"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref extent="delegates from Iraq's many factions"
+--------
+    ref relation APW_ENG_20030415.0742-R18 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R18 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E154 (ORG/Non-Gov/NOM/USP), head="factions"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E154 (ORG/Non-Gov/NOM/USP), head="factions"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="delegates from Iraq's many factions"
+--------
+    ref relation APW_ENG_20030415.0742-R19 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R19 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E1 (ORG/Religio/NAM/SPC), name="Shiite Muslim"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E1 (ORG/Religio/NAM/SPC), name="Shiite Muslim"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E1 (ORG/Religio/NAM/SPC), name="Shiite Muslim"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E1 (ORG/Religio/NAM/SPC), name="Shiite Muslim"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="some Shiite Muslim groups"
+--------
+    ref relation APW_ENG_20030415.0742-R2 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R2 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E27 (PER/Group/NAM/USP), name="Sunnis"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E27 (PER/Group/NAM/USP), name="Sunnis"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="Kurds, Sunnis and Shiites from inside..."
+--------
+    ref relation APW_ENG_20030415.0742-R20 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R20 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E5 (PER/Individ/NAM/SPC), name="Saddam Hussein"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E5 (PER/Individ/NAM/SPC), name="Saddam Hussein"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E4 (ORG/Non-Gov/NAM/SPC), name="Baath Party"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E4 (ORG/Non-Gov/NAM/SPC), name="Baath Party"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="Saddam's Baath Party"
+--------
+    ref relation APW_ENG_20030415.0742-R21 (PART-WHOLE/Subsidiary/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R21 (PART-WHOLE/Subsidiary/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E6 (ORG/Religio/NOM/GEN), head="religion"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E6 (ORG/Religio/NOM/GEN), head="religion"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E7 (GPE/Nation/NOM/GEN), head="state"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E7 (GPE/Nation/NOM/GEN), head="state"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref extent="church from the state"
+--------
+    ref relation APW_ENG_20030415.0742-R22 (PART-WHOLE/Subsidiary/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R22 (PART-WHOLE/Subsidiary/Other/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E10 (ORG/Governm/NOM/SPC), head="administration"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E10 (ORG/Governm/NOM/SPC), head="administration"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="the U.S.-led interim administration i..."
+--------
+    ref relation APW_ENG_20030415.0742-R23 (GEN-AFF/Org-Location/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R23 (GEN-AFF/Org-Location/Other/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E10 (ORG/Governm/NOM/SPC), head="administration"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E10 (ORG/Governm/NOM/SPC), head="administration"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="the U.S.-led interim administration i..."
+--------
+    ref relation APW_ENG_20030415.0742-R24 (PHYS/Located/Asserted/Past)
+    tst relation APW_ENG_20030415.0742-R24 (PHYS/Located/Asserted/Past)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E8 (PER/Individ/NAM/SPC), name="Jay Garner"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E8 (PER/Individ/NAM/SPC), name="Jay Garner"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E12 (FAC/Buildin/NOM/SPC), head="tent"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E12 (FAC/Buildin/NOM/SPC), head="tent"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="Retired Lt. Gen. Jay Garner, who will..."
+--------
+    ref relation APW_ENG_20030415.0742-R25 (PHYS/Near/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R25 (PHYS/Near/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E12 (FAC/Buildin/NOM/SPC), head="tent"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E12 (FAC/Buildin/NOM/SPC), head="tent"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E13 (FAC/Buildin/NOM/SPC), head="ziggurat"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E13 (FAC/Buildin/NOM/SPC), head="ziggurat"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="a golden-colored tent in the shadows ..."
+--------
+    ref relation APW_ENG_20030415.0742-R26 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R26 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E13 (FAC/Buildin/NOM/SPC), head="ziggurat"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E13 (FAC/Buildin/NOM/SPC), head="ziggurat"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E14 (GPE/Populat/NAM/SPC), name="Ur"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E14 (GPE/Populat/NAM/SPC), name="Ur"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="a golden-colored tent in the shadows ..."
+--------
+    ref relation APW_ENG_20030415.0742-R27 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+    tst relation APW_ENG_20030415.0742-R27 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E16 (PER/Group/NOM/SPC), head="Sumerians"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E16 (PER/Group/NOM/SPC), head="Sumerians"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E13 (FAC/Buildin/NOM/SPC), head="ziggurat"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E13 (FAC/Buildin/NOM/SPC), head="ziggurat"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="a terraced temple platform of the anc..."
+--------
+    ref relation APW_ENG_20030415.0742-R28 (PART-WHOLE/Geographical/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R28 (PART-WHOLE/Geographical/Other/Unspecified)
+      relation score:  1.20000 out of 1.20000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E18 (LOC/Region-/PRO/USP), head="where"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E18 (LOC/Region-/PRO/USP), head="where"
+      Time-Starti ref arg: ID=APW_ENG_20030415.0742-T13 (TIM/---), extent="today"
+      Time-Starti tst arg: ID=APW_ENG_20030415.0742-T13 (TIM/---), extent="today"
+- in document APW_ENG_20030415.0742:  score:  1.20000 out of 1.20000
+      ref extent="``What better birthday can a man have..."
+--------
+    ref relation APW_ENG_20030415.0742-R29 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R29 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E21 (PER/Individ/NAM/SPC), name="Zalmay Khalilzad"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E21 (PER/Individ/NAM/SPC), name="Zalmay Khalilzad"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E22 (ORG/Governm/NAM/SPC), head="White House"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E22 (ORG/Governm/NAM/SPC), head="White House"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="White House envoy Zalmay Khalilzad"
+--------
+    ref relation APW_ENG_20030415.0742-R3 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R3 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E28 (PER/Group/NAM/USP), name="Shiites"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E28 (PER/Group/NAM/USP), name="Shiites"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="Kurds, Sunnis and Shiites from inside..."
+--------
+    ref relation APW_ENG_20030415.0742-R30 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R30 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E58 (PER/Group/NOM/USP), head="officials"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E58 (PER/Group/NOM/USP), head="officials"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="Iraqi officials"
+--------
+    ref relation APW_ENG_20030415.0742-R31 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R31 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E61 (PER/Individ/NAM/SPC), name="Tim Cross"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E61 (PER/Individ/NAM/SPC), name="Tim Cross"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E63 (ORG/Non-Gov/NOM/SPC), head="team"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E63 (ORG/Non-Gov/NOM/SPC), head="team"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="the top British member of Garner's team"
+--------
+    ref relation APW_ENG_20030415.0742-R32 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R32 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E61 (PER/Individ/NAM/SPC), name="Tim Cross"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E61 (PER/Individ/NAM/SPC), name="Tim Cross"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E64 (GPE/Nation/NAM/SPC), name="British"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E64 (GPE/Nation/NAM/SPC), name="British"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="the top British member of Garner's team"
+--------
+    ref relation APW_ENG_20030415.0742-R33 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R33 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E8 (PER/Individ/NAM/SPC), name="Jay Garner"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E8 (PER/Individ/NAM/SPC), name="Jay Garner"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E63 (ORG/Non-Gov/NOM/SPC), head="team"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E63 (ORG/Non-Gov/NOM/SPC), head="team"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="the top British member of Garner's team"
+--------
+    ref relation APW_ENG_20030415.0742-R34 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R34 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E8 (PER/Individ/NAM/SPC), name="Jay Garner"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E8 (PER/Individ/NAM/SPC), name="Jay Garner"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E124 (ORG/Non-Gov/NAM/SPC), name="Office of Reconstruction and Humanita..."
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E124 (ORG/Non-Gov/NAM/SPC), name="Office of Reconstruction and Humanita..."
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="Garner's Office of Reconstruction and..."
+--------
+    ref relation APW_ENG_20030415.0742-R35 (PHYS/Located/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R35 (PHYS/Located/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E33 (PER/Individ/NAM/SPC), name="Ayad Jamal Al Din"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E33 (PER/Individ/NAM/SPC), name="Ayad Jamal Al Din"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E44 (GPE/Populat/NAM/SPC), name="Nasiriyah"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E44 (GPE/Populat/NAM/SPC), name="Nasiriyah"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="a Shiite religious leader from Nasiriyah"
+--------
+    ref relation APW_ENG_20030415.0742-R36 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R36 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E67 (PER/Individ/NAM/SPC), name="Mukhliss"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E67 (PER/Individ/NAM/SPC), name="Mukhliss"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="Iraqi exile Hatem Mukhliss"
+--------
+    ref relation APW_ENG_20030415.0742-R37 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R37 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E73 (PER/Indeter/PRO/GEN), head="your"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E73 (PER/Indeter/PRO/GEN), head="your"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E72 (GPE/Nation/NOM/GEN), head="country"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E72 (GPE/Nation/NOM/GEN), head="country"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref extent="your country"
+      ref extent="your country"
+--------
+    ref relation APW_ENG_20030415.0742-R38 (PART-WHOLE/Geographical/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R38 (PART-WHOLE/Geographical/Other/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E75 (FAC/Buildin/NOM/USP), head="hospitals"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E75 (FAC/Buildin/NOM/USP), head="hospitals"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="He asked coalition representatives to..."
+--------
+    ref relation APW_ENG_20030415.0742-R39 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R39 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E76 (PER/Group/NOM/GEN), head="personal"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E76 (PER/Group/NOM/GEN), head="personal"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="our country"
+--------
+    ref relation APW_ENG_20030415.0742-R4 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R4 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E30 (PER/Group/NOM/USP), head="officials"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E30 (PER/Group/NOM/USP), head="officials"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="U.S. officials"
+      ref extent="U.S. officials"
+      ref extent="U.S. officials"
+      ref extent="American officials"
+--------
+    ref relation APW_ENG_20030415.0742-R40 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R40 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E80 (PER/Group/NOM/USP), head="groups"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E80 (PER/Group/NOM/USP), head="groups"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref extent="Kurdish groups"
+--------
+    ref relation APW_ENG_20030415.0742-R41 (PART-WHOLE/Geographical/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R41 (PART-WHOLE/Geographical/Other/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E82 (LOC/Boundar/NOM/SPC), head="border"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E82 (LOC/Boundar/NOM/SPC), head="border"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E83 (GPE/Special/NOM/SPC), head="area"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E83 (GPE/Special/NOM/SPC), head="area"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="the border of their autonomous area"
+--------
+    ref relation APW_ENG_20030415.0742-R42 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R42 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.10000 out of 1.10000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E86 (GPE/Populat/PRO/SPC), head="parts"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E86 (GPE/Populat/PRO/SPC), head="parts"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E87 (GPE/Populat/NAM/SPC), name="Mosul"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E87 (GPE/Populat/NAM/SPC), name="Mosul"
+- in document APW_ENG_20030415.0742:  score:  1.10000 out of 1.10000
+      ref extent="Kurdish parts of the city of Mosul"
+--------
+    ref relation APW_ENG_20030415.0742-R43 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R43 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  0.10000 out of 0.10000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E86 (GPE/Populat/PRO/SPC), head="parts"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E86 (GPE/Populat/PRO/SPC), head="parts"
+- in document APW_ENG_20030415.0742:  score:  0.10000 out of 0.10000
+      ref extent="Kurdish parts of the city of Mosul"
+--------
+    ref relation APW_ENG_20030415.0742-R44 (PHYS/Located/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R44 (PHYS/Located/Other/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E84 (GPE/Populat/NAM/SPC), name="Kirkuk"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E84 (GPE/Populat/NAM/SPC), name="Kirkuk"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="That could pose a problem for the Uni..."
+--------
+    ref relation APW_ENG_20030415.0742-R45 (PHYS/Located/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R45 (PHYS/Located/Other/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E90 (GPE/Nation/NAM/SPC), name="Turkey"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E90 (GPE/Nation/NAM/SPC), name="Turkey"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="separatist Kurds in Turkey"
+--------
+    ref relation APW_ENG_20030415.0742-R47 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R47 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E94 (ORG/Non-Gov/NAM/SPC), name="Iraqi National Congress"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E94 (ORG/Non-Gov/NAM/SPC), name="Iraqi National Congress"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E95 (GPE/Populat/NAM/SPC), name="London"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E95 (GPE/Populat/NAM/SPC), name="London"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="the London-based umbrella Iraqi Natio..."
+--------
+    ref relation APW_ENG_20030415.0742-R48 (PART-WHOLE/Subsidiary/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R48 (PART-WHOLE/Subsidiary/Other/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E96 (ORG/Governm/NOM/USP), head="administration"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E96 (ORG/Governm/NOM/USP), head="administration"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="a new Iraqi administration"
+--------
+    ref relation APW_ENG_20030415.0742-R49 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R49 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E99 (ORG/Governm/NOM/USP), head="military"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E99 (ORG/Governm/NOM/USP), head="military"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="the U.S. military"
+--------
+    ref relation APW_ENG_20030415.0742-R5 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R5 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E36 (PER/Group/NOM/USP), head="representatives"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E36 (PER/Group/NOM/USP), head="representatives"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E35 (ORG/Non-Gov/NOM/SPC), head="groups"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E35 (ORG/Non-Gov/NOM/SPC), head="groups"
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000
+      ref extent="the groups, which picked their own re..."
+--------
+    ref relation APW_ENG_20030415.0742-R50 (PHYS/Located/Asserted/Past)
+    tst relation APW_ENG_20030415.0742-R50 (PHYS/Located/Asserted/Past)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E101 (LOC/Region-/NOM/USP), head="Iraq"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E101 (LOC/Region-/NOM/USP), head="Iraq"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="Chalabi was the first top Iraqi oppos..."
+--------
+    ref relation APW_ENG_20030415.0742-R51 (PHYS/Located/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R51 (PHYS/Located/Other/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E103 (GPE/Populat/NAM/SPC), name="Baghdad"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E103 (GPE/Populat/NAM/SPC), name="Baghdad"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="Chalabi was the first top Iraqi oppos..."
+--------
+    ref relation APW_ENG_20030415.0742-R52 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R52 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="the first top Iraqi opposition leader..."
+--------
+    ref relation APW_ENG_20030415.0742-R53 (PER-SOC/Business/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R53 (PER-SOC/Business/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E141 (PER/Group/PRO/USP), head="members"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E141 (PER/Group/PRO/USP), head="members"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="he and other top members of his group"
+--------
+    ref relation APW_ENG_20030415.0742-R54 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R54 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E141 (PER/Group/PRO/USP), head="members"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E141 (PER/Group/PRO/USP), head="members"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E102 (ORG/Non-Gov/NOM/SPC), head="group"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E102 (ORG/Non-Gov/NOM/SPC), head="group"
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000
+      ref extent="other top members of his group"
+--------
+    ref relation APW_ENG_20030415.0742-R55 (ORG-AFF/Employment/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R55 (ORG-AFF/Employment/Other/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E104 (PER/Group/NOM/USP), head="forces"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E104 (PER/Group/NOM/USP), head="forces"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E105 (ORG/Non-Gov/NOM/SPC), head="coalition"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E105 (ORG/Non-Gov/NOM/SPC), head="coalition"
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000
+      ref extent="forces to the coalition"
+--------
+    ref relation APW_ENG_20030415.0742-R56 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R56 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Other/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E5 (PER/Individ/NAM/SPC), name="Saddam Hussein"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E5 (PER/Individ/NAM/SPC), name="Saddam Hussein"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E107 (ORG/Non-Gov/NOM/USP), head="groups"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E107 (ORG/Non-Gov/NOM/USP), head="groups"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="anti-Saddam groups"
+--------
+    ref relation APW_ENG_20030415.0742-R57 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R57 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E28 (PER/Group/NAM/USP), name="Shiites"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E28 (PER/Group/NAM/USP), name="Shiites"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E111 (ORG/Educati/NAM/SPC), name="Hawza"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E111 (ORG/Educati/NAM/SPC), name="Hawza"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="the Shiite religious seminary in Najaf"
+--------
+    ref relation APW_ENG_20030415.0742-R58 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R58 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E111 (ORG/Educati/NAM/SPC), name="Hawza"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E111 (ORG/Educati/NAM/SPC), name="Hawza"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E114 (GPE/Populat/NAM/SPC), name="Najaf"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E114 (GPE/Populat/NAM/SPC), name="Najaf"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="the Shiite religious seminary in Najaf"
+--------
+    ref relation APW_ENG_20030415.0742-R59 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R59 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Other/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E119 (PER/Indeter/NOM/SPC), head="civilian"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E119 (PER/Indeter/NOM/SPC), head="civilian"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E118 (ORG/Governm/NOM/USP), head="administration"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E118 (ORG/Governm/NOM/USP), head="administration"
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000
+      ref extent="any Iraqi civilian administration"
+--------
+    ref relation APW_ENG_20030415.0742-R6 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R6 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E40 (ORG/Religio/NOM/SPC), head="group"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E40 (ORG/Religio/NOM/SPC), head="group"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="Thousands of Shiites _ who constitute..."
+--------
+    ref relation APW_ENG_20030415.0742-R60 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R60 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E119 (PER/Indeter/NOM/SPC), head="civilian"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E119 (PER/Indeter/NOM/SPC), head="civilian"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="any Iraqi civilian administration"
+--------
+    ref relation APW_ENG_20030415.0742-R61 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R61 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E121 (PER/Individ/NAM/SPC), name="Mowaffak al-Rubaie"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E121 (PER/Individ/NAM/SPC), name="Mowaffak al-Rubaie"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="an Iraqi physician and opposition act..."
+--------
+    ref relation APW_ENG_20030415.0742-R62 (PER-SOC/Business/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R62 (PER-SOC/Business/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E127 (PER/Individ/NAM/USP), name="American"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E127 (PER/Individ/NAM/USP), name="American"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E128 (PER/Group/NOM/USP), head="deputies"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E128 (PER/Group/NOM/USP), head="deputies"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref extent="Each minister would have two American..."
+--------
+    ref relation APW_ENG_20030415.0742-R63 (PER-SOC/Business/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R63 (PER-SOC/Business/Other/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E127 (PER/Individ/NAM/USP), name="American"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E127 (PER/Individ/NAM/USP), name="American"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E134 (PER/Group/NOM/USP), head="exiles"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E134 (PER/Group/NOM/USP), head="exiles"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref extent="Each minister would have two American..."
+--------
+    ref relation APW_ENG_20030415.0742-R64 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R64 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E128 (PER/Group/NOM/USP), head="deputies"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E128 (PER/Group/NOM/USP), head="deputies"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="two American deputies and eight Ameri..."
+--------
+    ref relation APW_ENG_20030415.0742-R65 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R65 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E132 (PER/Group/NOM/USP), head="advisers"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E132 (PER/Group/NOM/USP), head="advisers"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="four Iraqi advisers from inside the c..."
+--------
+    ref relation APW_ENG_20030415.0742-R66 (PHYS/Located/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R66 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E132 (PER/Group/NOM/USP), head="advisers"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E132 (PER/Group/NOM/USP), head="advisers"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="four Iraqi advisers from inside the c..."
+--------
+    ref relation APW_ENG_20030415.0742-R67 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R67 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E136 (PER/Individ/NAM/SPC), name="Patrick McDowell"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E136 (PER/Individ/NAM/SPC), name="Patrick McDowell"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E138 (ORG/Media/NAM/SPC), name="Associated Press"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E138 (ORG/Media/NAM/SPC), name="Associated Press"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="Associated Press writer Patrick McDow..."
+--------
+    ref relation APW_ENG_20030415.0742-R68 (PHYS/Located/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R68 (PHYS/Located/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E136 (PER/Individ/NAM/SPC), name="Patrick McDowell"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E136 (PER/Individ/NAM/SPC), name="Patrick McDowell"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E139 (GPE/Populat/NAM/SPC), name="Kuwait City"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E139 (GPE/Populat/NAM/SPC), name="Kuwait City"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref extent="Associated Press writer Patrick McDow..."
+--------
+    ref relation APW_ENG_20030415.0742-R7 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R7 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E39 (PER/Group/PRO/USP), head="Thousands"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E39 (PER/Group/PRO/USP), head="Thousands"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E40 (ORG/Religio/NOM/SPC), head="group"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E40 (ORG/Religio/NOM/SPC), head="group"
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000
+      ref extent="Thousands of Shiites _ who constitute..."
+--------
+    ref relation APW_ENG_20030415.0742-R70 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R70 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E55 (PER/Individ/NOM/SPC), head="official"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E55 (PER/Individ/NOM/SPC), head="official"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="a senior U.S. official"
+--------
+    ref relation APW_ENG_20030415.0742-R71 (PART-WHOLE/Geographical/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R71 (PART-WHOLE/Geographical/Other/Unspecified)
+      relation score:  2.20000 out of 2.20000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E14 (GPE/Populat/NAM/SPC), name="Ur"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E14 (GPE/Populat/NAM/SPC), name="Ur"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+      Time-Starti ref arg: ID=APW_ENG_20030415.0742-T13 (TIM/---), extent="today"
+      Time-Starti tst arg: ID=APW_ENG_20030415.0742-T13 (TIM/---), extent="today"
+- in document APW_ENG_20030415.0742:  score:  2.20000 out of 2.20000
+      ref extent="``What better birthday can a man have..."
+--------
+    ref relation APW_ENG_20030415.0742-R73 (PART-WHOLE/Geographical/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R73 (PART-WHOLE/Geographical/Other/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E84 (GPE/Populat/NAM/SPC), name="Kirkuk"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E84 (GPE/Populat/NAM/SPC), name="Kirkuk"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E83 (GPE/Special/NOM/SPC), head="area"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E83 (GPE/Special/NOM/SPC), head="area"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="Kurdish groups appear unwilling to co..."
+--------
+    ref relation APW_ENG_20030415.0742-R74 (PART-WHOLE/Geographical/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R74 (PART-WHOLE/Geographical/Other/Unspecified)
+      relation score:  0.60000 out of 0.60000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E86 (GPE/Populat/PRO/SPC), head="parts"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E86 (GPE/Populat/PRO/SPC), head="parts"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E83 (GPE/Special/NOM/SPC), head="area"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E83 (GPE/Special/NOM/SPC), head="area"
+- in document APW_ENG_20030415.0742:  score:  0.60000 out of 0.60000
+      ref extent="Kurdish groups appear unwilling to co..."
+--------
+    ref relation APW_ENG_20030415.0742-R8 (PHYS/Located/Asserted/Unspecified)
+    tst relation APW_ENG_20030415.0742-R8 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E39 (PER/Group/PRO/USP), head="Thousands"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E39 (PER/Group/PRO/USP), head="Thousands"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E41 (GPE/Populat/NAM/SPC), name="Nasiriyah"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E41 (GPE/Populat/NAM/SPC), name="Nasiriyah"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref extent="Thousands of Shiites _ who constitute..."
+--------
+    ref relation APW_ENG_20030415.0742-R9 (PART-WHOLE/Subsidiary/Other/Unspecified)
+    tst relation APW_ENG_20030415.0742-R9 (PART-WHOLE/Subsidiary/Other/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030415.0742-E43 (ORG/Governm/NOM/SPC), head="government"
+            Arg-1 tst arg: ID=APW_ENG_20030415.0742-E43 (ORG/Governm/NOM/SPC), head="government"
+            Arg-2 ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Arg-2 tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref extent="Iraqi interim government"
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    ART     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.19   0.00   0.00   0.00
+GEN-AFF    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.87   0.00   0.00   0.00
+ORG-AFF     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.25   0.00   0.00   0.00
+PART-WH    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.09   0.00   0.00   0.00
+PER-SOC     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.19   0.00   0.00   0.00
+   PHYS    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.41   0.00   0.00   0.00
+  total    71     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    50     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.65   0.00   0.00   0.00
+  Other    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.35   0.00   0.00   0.00
+  total    71     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    71     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    71     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    71     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    71     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.19   0.00   0.00   0.00
+Citizen    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    31.00   0.00   0.00   0.00
+Employm     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.34   0.00   0.00   0.00
+Geograp     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.00   0.00   0.00   0.00
+Located    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.22   0.00   0.00   0.00
+Members     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.91   0.00   0.00   0.00
+   Near     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.19   0.00   0.00   0.00
+Org-Loc     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.88   0.00   0.00   0.00
+Subsidi     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.10   0.00   0.00   0.00
+User-Ow     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.19   0.00   0.00   0.00
+  total    71     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ART:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+User-Ow     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.19   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.19   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    31.00   0.00   0.00   0.00
+Org-Loc     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.88   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.87   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.34   0.00   0.00   0.00
+Members     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.91   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.25   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.00   0.00   0.00   0.00
+Subsidi     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.10   0.00   0.00   0.00
+  total    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.09   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER-SOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.19   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.19   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.22   0.00   0.00   0.00
+   Near     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.19   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.41   0.00   0.00   0.00
+
+Relation Type confusion matrix for "newswire" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      1     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0    31     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     9     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0    15     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     3     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+       PHYS      0     0     0     0     0     0    12        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=ART   COUNT    PERCENT
+    ref\tst: User-      User- 
+User-Owner-      1      100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res     25     0      100.0   0.0
+Org-Locatio      0     6        0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      3     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     6     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     8     0        0.0 100.0   0.0
+ Subsidiary      0     0     7        0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PER-S COUNT............    PERCENT............
+    ref\tst: Busin Famil Lasti      Busin Famil Lasti 
+   Business      3     0     0      100.0   0.0   0.0
+     Family      0     0     0        0.0   0.0   0.0
+Lasting-Per      0     0     0        0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located     11     0      100.0   0.0
+       Near      0     1        0.0 100.0
+
+Relation Modality confusion matrix for "newswire" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     50     0     0      100.0   0.0   0.0
+      Other      0    21     0        0.0 100.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=71/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted    50/70.4%      -     
+           Other      -         21/29.6%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=71/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Citizen-Res     Located Geographica  Subsidiary  Membership Org-Locatio  Employment    Business  all others 
+  Citizen-Reside    25/35.2%      -           -           -           -           -           -           -           -     
+         Located      -         11/15.5%      -           -           -           -           -           -           -     
+    Geographical      -           -          8/11.3%      -           -           -           -           -           -     
+      Subsidiary      -           -           -          7/ 9.9%      -           -           -           -           -     
+      Membership      -           -           -           -          6/ 8.5%      -           -           -           -     
+    Org-Location      -           -           -           -           -          6/ 8.5%      -           -           -     
+      Employment      -           -           -           -           -           -          3/ 4.2%      -           -     
+        Business      -           -           -           -           -           -           -          3/ 4.2%      -     
+      all others      -           -           -           -           -           -           -           -          2/ 2.8%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=71/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past 
+     Unspecified    67/94.4%      -     
+            Past      -          4/ 5.6%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=71/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    GEN-AFF  PART-WHOLE        PHYS     ORG-AFF     PER-SOC         ART 
+         GEN-AFF    31/43.7%      -           -           -           -           -     
+      PART-WHOLE      -         15/21.1%      -           -           -           -     
+            PHYS      -           -         12/16.9%      -           -           -     
+         ORG-AFF      -           -           -          9/12.7%      -           -     
+         PER-SOC      -           -           -           -          3/ 4.2%      -     
+             ART      -           -           -           -           -          1/ 1.4%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=144/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 Time-Starti 
+           Arg-2    71/49.3%      -           -     
+           Arg-1      -         71/49.3%      -     
+   Time-Starting      -           -          2/ 1.4%
+
+======== event mapping ========
+
+--------
+    ref event APW_ENG_20030415.0742-EV1 (Contact/Meet/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV1 (Contact/Meet/Specific/Asserted/Positive/Past)
+      event score:  1.20000 out of 1.20000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+           Entity ref arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+      Time-Within ref arg: ID=APW_ENG_20030415.0742-T2 (TIM/---), extent="Tuesday"
+      Time-Within tst arg: ID=APW_ENG_20030415.0742-T2 (TIM/---), extent="Tuesday"
+- in document APW_ENG_20030415.0742:  score:  1.20000 out of 1.20000
+      ref anchor="A U.S.-sponsored forum that brought I...", extent="A U.S.-sponsored forum that brought I..."
+--------
+    ref event APW_ENG_20030415.0742-EV10 (Business/Start-Org/Specific/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV10 (Business/Start-Org/Specific/Other/Positive/Future)
+      event score:  1.20000 out of 1.20000
+            Agent ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Agent tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+      Time-Starti ref arg: ID=APW_ENG_20030415.0742-T13 (TIM/---), extent="today"
+      Time-Starti tst arg: ID=APW_ENG_20030415.0742-T13 (TIM/---), extent="today"
+- in document APW_ENG_20030415.0742:  score:  1.20000 out of 1.20000
+      ref anchor="``What better birthday can a man have...", extent="``What better birthday can a man have..."
+--------
+    ref event APW_ENG_20030415.0742-EV11 (Business/Start-Org/Generic/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV11 (Business/Start-Org/Generic/Other/Positive/Future)
+      event score:  1.00000 out of 1.00000
+            Agent ref arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+            Agent tst arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+            Place ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Place tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref anchor="``We want you to establish your own d...", extent="``We want you to establish your own d..."
+--------
+    ref event APW_ENG_20030415.0742-EV12 (Contact/Meet/Specific/Asserted/Positive/Unspecified)
+    tst event APW_ENG_20030415.0742-EV12 (Contact/Meet/Specific/Asserted/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+           Entity ref arg: ID=APW_ENG_20030415.0742-E27 (PER/Group/NAM/USP), name="Sunnis"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E27 (PER/Group/NAM/USP), name="Sunnis"
+           Entity ref arg: ID=APW_ENG_20030415.0742-E28 (PER/Group/NAM/USP), name="Shiites"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E28 (PER/Group/NAM/USP), name="Shiites"
+           Entity ref arg: ID=APW_ENG_20030415.0742-E29 (PER/Group/NOM/USP), head="others"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E29 (PER/Group/NOM/USP), head="others"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref anchor="Participants included Kurds, Sunnis a...", extent="Participants included Kurds, Sunnis a..."
+--------
+    ref event APW_ENG_20030415.0742-EV13 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV13 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+      event score:  0.50000 out of 0.50000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E35 (ORG/Non-Gov/NOM/SPC), head="groups"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E35 (ORG/Non-Gov/NOM/SPC), head="groups"
+           Person ref arg: ID=APW_ENG_20030415.0742-E36 (PER/Group/NOM/USP), head="representatives"
+           Person tst arg: ID=APW_ENG_20030415.0742-E36 (PER/Group/NOM/USP), head="representatives"
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000
+      ref anchor="U.S. officials invited the groups, wh...", extent="U.S. officials invited the groups, wh..."
+--------
+    ref event APW_ENG_20030415.0742-EV14 (Conflict/Demonstrate/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV14 (Conflict/Demonstrate/Specific/Asserted/Positive/Past)
+      event score:  0.50000 out of 0.50000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E145 (PER/Group/NOM/SPC), head="Iraqis"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E145 (PER/Group/NOM/SPC), head="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000
+      ref anchor="Many Iraqis boycotted the meeting in ...", extent="Many Iraqis boycotted the meeting in ..."
+--------
+    ref event APW_ENG_20030415.0742-EV15 (Conflict/Demonstrate/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV15 (Conflict/Demonstrate/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E39 (PER/Group/PRO/USP), head="Thousands"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E39 (PER/Group/PRO/USP), head="Thousands"
+            Place ref arg: ID=APW_ENG_20030415.0742-E41 (GPE/Populat/NAM/SPC), name="Nasiriyah"
+            Place tst arg: ID=APW_ENG_20030415.0742-E41 (GPE/Populat/NAM/SPC), name="Nasiriyah"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref anchor="Thousands of Shiites _ who constitute...", extent="Thousands of Shiites _ who constitute..."
+--------
+    ref event APW_ENG_20030415.0742-EV16 (Contact/Meet/Generic/Other/Positive/Unspecified)
+    tst event APW_ENG_20030415.0742-EV16 (Contact/Meet/Generic/Other/Positive/Unspecified)
+      event score:  1.00000 out of 1.00000
+            Place ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Place tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref anchor="U.S. officials hope more Iraqis join ...", extent="U.S. officials hope more Iraqis join ..."
+--------
+    ref event APW_ENG_20030415.0742-EV17 (Contact/Meet/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV17 (Contact/Meet/Specific/Asserted/Positive/Past)
+      event score:  0.00000 out of 0.00000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E23 (PER/Group/NOM/USP), head="Participants"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E23 (PER/Group/NOM/USP), head="Participants"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref anchor="The meeting concluded with the delega...", extent="The meeting concluded with the delega..."
+--------
+    ref event APW_ENG_20030415.0742-EV18 (Contact/Meet/Specific/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV18 (Contact/Meet/Specific/Other/Positive/Future)
+      event score:  0.20000 out of 0.20000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E23 (PER/Group/NOM/USP), head="Participants"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E23 (PER/Group/NOM/USP), head="Participants"
+      Time-Starti ref arg: ID=APW_ENG_20030415.0742-T5 (TIM/---), extent="10 days"
+      Time-Starti tst arg: ID=APW_ENG_20030415.0742-T5 (TIM/---), extent="10 days"
+- in document APW_ENG_20030415.0742:  score:  0.20000 out of 0.20000
+      ref anchor="The meeting concluded with the delega...", extent="The meeting concluded with the delega..."
+--------
+    ref event APW_ENG_20030415.0742-EV19 (Contact/Meet/Specific/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV19 (Contact/Meet/Specific/Other/Positive/Future)
+      event score:  0.20000 out of 0.20000
+      Time-Within ref arg: ID=APW_ENG_20030415.0742-T6 (TIM/---), extent="weeks"
+      Time-Within tst arg: ID=APW_ENG_20030415.0742-T6 (TIM/---), extent="weeks"
+- in document APW_ENG_20030415.0742:  score:  0.20000 out of 0.20000
+      ref anchor="A national conference is planned to s...", extent="A national conference is planned to s..."
+--------
+    ref event APW_ENG_20030415.0742-EV2 (Contact/Meet/Specific/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV2 (Contact/Meet/Specific/Other/Positive/Future)
+      event score:  1.20000 out of 1.20000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+           Entity ref arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+      Time-Starti ref arg: ID=APW_ENG_20030415.0742-T3 (TIM/---), extent="10 days"
+      Time-Starti tst arg: ID=APW_ENG_20030415.0742-T3 (TIM/---), extent="10 days"
+- in document APW_ENG_20030415.0742:  score:  1.20000 out of 1.20000
+      ref anchor="A U.S.-sponsored forum that brought I...", extent="A U.S.-sponsored forum that brought I..."
+--------
+    ref event APW_ENG_20030415.0742-EV20 (Transaction/Transfer-Ownership/Generic/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV20 (Transaction/Transfer-Ownership/Generic/Other/Positive/Future)
+      event score:  0.20000 out of 0.20000
+         Artifact ref arg: ID=APW_ENG_20030415.0742-E54 (ORG/Governm/NOM/USP), head="administration"
+         Artifact tst arg: ID=APW_ENG_20030415.0742-E54 (ORG/Governm/NOM/USP), head="administration"
+      Beneficiary ref arg: ID=APW_ENG_20030415.0742-E58 (PER/Group/NOM/USP), head="officials"
+      Beneficiary tst arg: ID=APW_ENG_20030415.0742-E58 (PER/Group/NOM/USP), head="officials"
+      Time-Within ref arg: ID=APW_ENG_20030415.0742-T7 (TIM/---), extent="three to six months"
+      Time-Within tst arg: ID=APW_ENG_20030415.0742-T7 (TIM/---), extent="three to six months"
+- in document APW_ENG_20030415.0742:  score:  0.20000 out of 0.20000
+      ref anchor="The interim administration could begi...", extent="The interim administration could begi..."
+--------
+    ref event APW_ENG_20030415.0742-EV21 (Personnel/Start-Position/Generic/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV21 (Personnel/Start-Position/Generic/Other/Positive/Future)
+      event score:  0.00000 out of 0.00000
+           Person ref arg: ID=APW_ENG_20030415.0742-E42 (PER/Indeter/NOM/GEN), head="leadership"
+           Person tst arg: ID=APW_ENG_20030415.0742-E42 (PER/Indeter/NOM/GEN), head="leadership"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref anchor="``One has to go through the process o...", extent="``One has to go through the process o..."
+--------
+    ref event APW_ENG_20030415.0742-EV22 (Transaction/Transfer-Ownership/Generic/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV22 (Transaction/Transfer-Ownership/Generic/Other/Positive/Future)
+      event score:  2.50000 out of 2.50000
+         Artifact ref arg: ID=APW_ENG_20030415.0742-E32 (ORG/Governm/NOM/SPC), head="government"
+         Artifact tst arg: ID=APW_ENG_20030415.0742-E32 (ORG/Governm/NOM/SPC), head="government"
+      Beneficiary ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+      Beneficiary tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+           Seller ref arg: ID=APW_ENG_20030415.0742-E124 (ORG/Non-Gov/NAM/SPC), name="Office of Reconstruction and Humanita..."
+           Seller tst arg: ID=APW_ENG_20030415.0742-E124 (ORG/Non-Gov/NAM/SPC), name="Office of Reconstruction and Humanita..."
+- in document APW_ENG_20030415.0742:  score:  2.50000 out of 2.50000
+      ref anchor="Garner's Office of Reconstruction and...", extent="Garner's Office of Reconstruction and..."
+--------
+    ref event APW_ENG_20030415.0742-EV23 (Contact/Meet/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV23 (Contact/Meet/Specific/Asserted/Positive/Past)
+      event score:  0.20000 out of 0.20000
+       Time-Holds ref arg: ID=APW_ENG_20030415.0742-T8 (TIM/---), extent="Tuesday"
+       Time-Holds tst arg: ID=APW_ENG_20030415.0742-T8 (TIM/---), extent="Tuesday"
+- in document APW_ENG_20030415.0742:  score:  0.20000 out of 0.20000
+      ref anchor="Tuesday's meeting was the first step ...", extent="Tuesday's meeting was the first step ..."
+--------
+    ref event APW_ENG_20030415.0742-EV24 (Personnel/End-Position/Specific/Other/Positive/Unspecified)
+    tst event APW_ENG_20030415.0742-EV24 (Personnel/End-Position/Specific/Other/Positive/Unspecified)
+      event score:  1.00000 out of 1.00000
+           Person ref arg: ID=APW_ENG_20030415.0742-E5 (PER/Individ/NAM/SPC), name="Saddam Hussein"
+           Person tst arg: ID=APW_ENG_20030415.0742-E5 (PER/Individ/NAM/SPC), name="Saddam Hussein"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref anchor="Tuesday's meeting was the first step ...", extent="Tuesday's meeting was the first step ..."
+--------
+    ref event APW_ENG_20030415.0742-EV25 (Business/Start-Org/Generic/Other/Positive/Unspecified)
+    tst event APW_ENG_20030415.0742-EV25 (Business/Start-Org/Generic/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+            Agent ref arg: ID=APW_ENG_20030415.0742-E23 (PER/Group/NOM/USP), head="Participants"
+            Agent tst arg: ID=APW_ENG_20030415.0742-E23 (PER/Group/NOM/USP), head="Participants"
+              Org ref arg: ID=APW_ENG_20030415.0742-E53 (ORG/Governm/NOM/USP), head="government"
+              Org tst arg: ID=APW_ENG_20030415.0742-E53 (ORG/Governm/NOM/USP), head="government"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref anchor="Sheik Ayad Jamal Al Din, a Shiite rel...", extent="Sheik Ayad Jamal Al Din, a Shiite rel..."
+--------
+    ref event APW_ENG_20030415.0742-EV26 (Conflict/Attack/Generic/Other/Positive/Unspecified)
+    tst event APW_ENG_20030415.0742-EV26 (Conflict/Attack/Generic/Other/Positive/Unspecified)
+      event score:  1.00000 out of 1.00000
+         Attacker ref arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+         Attacker tst arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+         Attacker ref arg: ID=APW_ENG_20030415.0742-E78 (PER/Group/NOM/USP), head="factions"
+         Attacker tst arg: ID=APW_ENG_20030415.0742-E78 (PER/Group/NOM/USP), head="factions"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref anchor="There are already tensions between th...", extent="There are already tensions between th..."
+--------
+    ref event APW_ENG_20030415.0742-EV27 (Personnel/Start-Position/Specific/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV27 (Personnel/Start-Position/Specific/Other/Positive/Future)
+      event score:  1.00000 out of 1.00000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E96 (ORG/Governm/NOM/USP), head="administration"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E96 (ORG/Governm/NOM/USP), head="administration"
+           Person ref arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+           Person tst arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref anchor="Iraqi opposition leaders fear the Uni...", extent="Iraqi opposition leaders fear the Uni..."
+--------
+    ref event APW_ENG_20030415.0742-EV28 (Movement/Transport/Generic/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV28 (Movement/Transport/Generic/Other/Positive/Future)
+      event score:  1.60000 out of 1.60000
+      Destination ref arg: ID=APW_ENG_20030415.0742-E84 (GPE/Populat/NAM/SPC), name="Kirkuk"
+      Destination tst arg: ID=APW_ENG_20030415.0742-E84 (GPE/Populat/NAM/SPC), name="Kirkuk"
+      Destination ref arg: ID=APW_ENG_20030415.0742-E86 (GPE/Populat/PRO/SPC), head="parts"
+      Destination tst arg: ID=APW_ENG_20030415.0742-E86 (GPE/Populat/PRO/SPC), head="parts"
+           Origin ref arg: ID=APW_ENG_20030415.0742-E83 (GPE/Special/NOM/SPC), head="area"
+           Origin tst arg: ID=APW_ENG_20030415.0742-E83 (GPE/Special/NOM/SPC), head="area"
+           Person ref arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+           Person tst arg: ID=APW_ENG_20030415.0742-E26 (PER/Group/NAM/USP), name="Kurdish"
+- in document APW_ENG_20030415.0742:  score:  1.60000 out of 1.60000
+      ref anchor="Kurdish groups appear unwilling to co...", extent="Kurdish groups appear unwilling to co..."
+--------
+    ref event APW_ENG_20030415.0742-EV29 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV29 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+            Agent ref arg: ID=APW_ENG_20030415.0742-E99 (ORG/Governm/NOM/USP), head="military"
+            Agent tst arg: ID=APW_ENG_20030415.0742-E99 (ORG/Governm/NOM/USP), head="military"
+      Destination ref arg: ID=APW_ENG_20030415.0742-E101 (LOC/Region-/NOM/USP), head="Iraq"
+      Destination tst arg: ID=APW_ENG_20030415.0742-E101 (LOC/Region-/NOM/USP), head="Iraq"
+           Person ref arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+           Person tst arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref anchor="Chalabi was the first top Iraqi oppos...", extent="Chalabi was the first top Iraqi oppos..."
+      ref anchor="U.S. officials said Chalabi was broug...", extent="U.S. officials said Chalabi was broug..."
+--------
+    ref event APW_ENG_20030415.0742-EV3 (Contact/Meet/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV3 (Contact/Meet/Specific/Asserted/Positive/Past)
+      event score:  0.50000 out of 0.50000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+            Place ref arg: ID=APW_ENG_20030415.0742-E151 (LOC/Region-/NOM/SPC), head="birthplace"
+            Place tst arg: ID=APW_ENG_20030415.0742-E151 (LOC/Region-/NOM/SPC), head="birthplace"
+- in document APW_ENG_20030415.0742:  score:  0.50000 out of 0.50000
+      ref anchor="Meeting in the biblical birthplace of...", extent="Meeting in the biblical birthplace of..."
+--------
+    ref event APW_ENG_20030415.0742-EV30 (Contact/Meet/Specific/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV30 (Contact/Meet/Specific/Other/Positive/Future)
+      event score:  2.00000 out of 2.00000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+            Place ref arg: ID=APW_ENG_20030415.0742-E103 (GPE/Populat/NAM/SPC), name="Baghdad"
+            Place tst arg: ID=APW_ENG_20030415.0742-E103 (GPE/Populat/NAM/SPC), name="Baghdad"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref anchor="Chalabi was the first top Iraqi oppos...", extent="Chalabi was the first top Iraqi oppos..."
+--------
+    ref event APW_ENG_20030415.0742-EV31 (Conflict/Attack/Generic/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV31 (Conflict/Attack/Generic/Asserted/Positive/Past)
+      event score:  0.00000 out of 0.00000
+            Place ref arg: ID=APW_ENG_20030415.0742-E101 (LOC/Region-/NOM/USP), head="Iraq"
+            Place tst arg: ID=APW_ENG_20030415.0742-E101 (LOC/Region-/NOM/USP), head="Iraq"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref anchor="Chalabi was the first top Iraqi oppos...", extent="Chalabi was the first top Iraqi oppos..."
+--------
+    ref event APW_ENG_20030415.0742-EV32 (Contact/Meet/Specific/Asserted/Negative/Past)
+    tst event APW_ENG_20030415.0742-EV32 (Contact/Meet/Specific/Asserted/Negative/Past)
+      event score:  1.20000 out of 1.20000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E106 (PER/Group/NOM/USP), head="leaders"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E106 (PER/Group/NOM/USP), head="leaders"
+           Entity ref arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E93 (PER/Individ/NAM/SPC), name="Ahmed Chalabi"
+       Time-Holds ref arg: ID=APW_ENG_20030415.0742-T11 (TIM/---), extent="Tuesday"
+       Time-Holds tst arg: ID=APW_ENG_20030415.0742-T11 (TIM/---), extent="Tuesday"
+- in document APW_ENG_20030415.0742:  score:  1.20000 out of 1.20000
+      ref anchor="Neither Chalabi nor many other leader...", extent="Neither Chalabi nor many other leader..."
+--------
+    ref event APW_ENG_20030415.0742-EV33 (Contact/Meet/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV33 (Contact/Meet/Specific/Asserted/Positive/Past)
+      event score:  0.20000 out of 0.20000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E109 (PER/Group/NOM/USP), head="delegates"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E109 (PER/Group/NOM/USP), head="delegates"
+       Time-Holds ref arg: ID=APW_ENG_20030415.0742-T11 (TIM/---), extent="Tuesday"
+       Time-Holds tst arg: ID=APW_ENG_20030415.0742-T11 (TIM/---), extent="Tuesday"
+- in document APW_ENG_20030415.0742:  score:  0.20000 out of 0.20000
+      ref anchor="Neither Chalabi nor many other leader...", extent="Neither Chalabi nor many other leader..."
+--------
+    ref event APW_ENG_20030415.0742-EV34 (Conflict/Demonstrate/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV34 (Conflict/Demonstrate/Specific/Asserted/Positive/Past)
+      event score:  0.00000 out of 0.00000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E110 (PER/Group/NOM/USP), head="protesters"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E110 (PER/Group/NOM/USP), head="protesters"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref anchor="Iraqis protesting the conference said...", extent="Iraqis protesting the conference said..."
+--------
+    ref event APW_ENG_20030415.0742-EV35 (Conflict/Demonstrate/Generic/Other/Positive/Unspecified)
+    tst event APW_ENG_20030415.0742-EV35 (Conflict/Demonstrate/Generic/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E110 (PER/Group/NOM/USP), head="protesters"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E110 (PER/Group/NOM/USP), head="protesters"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref anchor="The protesters held banners written i...", extent="The protesters held banners written i..."
+--------
+    ref event APW_ENG_20030415.0742-EV36 (Contact/Meet/Specific/Asserted/Positive/Unspecified)
+    tst event APW_ENG_20030415.0742-EV36 (Contact/Meet/Specific/Asserted/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E115 (PER/Group/PRO/USP), head="some"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E115 (PER/Group/PRO/USP), head="some"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref anchor="Even some of those at the meeting sai...", extent="Even some of those at the meeting sai..."
+--------
+    ref event APW_ENG_20030415.0742-EV37 (Personnel/Start-Position/Generic/Other/Positive/Unspecified)
+    tst event APW_ENG_20030415.0742-EV37 (Personnel/Start-Position/Generic/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E123 (ORG/Governm/NOM/USP), head="ministry"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E123 (ORG/Governm/NOM/USP), head="ministry"
+           Person ref arg: ID=APW_ENG_20030415.0742-E127 (PER/Individ/NAM/USP), name="American"
+           Person tst arg: ID=APW_ENG_20030415.0742-E127 (PER/Individ/NAM/USP), name="American"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref anchor="Each ministry would be headed by an A...", extent="Each ministry would be headed by an A..."
+--------
+    ref event APW_ENG_20030415.0742-EV38 (Personnel/Start-Position/Generic/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV38 (Personnel/Start-Position/Generic/Other/Positive/Future)
+      event score:  0.00000 out of 0.00000
+           Person ref arg: ID=APW_ENG_20030415.0742-E128 (PER/Group/NOM/USP), head="deputies"
+           Person tst arg: ID=APW_ENG_20030415.0742-E128 (PER/Group/NOM/USP), head="deputies"
+           Person ref arg: ID=APW_ENG_20030415.0742-E132 (PER/Group/NOM/USP), head="advisers"
+           Person tst arg: ID=APW_ENG_20030415.0742-E132 (PER/Group/NOM/USP), head="advisers"
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref anchor="Each minister would have two American...", extent="Each minister would have two American..."
+--------
+    ref event APW_ENG_20030415.0742-EV4 (Business/Start-Org/Specific/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV4 (Business/Start-Org/Specific/Other/Positive/Future)
+      event score:  1.50000 out of 1.50000
+            Agent ref arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+            Agent tst arg: ID=APW_ENG_20030415.0742-E146 (PER/Group/NOM/USP), head="delegates"
+              Org ref arg: ID=APW_ENG_20030415.0742-E149 (ORG/Governm/NOM/SPC), head="government"
+              Org tst arg: ID=APW_ENG_20030415.0742-E149 (ORG/Governm/NOM/SPC), head="government"
+            Place ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Place tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  1.50000 out of 1.50000
+      ref anchor="Meeting in the biblical birthplace of...", extent="Meeting in the biblical birthplace of..."
+--------
+    ref event APW_ENG_20030415.0742-EV5 (Conflict/Demonstrate/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV5 (Conflict/Demonstrate/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E1 (ORG/Religio/NAM/SPC), name="Shiite Muslim"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E1 (ORG/Religio/NAM/SPC), name="Shiite Muslim"
+           Entity ref arg: ID=APW_ENG_20030415.0742-E3 (PER/Group/PRO/USP), head="thousands"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E3 (PER/Group/PRO/USP), head="thousands"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref anchor="But some Shiite Muslim groups boycott...", extent="But some Shiite Muslim groups boycott..."
+--------
+    ref event APW_ENG_20030415.0742-EV6 (Contact/Meet/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV6 (Contact/Meet/Specific/Asserted/Positive/Past)
+      event score:  0.00000 out of 0.00000
+- in document APW_ENG_20030415.0742:  score:  0.00000 out of 0.00000
+      ref anchor="A 13-point statement released after t...", extent="A 13-point statement released after t..."
+--------
+    ref event APW_ENG_20030415.0742-EV7 (Business/End-Org/Specific/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV7 (Business/End-Org/Specific/Other/Positive/Future)
+      event score:  1.00000 out of 1.00000
+              Org ref arg: ID=APW_ENG_20030415.0742-E4 (ORG/Non-Gov/NAM/SPC), name="Baath Party"
+              Org tst arg: ID=APW_ENG_20030415.0742-E4 (ORG/Non-Gov/NAM/SPC), name="Baath Party"
+- in document APW_ENG_20030415.0742:  score:  1.00000 out of 1.00000
+      ref anchor="It also called for dissolving Saddam'...", extent="It also called for dissolving Saddam'..."
+--------
+    ref event APW_ENG_20030415.0742-EV8 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030415.0742-EV8 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E11 (GPE/Nation/NAM/SPC), name="United States"
+           Person ref arg: ID=APW_ENG_20030415.0742-E8 (PER/Individ/NAM/SPC), name="Jay Garner"
+           Person tst arg: ID=APW_ENG_20030415.0742-E8 (PER/Individ/NAM/SPC), name="Jay Garner"
+- in document APW_ENG_20030415.0742:  score:  2.00000 out of 2.00000
+      ref anchor="Retired Lt. Gen. Jay Garner, who will...", extent="Retired Lt. Gen. Jay Garner, who will..."
+--------
+    ref event APW_ENG_20030415.0742-EV9 (Personnel/Start-Position/Specific/Other/Positive/Future)
+    tst event APW_ENG_20030415.0742-EV9 (Personnel/Start-Position/Specific/Other/Positive/Future)
+      event score:  2.50000 out of 2.50000
+           Entity ref arg: ID=APW_ENG_20030415.0742-E10 (ORG/Governm/NOM/SPC), head="administration"
+           Entity tst arg: ID=APW_ENG_20030415.0742-E10 (ORG/Governm/NOM/SPC), head="administration"
+           Person ref arg: ID=APW_ENG_20030415.0742-E8 (PER/Individ/NAM/SPC), name="Jay Garner"
+           Person tst arg: ID=APW_ENG_20030415.0742-E8 (PER/Individ/NAM/SPC), name="Jay Garner"
+            Place ref arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+            Place tst arg: ID=APW_ENG_20030415.0742-E20 (GPE/Nation/NAM/SPC), name="Iraqis"
+- in document APW_ENG_20030415.0742:  score:  2.50000 out of 2.50000
+      ref anchor="Retired Lt. Gen. Jay Garner, who will...", extent="Retired Lt. Gen. Jay Garner, who will..."
+      ref anchor="Many Iraqis boycotted the meeting in ...", extent="Many Iraqis boycotted the meeting in ..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.55   0.00   0.00   0.00
+Conflic     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.32   0.00   0.00   0.00
+Contact    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.82   0.00   0.00   0.00
+Movemen     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.15   0.00   0.00   0.00
+Personn     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.65   0.00   0.00   0.00
+Transac     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.51   0.00   0.00   0.00
+  total    38     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    32.75   0.00   0.00   0.00
+  Other    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    67.25   0.00   0.00   0.00
+  total    38     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    38     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    38     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    38     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    38     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.52   0.00   0.00   0.00
+Demonst     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.80   0.00   0.00   0.00
+End-Org     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.52   0.00   0.00   0.00
+End-Pos     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.56   0.00   0.00   0.00
+   Meet    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.82   0.00   0.00   0.00
+Start-O     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.03   0.00   0.00   0.00
+Start-P     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.08   0.00   0.00   0.00
+Transfe     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.51   0.00   0.00   0.00
+Transpo     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.15   0.00   0.00   0.00
+  total    38     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Business:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+End-Org     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.52   0.00   0.00   0.00
+Start-O     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.03   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.55   0.00   0.00   0.00
+
+Performance statistics for TYPE = Conflict:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.52   0.00   0.00   0.00
+Demonst     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.80   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.32   0.00   0.00   0.00
+
+Performance statistics for TYPE = Contact:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Meet    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.82   0.00   0.00   0.00
+  total    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.82   0.00   0.00   0.00
+
+Performance statistics for TYPE = Movement:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.15   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.15   0.00   0.00   0.00
+
+Performance statistics for TYPE = Personnel:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+End-Pos     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.56   0.00   0.00   0.00
+Start-P     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.08   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.65   0.00   0.00   0.00
+
+Performance statistics for TYPE = Transaction:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transfe     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.51   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.51   0.00   0.00   0.00
+
+Event Type confusion matrix for "newswire" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      5     0     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     7     0     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0    14     0     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     2     0     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     8     0        0.0   0.0   0.0   0.0   0.0   0.0 100.0   0.0
+Transaction      0     0     0     0     0     0     0     2        0.0   0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Busin COUNT..................    PERCENT..................
+    ref\tst: Decla End-O Merge Start      Decla End-O Merge Start 
+Declare-Ban      0     0     0     0        0.0   0.0   0.0   0.0
+    End-Org      0     1     0     0        0.0 100.0   0.0   0.0
+  Merge-Org      0     0     0     0        0.0   0.0   0.0   0.0
+  Start-Org      0     0     0     4        0.0   0.0   0.0 100.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Confl COUNT......    PERCENT......
+    ref\tst: Attac Demon      Attac Demon 
+     Attack      2     0      100.0   0.0
+Demonstrate      0     5        0.0 100.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Conta COUNT......    PERCENT......
+    ref\tst:  Meet Phone       Meet Phone 
+       Meet     14     0      100.0   0.0
+Phone-Write      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Movem COUNT    PERCENT
+    ref\tst: Trans      Trans 
+  Transport      2      100.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Perso COUNT..................    PERCENT..................
+    ref\tst: Elect End-P Nomin Start      Elect End-P Nomin Start 
+      Elect      0     0     0     0        0.0   0.0   0.0   0.0
+End-Positio      0     2     0     0        0.0 100.0   0.0   0.0
+   Nominate      0     0     0     0        0.0   0.0   0.0   0.0
+Start-Posit      0     0     0     6        0.0   0.0   0.0 100.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Trans COUNT......    PERCENT......
+    ref\tst: Trans Trans      Trans Trans 
+Transfer-Mo      0     0        0.0   0.0
+Transfer-Ow      0     2        0.0 100.0
+
+Event Modality confusion matrix for "newswire" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted     17     0      100.0   0.0
+      Other      0    21        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=38/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific     Generic 
+        Specific    26/68.4%      -     
+         Generic      -         12/31.6%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=38/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Other    Asserted 
+           Other    21/55.3%      -     
+        Asserted      -         17/44.7%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=38/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive    Negative 
+        Positive    37/97.4%      -     
+        Negative      -          1/ 2.6%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=38/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Meet Start-Posit Demonstrate   Start-Org      Attack End-Positio Transfer-Ow   Transport  all others 
+            Meet    14/36.8%      -           -           -           -           -           -           -           -     
+  Start-Position      -          6/15.8%      -           -           -           -           -           -           -     
+     Demonstrate      -           -          5/13.2%      -           -           -           -           -           -     
+       Start-Org      -           -           -          4/10.5%      -           -           -           -           -     
+          Attack      -           -           -           -          2/ 5.3%      -           -           -           -     
+    End-Position      -           -           -           -           -          2/ 5.3%      -           -           -     
+  Transfer-Owner      -           -           -           -           -           -          2/ 5.3%      -           -     
+       Transport      -           -           -           -           -           -           -          2/ 5.3%      -     
+      all others      -           -           -           -           -           -           -           -          1/ 2.6%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=38/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Future        Past Unspecified 
+          Future    15/39.5%      -           -     
+            Past      -         15/39.5%      -     
+     Unspecified      -           -          8/21.1%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=38/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Contact   Personnel    Conflict    Business Transaction    Movement 
+         Contact    14/36.8%      -           -           -           -           -     
+       Personnel      -          8/21.1%      -           -           -           -     
+        Conflict      -           -          7/18.4%      -           -           -     
+        Business      -           -           -          5/13.2%      -           -     
+     Transaction      -           -           -           -          2/ 5.3%      -     
+        Movement      -           -           -           -           -          2/ 5.3%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=74/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Entity      Person       Place       Agent Time-Starti Destination Time-Within         Org  all others 
+          Entity    27/36.5%      -           -           -           -           -           -           -           -     
+          Person      -         11/14.9%      -           -           -           -           -           -           -     
+           Place      -           -          8/10.8%      -           -           -           -           -           -     
+           Agent      -           -           -          5/ 6.8%      -           -           -           -           -     
+   Time-Starting      -           -           -           -          3/ 4.1%      -           -           -           -     
+     Destination      -           -           -           -           -          3/ 4.1%      -           -           -     
+     Time-Within      -           -           -           -           -           -          3/ 4.1%      -           -     
+             Org      -           -           -           -           -           -           -          3/ 4.1%      -     
+      all others      -           -           -           -           -           -           -           -         11/14.9%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 APW_ENG_20030415.0742-T1, ID=APW_ENG_20030415.0742-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T1, ID=APW_ENG_20030415.0742-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="20030415"
+--------
+    ref timex2 APW_ENG_20030415.0742-T10, ID=APW_ENG_20030415.0742-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T10, ID=APW_ENG_20030415.0742-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="Now"
+--------
+    ref timex2 APW_ENG_20030415.0742-T11, ID=APW_ENG_20030415.0742-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T11, ID=APW_ENG_20030415.0742-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="Tuesday"
+--------
+    ref timex2 APW_ENG_20030415.0742-T12, ID=APW_ENG_20030415.0742-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T12, ID=APW_ENG_20030415.0742-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="birthday"
+--------
+    ref timex2 APW_ENG_20030415.0742-T13, ID=APW_ENG_20030415.0742-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T13, ID=APW_ENG_20030415.0742-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="today"
+--------
+    ref timex2 APW_ENG_20030415.0742-T2, ID=APW_ENG_20030415.0742-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T2, ID=APW_ENG_20030415.0742-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="Tuesday"
+--------
+    ref timex2 APW_ENG_20030415.0742-T3, ID=APW_ENG_20030415.0742-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T3, ID=APW_ENG_20030415.0742-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="10 days"
+--------
+    ref timex2 APW_ENG_20030415.0742-T4, ID=APW_ENG_20030415.0742-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T4, ID=APW_ENG_20030415.0742-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="Tuesday"
+--------
+    ref timex2 APW_ENG_20030415.0742-T5, ID=APW_ENG_20030415.0742-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T5, ID=APW_ENG_20030415.0742-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="10 days"
+--------
+    ref timex2 APW_ENG_20030415.0742-T6, ID=APW_ENG_20030415.0742-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T6, ID=APW_ENG_20030415.0742-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="weeks"
+--------
+    ref timex2 APW_ENG_20030415.0742-T7, ID=APW_ENG_20030415.0742-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T7, ID=APW_ENG_20030415.0742-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="three to six months"
+--------
+    ref timex2 APW_ENG_20030415.0742-T8, ID=APW_ENG_20030415.0742-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T8, ID=APW_ENG_20030415.0742-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="Tuesday"
+--------
+    ref timex2 APW_ENG_20030415.0742-T9, ID=APW_ENG_20030415.0742-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030415.0742-T9, ID=APW_ENG_20030415.0742-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030415.0742:
+          mention="time"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    13/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    13/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---    13/99.9%
+
+data input:               1.57 secs to load data
+entity eval:              0.22 secs to compute values,    0.05 secs to map,    0.14 secs to score
+relation eval:            1.23 secs to compute values,    0.06 secs to map,    0.10 secs to score
+event eval:               0.31 secs to compute values,    0.01 secs to map,    0.06 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.01 secs to compute values,    0.01 secs to map,    0.00 secs to score
+value eval:               0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+########

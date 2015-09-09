@@ -1,0 +1,1959 @@
+command line (run on 2005 Aug 21 at 13:10:55):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score75801 -t /tmp/score75801
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity rec.travel.europe_20050101.1800-E1 (ORG/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E1 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="bank" (NOM/ORG/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E10 (PER/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E10 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="wife" (NOM/PER/LIT)
+      ref mention="wife" (NOM/PER/LIT)
+      ref mention="person" (NOM/PER/LIT)
+      ref mention="wife" (NOM/PER/LIT)
+      ref mention="wife" (NOM/PER/LIT)
+      ref mention="wife" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E11 (FAC/PRO/USP)
+    tst entity rec.travel.europe_20050101.1800-E11 (FAC/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (FAC/PRO/USP)
+      ref mention="lot" (PRO/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E12 (FAC/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E12 (FAC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (FAC/NOM/GEN)
+      ref mention="places" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E13 (FAC/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E13 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="restaurants" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E14 (GPE/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E14 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="home" (NOM/LOC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E15 (FAC/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E15 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="newsagent/foodstore" (NOM/FAC/LIT)
+      ref mention="foodstore" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E16 (FAC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E16 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="restaurant/pub" (NOM/FAC/LIT)
+      ref mention="White Swan" (NAM/FAC/LIT)
+      ref mention="that" (PRO/FAC/LIT)
+      ref mention="It" (PRO/FAC/LIT)
+      ref mention="place" (NOM/FAC/LIT)
+      ref mention="place" (NOM/FAC/LIT)
+      ref mention="this" (PRO/FAC/LIT)
+      ref mention="pub" (NOM/FAC/LIT)
+         ref name="White Swan"
+--------
+    ref entity rec.travel.europe_20050101.1800-E18 (PER/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E18 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="woman" (NOM/PER/LIT)
+      ref mention="that" (PRO/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E2 (FAC/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E2 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="hotel" (NOM/FAC/LIT)
+      ref mention="hotel" (NOM/FAC/LIT)
+      ref mention="hotel" (NOM/FAC/LIT)
+      ref mention="hotel" (NOM/FAC/LIT)
+      ref mention="hotel" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E20 (FAC/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E20 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="bar" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E21 (FAC/NOM/USP)
+    tst entity rec.travel.europe_20050101.1800-E21 (FAC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (FAC/NOM/USP)
+      ref mention="pubs" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E22 (LOC/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E22 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="area" (NOM/LOC/LIT)
+      ref mention="there" (PRO/LOC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E23 (FAC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E23 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="station" (NOM/FAC/LIT)
+      ref mention="station" (NOM/FAC/LIT)
+      ref mention="station" (NOM/FAC/LIT)
+      ref mention="Victoria" (NAM/FAC/LIT)
+         ref name="Victoria"
+--------
+    ref entity rec.travel.europe_20050101.1800-E25 (PER/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E25 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="tour" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E26 (FAC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E26 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Sainsbury" (NAM/FAC/LIT)
+      ref mention="supermarket" (NOM/FAC/LIT)
+      ref mention="here" (PRO/FAC/LIT)
+         ref name="Sainsbury"
+--------
+    ref entity rec.travel.europe_20050101.1800-E3 (GPE/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E3 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="London" (NAM/LOC/LIT)
+      ref mention="London" (NAM/LOC/LIT)
+      ref mention="city" (NOM/LOC/LIT)
+      ref mention="London" (NAM/GPE/LIT)
+         ref name="London"
+         ref name="London"
+         ref name="London"
+--------
+    ref entity rec.travel.europe_20050101.1800-E30 (FAC/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E30 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="steakhouse" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E31 (PER/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E31 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="parties" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E32 (FAC/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E32 (FAC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (FAC/NOM/GEN)
+      ref mention="steakhouses" (NOM/FAC/LIT)
+      ref mention="them" (PRO/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E33 (VEH/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E33 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="bus" (NOM/VEH/LIT)
+      ref mention="bus" (NOM/VEH/LIT)
+      ref mention="bus" (NOM/VEH/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E34 (ORG/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E34 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Evan Evans" (NAM/ORG/LIT)
+         ref name="Evan Evans"
+--------
+    ref entity rec.travel.europe_20050101.1800-E35 (FAC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E35 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="London Eye" (NAM/FAC/LIT)
+      ref mention="London Eye" (NAM/FAC/LIT)
+         ref name="London Eye"
+         ref name="London Eye"
+--------
+    ref entity rec.travel.europe_20050101.1800-E36 (FAC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E36 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Victoria Coach Station" (NAM/FAC/LIT)
+      ref mention="it" (PRO/FAC/LIT)
+         ref name="Victoria Coach Station"
+--------
+    ref entity rec.travel.europe_20050101.1800-E37 (ORG/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E37 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Pepsi" (NAM/ORG/LIT)
+         ref name="Pepsi"
+--------
+    ref entity rec.travel.europe_20050101.1800-E38 (LOC/PRO/USP)
+    tst entity rec.travel.europe_20050101.1800-E38 (LOC/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (LOC/PRO/USP)
+      ref mention="part" (PRO/LOC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E39 (FAC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E39 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Westminster" (NAM/FAC/LIT)
+         ref name="Westminster"
+--------
+    ref entity rec.travel.europe_20050101.1800-E4 (PER/PRO/USP)
+    tst entity rec.travel.europe_20050101.1800-E4 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="All" (PRO/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E40 (PER/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E40 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="people" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E41 (FAC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E41 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Tower of London" (NOM/FAC/LIT)
+      ref mention="London Tower" (NAM/FAC/LIT)
+         ref name="London Tower"
+--------
+    ref entity rec.travel.europe_20050101.1800-E42 (FAC/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E42 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="pub" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E43 (FAC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E43 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Trafalgar Square" (NAM/FAC/LIT)
+         ref name="Trafalgar Square"
+--------
+    ref entity rec.travel.europe_20050101.1800-E44 (PER/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E44 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="guide" (NOM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E45 (PER/PRO/SPC)
+    tst entity rec.travel.europe_20050101.1800-E45 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document rec.travel.europe_20050101.1800:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="We" (PRO/PER/LIT)
+      ref mention="our" (PRO/PER/LIT)
+      ref mention="We" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="us" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="our" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="us" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="our" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="our" (PRO/PER/LIT)
+      ref mention="We" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="We" (PRO/PER/LIT)
+      ref mention="We" (PRO/PER/LIT)
+      ref mention="us" (PRO/PER/LIT)
+      ref mention="us" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="We" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="We" (PRO/PER/LIT)
+      ref mention="our" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="us" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="us" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E46 (PER/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E46 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="grand dad" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E47 (VEH/PRO/SPC)
+    tst entity rec.travel.europe_20050101.1800-E47 (VEH/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document rec.travel.europe_20050101.1800:  score:  0.10000 out of 0.10000  (VEH/PRO/SPC)
+      ref mention="one" (PRO/VEH/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E48 (VEH/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E48 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="boats" (NOM/VEH/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E49 (LOC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E49 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="Thames" (NAM/LOC/LIT)
+         ref name="Thames"
+--------
+    ref entity rec.travel.europe_20050101.1800-E5 (VEH/NAM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E5 (VEH/NAM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (VEH/NAM/GEN)
+      ref mention="underground" (NAM/VEH/LIT)
+      ref mention="tube" (NAM/VEH/LIT)
+      ref mention="underground" (NAM/VEH/LIT)
+      ref mention="underground" (NAM/VEH/LIT)
+      ref mention="underground" (NAM/VEH/LIT)
+      ref mention="tube" (NAM/VEH/LIT)
+      ref mention="underground" (NAM/VEH/LIT)
+         ref name="underground"
+         ref name="tube"
+         ref name="underground"
+         ref name="underground"
+         ref name="underground"
+         ref name="tube"
+         ref name="underground"
+--------
+    ref entity rec.travel.europe_20050101.1800-E50 (VEH/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E50 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="deck" (NOM/VEH/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E52 (PER/PRO/USP)
+    tst entity rec.travel.europe_20050101.1800-E52 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E53 (PER/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E53 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="Guards" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E55 (LOC/NOM/USP)
+    tst entity rec.travel.europe_20050101.1800-E55 (LOC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (LOC/NOM/USP)
+      ref mention="places" (NOM/LOC/LIT)
+      ref mention="that" (PRO/LOC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E56 (PER/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E56 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="guide" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E57 (VEH/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E57 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="deck" (NOM/VEH/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E58 (VEH/PRO/USP)
+    tst entity rec.travel.europe_20050101.1800-E58 (VEH/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (VEH/PRO/USP)
+      ref mention="one" (PRO/VEH/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E59 (VEH/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E59 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="buses" (NOM/VEH/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E6 (FAC/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E6 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="station" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E60 (VEH/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E60 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="deck" (NOM/VEH/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E62 (PER/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E62 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="conceierge" (NOM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="concierge" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E63 (VEH/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E63 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="bus" (NOM/VEH/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E64 (VEH/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E64 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="car" (NOM/VEH/LIT)
+      ref mention="it" (PRO/VEH/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E65 (FAC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E65 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Heathrow" (NAM/FAC/LIT)
+      ref mention="airport" (NOM/FAC/LIT)
+      ref mention="Heathrow" (NAM/FAC/LIT)
+      ref mention="airport" (NOM/FAC/LIT)
+      ref mention="airport" (NOM/FAC/LIT)
+      ref mention="LHR" (NAM/FAC/LIT)
+         ref name="Heathrow"
+         ref name="Heathrow"
+         ref name="LHR"
+--------
+    ref entity rec.travel.europe_20050101.1800-E66 (FAC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E66 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="LHR Terminal 3" (NAM/FAC/LIT)
+         ref name="LHR Terminal 3"
+--------
+    ref entity rec.travel.europe_20050101.1800-E67 (PER/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E67 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="driver" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E68 (LOC/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E68 (LOC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (LOC/NOM/GEN)
+      ref mention="suburbs" (NOM/LOC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E69 (GPE/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E69 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="Americans" (NOM/PER/LIT)
+      ref mention="Americans" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E70 (FAC/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E70 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="counter" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E71 (FAC/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E71 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Harrods" (NAM/FAC/LIT)
+      ref mention="Harrods" (NAM/FAC/LIT)
+      ref mention="Harrods" (NAM/FAC/LIT)
+      ref mention="there" (PRO/FAC/LIT)
+         ref name="Harrods"
+         ref name="Harrods"
+         ref name="Harrods"
+--------
+    ref entity rec.travel.europe_20050101.1800-E72 (PER/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E72 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="kids" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E73 (ORG/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E73 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Angus Steakhouse" (NAM/ORG/LIT)
+      ref mention="them" (PRO/ORG/LIT)
+      ref mention="They" (PRO/ORG/LIT)
+         ref name="Angus Steakhouse"
+--------
+    ref entity rec.travel.europe_20050101.1800-E74 (PER/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E74 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="DFM" (NAM/PER/LIT)
+         ref name="DFM"
+--------
+    ref entity rec.travel.europe_20050101.1800-E75 (FAC/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E75 (FAC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (FAC/NOM/GEN)
+      ref mention="Pub" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E76 (GPE/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E76 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="UK" (NAM/LOC/LIT)
+         ref name="UK"
+--------
+    ref entity rec.travel.europe_20050101.1800-E77 (GPE/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E77 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Europe" (NAM/GPE/LIT)
+         ref name="Europe"
+--------
+    ref entity rec.travel.europe_20050101.1800-E78 (GPE/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E78 (GPE/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (GPE/NOM/GEN)
+      ref mention="cities" (NOM/GPE/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E79 (PER/NOM/USP)
+    tst entity rec.travel.europe_20050101.1800-E79 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="people" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E8 (FAC/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E8 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="room" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E80 (PER/PRO/USP)
+    tst entity rec.travel.europe_20050101.1800-E80 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="everyone" (PRO/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E81 (PER/NOM/GEN)
+    tst entity rec.travel.europe_20050101.1800-E81 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="tourist" (NOM/PER/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E82 (GPE/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E82 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Washington" (NAM/LOC/LIT)
+         ref name="Washington"
+--------
+    ref entity rec.travel.europe_20050101.1800-E83 (ORG/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E83 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="hotel" (NOM/ORG/LIT)
+      ref mention="hotel" (NOM/ORG/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E86 (PER/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E86 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="me" (PRO/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="Jim" (NAM/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+         ref name="Jim"
+--------
+    ref entity rec.travel.europe_20050101.1800-E89 (ORG/NAM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E89 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Barclays" (NAM/ORG/LIT)
+         ref name="Barclays"
+--------
+    ref entity rec.travel.europe_20050101.1800-E90 (FAC/NOM/SPC)
+    tst entity rec.travel.europe_20050101.1800-E90 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document rec.travel.europe_20050101.1800:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="area" (NOM/FAC/LIT)
+--------
+    ref entity rec.travel.europe_20050101.1800-E91 (PER/PRO/USP)
+    tst entity rec.travel.europe_20050101.1800-E91 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document rec.travel.europe_20050101.1800:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="many" (PRO/PER/LIT)
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    FAC    26     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    47.48   0.00   0.00   0.00
+    GPE     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.84   0.00   0.00   0.00
+    LOC     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.45   0.00   0.00   0.00
+    ORG     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.35   0.00   0.00   0.00
+    PER    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.58   0.00   0.00   0.00
+    VEH    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.30   0.00   0.00   0.00
+  total    76     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    65.28   0.00   0.00   0.00
+    NOM    44     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.12   0.00   0.00   0.00
+    PRO     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.59   0.00   0.00   0.00
+  total    76     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.59   0.00   0.00   0.00
+0.2-0.5    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.12   0.00   0.00   0.00
+0.5-1.0    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    65.28   0.00   0.00   0.00
+  total    76     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    48     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    50.74   0.00   0.00   0.00
+      2    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.84   0.00   0.00   0.00
+    3-4    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.26   0.00   0.00   0.00
+    5-8     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.90   0.00   0.00   0.00
+     >8     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.26   0.00   0.00   0.00
+  total    76     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    47     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    76     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet    76     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    76     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Airport     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.97   0.00   0.00   0.00
+Buildin    20     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    35.61   0.00   0.00   0.00
+Commerc     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.35   0.00   0.00   0.00
+Contine     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.97   0.00   0.00   0.00
+  Group    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.23   0.00   0.00   0.00
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.35   0.00   0.00   0.00
+   Land     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+ Nation     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.93   0.00   0.00   0.00
+Populat     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.93   0.00   0.00   0.00
+Region-     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.48   0.00   0.00   0.00
+Subarea     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.90   0.00   0.00   0.00
+Subarea     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  Water     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.30   0.00   0.00   0.00
+Water-B     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.97   0.00   0.00   0.00
+  total    76     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = FAC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Airport     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.97   0.00   0.00   0.00
+Buildin    20     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    35.61   0.00   0.00   0.00
+Subarea     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.90   0.00   0.00   0.00
+  total    26     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    47.48   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Contine     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.97   0.00   0.00   0.00
+ Nation     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.93   0.00   0.00   0.00
+Populat     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.93   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.84   0.00   0.00   0.00
+
+Performance statistics for TYPE = LOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Region-     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.48   0.00   0.00   0.00
+Water-B     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.97   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.45   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.35   0.00   0.00   0.00
+  total     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.35   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.23   0.00   0.00   0.00
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.35   0.00   0.00   0.00
+  total    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.58   0.00   0.00   0.00
+
+Performance statistics for TYPE = VEH:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Land     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Subarea     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  Water     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.30   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.30   0.00   0.00   0.00
+
+Entity Type confusion matrix for "usenet" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC           26     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     7     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     5     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     6     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    21     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0    11     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=76/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         GEN         USP 
+             SPC    47/61.8%      -           -     
+             GEN      -         19/25.0%      -     
+             USP      -           -         10/13.2%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=76/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Building-Gr       Group  Individual  Commercial        Land Subarea-Fac Region-Gene Subarea-Veh  all others 
+  Building-Groun    20/26.3%      -           -           -           -           -           -           -           -     
+           Group      -         11/14.5%      -           -           -           -           -           -           -     
+      Individual      -           -          9/11.8%      -           -           -           -           -           -     
+      Commercial      -           -           -          6/ 7.9%      -           -           -           -           -     
+            Land      -           -           -           -          6/ 7.9%      -           -           -           -     
+  Subarea-Facili      -           -           -           -           -          5/ 6.6%      -           -           -     
+  Region-General      -           -           -           -           -           -          4/ 5.3%      -           -     
+  Subarea-Vehicl      -           -           -           -           -           -           -          3/ 3.9%      -     
+      all others      -           -           -           -           -           -           -           -         12/15.8%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=76/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        FAC         PER         VEH         GPE         ORG         LOC 
+             FAC    26/34.2%      -           -           -           -           -     
+             PER      -         21/27.6%      -           -           -           -     
+             VEH      -           -         11/14.5%      -           -           -     
+             GPE      -           -           -          7/ 9.2%      -           -     
+             ORG      -           -           -           -          6/ 7.9%      -     
+             LOC      -           -           -           -           -          5/ 6.6%
+
+Entity Class confusion matrix for "usenet" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           47     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0    19     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0    10        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0    16        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0     6        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0     4        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0     2        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     7        0.0   0.0      0.0   0.0 100.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    36        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    36        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    72        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0   107        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   215        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   215        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   215        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0    55        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0     3        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0    13        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0     9        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0   115        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0    20        0.0   0.0      0.0   0.0 100.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   215        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "usenet" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC           55     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     3     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    13     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     9     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0   115     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0    20     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "usenet" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          215     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation rec.travel.europe_20050101.1800-R1 (PHYS/Located/Asserted/Past)
+    tst relation rec.travel.europe_20050101.1800-R1 (PHYS/Located/Asserted/Past)
+      relation score:  1.30000 out of 1.30000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E3 (GPE/Populat/NAM/SPC), name="London"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E3 (GPE/Populat/NAM/SPC), name="London"
+      Time-Within ref arg: ID=rec.travel.europe_20050101.1800-T9 (TIM/---), extent="5-day"
+      Time-Within tst arg: ID=rec.travel.europe_20050101.1800-T9 (TIM/---), extent="5-day"
+- in document rec.travel.europe_20050101.1800:  score:  1.30000 out of 1.30000
+      ref extent="We *just* got back into Washington la..."
+      ref extent="After that, we took the underground i..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R10 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R10 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E8 (FAC/Subarea/NOM/SPC), head="room"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E8 (FAC/Subarea/NOM/SPC), head="room"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E2 (FAC/Buildin/NOM/SPC), head="hotel"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E2 (FAC/Buildin/NOM/SPC), head="hotel"
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000
+      ref extent="the hotel room"
+--------
+    ref relation rec.travel.europe_20050101.1800-R11 (PHYS/Located/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R11 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E18 (PER/Individ/NOM/SPC), head="woman"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E18 (PER/Individ/NOM/SPC), head="woman"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E16 (FAC/Buildin/NAM/SPC), name="White Swan"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E16 (FAC/Buildin/NAM/SPC), name="White Swan"
+- in document rec.travel.europe_20050101.1800:  score:  1.50000 out of 1.50000
+      ref extent="It seemed like a kind of local place,..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R12 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R12 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E13 (FAC/Subarea/NOM/SPC), head="restaurants"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E13 (FAC/Subarea/NOM/SPC), head="restaurants"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E2 (FAC/Buildin/NOM/SPC), head="hotel"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E2 (FAC/Buildin/NOM/SPC), head="hotel"
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000
+      ref extent="restaurants in the hotel"
+--------
+    ref relation rec.travel.europe_20050101.1800-R14 (METONYMY/Unspecified/Unspecified/---)
+    tst relation rec.travel.europe_20050101.1800-R14 (METONYMY/Unspecified/Unspecified/---)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E2 (FAC/Buildin/NOM/SPC), head="hotel"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E2 (FAC/Buildin/NOM/SPC), head="hotel"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E83 (ORG/Commerc/NOM/SPC), head="hotel"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E83 (ORG/Commerc/NOM/SPC), head="hotel"
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000
+--------
+    ref relation rec.travel.europe_20050101.1800-R15 (PHYS/Located/Asserted/Past)
+    tst relation rec.travel.europe_20050101.1800-R15 (PHYS/Located/Asserted/Past)
+      relation score:  0.80000 out of 0.80000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E22 (LOC/Region-/NOM/SPC), head="there"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E22 (LOC/Region-/NOM/SPC), head="there"
+      Time-Within ref arg: ID=rec.travel.europe_20050101.1800-T12 (TIM/---), extent="That night"
+      Time-Within tst arg: ID=rec.travel.europe_20050101.1800-T12 (TIM/---), extent="That night"
+- in document rec.travel.europe_20050101.1800:  score:  0.80000 out of 0.80000
+      ref extent="That night, we walked around the area..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R16 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R16 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E23 (FAC/Buildin/NAM/SPC), name="Victoria"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E23 (FAC/Buildin/NAM/SPC), name="Victoria"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E22 (LOC/Region-/NOM/SPC), head="there"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E22 (LOC/Region-/NOM/SPC), head="there"
+- in document rec.travel.europe_20050101.1800:  score:  1.50000 out of 1.50000
+      ref extent="the area around the Victoria undergro..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R17 (PHYS/Near/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R17 (PHYS/Near/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E26 (FAC/Buildin/NAM/SPC), name="Sainsbury"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E26 (FAC/Buildin/NAM/SPC), name="Sainsbury"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E23 (FAC/Buildin/NAM/SPC), name="Victoria"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E23 (FAC/Buildin/NAM/SPC), name="Victoria"
+- in document rec.travel.europe_20050101.1800:  score:  2.00000 out of 2.00000
+      ref extent="a local Sainsbury (kind of a small su..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R18 (PHYS/Located/Asserted/Past)
+    tst relation rec.travel.europe_20050101.1800-R18 (PHYS/Located/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E86 (PER/Individ/NAM/SPC), name="Jim"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E86 (PER/Individ/NAM/SPC), name="Jim"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E26 (FAC/Buildin/NAM/SPC), name="Sainsbury"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E26 (FAC/Buildin/NAM/SPC), name="Sainsbury"
+- in document rec.travel.europe_20050101.1800:  score:  2.00000 out of 2.00000
+      ref extent="Prices here were a bit cheaper than t..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R19 (PHYS/Near/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R19 (PHYS/Near/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E30 (FAC/Buildin/NOM/SPC), head="steakhouse"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E30 (FAC/Buildin/NOM/SPC), head="steakhouse"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E23 (FAC/Buildin/NAM/SPC), name="Victoria"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E23 (FAC/Buildin/NAM/SPC), name="Victoria"
+- in document rec.travel.europe_20050101.1800:  score:  1.50000 out of 1.50000
+      ref extent="a "steakhouse" near the station"
+--------
+    ref relation rec.travel.europe_20050101.1800-R2 (PER-SOC/Family/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R2 (PER-SOC/Family/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E86 (PER/Individ/NAM/SPC), name="Jim"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E86 (PER/Individ/NAM/SPC), name="Jim"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E10 (PER/Individ/NOM/SPC), head="person"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E10 (PER/Individ/NOM/SPC), head="person"
+- in document rec.travel.europe_20050101.1800:  score:  1.50000 out of 1.50000
+      ref extent="my wife"
+      ref extent="my wife"
+      ref extent="my wife"
+      ref extent="my wife"
+      ref extent="my wife"
+--------
+    ref relation rec.travel.europe_20050101.1800-R20 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R20 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E38 (LOC/Region-/PRO/USP), head="part"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E38 (LOC/Region-/PRO/USP), head="part"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E3 (GPE/Populat/NAM/SPC), name="London"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E3 (GPE/Populat/NAM/SPC), name="London"
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000
+      ref extent="part of the city"
+--------
+    ref relation rec.travel.europe_20050101.1800-R21 (PHYS/Near/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R21 (PHYS/Near/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E42 (FAC/Buildin/NOM/SPC), head="pub"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E42 (FAC/Buildin/NOM/SPC), head="pub"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E43 (FAC/Buildin/NAM/SPC), name="Trafalgar Square"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E43 (FAC/Buildin/NAM/SPC), name="Trafalgar Square"
+- in document rec.travel.europe_20050101.1800:  score:  1.50000 out of 1.50000
+      ref extent="another pub near Trafalgar Square"
+--------
+    ref relation rec.travel.europe_20050101.1800-R22 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+    tst relation rec.travel.europe_20050101.1800-R22 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+      relation score:  0.20000 out of 0.20000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E47 (VEH/Water/PRO/SPC), head="one"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E47 (VEH/Water/PRO/SPC), head="one"
+- in document rec.travel.europe_20050101.1800:  score:  0.20000 out of 0.20000
+      ref extent="At the end of the land tour, we went ..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R24 (PHYS/Located/Asserted/Past)
+    tst relation rec.travel.europe_20050101.1800-R24 (PHYS/Located/Asserted/Past)
+      relation score:  1.10000 out of 1.10000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E35 (FAC/Buildin/NAM/SPC), name="London Eye"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E35 (FAC/Buildin/NAM/SPC), name="London Eye"
+- in document rec.travel.europe_20050101.1800:  score:  1.10000 out of 1.10000
+      ref extent="At the end of the land tour, we went ..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R26 (PHYS/Located/Other/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R26 (PHYS/Located/Other/Unspecified)
+      relation score:  0.10000 out of 0.10000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E55 (LOC/Region-/NOM/USP), head="places"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E55 (LOC/Region-/NOM/USP), head="places"
+- in document rec.travel.europe_20050101.1800:  score:  0.10000 out of 0.10000
+      ref extent="We also took one of the hop-on/hop-of..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R27 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R27 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E62 (PER/Individ/NOM/SPC), head="conceierge"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E62 (PER/Individ/NOM/SPC), head="conceierge"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E83 (ORG/Commerc/NOM/SPC), head="hotel"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E83 (ORG/Commerc/NOM/SPC), head="hotel"
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000
+      ref extent="the hotel conceierge"
+--------
+    ref relation rec.travel.europe_20050101.1800-R28 (PHYS/Located/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R28 (PHYS/Located/Asserted/Unspecified)
+      relation score:  0.10000 out of 0.10000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E68 (LOC/Region-/NOM/GEN), head="suburbs"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E68 (LOC/Region-/NOM/GEN), head="suburbs"
+- in document rec.travel.europe_20050101.1800:  score:  0.10000 out of 0.10000
+      ref extent="Overall, it was an enjoyable, but rea..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R29 (PHYS/Located/Asserted/Past)
+    tst relation rec.travel.europe_20050101.1800-R29 (PHYS/Located/Asserted/Past)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E86 (PER/Individ/NAM/SPC), name="Jim"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E86 (PER/Individ/NAM/SPC), name="Jim"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E70 (FAC/Subarea/NOM/SPC), head="counter"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E70 (FAC/Subarea/NOM/SPC), head="counter"
+- in document rec.travel.europe_20050101.1800:  score:  1.50000 out of 1.50000
+      ref extent="I think that if I was dealing in GPBs..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R3 (PHYS/Located/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R3 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.30000 out of 1.30000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E82 (GPE/Populat/NAM/SPC), name="Washington"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E82 (GPE/Populat/NAM/SPC), name="Washington"
+      Time-Starti ref arg: ID=rec.travel.europe_20050101.1800-T8 (TIM/---), extent="last evening"
+      Time-Starti tst arg: ID=rec.travel.europe_20050101.1800-T8 (TIM/---), extent="last evening"
+- in document rec.travel.europe_20050101.1800:  score:  1.30000 out of 1.30000
+      ref extent="We *just* got back into Washington la..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R30 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R30 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E70 (FAC/Subarea/NOM/SPC), head="counter"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E70 (FAC/Subarea/NOM/SPC), head="counter"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E71 (FAC/Buildin/NAM/SPC), name="Harrods"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E71 (FAC/Buildin/NAM/SPC), name="Harrods"
+- in document rec.travel.europe_20050101.1800:  score:  1.50000 out of 1.50000
+      ref extent="the ice cream ("gelato"?) counter at ..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R31 (PHYS/Located/Asserted/Unspecified)
+    tst relation rec.travel.europe_20050101.1800-R31 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E79 (PER/Group/NOM/USP), head="people"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E79 (PER/Group/NOM/USP), head="people"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E71 (FAC/Buildin/NAM/SPC), name="Harrods"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E71 (FAC/Buildin/NAM/SPC), name="Harrods"
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000
+      ref extent="Harrods is Harrods though, and most p..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R6 (PHYS/Located/Asserted/Past)
+    tst relation rec.travel.europe_20050101.1800-R6 (PHYS/Located/Asserted/Past)
+      relation score:  1.30000 out of 1.30000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E65 (FAC/Airport/NAM/SPC), name="Heathrow"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E65 (FAC/Airport/NAM/SPC), name="Heathrow"
+      Time-Within ref arg: ID=rec.travel.europe_20050101.1800-T10 (TIM/---), extent="Monday morning"
+      Time-Within tst arg: ID=rec.travel.europe_20050101.1800-T10 (TIM/---), extent="Monday morning"
+- in document rec.travel.europe_20050101.1800:  score:  1.30000 out of 1.30000
+      ref extent="We got into Heathrow on Monday morning"
+--------
+    ref relation rec.travel.europe_20050101.1800-R7 (PHYS/Located/Asserted/Past)
+    tst relation rec.travel.europe_20050101.1800-R7 (PHYS/Located/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E86 (PER/Individ/NAM/SPC), name="Jim"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E86 (PER/Individ/NAM/SPC), name="Jim"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E65 (FAC/Airport/NAM/SPC), name="Heathrow"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E65 (FAC/Airport/NAM/SPC), name="Heathrow"
+- in document rec.travel.europe_20050101.1800:  score:  2.00000 out of 2.00000
+      ref extent="At the airport, I got some cash from ..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R8 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+    tst relation rec.travel.europe_20050101.1800-R8 (ART/User-Owner-Inventor-Manufacturer/Asserted/Past)
+      relation score:  0.10000 out of 0.10000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E5 (VEH/Land/NAM/GEN), name="underground"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E5 (VEH/Land/NAM/GEN), name="underground"
+- in document rec.travel.europe_20050101.1800:  score:  0.10000 out of 0.10000
+      ref extent="After that, we took the underground i..."
+--------
+    ref relation rec.travel.europe_20050101.1800-R9 (PHYS/Located/Asserted/Past)
+    tst relation rec.travel.europe_20050101.1800-R9 (PHYS/Located/Asserted/Past)
+      relation score:  0.60000 out of 0.60000
+            Arg-1 ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-1 tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+            Arg-2 ref arg: ID=rec.travel.europe_20050101.1800-E6 (FAC/Buildin/NOM/SPC), head="station"
+            Arg-2 tst arg: ID=rec.travel.europe_20050101.1800-E6 (FAC/Buildin/NOM/SPC), head="station"
+- in document rec.travel.europe_20050101.1800:  score:  0.60000 out of 0.60000
+      ref extent="That was pretty easy... the most diff..."
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    ART     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.02   0.00   0.00   0.00
+METONYM     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.40   0.00   0.00   0.00
+ORG-AFF     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.40   0.00   0.00   0.00
+PART-WH     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.41   0.00   0.00   0.00
+PER-SOC     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.10   0.00   0.00   0.00
+   PHYS    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    66.67   0.00   0.00   0.00
+  total    26     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    96.26   0.00   0.00   0.00
+  Other     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.34   0.00   0.00   0.00
+Unspeci     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.40   0.00   0.00   0.00
+  total    26     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet    26     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    26     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    26     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    26     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.40   0.00   0.00   0.00
+ Family     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.10   0.00   0.00   0.00
+Geograp     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.41   0.00   0.00   0.00
+Located    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    49.66   0.00   0.00   0.00
+   Near     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.01   0.00   0.00   0.00
+User-Ow     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.02   0.00   0.00   0.00
+  total    26     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ART:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+User-Ow     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.02   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.02   0.00   0.00   0.00
+
+Performance statistics for TYPE = METONYMY:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.40   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.40   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.40   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.41   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.41   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER-SOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Family     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.10   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.10   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    49.66   0.00   0.00   0.00
+   Near     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.01   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    66.67   0.00   0.00   0.00
+
+Relation Type confusion matrix for "usenet" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      2     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     1     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     1     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0     5     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     1     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+       PHYS      0     0     0     0     0     0    16        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=ART   COUNT    PERCENT
+    ref\tst: User-      User- 
+User-Owner-      2      100.0
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=METON COUNT    PERCENT
+    ref\tst:      
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      1     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     5     0        0.0 100.0   0.0
+ Subsidiary      0     0     0        0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=PER-S COUNT............    PERCENT............
+    ref\tst: Busin Famil Lasti      Busin Famil Lasti 
+   Business      0     0     0        0.0   0.0   0.0
+     Family      0     1     0        0.0 100.0   0.0
+Lasting-Per      0     0     0        0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "usenet" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located     13     0      100.0   0.0
+       Near      0     3        0.0 100.0
+
+Relation Modality confusion matrix for "usenet" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     24     0     0      100.0   0.0   0.0
+      Other      0     1     0        0.0 100.0   0.0
+Unspecified      0     0     1        0.0   0.0 100.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=26/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other Unspecified 
+        Asserted    24/92.3%      -           -     
+           Other      -          1/ 3.8%      -     
+     Unspecified      -           -          1/ 3.8%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=26/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Located Geographica        Near User-Owner-      Family  Employment Unspecified 
+         Located    13/50.0%      -           -           -           -           -           -     
+    Geographical      -          5/19.2%      -           -           -           -           -     
+            Near      -           -          3/11.5%      -           -           -           -     
+  User-Owner-Inv      -           -           -          2/ 7.7%      -           -           -     
+          Family      -           -           -           -          1/ 3.8%      -           -     
+      Employment      -           -           -           -           -          1/ 3.8%      -     
+     Unspecified      -           -           -           -           -           -          1/ 3.8%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=25/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past 
+     Unspecified    15/60.0%      -     
+            Past      -         10/40.0%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=26/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       PHYS  PART-WHOLE         ART    METONYMY     ORG-AFF     PER-SOC 
+            PHYS    16/61.5%      -           -           -           -           -     
+      PART-WHOLE      -          5/19.2%      -           -           -           -     
+             ART      -           -          2/ 7.7%      -           -           -     
+        METONYMY      -           -           -          1/ 3.8%      -           -     
+         ORG-AFF      -           -           -           -          1/ 3.8%      -     
+         PER-SOC      -           -           -           -           -          1/ 3.8%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=56/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 Time-Within Time-Starti 
+           Arg-2    26/46.4%      -           -           -     
+           Arg-1      -         26/46.4%      -           -     
+     Time-Within      -           -          3/ 5.4%      -     
+   Time-Starting      -           -           -          1/ 1.8%
+
+======== event mapping ========
+
+--------
+    ref event rec.travel.europe_20050101.1800-EV1 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event rec.travel.europe_20050101.1800-EV1 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.30000 out of 1.30000
+      Destination ref arg: ID=rec.travel.europe_20050101.1800-E82 (GPE/Populat/NAM/SPC), name="Washington"
+      Destination tst arg: ID=rec.travel.europe_20050101.1800-E82 (GPE/Populat/NAM/SPC), name="Washington"
+           Person ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+           Person tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+      Time-Within ref arg: ID=rec.travel.europe_20050101.1800-T8 (TIM/---), extent="last evening"
+      Time-Within tst arg: ID=rec.travel.europe_20050101.1800-T8 (TIM/---), extent="last evening"
+- in document rec.travel.europe_20050101.1800:  score:  1.30000 out of 1.30000
+      ref anchor="got", extent="We *just* got back into Washington la..."
+--------
+    ref event rec.travel.europe_20050101.1800-EV2 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event rec.travel.europe_20050101.1800-EV2 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.10000 out of 1.10000
+      Destination ref arg: ID=rec.travel.europe_20050101.1800-E3 (GPE/Populat/NAM/SPC), name="London"
+      Destination tst arg: ID=rec.travel.europe_20050101.1800-E3 (GPE/Populat/NAM/SPC), name="London"
+           Person ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+           Person tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+- in document rec.travel.europe_20050101.1800:  score:  1.10000 out of 1.10000
+      ref anchor="trip", extent="our brief 5-day trip to London"
+--------
+    ref event rec.travel.europe_20050101.1800-EV3 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event rec.travel.europe_20050101.1800-EV3 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.30000 out of 1.30000
+      Destination ref arg: ID=rec.travel.europe_20050101.1800-E65 (FAC/Airport/NAM/SPC), name="Heathrow"
+      Destination tst arg: ID=rec.travel.europe_20050101.1800-E65 (FAC/Airport/NAM/SPC), name="Heathrow"
+           Person ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+           Person tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+      Time-Within ref arg: ID=rec.travel.europe_20050101.1800-T10 (TIM/---), extent="Monday morning"
+      Time-Within tst arg: ID=rec.travel.europe_20050101.1800-T10 (TIM/---), extent="Monday morning"
+- in document rec.travel.europe_20050101.1800:  score:  1.30000 out of 1.30000
+      ref anchor="got", extent="We got into Heathrow on Monday morning"
+--------
+    ref event rec.travel.europe_20050101.1800-EV4 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event rec.travel.europe_20050101.1800-EV4 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.10000 out of 1.10000
+         Artifact ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+         Artifact tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+      Destination ref arg: ID=rec.travel.europe_20050101.1800-E3 (GPE/Populat/NAM/SPC), name="London"
+      Destination tst arg: ID=rec.travel.europe_20050101.1800-E3 (GPE/Populat/NAM/SPC), name="London"
+          Vehicle ref arg: ID=rec.travel.europe_20050101.1800-E5 (VEH/Land/NAM/GEN), name="underground"
+          Vehicle tst arg: ID=rec.travel.europe_20050101.1800-E5 (VEH/Land/NAM/GEN), name="underground"
+- in document rec.travel.europe_20050101.1800:  score:  1.10000 out of 1.10000
+      ref anchor="took", extent="we took the underground into London"
+--------
+    ref event rec.travel.europe_20050101.1800-EV5 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event rec.travel.europe_20050101.1800-EV5 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+      Destination ref arg: ID=rec.travel.europe_20050101.1800-E26 (FAC/Buildin/NAM/SPC), name="Sainsbury"
+      Destination tst arg: ID=rec.travel.europe_20050101.1800-E26 (FAC/Buildin/NAM/SPC), name="Sainsbury"
+           Person ref arg: ID=rec.travel.europe_20050101.1800-E86 (PER/Individ/NAM/SPC), name="Jim"
+           Person tst arg: ID=rec.travel.europe_20050101.1800-E86 (PER/Individ/NAM/SPC), name="Jim"
+- in document rec.travel.europe_20050101.1800:  score:  2.00000 out of 2.00000
+      ref anchor="trips", extent="I made several trips here"
+--------
+    ref event rec.travel.europe_20050101.1800-EV6 (Movement/Transport/Generic/Other/Positive/Past)
+    tst event rec.travel.europe_20050101.1800-EV6 (Movement/Transport/Generic/Other/Positive/Past)
+      event score:  0.30000 out of 0.30000
+      Destination ref arg: ID=rec.travel.europe_20050101.1800-E55 (LOC/Region-/NOM/USP), head="places"
+      Destination tst arg: ID=rec.travel.europe_20050101.1800-E55 (LOC/Region-/NOM/USP), head="places"
+           Person ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+           Person tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+      Time-Within ref arg: ID=rec.travel.europe_20050101.1800-T17 (TIM/---), extent="one of the other day"
+      Time-Within tst arg: ID=rec.travel.europe_20050101.1800-T17 (TIM/---), extent="one of the other day"
+          Vehicle ref arg: ID=rec.travel.europe_20050101.1800-E33 (VEH/Land/NOM/GEN), head="bus"
+          Vehicle tst arg: ID=rec.travel.europe_20050101.1800-E33 (VEH/Land/NOM/GEN), head="bus"
+- in document rec.travel.europe_20050101.1800:  score:  0.30000 out of 0.30000
+      ref anchor="get", extent="bus tours (the "Original") on one of ..."
+--------
+    ref event rec.travel.europe_20050101.1800-EV7 (Movement/Transport/Specific/Other/Negative/Past)
+    tst event rec.travel.europe_20050101.1800-EV7 (Movement/Transport/Specific/Other/Negative/Past)
+      event score:  1.50000 out of 1.50000
+         Artifact ref arg: ID=rec.travel.europe_20050101.1800-E10 (PER/Individ/NOM/SPC), head="person"
+         Artifact tst arg: ID=rec.travel.europe_20050101.1800-E10 (PER/Individ/NOM/SPC), head="person"
+      Destination ref arg: ID=rec.travel.europe_20050101.1800-E65 (FAC/Airport/NAM/SPC), name="Heathrow"
+      Destination tst arg: ID=rec.travel.europe_20050101.1800-E65 (FAC/Airport/NAM/SPC), name="Heathrow"
+          Vehicle ref arg: ID=rec.travel.europe_20050101.1800-E5 (VEH/Land/NAM/GEN), name="underground"
+          Vehicle tst arg: ID=rec.travel.europe_20050101.1800-E5 (VEH/Land/NAM/GEN), name="underground"
+- in document rec.travel.europe_20050101.1800:  score:  1.50000 out of 1.50000
+      ref anchor="taking", extent="my wife didn't feel like taking the u..."
+--------
+    ref event rec.travel.europe_20050101.1800-EV8 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event rec.travel.europe_20050101.1800-EV8 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.60000 out of 1.60000
+         Artifact ref arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+         Artifact tst arg: ID=rec.travel.europe_20050101.1800-E45 (PER/Group/PRO/SPC), head="our"
+      Destination ref arg: ID=rec.travel.europe_20050101.1800-E66 (FAC/Subarea/NAM/SPC), name="LHR Terminal 3"
+      Destination tst arg: ID=rec.travel.europe_20050101.1800-E66 (FAC/Subarea/NAM/SPC), name="LHR Terminal 3"
+           Origin ref arg: ID=rec.travel.europe_20050101.1800-E2 (FAC/Buildin/NOM/SPC), head="hotel"
+           Origin tst arg: ID=rec.travel.europe_20050101.1800-E2 (FAC/Buildin/NOM/SPC), head="hotel"
+          Vehicle ref arg: ID=rec.travel.europe_20050101.1800-E64 (VEH/Land/NOM/GEN), head="car"
+          Vehicle tst arg: ID=rec.travel.europe_20050101.1800-E64 (VEH/Land/NOM/GEN), head="car"
+- in document rec.travel.europe_20050101.1800:  score:  1.60000 out of 1.60000
+      ref anchor="got", extent="it got us door-to-door from the hotel..."
+--------
+    ref event rec.travel.europe_20050101.1800-EV9 (Movement/Transport/Generic/Asserted/Positive/Unspecified)
+    tst event rec.travel.europe_20050101.1800-EV9 (Movement/Transport/Generic/Asserted/Positive/Unspecified)
+      event score:  1.00000 out of 1.00000
+      Destination ref arg: ID=rec.travel.europe_20050101.1800-E71 (FAC/Buildin/NAM/SPC), name="Harrods"
+      Destination tst arg: ID=rec.travel.europe_20050101.1800-E71 (FAC/Buildin/NAM/SPC), name="Harrods"
+           Person ref arg: ID=rec.travel.europe_20050101.1800-E79 (PER/Group/NOM/USP), head="people"
+           Person tst arg: ID=rec.travel.europe_20050101.1800-E79 (PER/Group/NOM/USP), head="people"
+- in document rec.travel.europe_20050101.1800:  score:  1.00000 out of 1.00000
+      ref anchor="go", extent="Harrods is Harrods though, and most p..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Movemen     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    83.93   0.00   0.00   0.00
+  Other     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.07   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Movement:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Event Type confusion matrix for "usenet" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     9     0     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "usenet" sources (for mapped events):
+  type=Movem COUNT    PERCENT
+    ref\tst: Trans      Trans 
+  Transport      9      100.0
+
+Event Modality confusion matrix for "usenet" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted      7     0      100.0   0.0
+      Other      0     2        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=9/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific     Generic 
+        Specific     7/77.8%      -     
+         Generic      -          2/22.2%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=9/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted     7/77.8%      -     
+           Other      -          2/22.2%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=9/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive    Negative 
+        Positive     8/88.9%      -     
+        Negative      -          1/11.1%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=9/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:  Transport 
+       Transport     9/99.9%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=9/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past Unspecified 
+            Past     8/88.9%      -     
+     Unspecified      -          1/11.1%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=9/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Movement 
+        Movement     9/99.9%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=26/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Destination      Person     Vehicle Time-Within    Artifact      Origin 
+     Destination     9/34.6%      -           -           -           -           -     
+          Person      -          6/23.1%      -           -           -           -     
+         Vehicle      -           -          4/15.4%      -           -           -     
+     Time-Within      -           -           -          3/11.5%      -           -     
+        Artifact      -           -           -           -          3/11.5%      -     
+          Origin      -           -           -           -           -          1/ 3.8%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T1, ID=rec.travel.europe_20050101.1800-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T1, ID=rec.travel.europe_20050101.1800-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="all-day"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T10, ID=rec.travel.europe_20050101.1800-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T10, ID=rec.travel.europe_20050101.1800-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="Monday morning"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T11, ID=rec.travel.europe_20050101.1800-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T11, ID=rec.travel.europe_20050101.1800-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="a holiday"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T12, ID=rec.travel.europe_20050101.1800-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T12, ID=rec.travel.europe_20050101.1800-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="That night"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T13, ID=rec.travel.europe_20050101.1800-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T13, ID=rec.travel.europe_20050101.1800-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="the next morning"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T14, ID=rec.travel.europe_20050101.1800-T14, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T14, ID=rec.travel.europe_20050101.1800-T14, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="all day"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T15, ID=rec.travel.europe_20050101.1800-T15, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T15, ID=rec.travel.europe_20050101.1800-T15, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="all-day"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T16, ID=rec.travel.europe_20050101.1800-T16, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T16, ID=rec.travel.europe_20050101.1800-T16, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="1/2 day"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T17, ID=rec.travel.europe_20050101.1800-T17, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T17, ID=rec.travel.europe_20050101.1800-T17, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="one of the other day"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T18, ID=rec.travel.europe_20050101.1800-T18, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T18, ID=rec.travel.europe_20050101.1800-T18, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="later in the day"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T19, ID=rec.travel.europe_20050101.1800-T19, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T19, ID=rec.travel.europe_20050101.1800-T19, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="all-day"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T2, ID=rec.travel.europe_20050101.1800-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T2, ID=rec.travel.europe_20050101.1800-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="around 12:30"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T20, ID=rec.travel.europe_20050101.1800-T20, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T20, ID=rec.travel.europe_20050101.1800-T20, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="everyday"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T21, ID=rec.travel.europe_20050101.1800-T21, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T21, ID=rec.travel.europe_20050101.1800-T21, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="the time this was all over"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T22, ID=rec.travel.europe_20050101.1800-T22, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T22, ID=rec.travel.europe_20050101.1800-T22, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="all the time"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T23, ID=rec.travel.europe_20050101.1800-T23, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T23, ID=rec.travel.europe_20050101.1800-T23, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="Sun, 02 Jan 2005 10:41:54 GMT"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T3, ID=rec.travel.europe_20050101.1800-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T3, ID=rec.travel.europe_20050101.1800-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="14:30"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T4, ID=rec.travel.europe_20050101.1800-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T4, ID=rec.travel.europe_20050101.1800-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="normal check-in time"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T5, ID=rec.travel.europe_20050101.1800-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T5, ID=rec.travel.europe_20050101.1800-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="a couple of hours"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T6, ID=rec.travel.europe_20050101.1800-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T6, ID=rec.travel.europe_20050101.1800-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="2005-01-01T18:00:00"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T7, ID=rec.travel.europe_20050101.1800-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T7, ID=rec.travel.europe_20050101.1800-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="Sat, 01 Jan 2005 18:00:00 -0500"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T8, ID=rec.travel.europe_20050101.1800-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T8, ID=rec.travel.europe_20050101.1800-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="last evening"
+--------
+    ref timex2 rec.travel.europe_20050101.1800-T9, ID=rec.travel.europe_20050101.1800-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 rec.travel.europe_20050101.1800-T9, ID=rec.travel.europe_20050101.1800-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document rec.travel.europe_20050101.1800:
+          mention="5-day"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=23/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    23/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=23/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    23/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=23/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---    23/99.9%
+
+======== value mapping ========
+
+--------
+    ref value rec.travel.europe_20050101.1800-V1, ID=rec.travel.europe_20050101.1800-V1, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V1, ID=rec.travel.europe_20050101.1800-V1, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="$1.92"
+--------
+    ref value rec.travel.europe_20050101.1800-V10, ID=rec.travel.europe_20050101.1800-V10, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V10, ID=rec.travel.europe_20050101.1800-V10, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="35 GBP"
+--------
+    ref value rec.travel.europe_20050101.1800-V11, ID=rec.travel.europe_20050101.1800-V11, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V11, ID=rec.travel.europe_20050101.1800-V11, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="15 GPB"
+--------
+    ref value rec.travel.europe_20050101.1800-V12, ID=rec.travel.europe_20050101.1800-V12, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V12, ID=rec.travel.europe_20050101.1800-V12, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="$30.00"
+--------
+    ref value rec.travel.europe_20050101.1800-V2, ID=rec.travel.europe_20050101.1800-V2, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V2, ID=rec.travel.europe_20050101.1800-V2, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="5.40 GBP"
+--------
+    ref value rec.travel.europe_20050101.1800-V3, ID=rec.travel.europe_20050101.1800-V3, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V3, ID=rec.travel.europe_20050101.1800-V3, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="GPB"
+--------
+    ref value rec.travel.europe_20050101.1800-V4, ID=rec.travel.europe_20050101.1800-V4, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V4, ID=rec.travel.europe_20050101.1800-V4, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="5 GBP"
+--------
+    ref value rec.travel.europe_20050101.1800-V5, ID=rec.travel.europe_20050101.1800-V5, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V5, ID=rec.travel.europe_20050101.1800-V5, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="1.59 GPB"
+--------
+    ref value rec.travel.europe_20050101.1800-V6, ID=rec.travel.europe_20050101.1800-V6, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V6, ID=rec.travel.europe_20050101.1800-V6, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="98 GBP"
+--------
+    ref value rec.travel.europe_20050101.1800-V7, ID=rec.travel.europe_20050101.1800-V7, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V7, ID=rec.travel.europe_20050101.1800-V7, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="$2.00"
+--------
+    ref value rec.travel.europe_20050101.1800-V8, ID=rec.travel.europe_20050101.1800-V8, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V8, ID=rec.travel.europe_20050101.1800-V8, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="4.20 GBP"
+--------
+    ref value rec.travel.europe_20050101.1800-V9, ID=rec.travel.europe_20050101.1800-V9, SUBTYPE=Money, TYPE=Numeric
+    tst value rec.travel.europe_20050101.1800-V9, ID=rec.travel.europe_20050101.1800-V9, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document rec.travel.europe_20050101.1800:
+          mention="15 GBP"
+
+======== value scoring ========
+
+Value Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ usenet    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Money 
+           Money    12/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Numeric 
+         Numeric    12/99.9%
+
+data input:               0.83 secs to load data
+entity eval:              0.19 secs to compute values,    0.02 secs to map,    0.10 secs to score
+relation eval:            0.20 secs to compute values,    0.02 secs to map,    0.05 secs to score
+event eval:               0.04 secs to compute values,    0.00 secs to map,    0.02 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.02 secs to compute values,    0.01 secs to map,    0.01 secs to score
+value eval:               0.01 secs to compute values,    0.01 secs to map,    0.00 secs to score
+########

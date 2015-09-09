@@ -1,0 +1,1437 @@
+command line (run on 2005 Aug 19 at 15:40:38):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score72197 -t /tmp/score72197
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity DAVYZW_20041227.1120-E1 (ORG/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E1 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="办公室" (NOM/ORG/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E10 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E10 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="渝北" (NAM/ORG/LIT)
+      ref mention="渝北" (NAM/ORG/LIT)
+         ref name="渝北"
+         ref name="渝北"
+--------
+    ref entity DAVYZW_20041227.1120-E11 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E11 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="璧山" (NAM/ORG/LIT)
+      ref mention="璧山" (NAM/GPE/LIT)
+      ref mention="璧山" (NAM/ORG/LIT)
+         ref name="璧山"
+         ref name="璧山"
+         ref name="璧山"
+--------
+    ref entity DAVYZW_20041227.1120-E12 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E12 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="开县" (NAM/ORG/LIT)
+      ref mention="开县" (NAM/ORG/LIT)
+         ref name="开县"
+         ref name="开县"
+--------
+    ref entity DAVYZW_20041227.1120-E13 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E13 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="铜梁" (NAM/ORG/LIT)
+      ref mention="铜梁" (NAM/ORG/LIT)
+         ref name="铜梁"
+         ref name="铜梁"
+--------
+    ref entity DAVYZW_20041227.1120-E14 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E14 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="万州" (NAM/ORG/LIT)
+         ref name="万州"
+--------
+    ref entity DAVYZW_20041227.1120-E15 (FAC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E15 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="道路" (NOM/FAC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E16 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E16 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="丁家镇" (NAM/GPE/LIT)
+         ref name="丁家镇"
+--------
+    ref entity DAVYZW_20041227.1120-E17 (LOC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E17 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="水塘" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E18 (LOC/PRO/SPC)
+    tst entity DAVYZW_20041227.1120-E18 (LOC/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document DAVYZW_20041227.1120:  score:  0.10000 out of 0.10000  (LOC/PRO/SPC)
+      ref mention="等" (PRO/LOC/LIT)
+      ref mention="处" (PRO/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E19 (LOC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E19 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="水库" (NOM/LOC/LIT)
+      ref mention="水库" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E2 (ORG/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E2 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="指 挥中心" (NAM/ORG/LIT)
+         ref name="指 挥中心"
+--------
+    ref entity DAVYZW_20041227.1120-E20 (LOC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E20 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="水塘" (NOM/LOC/LIT)
+      ref mention="池塘" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E21 (GPE/PRO/SPC)
+    tst entity DAVYZW_20041227.1120-E21 (GPE/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document DAVYZW_20041227.1120:  score:  0.10000 out of 0.10000  (GPE/PRO/SPC)
+      ref mention="等" (PRO/ORG/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E22 (PER/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E22 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="蓝色海洋" (NAM/PER/LIT)
+         ref name="蓝色海洋"
+--------
+    ref entity DAVYZW_20041227.1120-E23 (ORG/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E23 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="部门" (NOM/ORG/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E24 (ORG/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E24 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="水利局" (NAM/ORG/LIT)
+         ref name="水利局"
+--------
+    ref entity DAVYZW_20041227.1120-E25 (LOC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E25 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="水库" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E26 (FAC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E26 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="大坝" (NOM/FAC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E27 (GPE/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E27 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="本地" (NOM/GPE/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E28 (LOC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E28 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="水库" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E29 (PER/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E29 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="记者" (NOM/PER/LIT)
+      ref mention="记者" (NOM/PER/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E3 (ORG/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E3 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="公安局" (NAM/ORG/LIT)
+         ref name="公安局"
+--------
+    ref entity DAVYZW_20041227.1120-E30 (ORG/PRO/SPC)
+    tst entity DAVYZW_20041227.1120-E30 (ORG/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document DAVYZW_20041227.1120:  score:  0.10000 out of 0.10000  (ORG/PRO/SPC)
+      ref mention="等" (PRO/ORG/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E31 (ORG/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E31 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="机场" (NOM/ORG/MET)
+--------
+    ref entity DAVYZW_20041227.1120-E32 (ORG/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E32 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="水运" (NOM/ORG/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E33 (ORG/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E33 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="通讯" (NOM/ORG/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E34 (VEH/NOM/USP)
+    tst entity DAVYZW_20041227.1120-E34 (VEH/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document DAVYZW_20041227.1120:  score:  0.00000 out of 0.00000  (VEH/NOM/USP)
+      ref mention="飞机" (NOM/VEH/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E35 (VEH/NOM/USP)
+    tst entity DAVYZW_20041227.1120-E35 (VEH/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document DAVYZW_20041227.1120:  score:  0.00000 out of 0.00000  (VEH/NOM/USP)
+      ref mention="轮船" (NOM/VEH/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E36 (ORG/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E36 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="三峡开发 总公司" (NAM/ORG/LIT)
+      ref mention="公司" (NOM/ORG/LIT)
+         ref name="三峡开发 总公司"
+--------
+    ref entity DAVYZW_20041227.1120-E37 (ORG/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E37 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="水情监测中心" (NAM/ORG/LIT)
+         ref name="水情监测中心"
+--------
+    ref entity DAVYZW_20041227.1120-E38 (PER/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E38 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="主任" (NOM/PER/LIT)
+      ref mention="朱丽霞" (NAM/PER/LIT)
+      ref mention="朱" (NAM/PER/LIT)
+      ref mention="她" (PRO/PER/LIT)
+      ref mention="她" (PRO/PER/LIT)
+         ref name="朱丽霞"
+         ref name="朱"
+--------
+    ref entity DAVYZW_20041227.1120-E4 (LOC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E4 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="水库" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E40 (ORG/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E40 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="地震预报中心" (NAM/ORG/LIT)
+         ref name="地震预报中心"
+--------
+    ref entity DAVYZW_20041227.1120-E41 (LOC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E41 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="全球" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E42 (PER/NOM/USP)
+    tst entity DAVYZW_20041227.1120-E42 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document DAVYZW_20041227.1120:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="人们" (NOM/PER/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E43 (PER/NOM/USP)
+    tst entity DAVYZW_20041227.1120-E43 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document DAVYZW_20041227.1120:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="市民" (NOM/PER/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E44 (ORG/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E44 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="监测预报处" (NAM/ORG/LIT)
+         ref name="监测预报处"
+--------
+    ref entity DAVYZW_20041227.1120-E45 (PER/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E45 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="人士" (NOM/PER/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E46 (LOC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E46 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="地区" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E47 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E47 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="中国" (NAM/GPE/LIT)
+      ref mention="全国" (NOM/LOC/LIT)
+      ref mention="中国" (NAM/GPE/LIT)
+      ref mention="中国" (NAM/LOC/LIT)
+         ref name="中国"
+         ref name="中国"
+         ref name="中国"
+--------
+    ref entity DAVYZW_20041227.1120-E48 (LOC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E48 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="地震带" (NOM/LOC/LIT)
+      ref mention="地震带" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E49 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E49 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="欧" (NAM/GPE/LIT)
+         ref name="欧"
+--------
+    ref entity DAVYZW_20041227.1120-E5 (LOC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E5 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="水塘" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E50 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E50 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="亚" (NAM/GPE/LIT)
+         ref name="亚"
+--------
+    ref entity DAVYZW_20041227.1120-E51 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E51 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="云南" (NAM/LOC/LIT)
+         ref name="云南"
+--------
+    ref entity DAVYZW_20041227.1120-E52 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E52 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="四川" (NAM/LOC/LIT)
+         ref name="四川"
+--------
+    ref entity DAVYZW_20041227.1120-E53 (ORG/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E53 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="地震局" (NAM/ORG/LIT)
+      ref mention="地震局" (NAM/ORG/LIT)
+      ref mention="地震局" (NAM/ORG/LIT)
+      ref mention="地震局" (NAM/ORG/LIT)
+      ref mention="地震局" (NAM/ORG/LIT)
+      ref mention="地震局" (NAM/ORG/LIT)
+         ref name="地震局"
+         ref name="地震局"
+         ref name="地震局"
+         ref name="地震局"
+         ref name="地震局"
+         ref name="地震局"
+--------
+    ref entity DAVYZW_20041227.1120-E54 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E54 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="重庆市" (NAM/GPE/LIT)
+      ref mention="重庆" (NAM/LOC/LIT)
+      ref mention="重庆市" (NAM/GPE/LIT)
+      ref mention="重庆" (NAM/GPE/LIT)
+      ref mention="重庆市" (NAM/GPE/LIT)
+      ref mention="重庆" (NAM/LOC/LIT)
+      ref mention="重庆市" (NAM/GPE/LIT)
+      ref mention="重庆" (NAM/GPE/LIT)
+      ref mention="重庆市" (NAM/GPE/LIT)
+      ref mention="政府" (NOM/ORG/LIT)
+      ref mention="市" (NOM/GPE/LIT)
+      ref mention="市" (NAM/GPE/LIT)
+      ref mention="政府" (NOM/ORG/LIT)
+      ref mention="重庆市" (NAM/GPE/LIT)
+      ref mention="重庆市" (NAM/LOC/LIT)
+      ref mention="重庆" (NAM/LOC/LIT)
+      ref mention="我们" (PRO/PER/LIT)
+      ref mention="重庆" (NAM/LOC/LIT)
+      ref mention="重庆 市" (NAM/GPE/LIT)
+      ref mention="重庆市" (NAM/GPE/LIT)
+      ref mention="重庆" (NAM/LOC/LIT)
+      ref mention="重庆" (NAM/LOC/LIT)
+      ref mention="重庆市" (NAM/GPE/LIT)
+      ref mention="重庆市" (NAM/LOC/LIT)
+      ref mention="重庆" (NAM/LOC/LIT)
+      ref mention="重庆市" (NAM/GPE/LIT)
+      ref mention="重庆市" (NAM/LOC/LIT)
+         ref name="重庆市"
+         ref name="重庆"
+         ref name="重庆市"
+         ref name="重庆"
+         ref name="重庆市"
+         ref name="重庆"
+         ref name="重庆市"
+         ref name="重庆"
+         ref name="重庆市"
+         ref name="市"
+         ref name="重庆市"
+         ref name="重庆市"
+         ref name="重庆"
+         ref name="重庆"
+         ref name="重庆 市"
+         ref name="重庆市"
+         ref name="重庆"
+         ref name="重庆"
+         ref name="重庆市"
+         ref name="重庆市"
+         ref name="重庆"
+         ref name="重庆市"
+         ref name="重庆市"
+--------
+    ref entity DAVYZW_20041227.1120-E55 (GPE/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E55 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="印尼" (NAM/LOC/LIT)
+      ref mention="印尼" (NAM/GPE/LIT)
+      ref mention="印尼" (NAM/GPE/LIT)
+      ref mention="印尼" (NAM/LOC/LIT)
+      ref mention="印尼" (NAM/GPE/LIT)
+         ref name="印尼"
+         ref name="印尼"
+         ref name="印尼"
+         ref name="印尼"
+         ref name="印尼"
+--------
+    ref entity DAVYZW_20041227.1120-E56 (PER/NOM/GEN)
+    tst entity DAVYZW_20041227.1120-E56 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document DAVYZW_20041227.1120:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="市长" (NOM/PER/LIT)
+      ref mention="市长" (NOM/PER/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E57 (ORG/NAM/SPC)
+    tst entity DAVYZW_20041227.1120-E57 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="重庆晚报" (NAM/ORG/LIT)
+      ref mention="重庆晚报" (NAM/ORG/LIT)
+         ref name="重庆晚报"
+         ref name="重庆晚报"
+--------
+    ref entity DAVYZW_20041227.1120-E58 (LOC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E58 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="水库" (NOM/LOC/LIT)
+      ref mention="水库" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E59 (FAC/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E59 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="公路" (NOM/FAC/LIT)
+      ref mention="公路" (NOM/FAC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E6 (GPE/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E6 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="区" (NOM/GPE/LIT)
+      ref mention="区" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E60 (GPE/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E60 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="区" (NOM/GPE/LIT)
+      ref mention="区" (NOM/GPE/LIT)
+      ref mention="区" (NOM/LOC/LIT)
+      ref mention="区" (NOM/ORG/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E61 (GPE/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E61 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="县" (NOM/GPE/LIT)
+      ref mention="县" (NOM/GPE/LIT)
+      ref mention="县" (NOM/LOC/LIT)
+      ref mention="县" (NOM/ORG/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E7 (GPE/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E7 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="县" (NOM/GPE/LIT)
+      ref mention="县" (NOM/LOC/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E8 (GPE/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E8 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="区" (NOM/ORG/LIT)
+--------
+    ref entity DAVYZW_20041227.1120-E9 (GPE/NOM/SPC)
+    tst entity DAVYZW_20041227.1120-E9 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document DAVYZW_20041227.1120:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="县" (NOM/ORG/LIT)
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    FAC     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.92   0.00   0.00   0.00
+    GPE    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    43.34   0.00   0.00   0.00
+    LOC    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.62   0.00   0.00   0.00
+    ORG    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.29   0.00   0.00   0.00
+    PER     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.83   0.00   0.00   0.00
+    VEH     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    60     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    62.66   0.00   0.00   0.00
+    NOM    33     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.55   0.00   0.00   0.00
+    PRO     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.78   0.00   0.00   0.00
+  total    60     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.78   0.00   0.00   0.00
+0.2-0.5    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.55   0.00   0.00   0.00
+0.5-1.0    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    62.66   0.00   0.00   0.00
+  total    60     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    37     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    57.96   0.00   0.00   0.00
+      2    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    23.76   0.00   0.00   0.00
+    3-4     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.83   0.00   0.00   0.00
+    5-8     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.83   0.00   0.00   0.00
+     >8     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.61   0.00   0.00   0.00
+  total    60     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    55     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    60     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ weblog    60     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    60     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    Air     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Buildin     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+Celesti     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+Commerc     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.79   0.00   0.00   0.00
+Contine     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.22   0.00   0.00   0.00
+Governm     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.67   0.00   0.00   0.00
+  Group     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Indeter     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+Individ     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.53   0.00   0.00   0.00
+Land-Re     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+  Media     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.61   0.00   0.00   0.00
+Medical     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.22   0.00   0.00   0.00
+ Nation     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.22   0.00   0.00   0.00
+   Path     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.61   0.00   0.00   0.00
+Populat    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.68   0.00   0.00   0.00
+Region-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+State-o     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.22   0.00   0.00   0.00
+  Water     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Water-B     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.70   0.00   0.00   0.00
+  total    60     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = FAC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Buildin     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+   Path     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.61   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.92   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Contine     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.22   0.00   0.00   0.00
+ Nation     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.22   0.00   0.00   0.00
+Populat    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.68   0.00   0.00   0.00
+State-o     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.22   0.00   0.00   0.00
+  total    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    43.34   0.00   0.00   0.00
+
+Performance statistics for TYPE = LOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Celesti     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+Land-Re     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+Region-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+Water-B     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.70   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.62   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.79   0.00   0.00   0.00
+Governm     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.67   0.00   0.00   0.00
+  Media     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.61   0.00   0.00   0.00
+Medical     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.22   0.00   0.00   0.00
+  total    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.29   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Indeter     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+Individ     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.53   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.83   0.00   0.00   0.00
+
+Performance statistics for TYPE = VEH:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    Air     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  Water     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+
+Entity Type confusion matrix for "weblog" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            3     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    21     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    12     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    15     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0     7     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     2     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=60/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         USP         GEN 
+             SPC    55/91.7%      -           -     
+             USP      -          4/ 6.7%      -     
+             GEN      -           -          1/ 1.7%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=60/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Population-  Water-Body  Government  Commercial  Individual   Continent       Group State-or-Pr  all others 
+  Population-Cen    15/25.0%      -           -           -           -           -           -           -           -     
+      Water-Body      -          9/15.0%      -           -           -           -           -           -           -     
+      Government      -           -          7/11.7%      -           -           -           -           -           -     
+      Commercial      -           -           -          5/ 8.3%      -           -           -           -           -     
+      Individual      -           -           -           -          3/ 5.0%      -           -           -           -     
+       Continent      -           -           -           -           -          2/ 3.3%      -           -           -     
+           Group      -           -           -           -           -           -          2/ 3.3%      -           -     
+  State-or-Provi      -           -           -           -           -           -           -          2/ 3.3%      -     
+      all others      -           -           -           -           -           -           -           -         15/25.0%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=60/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        GPE         ORG         LOC         PER         FAC         VEH 
+             GPE    21/35.0%      -           -           -           -           -     
+             ORG      -         15/25.0%      -           -           -           -     
+             LOC      -           -         12/20.0%      -           -           -     
+             PER      -           -           -          7/11.7%      -           -     
+             FAC      -           -           -           -          3/ 5.0%      -     
+             VEH      -           -           -           -           -          2/ 3.3%
+
+Entity Class confusion matrix for "weblog" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           55     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     1     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0     4        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0    46        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0    15        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0     3        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    64        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    64        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    54        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0     7        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   125        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   124        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   125        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     4        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0    30        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0    37        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    38        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    14        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     2        0.0   0.0      0.0   0.0 100.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   125        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "weblog" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            4     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    30     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    37     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    38     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    14     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     2     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "weblog" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          124     0      100.0   0.0
+METON            0     1        0.0 100.0
+
+======== relation mapping ========
+
+--------
+    ref relation DAVYZW_20041227.1120-R1 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R1 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E53 (ORG/Governm/NAM/SPC), name="地震局"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E53 (ORG/Governm/NAM/SPC), name="地震局"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+- in document DAVYZW_20041227.1120:  score:  2.00000 out of 2.00000
+      ref extent="重庆市地震局"
+      ref extent="重庆市地震局"
+      ref extent="重庆市地震局"
+      ref extent="重庆市地震局"
+      ref extent="重庆 市地震局"
+      ref extent="重庆市地震局"
+--------
+    ref relation DAVYZW_20041227.1120-R17 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R17 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E1 (ORG/Governm/NOM/SPC), head="办公室"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E1 (ORG/Governm/NOM/SPC), head="办公室"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="重庆市政府公开电话办公室"
+--------
+    ref relation DAVYZW_20041227.1120-R18 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R18 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E2 (ORG/Governm/NAM/SPC), name="指 挥中心"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E2 (ORG/Governm/NAM/SPC), name="指 挥中心"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E3 (ORG/Governm/NAM/SPC), name="公安局"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E3 (ORG/Governm/NAM/SPC), name="公安局"
+- in document DAVYZW_20041227.1120:  score:  2.00000 out of 2.00000
+      ref extent="市公安局指 挥中心"
+--------
+    ref relation DAVYZW_20041227.1120-R19 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R19 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E3 (ORG/Governm/NAM/SPC), name="公安局"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E3 (ORG/Governm/NAM/SPC), name="公安局"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+- in document DAVYZW_20041227.1120:  score:  2.00000 out of 2.00000
+      ref extent="市公安局"
+--------
+    ref relation DAVYZW_20041227.1120-R20 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R20 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E4 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E4 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E6 (GPE/Populat/NOM/SPC), head="区"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E6 (GPE/Populat/NOM/SPC), head="区"
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000
+      ref extent="部分区县水库、水塘"
+--------
+    ref relation DAVYZW_20041227.1120-R21 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R21 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E4 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E4 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E7 (GPE/Populat/NOM/SPC), head="县"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E7 (GPE/Populat/NOM/SPC), head="县"
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000
+      ref extent="部分区县水库、水塘"
+--------
+    ref relation DAVYZW_20041227.1120-R22 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R22 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E5 (LOC/Water-B/NOM/SPC), head="水塘"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E5 (LOC/Water-B/NOM/SPC), head="水塘"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E6 (GPE/Populat/NOM/SPC), head="区"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E6 (GPE/Populat/NOM/SPC), head="区"
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000
+      ref extent="部分区县水库、水塘"
+--------
+    ref relation DAVYZW_20041227.1120-R23 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R23 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E5 (LOC/Water-B/NOM/SPC), head="水塘"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E5 (LOC/Water-B/NOM/SPC), head="水塘"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E7 (GPE/Populat/NOM/SPC), head="县"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E7 (GPE/Populat/NOM/SPC), head="县"
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000
+      ref extent="部分区县水库、水塘"
+--------
+    ref relation DAVYZW_20041227.1120-R24 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R24 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E15 (FAC/Path/NOM/SPC), head="道路"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E15 (FAC/Path/NOM/SPC), head="道路"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E16 (GPE/Populat/NAM/SPC), name="丁家镇"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E16 (GPE/Populat/NAM/SPC), name="丁家镇"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="璧山丁家镇村级道路"
+--------
+    ref relation DAVYZW_20041227.1120-R25 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R25 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E16 (GPE/Populat/NAM/SPC), name="丁家镇"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E16 (GPE/Populat/NAM/SPC), name="丁家镇"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E11 (GPE/Populat/NAM/SPC), name="璧山"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E11 (GPE/Populat/NAM/SPC), name="璧山"
+- in document DAVYZW_20041227.1120:  score:  2.00000 out of 2.00000
+      ref extent="璧山丁家镇"
+--------
+    ref relation DAVYZW_20041227.1120-R26 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R26 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E24 (ORG/Governm/NAM/SPC), name="水利局"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E24 (ORG/Governm/NAM/SPC), name="水利局"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+- in document DAVYZW_20041227.1120:  score:  2.00000 out of 2.00000
+      ref extent="重庆市水利局"
+--------
+    ref relation DAVYZW_20041227.1120-R27 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R27 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E25 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E25 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E27 (GPE/Populat/NOM/SPC), head="本地"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E27 (GPE/Populat/NOM/SPC), head="本地"
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000
+      ref extent="本地水库和大坝"
+--------
+    ref relation DAVYZW_20041227.1120-R28 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R28 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E26 (FAC/Buildin/NOM/SPC), head="大坝"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E26 (FAC/Buildin/NOM/SPC), head="大坝"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E27 (GPE/Populat/NOM/SPC), head="本地"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E27 (GPE/Populat/NOM/SPC), head="本地"
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000
+      ref extent="本地水库和大坝"
+--------
+    ref relation DAVYZW_20041227.1120-R29 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R29 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E37 (ORG/Medical/NAM/SPC), name="水情监测中心"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E37 (ORG/Medical/NAM/SPC), name="水情监测中心"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E36 (ORG/Commerc/NAM/SPC), name="三峡开发 总公司"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E36 (ORG/Commerc/NAM/SPC), name="三峡开发 总公司"
+- in document DAVYZW_20041227.1120:  score:  2.00000 out of 2.00000
+      ref extent="该公司水情监测中心"
+--------
+    ref relation DAVYZW_20041227.1120-R3 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R3 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E58 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E58 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E60 (GPE/Populat/NOM/SPC), head="区"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E60 (GPE/Populat/NOM/SPC), head="区"
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000
+      ref extent="重庆17个区 县的50处水库、�..."
+      ref extent="重庆17个区 县的50处水库、�..."
+--------
+    ref relation DAVYZW_20041227.1120-R30 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R30 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E38 (PER/Individ/NAM/SPC), name="朱丽霞"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E38 (PER/Individ/NAM/SPC), name="朱丽霞"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E40 (ORG/Governm/NAM/SPC), name="地震预报中心"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E40 (ORG/Governm/NAM/SPC), name="地震预报中心"
+- in document DAVYZW_20041227.1120:  score:  2.00000 out of 2.00000
+      ref extent="重庆 市地震局地震预报中心..."
+--------
+    ref relation DAVYZW_20041227.1120-R31 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R31 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E40 (ORG/Governm/NAM/SPC), name="地震预报中心"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E40 (ORG/Governm/NAM/SPC), name="地震预报中心"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E53 (ORG/Governm/NAM/SPC), name="地震局"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E53 (ORG/Governm/NAM/SPC), name="地震局"
+- in document DAVYZW_20041227.1120:  score:  2.00000 out of 2.00000
+      ref extent="重庆 市地震局地震预报中心"
+--------
+    ref relation DAVYZW_20041227.1120-R33 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R33 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E6 (GPE/Populat/NOM/SPC), head="区"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E6 (GPE/Populat/NOM/SPC), head="区"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="重庆市部分区县"
+--------
+    ref relation DAVYZW_20041227.1120-R34 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R34 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E7 (GPE/Populat/NOM/SPC), head="县"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E7 (GPE/Populat/NOM/SPC), head="县"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="重庆市部分区县"
+--------
+    ref relation DAVYZW_20041227.1120-R35 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R35 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E19 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E19 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="重庆市一些水库 和池塘"
+--------
+    ref relation DAVYZW_20041227.1120-R36 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R36 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E20 (LOC/Water-B/NOM/SPC), head="水塘"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E20 (LOC/Water-B/NOM/SPC), head="水塘"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="重庆市一些水库 和池塘"
+--------
+    ref relation DAVYZW_20041227.1120-R37 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R37 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E45 (PER/Individ/NOM/SPC), head="人士"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E45 (PER/Individ/NOM/SPC), head="人士"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E44 (ORG/Medical/NAM/SPC), name="监测预报处"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E44 (ORG/Medical/NAM/SPC), name="监测预报处"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="重庆市地震局监测预报处相�..."
+--------
+    ref relation DAVYZW_20041227.1120-R38 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R38 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E44 (ORG/Medical/NAM/SPC), name="监测预报处"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E44 (ORG/Medical/NAM/SPC), name="监测预报处"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E53 (ORG/Governm/NAM/SPC), name="地震局"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E53 (ORG/Governm/NAM/SPC), name="地震局"
+- in document DAVYZW_20041227.1120:  score:  2.00000 out of 2.00000
+      ref extent="重庆市地震局监测预报处"
+--------
+    ref relation DAVYZW_20041227.1120-R4 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R4 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E58 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E58 (LOC/Water-B/NOM/SPC), head="水库"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E61 (GPE/Populat/NOM/SPC), head="县"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E61 (GPE/Populat/NOM/SPC), head="县"
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000
+      ref extent="重庆17个区 县的50处水库、�..."
+      ref extent="重庆17个区 县的50处水库、�..."
+--------
+    ref relation DAVYZW_20041227.1120-R40 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R40 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E46 (LOC/Region-/NOM/SPC), head="地区"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E46 (LOC/Region-/NOM/SPC), head="地区"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E47 (GPE/Nation/NAM/SPC), name="中国"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E47 (GPE/Nation/NAM/SPC), name="中国"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="中国西南地区"
+--------
+    ref relation DAVYZW_20041227.1120-R41 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R41 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E48 (LOC/Land-Re/NOM/SPC), head="地震带"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E48 (LOC/Land-Re/NOM/SPC), head="地震带"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E49 (GPE/Contine/NAM/SPC), name="欧"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E49 (GPE/Contine/NAM/SPC), name="欧"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="位于在中国西面的欧亚地震带"
+--------
+    ref relation DAVYZW_20041227.1120-R42 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R42 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E48 (LOC/Land-Re/NOM/SPC), head="地震带"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E48 (LOC/Land-Re/NOM/SPC), head="地震带"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E50 (GPE/Contine/NAM/SPC), name="亚"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E50 (GPE/Contine/NAM/SPC), name="亚"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="位于在中国西面的欧亚地震带"
+--------
+    ref relation DAVYZW_20041227.1120-R5 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R5 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E59 (FAC/Path/NOM/SPC), head="公路"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E59 (FAC/Path/NOM/SPC), head="公路"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E60 (GPE/Populat/NOM/SPC), head="区"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E60 (GPE/Populat/NOM/SPC), head="区"
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000
+      ref extent="重庆17个区 县的50处水库、�..."
+      ref extent="重庆17个区 县的50处水库、�..."
+--------
+    ref relation DAVYZW_20041227.1120-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E59 (FAC/Path/NOM/SPC), head="公路"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E59 (FAC/Path/NOM/SPC), head="公路"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E61 (GPE/Populat/NOM/SPC), head="县"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E61 (GPE/Populat/NOM/SPC), head="县"
+- in document DAVYZW_20041227.1120:  score:  1.00000 out of 1.00000
+      ref extent="重庆17个区 县的50处水库、�..."
+      ref extent="重庆17个区 县的50处水库、�..."
+--------
+    ref relation DAVYZW_20041227.1120-R7 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R7 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E60 (GPE/Populat/NOM/SPC), head="区"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E60 (GPE/Populat/NOM/SPC), head="区"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="重庆17个区 县"
+      ref extent="重庆17个区 县"
+--------
+    ref relation DAVYZW_20041227.1120-R8 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation DAVYZW_20041227.1120-R8 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=DAVYZW_20041227.1120-E61 (GPE/Populat/NOM/SPC), head="县"
+            Arg-1 tst arg: ID=DAVYZW_20041227.1120-E61 (GPE/Populat/NOM/SPC), head="县"
+            Arg-2 ref arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+            Arg-2 tst arg: ID=DAVYZW_20041227.1120-E54 (GPE/Populat/NAM/SPC), name="重庆 市"
+- in document DAVYZW_20041227.1120:  score:  1.50000 out of 1.50000
+      ref extent="重庆17个区 县"
+      ref extent="重庆17个区 县"
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+GEN-AFF     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.35   0.00   0.00   0.00
+ORG-AFF     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.61   0.00   0.00   0.00
+PART-WH    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    88.04   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ weblog    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.61   0.00   0.00   0.00
+Geograp    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    58.70   0.00   0.00   0.00
+Org-Loc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.35   0.00   0.00   0.00
+Subsidi     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.35   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Org-Loc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.35   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.35   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.61   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.61   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    58.70   0.00   0.00   0.00
+Subsidi     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.35   0.00   0.00   0.00
+  total    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    88.04   0.00   0.00   0.00
+
+Relation Type confusion matrix for "weblog" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     1     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     2     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0    28     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       PHYS      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "weblog" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      0     0        0.0   0.0
+Org-Locatio      0     1        0.0 100.0
+
+Relation Subtype confusion matrix for "weblog" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      2     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "weblog" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0    21     0        0.0 100.0   0.0
+ Subsidiary      0     0     7        0.0   0.0 100.0
+
+Relation Modality confusion matrix for "weblog" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     31     0     0      100.0   0.0   0.0
+      Other      0     0     0        0.0   0.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=31/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted    31/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=31/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Geographica  Subsidiary  Employment Org-Locatio 
+    Geographical    21/67.7%      -           -           -     
+      Subsidiary      -          7/22.6%      -           -     
+      Employment      -           -          2/ 6.5%      -     
+    Org-Location      -           -           -          1/ 3.2%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=31/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified 
+     Unspecified    31/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=31/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: PART-WHOLE     ORG-AFF     GEN-AFF 
+      PART-WHOLE    28/90.3%      -           -     
+         ORG-AFF      -          2/ 6.5%      -     
+         GEN-AFF      -           -          1/ 3.2%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=62/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 
+           Arg-2    31/50.0%      -     
+           Arg-1      -         31/50.0%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 DAVYZW_20041227.1120-T1, ID=DAVYZW_20041227.1120-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T1, ID=DAVYZW_20041227.1120-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="2004-12-27T11:20:00"
+--------
+    ref timex2 DAVYZW_20041227.1120-T10, ID=DAVYZW_20041227.1120-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T10, ID=DAVYZW_20041227.1120-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="昨晚11时"
+--------
+    ref timex2 DAVYZW_20041227.1120-T11, ID=DAVYZW_20041227.1120-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T11, ID=DAVYZW_20041227.1120-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="昨日"
+--------
+    ref timex2 DAVYZW_20041227.1120-T12, ID=DAVYZW_20041227.1120-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T12, ID=DAVYZW_20041227.1120-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="昨日"
+--------
+    ref timex2 DAVYZW_20041227.1120-T13, ID=DAVYZW_20041227.1120-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T13, ID=DAVYZW_20041227.1120-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="昨日"
+--------
+    ref timex2 DAVYZW_20041227.1120-T2, ID=DAVYZW_20041227.1120-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T2, ID=DAVYZW_20041227.1120-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="2004-12-27T11:20:00"
+--------
+    ref timex2 DAVYZW_20041227.1120-T3, ID=DAVYZW_20041227.1120-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T3, ID=DAVYZW_20041227.1120-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="昨日早晨8点56分"
+--------
+    ref timex2 DAVYZW_20041227.1120-T4, ID=DAVYZW_20041227.1120-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T4, ID=DAVYZW_20041227.1120-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="昨天上午"
+--------
+    ref timex2 DAVYZW_20041227.1120-T5, ID=DAVYZW_20041227.1120-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T5, ID=DAVYZW_20041227.1120-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="昨日早晨8点56分"
+--------
+    ref timex2 DAVYZW_20041227.1120-T6, ID=DAVYZW_20041227.1120-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T6, ID=DAVYZW_20041227.1120-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="昨天上午"
+--------
+    ref timex2 DAVYZW_20041227.1120-T7, ID=DAVYZW_20041227.1120-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T7, ID=DAVYZW_20041227.1120-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="昨上午10时左右"
+--------
+    ref timex2 DAVYZW_20041227.1120-T8, ID=DAVYZW_20041227.1120-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T8, ID=DAVYZW_20041227.1120-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="下午1点"
+--------
+    ref timex2 DAVYZW_20041227.1120-T9, ID=DAVYZW_20041227.1120-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 DAVYZW_20041227.1120-T9, ID=DAVYZW_20041227.1120-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document DAVYZW_20041227.1120:
+          mention="昨晚10时"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ weblog    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    13/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    13/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---    13/99.9%
+
+data input:               0.56 secs to load data
+entity eval:              0.10 secs to compute values,    0.04 secs to map,    0.09 secs to score
+relation eval:            0.30 secs to compute values,    0.02 secs to map,    0.05 secs to score
+event eval:               0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.01 secs to compute values,    0.01 secs to map,    0.01 secs to score
+value eval:               0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+########

@@ -1,0 +1,1511 @@
+command line (run on 2005 Aug 21 at 10:32:01):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score71914 -t /tmp/score71914
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity APW_ENG_20030319.0545-E1 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030319.0545-E1 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030319.0545:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="company" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030319.0545-E10 (ORG/PRO/USP)
+    tst entity APW_ENG_20030319.0545-E10 (ORG/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030319.0545:  score:  0.00000 out of 0.00000  (ORG/PRO/USP)
+      ref mention="parts" (PRO/ORG/LIT)
+--------
+    ref entity APW_ENG_20030319.0545-E11 (PER/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E11 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Barry Diller" (NAM/PER/LIT)
+      ref mention="executive" (NOM/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="Diller" (NAM/PER/LIT)
+      ref mention="CEO" (NOM/PER/LIT)
+      ref mention="Diller" (NAM/PER/LIT)
+      ref mention="CEO" (NOM/PER/LIT)
+      ref mention="My" (PRO/PER/LIT)
+      ref mention="Diller" (NAM/PER/LIT)
+      ref mention="Diller" (NAM/PER/LIT)
+      ref mention="officer" (NOM/PER/LIT)
+      ref mention="Diller" (NAM/PER/LIT)
+      ref mention="He" (PRO/PER/LIT)
+      ref mention="Diller" (NAM/PER/LIT)
+      ref mention="Diller" (NAM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Diller" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="executive" (NOM/PER/LIT)
+      ref mention="Diller" (NAM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="head" (NOM/PER/LIT)
+      ref mention="Diller" (NAM/PER/LIT)
+      ref mention="head" (NOM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="He" (PRO/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+         ref name="Barry Diller"
+         ref name="Diller"
+         ref name="Diller"
+         ref name="Diller"
+         ref name="Diller"
+         ref name="Diller"
+         ref name="Diller"
+         ref name="Diller"
+         ref name="Diller"
+         ref name="Diller"
+         ref name="Diller"
+--------
+    ref entity APW_ENG_20030319.0545-E13 (PER/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E13 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="chairman" (NOM/PER/LIT)
+      ref mention="Jean-Rene Fourtou" (NAM/PER/LIT)
+         ref name="Jean-Rene Fourtou"
+--------
+    ref entity APW_ENG_20030319.0545-E16 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E16 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="USA Interactive" (NAM/ORG/LIT)
+      ref mention="which" (PRO/ORG/LIT)
+      ref mention="USA Interactive" (NAM/ORG/LIT)
+      ref mention="USA Interactive" (NAM/ORG/LIT)
+         ref name="USA Interactive"
+         ref name="USA Interactive"
+         ref name="USA Interactive"
+--------
+    ref entity APW_ENG_20030319.0545-E17 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E17 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Home Shopping Network" (NAM/ORG/LIT)
+         ref name="Home Shopping Network"
+--------
+    ref entity APW_ENG_20030319.0545-E18 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E18 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Ticketmaster" (NAM/ORG/LIT)
+         ref name="Ticketmaster"
+--------
+    ref entity APW_ENG_20030319.0545-E19 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E19 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Match.com" (NAM/ORG/LIT)
+         ref name="Match.com"
+--------
+    ref entity APW_ENG_20030319.0545-E2 (PER/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E2 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="oilman" (NOM/PER/LIT)
+      ref mention="Marvin Davis" (NAM/PER/LIT)
+         ref name="Marvin Davis"
+--------
+    ref entity APW_ENG_20030319.0545-E20 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E20 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Expedia" (NAM/ORG/LIT)
+         ref name="Expedia"
+--------
+    ref entity APW_ENG_20030319.0545-E21 (ORG/NOM/USP)
+    tst entity APW_ENG_20030319.0545-E21 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030319.0545:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="companies" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030319.0545-E22 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E22 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="LOS ANGELES" (NAM/LOC/LIT)
+         ref name="LOS ANGELES"
+--------
+    ref entity APW_ENG_20030319.0545-E26 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E26 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Paramount" (NAM/ORG/LIT)
+         ref name="Paramount"
+--------
+    ref entity APW_ENG_20030319.0545-E27 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E27 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Twentieth Century Fox" (NAM/ORG/LIT)
+      ref mention="where" (PRO/ORG/LIT)
+      ref mention="Fox" (NAM/ORG/LIT)
+         ref name="Twentieth Century Fox"
+         ref name="Fox"
+--------
+    ref entity APW_ENG_20030319.0545-E28 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E28 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Fox" (NAM/ORG/LIT)
+      ref mention="network" (NOM/ORG/LIT)
+         ref name="Fox"
+--------
+    ref entity APW_ENG_20030319.0545-E30 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E30 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="ABC" (NAM/ORG/LIT)
+      ref mention="where" (PRO/ORG/LIT)
+         ref name="ABC"
+--------
+    ref entity APW_ENG_20030319.0545-E31 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E31 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="New York Stock Exchange" (NAM/ORG/LIT)
+      ref mention="where" (PRO/ORG/LIT)
+         ref name="New York Stock Exchange"
+--------
+    ref entity APW_ENG_20030319.0545-E32 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E32 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+         ref name="U.S"
+         ref name="U.S"
+--------
+    ref entity APW_ENG_20030319.0545-E33 (ORG/PRO/SPC)
+    tst entity APW_ENG_20030319.0545-E33 (ORG/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document APW_ENG_20030319.0545:  score:  0.10000 out of 0.10000  (ORG/PRO/SPC)
+      ref mention="one" (PRO/ORG/LIT)
+--------
+    ref entity APW_ENG_20030319.0545-E34 (ORG/PRO/USP)
+    tst entity APW_ENG_20030319.0545-E34 (ORG/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030319.0545:  score:  0.00000 out of 0.00000  (ORG/PRO/USP)
+      ref mention="more" (PRO/ORG/LIT)
+--------
+    ref entity APW_ENG_20030319.0545-E35 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E35 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="AP" (NAM/ORG/LIT)
+      ref mention="Associated Press" (NAM/ORG/LIT)
+         ref name="AP"
+         ref name="Associated Press"
+--------
+    ref entity APW_ENG_20030319.0545-E38 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E38 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Vivendi Universal Entertainment" (NAM/ORG/LIT)
+      ref mention="VUE" (NAM/ORG/LIT)
+      ref mention="VUE" (NAM/ORG/LIT)
+      ref mention="arm" (NOM/ORG/LIT)
+      ref mention="Vivendi Universal Entertainment" (NAM/ORG/LIT)
+      ref mention="unit" (NOM/ORG/LIT)
+         ref name="Vivendi Universal Entertainment"
+         ref name="VUE"
+         ref name="VUE"
+         ref name="Vivendi Universal Entertainment"
+--------
+    ref entity APW_ENG_20030319.0545-E39 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E39 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Paris" (NAM/GPE/LIT)
+         ref name="Paris"
+--------
+    ref entity APW_ENG_20030319.0545-E4 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E4 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Universal Music Group" (NAM/ORG/LIT)
+         ref name="Universal Music Group"
+--------
+    ref entity APW_ENG_20030319.0545-E41 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E41 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Universal Studios" (NAM/ORG/LIT)
+      ref mention="Universal Studios" (NAM/ORG/LIT)
+      ref mention="studio" (NOM/ORG/LIT)
+         ref name="Universal Studios"
+         ref name="Universal Studios"
+--------
+    ref entity APW_ENG_20030319.0545-E42 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030319.0545-E42 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030319.0545:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="parks" (NOM/ORG/LIT)
+      ref mention="parks" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030319.0545-E5 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E5 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Vivendi Universal" (NAM/ORG/LIT)
+      ref mention="Universal" (NAM/ORG/LIT)
+      ref mention="Vivendi Universal" (NAM/ORG/LIT)
+      ref mention="Vivendi Universal" (NAM/ORG/LIT)
+      ref mention="Vivendi" (NAM/ORG/LIT)
+      ref mention="its" (PRO/ORG/LIT)
+      ref mention="Universal" (NAM/ORG/LIT)
+      ref mention="Vivendi" (NAM/ORG/LIT)
+      ref mention="its" (PRO/ORG/LIT)
+      ref mention="Vivendi Universal" (NAM/ORG/LIT)
+      ref mention="Vivendi Universal" (NAM/ORG/LIT)
+      ref mention="its" (PRO/ORG/LIT)
+      ref mention="it" (PRO/ORG/LIT)
+      ref mention="Vivendi" (NAM/ORG/LIT)
+      ref mention="venture" (NOM/ORG/LIT)
+      ref mention="Vivendi" (NAM/ORG/LIT)
+         ref name="Vivendi Universal"
+         ref name="Universal"
+         ref name="Vivendi Universal"
+         ref name="Vivendi Universal"
+         ref name="Vivendi"
+         ref name="Universal"
+         ref name="Vivendi"
+         ref name="Vivendi Universal"
+         ref name="Vivendi Universal"
+         ref name="Vivendi"
+         ref name="Vivendi"
+--------
+    ref entity APW_ENG_20030319.0545-E6 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E6 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Viacom" (NAM/ORG/LIT)
+         ref name="Viacom"
+--------
+    ref entity APW_ENG_20030319.0545-E7 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030319.0545-E7 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="MGM" (NAM/ORG/LIT)
+         ref name="MGM"
+--------
+    ref entity APW_ENG_20030319.0545-E8 (ORG/NOM/USP)
+    tst entity APW_ENG_20030319.0545-E8 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030319.0545:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="buyers" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030319.0545-E9 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030319.0545-E9 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030319.0545:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="assets" (NOM/ORG/LIT)
+      ref mention="assets" (NOM/ORG/LIT)
+      ref mention="all" (PRO/ORG/LIT)
+      ref mention="companies" (NOM/ORG/LIT)
+      ref mention="assets" (NOM/ORG/LIT)
+      ref mention="assets" (NOM/ORG/LIT)
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    GPE     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.20   0.00   0.00   0.00
+    ORG    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.61   0.00   0.00   0.00
+    PER     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.20   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    93.50   0.00   0.00   0.00
+    NOM     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.10   0.00   0.00   0.00
+    PRO     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.41   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.41   0.00   0.00   0.00
+0.2-0.5     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.10   0.00   0.00   0.00
+0.5-1.0    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    93.50   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    43.09   0.00   0.00   0.00
+      2     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.49   0.00   0.00   0.00
+    3-4     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.20   0.00   0.00   0.00
+    5-8     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.10   0.00   0.00   0.00
+     >8     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.13   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    27     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    USP     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    32.52   0.00   0.00   0.00
+Enterta    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.76   0.00   0.00   0.00
+Individ     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.20   0.00   0.00   0.00
+  Media     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.33   0.00   0.00   0.00
+ Nation     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.07   0.00   0.00   0.00
+Populat     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.13   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Nation     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.07   0.00   0.00   0.00
+Populat     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.13   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.20   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    32.52   0.00   0.00   0.00
+Enterta    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.76   0.00   0.00   0.00
+  Media     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.33   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.61   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Individ     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.20   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.20   0.00   0.00   0.00
+
+Entity Type confusion matrix for "newswire" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     3     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    25     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0     3     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=31/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         USP 
+             SPC    27/87.1%      -     
+             USP      -          4/12.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=31/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: Commercial Entertainme       Media  Individual Population-      Nation 
+      Commercial    10/32.3%      -           -           -           -           -     
+   Entertainment      -         10/32.3%      -           -           -           -     
+           Media      -           -          5/16.1%      -           -           -     
+      Individual      -           -           -          3/ 9.7%      -           -     
+  Population-Cen      -           -           -           -          2/ 6.5%      -     
+          Nation      -           -           -           -           -          1/ 3.2%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=31/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        ORG         GPE         PER 
+             ORG    25/80.6%      -           -     
+             GPE      -          3/ 9.7%      -     
+             PER      -           -          3/ 9.7%
+
+Entity Class confusion matrix for "newswire" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           27     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     0     0     0        0.0   0.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0     4        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0     4        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0    35        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    13        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    52        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    52        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    24        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0    24        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   100        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   100        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   100        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0     3        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    62        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    34        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   100        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "newswire" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     3     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     1     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    62     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    34     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "newswire" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          100     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation APW_ENG_20030319.0545-R1 (ORG-AFF/Employment/Asserted/Past)
+    tst relation APW_ENG_20030319.0545-R1 (ORG-AFF/Employment/Asserted/Past)
+      relation score:  1.70000 out of 1.70000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+      Time-Starti ref arg: ID=APW_ENG_20030319.0545-T2 (TIM/---), extent="last year"
+      Time-Starti tst arg: ID=APW_ENG_20030319.0545-T2 (TIM/---), extent="last year"
+- in document APW_ENG_20030319.0545:  score:  1.70000 out of 1.70000
+      ref extent="interim CEO of Vivendi Universal's U...."
+--------
+    ref relation APW_ENG_20030319.0545-R10 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R10 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E41 (ORG/Enterta/NAM/SPC), name="Universal Studios"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E41 (ORG/Enterta/NAM/SPC), name="Universal Studios"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Cash-strapped Vivendi wants to sell U..."
+--------
+    ref relation APW_ENG_20030319.0545-R12 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R12 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E1 (ORG/Enterta/NOM/SPC), head="company"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E1 (ORG/Enterta/NOM/SPC), head="company"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+- in document APW_ENG_20030319.0545:  score:  1.50000 out of 1.50000
+      ref extent="its Universal theme parks and televis..."
+--------
+    ref relation APW_ENG_20030319.0545-R13 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R13 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+- in document APW_ENG_20030319.0545:  score:  1.50000 out of 1.50000
+      ref extent="its entertainment companies"
+      ref extent="its entertainment assets"
+--------
+    ref relation APW_ENG_20030319.0545-R14 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R14 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E13 (PER/Individ/NAM/SPC), name="Jean-Rene Fourtou"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E13 (PER/Individ/NAM/SPC), name="Jean-Rene Fourtou"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Vivendi Universal chairman"
+--------
+    ref relation APW_ENG_20030319.0545-R15 (PER-SOC/Business/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R15 (PER-SOC/Business/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E13 (PER/Individ/NAM/SPC), name="Jean-Rene Fourtou"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E13 (PER/Individ/NAM/SPC), name="Jean-Rene Fourtou"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="co-CEO with Vivendi Universal chairma..."
+--------
+    ref relation APW_ENG_20030319.0545-R16 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R16 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="chief executive officer of USA Intera..."
+      ref extent="head of USA Interactive"
+--------
+    ref relation APW_ENG_20030319.0545-R17 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R17 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E17 (ORG/Enterta/NAM/SPC), name="Home Shopping Network"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E17 (ORG/Enterta/NAM/SPC), name="Home Shopping Network"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Diller, 61, remains chief executive o..."
+--------
+    ref relation APW_ENG_20030319.0545-R18 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R18 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E18 (ORG/Enterta/NAM/SPC), name="Ticketmaster"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E18 (ORG/Enterta/NAM/SPC), name="Ticketmaster"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Diller, 61, remains chief executive o..."
+--------
+    ref relation APW_ENG_20030319.0545-R19 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R19 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E19 (ORG/Commerc/NAM/SPC), name="Match.com"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E19 (ORG/Commerc/NAM/SPC), name="Match.com"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Diller, 61, remains chief executive o..."
+--------
+    ref relation APW_ENG_20030319.0545-R20 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R20 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E20 (ORG/Commerc/NAM/SPC), name="Expedia"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E20 (ORG/Commerc/NAM/SPC), name="Expedia"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Diller, 61, remains chief executive o..."
+--------
+    ref relation APW_ENG_20030319.0545-R21 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R21 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Diller, 61, remains chief executive o..."
+--------
+    ref relation APW_ENG_20030319.0545-R22 (ORG-AFF/Investor-Shareholder/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R22 (ORG-AFF/Investor-Shareholder/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E16 (ORG/Commerc/NAM/SPC), name="USA Interactive"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Diller, 61, remains chief executive o..."
+--------
+    ref relation APW_ENG_20030319.0545-R23 (ORG-AFF/Investor-Shareholder/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R23 (ORG-AFF/Investor-Shareholder/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="He personally owns 1.5 percent of the..."
+--------
+    ref relation APW_ENG_20030319.0545-R24 (ORG-AFF/Investor-Shareholder/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R24 (ORG-AFF/Investor-Shareholder/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Diller also owns preferred stock in V..."
+--------
+    ref relation APW_ENG_20030319.0545-R25 (ORG-AFF/Employment/Asserted/Past)
+    tst relation APW_ENG_20030319.0545-R25 (ORG-AFF/Employment/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E26 (ORG/Media/NAM/SPC), name="Paramount"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E26 (ORG/Media/NAM/SPC), name="Paramount"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="head of Paramount and Twentieth Centu..."
+--------
+    ref relation APW_ENG_20030319.0545-R26 (ORG-AFF/Employment/Asserted/Past)
+    tst relation APW_ENG_20030319.0545-R26 (ORG-AFF/Employment/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E27 (ORG/Media/NAM/SPC), name="Twentieth Century Fox"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E27 (ORG/Media/NAM/SPC), name="Twentieth Century Fox"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="head of Paramount and Twentieth Centu..."
+      ref extent="While at Fox, he"
+--------
+    ref relation APW_ENG_20030319.0545-R27 (ORG-AFF/Founder/Asserted/Past)
+    tst relation APW_ENG_20030319.0545-R27 (ORG-AFF/Founder/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E28 (ORG/Media/NAM/SPC), name="Fox"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E28 (ORG/Media/NAM/SPC), name="Fox"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Diller has served as head of Paramoun..."
+--------
+    ref relation APW_ENG_20030319.0545-R28 (ORG-AFF/Employment/Asserted/Past)
+    tst relation APW_ENG_20030319.0545-R28 (ORG-AFF/Employment/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E30 (ORG/Media/NAM/SPC), name="ABC"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E30 (ORG/Media/NAM/SPC), name="ABC"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="He started his entertainment career a..."
+--------
+    ref relation APW_ENG_20030319.0545-R29 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R29 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E41 (ORG/Enterta/NAM/SPC), name="Universal Studios"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E41 (ORG/Enterta/NAM/SPC), name="Universal Studios"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Diller also is believed to be interes..."
+--------
+    ref relation APW_ENG_20030319.0545-R3 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R3 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Vivendi's entertainment arm"
+--------
+    ref relation APW_ENG_20030319.0545-R4 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R4 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+- in document APW_ENG_20030319.0545:  score:  1.50000 out of 1.50000
+      ref extent="the entertainment unit's assets"
+--------
+    ref relation APW_ENG_20030319.0545-R7 (ORG-AFF/Employment/Asserted/Past)
+    tst relation APW_ENG_20030319.0545-R7 (ORG-AFF/Employment/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="co-chief executive of Vivendi Univers..."
+--------
+    ref relation APW_ENG_20030319.0545-R8 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R8 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E39 (GPE/Populat/NAM/SPC), name="Paris"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E39 (GPE/Populat/NAM/SPC), name="Paris"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref extent="Paris-based Vivendi Universal"
+--------
+    ref relation APW_ENG_20030319.0545-R9 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030319.0545-R9 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030319.0545-E42 (ORG/Enterta/NOM/SPC), head="parks"
+            Arg-1 tst arg: ID=APW_ENG_20030319.0545-E42 (ORG/Enterta/NOM/SPC), head="parks"
+            Arg-2 ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+            Arg-2 tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+- in document APW_ENG_20030319.0545:  score:  1.50000 out of 1.50000
+      ref extent="Universal's theme parks"
+      ref extent="its Universal theme parks and televis..."
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+GEN-AFF     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.19   0.00   0.00   0.00
+ORG-AFF    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    45.49   0.00   0.00   0.00
+PART-WH    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    46.12   0.00   0.00   0.00
+PER-SOC     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.19   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.19   0.00   0.00   0.00
+Employm     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.72   0.00   0.00   0.00
+Founder     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.19   0.00   0.00   0.00
+Investo     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.58   0.00   0.00   0.00
+Org-Loc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.19   0.00   0.00   0.00
+Subsidi    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    46.12   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Org-Loc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.19   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.19   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.72   0.00   0.00   0.00
+Founder     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.19   0.00   0.00   0.00
+Investo     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.58   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    45.49   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Subsidi    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    46.12   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    46.12   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER-SOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.19   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.19   0.00   0.00   0.00
+
+Relation Type confusion matrix for "newswire" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     1     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0    11     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0    12     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     1     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+       PHYS      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      0     0        0.0   0.0
+Org-Locatio      0     1        0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      7     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     1     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     3     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     0     0        0.0   0.0   0.0
+ Subsidiary      0     0    12        0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PER-S COUNT............    PERCENT............
+    ref\tst: Busin Famil Lasti      Busin Famil Lasti 
+   Business      1     0     0      100.0   0.0   0.0
+     Family      0     0     0        0.0   0.0   0.0
+Lasting-Per      0     0     0        0.0   0.0   0.0
+
+Relation Modality confusion matrix for "newswire" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     25     0     0      100.0   0.0   0.0
+      Other      0     0     0        0.0   0.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=25/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted    25/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=25/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: Subsidiary  Employment Investor-Sh     Founder Org-Locatio    Business 
+      Subsidiary    12/48.0%      -           -           -           -           -     
+      Employment      -          7/28.0%      -           -           -           -     
+  Investor-Share      -           -          3/12.0%      -           -           -     
+         Founder      -           -           -          1/ 4.0%      -           -     
+    Org-Location      -           -           -           -          1/ 4.0%      -     
+        Business      -           -           -           -           -          1/ 4.0%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=25/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past 
+     Unspecified    19/76.0%      -     
+            Past      -          6/24.0%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=25/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: PART-WHOLE     ORG-AFF     GEN-AFF     PER-SOC 
+      PART-WHOLE    12/48.0%      -           -           -     
+         ORG-AFF      -         11/44.0%      -           -     
+         GEN-AFF      -           -          1/ 4.0%      -     
+         PER-SOC      -           -           -          1/ 4.0%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=51/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 Time-Starti 
+           Arg-2    25/49.0%      -           -     
+           Arg-1      -         25/49.0%      -     
+   Time-Starting      -           -          1/ 2.0%
+
+======== event mapping ========
+
+--------
+    ref event APW_ENG_20030319.0545-EV1 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030319.0545-EV1 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  3.00000 out of 3.00000
+           Entity ref arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+           Entity tst arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+           Person ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+           Person tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+         Position ref arg: ID=APW_ENG_20030319.0545-V9 (Job/---), extent="co-chief executive"
+         Position tst arg: ID=APW_ENG_20030319.0545-V9 (Job/---), extent="co-chief executive"
+- in document APW_ENG_20030319.0545:  score:  3.00000 out of 3.00000
+      ref anchor="resigned", extent="Barry Diller resigned as co-chief exe..."
+      ref anchor="step down", extent="him to step down"
+      ref anchor="step aside", extent="step aside"
+--------
+    ref event APW_ENG_20030319.0545-EV10 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030319.0545-EV10 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+           Entity ref arg: ID=APW_ENG_20030319.0545-E30 (ORG/Media/NAM/SPC), name="ABC"
+           Entity tst arg: ID=APW_ENG_20030319.0545-E30 (ORG/Media/NAM/SPC), name="ABC"
+           Person ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+           Person tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+- in document APW_ENG_20030319.0545:  score:  2.00000 out of 2.00000
+      ref anchor="started", extent="He started his entertainment career a..."
+--------
+    ref event APW_ENG_20030319.0545-EV2 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030319.0545-EV2 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+      event score:  3.70000 out of 3.70000
+           Entity ref arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+           Entity tst arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+           Person ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+           Person tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Place ref arg: ID=APW_ENG_20030319.0545-E32 (GPE/Nation/NAM/SPC), name="U.S"
+            Place tst arg: ID=APW_ENG_20030319.0545-E32 (GPE/Nation/NAM/SPC), name="U.S"
+         Position ref arg: ID=APW_ENG_20030319.0545-V10 (Job/---), extent="interim CEO"
+         Position tst arg: ID=APW_ENG_20030319.0545-V10 (Job/---), extent="interim CEO"
+      Time-Starti ref arg: ID=APW_ENG_20030319.0545-T2 (TIM/---), extent="last year"
+      Time-Starti tst arg: ID=APW_ENG_20030319.0545-T2 (TIM/---), extent="last year"
+- in document APW_ENG_20030319.0545:  score:  3.70000 out of 3.70000
+      ref anchor="appointed", extent="Diller was appointed interim CEO of V..."
+--------
+    ref event APW_ENG_20030319.0545-EV3 (Transaction/Transfer-Money/Generic/Asserted/Positive/Unspecified)
+    tst event APW_ENG_20030319.0545-EV3 (Transaction/Transfer-Money/Generic/Asserted/Positive/Unspecified)
+      event score:  1.20000 out of 1.20000
+            Giver ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+            Giver tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+      Time-Starti ref arg: ID=APW_ENG_20030319.0545-T2 (TIM/---), extent="last year"
+      Time-Starti tst arg: ID=APW_ENG_20030319.0545-T2 (TIM/---), extent="last year"
+- in document APW_ENG_20030319.0545:  score:  1.20000 out of 1.20000
+      ref anchor="repaying", extent="Vivendi Universal's U.S.-based entert..."
+--------
+    ref event APW_ENG_20030319.0545-EV4 (Transaction/Transfer-Ownership/Specific/Other/Positive/Unspecified)
+    tst event APW_ENG_20030319.0545-EV4 (Transaction/Transfer-Ownership/Specific/Other/Positive/Unspecified)
+      event score:  3.00000 out of 3.00000
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E1 (ORG/Enterta/NOM/SPC), head="company"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E1 (ORG/Enterta/NOM/SPC), head="company"
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E41 (ORG/Enterta/NAM/SPC), name="Universal Studios"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E41 (ORG/Enterta/NAM/SPC), name="Universal Studios"
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E42 (ORG/Enterta/NOM/SPC), head="parks"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E42 (ORG/Enterta/NOM/SPC), head="parks"
+           Seller ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+           Seller tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+- in document APW_ENG_20030319.0545:  score:  3.00000 out of 3.00000
+      ref anchor="sell", extent="Cash-strapped Vivendi wants to sell U..."
+--------
+    ref event APW_ENG_20030319.0545-EV5 (Transaction/Transfer-Ownership/Specific/Other/Positive/Unspecified)
+    tst event APW_ENG_20030319.0545-EV5 (Transaction/Transfer-Ownership/Specific/Other/Positive/Unspecified)
+      event score:  4.00000 out of 4.00000
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E4 (ORG/Enterta/NAM/SPC), name="Universal Music Group"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E4 (ORG/Enterta/NAM/SPC), name="Universal Music Group"
+            Buyer ref arg: ID=APW_ENG_20030319.0545-E2 (PER/Individ/NAM/SPC), name="Marvin Davis"
+            Buyer tst arg: ID=APW_ENG_20030319.0545-E2 (PER/Individ/NAM/SPC), name="Marvin Davis"
+            Price ref arg: ID=APW_ENG_20030319.0545-V1 (Num/Money), extent="$20 billion"
+            Price tst arg: ID=APW_ENG_20030319.0545-V1 (Num/Money), extent="$20 billion"
+- in document APW_ENG_20030319.0545:  score:  4.00000 out of 4.00000
+      ref anchor="offered", extent="Former oilman Marvin Davis has offere..."
+--------
+    ref event APW_ENG_20030319.0545-EV6 (Transaction/Transfer-Ownership/Specific/Other/Positive/Unspecified)
+    tst event APW_ENG_20030319.0545-EV6 (Transaction/Transfer-Ownership/Specific/Other/Positive/Unspecified)
+      event score:  3.00000 out of 3.00000
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E42 (ORG/Enterta/NOM/SPC), head="parks"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E42 (ORG/Enterta/NOM/SPC), head="parks"
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+           Seller ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+           Seller tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+- in document APW_ENG_20030319.0545:  score:  3.00000 out of 3.00000
+      ref anchor="bids", extent="Paris-based Vivendi Universal enterta..."
+--------
+    ref event APW_ENG_20030319.0545-EV7 (Transaction/Transfer-Ownership/Specific/Other/Positive/Unspecified)
+    tst event APW_ENG_20030319.0545-EV7 (Transaction/Transfer-Ownership/Specific/Other/Positive/Unspecified)
+      event score:  3.50000 out of 3.50000
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E10 (ORG/Enterta/PRO/USP), head="parts"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E10 (ORG/Enterta/PRO/USP), head="parts"
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E9 (ORG/Enterta/NOM/SPC), head="companies"
+            Buyer ref arg: ID=APW_ENG_20030319.0545-E6 (ORG/Commerc/NAM/SPC), name="Viacom"
+            Buyer tst arg: ID=APW_ENG_20030319.0545-E6 (ORG/Commerc/NAM/SPC), name="Viacom"
+            Buyer ref arg: ID=APW_ENG_20030319.0545-E7 (ORG/Commerc/NAM/SPC), name="MGM"
+            Buyer tst arg: ID=APW_ENG_20030319.0545-E7 (ORG/Commerc/NAM/SPC), name="MGM"
+            Buyer ref arg: ID=APW_ENG_20030319.0545-E8 (ORG/Commerc/NOM/USP), head="buyers"
+            Buyer tst arg: ID=APW_ENG_20030319.0545-E8 (ORG/Commerc/NOM/USP), head="buyers"
+           Seller ref arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+           Seller tst arg: ID=APW_ENG_20030319.0545-E5 (ORG/Commerc/NAM/SPC), name="Vivendi Universal"
+- in document APW_ENG_20030319.0545:  score:  3.50000 out of 3.50000
+      ref anchor="acquiring", extent="Vivendi also is holding talks with Vi..."
+--------
+    ref event APW_ENG_20030319.0545-EV8 (Transaction/Transfer-Ownership/Specific/Other/Positive/Unspecified)
+    tst event APW_ENG_20030319.0545-EV8 (Transaction/Transfer-Ownership/Specific/Other/Positive/Unspecified)
+      event score:  3.10000 out of 3.10000
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E33 (ORG/Enterta/PRO/SPC), head="one"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E33 (ORG/Enterta/PRO/SPC), head="one"
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E34 (ORG/Enterta/PRO/USP), head="more"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E34 (ORG/Enterta/PRO/USP), head="more"
+         Artifact ref arg: ID=APW_ENG_20030319.0545-E41 (ORG/Enterta/NAM/SPC), name="Universal Studios"
+         Artifact tst arg: ID=APW_ENG_20030319.0545-E41 (ORG/Enterta/NAM/SPC), name="Universal Studios"
+            Buyer ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Buyer tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+           Seller ref arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+           Seller tst arg: ID=APW_ENG_20030319.0545-E38 (ORG/Commerc/NAM/SPC), name="Vivendi Universal Entertainment"
+- in document APW_ENG_20030319.0545:  score:  3.10000 out of 3.10000
+      ref anchor="bid", extent="Diller also is believed to be interes..."
+      ref anchor="bid", extent="he would be interested in an opportun..."
+--------
+    ref event APW_ENG_20030319.0545-EV9 (Business/Start-Org/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030319.0545-EV9 (Business/Start-Org/Specific/Asserted/Positive/Past)
+      event score:  3.00000 out of 3.00000
+            Agent ref arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Agent tst arg: ID=APW_ENG_20030319.0545-E11 (PER/Individ/NAM/SPC), name="Barry Diller"
+            Agent ref arg: ID=APW_ENG_20030319.0545-E27 (ORG/Media/NAM/SPC), name="Twentieth Century Fox"
+            Agent tst arg: ID=APW_ENG_20030319.0545-E27 (ORG/Media/NAM/SPC), name="Twentieth Century Fox"
+              Org ref arg: ID=APW_ENG_20030319.0545-E28 (ORG/Media/NAM/SPC), name="Fox"
+              Org tst arg: ID=APW_ENG_20030319.0545-E28 (ORG/Media/NAM/SPC), name="Fox"
+- in document APW_ENG_20030319.0545:  score:  3.00000 out of 3.00000
+      ref anchor="launch", extent="Twentieth Century Fox, where he helpe..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.17   0.00   0.00   0.00
+Personn     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.49   0.00   0.00   0.00
+Transac     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    60.34   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    43.73   0.00   0.00   0.00
+  Other     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    56.27   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+End-Pos     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.17   0.00   0.00   0.00
+Start-O     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.17   0.00   0.00   0.00
+Start-P     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.32   0.00   0.00   0.00
+Transfe     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.07   0.00   0.00   0.00
+Transfe     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    56.27   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Business:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Start-O     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.17   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.17   0.00   0.00   0.00
+
+Performance statistics for TYPE = Personnel:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+End-Pos     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.17   0.00   0.00   0.00
+Start-P     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.32   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.49   0.00   0.00   0.00
+
+Performance statistics for TYPE = Transaction:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transfe     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.07   0.00   0.00   0.00
+Transfe     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    56.27   0.00   0.00   0.00
+  total     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    60.34   0.00   0.00   0.00
+
+Event Type confusion matrix for "newswire" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      1     0     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     3     0        0.0   0.0   0.0   0.0   0.0   0.0 100.0   0.0
+Transaction      0     0     0     0     0     0     0     6        0.0   0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Busin COUNT..................    PERCENT..................
+    ref\tst: Decla End-O Merge Start      Decla End-O Merge Start 
+Declare-Ban      0     0     0     0        0.0   0.0   0.0   0.0
+    End-Org      0     0     0     0        0.0   0.0   0.0   0.0
+  Merge-Org      0     0     0     0        0.0   0.0   0.0   0.0
+  Start-Org      0     0     0     1        0.0   0.0   0.0 100.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Perso COUNT..................    PERCENT..................
+    ref\tst: Elect End-P Nomin Start      Elect End-P Nomin Start 
+      Elect      0     0     0     0        0.0   0.0   0.0   0.0
+End-Positio      0     1     0     0        0.0 100.0   0.0   0.0
+   Nominate      0     0     0     0        0.0   0.0   0.0   0.0
+Start-Posit      0     0     0     2        0.0   0.0   0.0 100.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Trans COUNT......    PERCENT......
+    ref\tst: Trans Trans      Trans Trans 
+Transfer-Mo      1     0      100.0   0.0
+Transfer-Ow      0     5        0.0 100.0
+
+Event Modality confusion matrix for "newswire" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted      5     0      100.0   0.0
+      Other      0     5        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific     Generic 
+        Specific     9/90.0%      -     
+         Generic      -          1/10.0%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted     5/50.0%      -     
+           Other      -          5/50.0%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive 
+        Positive    10/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Transfer-Ow Start-Posit End-Positio Transfer-Mo   Start-Org 
+  Transfer-Owner     5/50.0%      -           -           -           -     
+  Start-Position      -          2/20.0%      -           -           -     
+    End-Position      -           -          1/10.0%      -           -     
+  Transfer-Money      -           -           -          1/10.0%      -     
+       Start-Org      -           -           -           -          1/10.0%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past 
+     Unspecified     6/60.0%      -     
+            Past      -          4/40.0%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Transaction   Personnel    Business 
+     Transaction     6/60.0%      -           -     
+       Personnel      -          3/30.0%      -     
+        Business      -           -          1/10.0%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=38/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Artifact       Buyer      Seller      Entity      Person    Position Time-Starti       Agent  all others 
+        Artifact    13/34.2%      -           -           -           -           -           -           -           -     
+           Buyer      -          5/13.2%      -           -           -           -           -           -           -     
+          Seller      -           -          4/10.5%      -           -           -           -           -           -     
+          Entity      -           -           -          3/ 7.9%      -           -           -           -           -     
+          Person      -           -           -           -          3/ 7.9%      -           -           -           -     
+        Position      -           -           -           -           -          2/ 5.3%      -           -           -     
+   Time-Starting      -           -           -           -           -           -          2/ 5.3%      -           -     
+           Agent      -           -           -           -           -           -           -          2/ 5.3%      -     
+      all others      -           -           -           -           -           -           -           -          4/10.5%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 APW_ENG_20030319.0545-T1, ID=APW_ENG_20030319.0545-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030319.0545-T1, ID=APW_ENG_20030319.0545-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030319.0545:
+          mention="20030319"
+--------
+    ref timex2 APW_ENG_20030319.0545-T2, ID=APW_ENG_20030319.0545-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030319.0545-T2, ID=APW_ENG_20030319.0545-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030319.0545:
+          mention="last year"
+--------
+    ref timex2 APW_ENG_20030319.0545-T3, ID=APW_ENG_20030319.0545-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030319.0545-T3, ID=APW_ENG_20030319.0545-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030319.0545:
+          mention="Wednesday"
+--------
+    ref timex2 APW_ENG_20030319.0545-T4, ID=APW_ENG_20030319.0545-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030319.0545-T4, ID=APW_ENG_20030319.0545-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030319.0545:
+          mention="the week"
+--------
+    ref timex2 APW_ENG_20030319.0545-T5, ID=APW_ENG_20030319.0545-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030319.0545-T5, ID=APW_ENG_20030319.0545-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030319.0545:
+          mention="midday"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     5/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     5/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---     5/99.9%
+
+======== value mapping ========
+
+--------
+    ref value APW_ENG_20030319.0545-V1, ID=APW_ENG_20030319.0545-V1, SUBTYPE=Money, TYPE=Numeric
+    tst value APW_ENG_20030319.0545-V1, ID=APW_ENG_20030319.0545-V1, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:
+          mention="$20 billion"
+--------
+    ref value APW_ENG_20030319.0545-V10, ID=APW_ENG_20030319.0545-V10, TYPE=Job-Title
+    tst value APW_ENG_20030319.0545-V10, ID=APW_ENG_20030319.0545-V10, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:
+          mention="interim CEO"
+--------
+    ref value APW_ENG_20030319.0545-V11, ID=APW_ENG_20030319.0545-V11, SUBTYPE=URL, TYPE=Contact-Info
+    tst value APW_ENG_20030319.0545-V11, ID=APW_ENG_20030319.0545-V11, SUBTYPE=URL, TYPE=Contact-Info
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:
+          mention="Match.com"
+--------
+    ref value APW_ENG_20030319.0545-V2, ID=APW_ENG_20030319.0545-V2, SUBTYPE=Percent, TYPE=Numeric
+    tst value APW_ENG_20030319.0545-V2, ID=APW_ENG_20030319.0545-V2, SUBTYPE=Percent, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:
+          mention="5.4 percent"
+--------
+    ref value APW_ENG_20030319.0545-V3, ID=APW_ENG_20030319.0545-V3, SUBTYPE=Percent, TYPE=Numeric
+    tst value APW_ENG_20030319.0545-V3, ID=APW_ENG_20030319.0545-V3, SUBTYPE=Percent, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:
+          mention="1.5 percent"
+--------
+    ref value APW_ENG_20030319.0545-V4, ID=APW_ENG_20030319.0545-V4, SUBTYPE=Money, TYPE=Numeric
+    tst value APW_ENG_20030319.0545-V4, ID=APW_ENG_20030319.0545-V4, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:
+          mention="$2.08"
+--------
+    ref value APW_ENG_20030319.0545-V5, ID=APW_ENG_20030319.0545-V5, SUBTYPE=Money, TYPE=Numeric
+    tst value APW_ENG_20030319.0545-V5, ID=APW_ENG_20030319.0545-V5, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:
+          mention="$24.41"
+--------
+    ref value APW_ENG_20030319.0545-V6, ID=APW_ENG_20030319.0545-V6, SUBTYPE=Money, TYPE=Numeric
+    tst value APW_ENG_20030319.0545-V6, ID=APW_ENG_20030319.0545-V6, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:
+          mention="$15.15"
+--------
+    ref value APW_ENG_20030319.0545-V7, ID=APW_ENG_20030319.0545-V7, SUBTYPE=Money, TYPE=Numeric
+    tst value APW_ENG_20030319.0545-V7, ID=APW_ENG_20030319.0545-V7, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:
+          mention="35 cents"
+--------
+    ref value APW_ENG_20030319.0545-V8, ID=APW_ENG_20030319.0545-V8, SUBTYPE=Percent, TYPE=Numeric
+    tst value APW_ENG_20030319.0545-V8, ID=APW_ENG_20030319.0545-V8, SUBTYPE=Percent, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:
+          mention="8 percent"
+--------
+    ref value APW_ENG_20030319.0545-V9, ID=APW_ENG_20030319.0545-V9, TYPE=Job-Title
+    tst value APW_ENG_20030319.0545-V9, ID=APW_ENG_20030319.0545-V9, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030319.0545:
+          mention="co-chief executive"
+
+======== value scoring ========
+
+Value Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=9/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Money     Percent         URL 
+           Money     5/55.6%      -           -     
+         Percent      -          3/33.3%      -     
+             URL      -           -          1/11.1%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=11/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Numeric   Job-Title Contact-Inf 
+         Numeric     8/72.7%      -           -     
+       Job-Title      -          2/18.2%      -     
+    Contact-Info      -           -          1/ 9.1%
+
+data input:               0.49 secs to load data
+entity eval:              0.08 secs to compute values,    0.02 secs to map,    0.05 secs to score
+relation eval:            0.20 secs to compute values,    0.02 secs to map,    0.05 secs to score
+event eval:               0.06 secs to compute values,    0.00 secs to map,    0.03 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.00 secs to compute values,    0.01 secs to map,    0.00 secs to score
+value eval:               0.01 secs to compute values,    0.00 secs to map,    0.00 secs to score
+########

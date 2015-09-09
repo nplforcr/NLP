@@ -1,0 +1,2514 @@
+command line (run on 2005 Aug 21 at 10:29:27):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score70663 -t /tmp/score70663
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity AFP_ENG_20030630.0741-E1 (ORG/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E1 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Fatah" (NAM/ORG/LIT)
+      ref mention="Fatah" (NAM/ORG/LIT)
+      ref mention="Fatah party" (NAM/ORG/LIT)
+      ref mention="Fatah" (NAM/ORG/LIT)
+      ref mention="Fatah" (NAM/ORG/LIT)
+      ref mention="Fatah" (NAM/ORG/LIT)
+         ref name="Fatah"
+         ref name="Fatah"
+         ref name="Fatah party"
+         ref name="Fatah"
+         ref name="Fatah"
+         ref name="Fatah"
+--------
+    ref entity AFP_ENG_20030630.0741-E100 (ORG/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E100 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="military" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E101 (ORG/PRO/NEG)
+    tst entity AFP_ENG_20030630.0741-E101 (ORG/PRO/NEG)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (ORG/PRO/NEG)
+      ref mention="None" (PRO/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E102 (ORG/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E102 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="groups" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E103 (ORG/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E103 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Authority" (NAM/ORG/LIT)
+         ref name="Authority"
+--------
+    ref entity AFP_ENG_20030630.0741-E105 (ORG/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E105 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="governments" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E106 (PER/PRO/GEN)
+    tst entity AFP_ENG_20030630.0741-E106 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="We" (PRO/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E107 (PER/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E107 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="spokesman" (NOM/PER/LIT)
+      ref mention="Ari Fleischer" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="Fleischer" (NAM/PER/LIT)
+         ref name="Ari Fleischer"
+         ref name="Fleischer"
+--------
+    ref entity AFP_ENG_20030630.0741-E109 (FAC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E109 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="White House" (NAM/FAC/LIT)
+         ref name="White House"
+--------
+    ref entity AFP_ENG_20030630.0741-E110 (PER/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E110 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="President" (NOM/PER/LIT)
+      ref mention="George W. Bush" (NAM/PER/LIT)
+      ref mention="president" (NOM/PER/LIT)
+         ref name="George W. Bush"
+--------
+    ref entity AFP_ENG_20030630.0741-E113 (PER/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E113 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="adviser" (NOM/PER/LIT)
+      ref mention="Condoleezza Rice" (NAM/PER/LIT)
+      ref mention="her" (PRO/PER/LIT)
+         ref name="Condoleezza Rice"
+--------
+    ref entity AFP_ENG_20030630.0741-E115 (LOC/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E115 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="region" (NOM/LOC/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E117 (PER/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E117 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="Palestinians" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E118 (PER/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E118 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="terrorist" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E119 (PER/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E119 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="terrorists" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E12 (PER/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E12 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="worker" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E120 (PER/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E120 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="people" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E122 (GPE/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E122 (GPE/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (GPE/NOM/GEN)
+      ref mention="state" (NOM/GPE/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E123 (PER/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E123 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="officials" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E124 (ORG/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E124 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Hamas" (NAM/ORG/LIT)
+         ref name="Hamas"
+--------
+    ref entity AFP_ENG_20030630.0741-E125 (ORG/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E125 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Islamic Jihad" (NAM/ORG/LIT)
+         ref name="Islamic Jihad"
+--------
+    ref entity AFP_ENG_20030630.0741-E126 (LOC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E126 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="Gaza Strip" (NAM/LOC/LIT)
+         ref name="Gaza Strip"
+--------
+    ref entity AFP_ENG_20030630.0741-E128 (ORG/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E128 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="military" (NOM/ORG/LIT)
+      ref mention="army" (NOM/ORG/LIT)
+      ref mention="it" (PRO/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E13 (LOC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E13 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="West Bank" (NAM/LOC/LIT)
+         ref name="West Bank"
+--------
+    ref entity AFP_ENG_20030630.0741-E131 (PER/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E131 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="Israelis" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E132 (PER/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E132 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="tourists" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E133 (FAC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E133 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="compound" (NOM/FAC/LIT)
+      ref mention="compound" (NAM/FAC/LIT)
+      ref mention="site" (NOM/FAC/LIT)
+         ref name="compound"
+--------
+    ref entity AFP_ENG_20030630.0741-E134 (LOC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E134 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="Temple Mount" (NAM/LOC/LIT)
+         ref name="Temple Mount"
+--------
+    ref entity AFP_ENG_20030630.0741-E135 (ORG/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E135 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="groups" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E136 (PER/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E136 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="minister" (NOM/PER/LIT)
+      ref mention="Tzahi Hanegbi" (NAM/PER/LIT)
+         ref name="Tzahi Hanegbi"
+--------
+    ref entity AFP_ENG_20030630.0741-E138 (ORG/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E138 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="police" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E14 (ORG/PRO/USP)
+    tst entity AFP_ENG_20030630.0741-E14 (ORG/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (ORG/PRO/USP)
+      ref mention="one" (PRO/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E141 (LOC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E141 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="Gaza" (NAM/LOC/LIT)
+         ref name="Gaza"
+--------
+    ref entity AFP_ENG_20030630.0741-E143 (LOC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E143 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="West Bank" (NAM/LOC/LIT)
+         ref name="West Bank"
+--------
+    ref entity AFP_ENG_20030630.0741-E144 (PER/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E144 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Adel Zanoun" (NAM/PER/LIT)
+         ref name="Adel Zanoun"
+--------
+    ref entity AFP_ENG_20030630.0741-E145 (LOC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E145 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="Temple Mount" (NAM/LOC/LIT)
+         ref name="Temple Mount"
+--------
+    ref entity AFP_ENG_20030630.0741-E146 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E146 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="GAZA CITY" (NAM/LOC/LIT)
+      ref mention="Gaza City" (NAM/LOC/LIT)
+         ref name="GAZA CITY"
+         ref name="Gaza City"
+--------
+    ref entity AFP_ENG_20030630.0741-E147 (ORG/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E147 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="AFP" (NAM/ORG/LIT)
+      ref mention="AFP" (NAM/ORG/LIT)
+         ref name="AFP"
+         ref name="AFP"
+--------
+    ref entity AFP_ENG_20030630.0741-E148 (PER/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E148 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="forces" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+      ref mention="troops" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E15 (ORG/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E15 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="branches" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E150 (LOC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E150 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="Gaza" (NAM/LOC/LIT)
+      ref mention="Gaza Strip" (NAM/LOC/LIT)
+      ref mention="territory" (NOM/LOC/LIT)
+      ref mention="Gaza's" (NAM/LOC/LIT)
+      ref mention="Gaza Strip" (NAM/LOC/LIT)
+      ref mention="Gaza Strip" (NAM/LOC/LIT)
+         ref name="Gaza"
+         ref name="Gaza Strip"
+         ref name="Gaza's"
+         ref name="Gaza Strip"
+         ref name="Gaza Strip"
+--------
+    ref entity AFP_ENG_20030630.0741-E151 (ORG/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E151 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="offshoo" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E16 (ORG/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E16 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="Governments" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E17 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E17 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="United States" (NAM/ORG/LIT)
+      ref mention="it" (PRO/ORG/LIT)
+      ref mention="United States" (NAM/ORG/LIT)
+      ref mention="US" (NAM/GPE/LIT)
+         ref name="United States"
+         ref name="United States"
+         ref name="US"
+--------
+    ref entity AFP_ENG_20030630.0741-E18 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E18 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Middle Eas" (NAM/GPE/LIT)
+         ref name="Middle Eas"
+--------
+    ref entity AFP_ENG_20030630.0741-E19 (PER/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E19 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="source" (NOM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E21 (PER/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E21 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="officers" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+      ref mention="police" (NOM/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+      ref mention="police" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E22 (ORG/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E22 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="police" (NOM/ORG/LIT)
+      ref mention="police" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E24 (VEH/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E24 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="cars" (NOM/VEH/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E25 (WEA/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E25 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="weapons" (NOM/WEA/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E26 (PER/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E26 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="troops" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E27 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E27 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israel" (NAM/ORG/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israel" (NAM/GPE/LIT)
+      ref mention="Israel" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israel" (NAM/ORG/LIT)
+      ref mention="it" (PRO/ORG/LIT)
+      ref mention="Israel" (NAM/GPE/LIT)
+      ref mention="Israel's" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+         ref name="Israeli"
+         ref name="Israeli"
+         ref name="Israel"
+         ref name="Israeli"
+         ref name="Israeli"
+         ref name="Israeli"
+         ref name="Israeli"
+         ref name="Israeli"
+         ref name="Israeli"
+         ref name="Israeli"
+         ref name="Israeli"
+         ref name="Israel"
+         ref name="Israel"
+         ref name="Israeli"
+         ref name="Israel"
+         ref name="Israel"
+         ref name="Israel's"
+         ref name="Israeli"
+--------
+    ref entity AFP_ENG_20030630.0741-E28 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E28 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="town" (NOM/LOC/LIT)
+      ref mention="Beit Hanun" (NAM/LOC/LIT)
+      ref mention="there" (PRO/LOC/LIT)
+      ref mention="Beit Hanun" (NAM/GPE/LIT)
+      ref mention="area" (NOM/LOC/LIT)
+         ref name="Beit Hanun"
+         ref name="Beit Hanun"
+--------
+    ref entity AFP_ENG_20030630.0741-E3 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E3 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="US" (NAM/GPE/LIT)
+      ref mention="US" (NAM/GPE/LIT)
+         ref name="US"
+         ref name="US"
+--------
+    ref entity AFP_ENG_20030630.0741-E30 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E30 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="town" (NOM/LOC/LIT)
+      ref mention="Beit Lahiya" (NAM/LOC/LIT)
+         ref name="Beit Lahiya"
+--------
+    ref entity AFP_ENG_20030630.0741-E31 (ORG/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E31 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="army" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E32 (ORG/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E32 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="groups" (NOM/ORG/LIT)
+      ref mention="them" (PRO/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E33 (WEA/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E33 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="rocket" (NOM/WEA/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E34 (GPE/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E34 (GPE/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (GPE/NOM/USP)
+      ref mention="communities" (NOM/GPE/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E36 (PER/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E36 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="forces" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E38 (PER/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E38 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="militants" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E39 (FAC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E39 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Netzarim junction" (NAM/FAC/LIT)
+         ref name="Netzarim junction"
+--------
+    ref entity AFP_ENG_20030630.0741-E4 (PER/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E4 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="forces" (NOM/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E40 (FAC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E40 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Kissufim junction" (NAM/FAC/LIT)
+         ref name="Kissufim junction"
+--------
+    ref entity AFP_ENG_20030630.0741-E41 (LOC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E41 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="Deir al-Balah" (NAM/LOC/LIT)
+         ref name="Deir al-Balah"
+--------
+    ref entity AFP_ENG_20030630.0741-E42 (FAC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E42 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="Guest House junction" (NAM/FAC/LIT)
+         ref name="Guest House junction"
+--------
+    ref entity AFP_ENG_20030630.0741-E43 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E43 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Deir al-Balah" (NAM/LOC/LIT)
+         ref name="Deir al-Balah"
+--------
+    ref entity AFP_ENG_20030630.0741-E44 (ORG/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E44 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="military" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E45 (FAC/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E45 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="highway" (NOM/FAC/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E46 (PER/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E46 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="troops" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E47 (PER/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E47 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="officers" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E5 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E5 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestine" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestine"
+         ref name="Palestinian"
+         ref name="Palestinian"
+--------
+    ref entity AFP_ENG_20030630.0741-E50 (LOC/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E50 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="section" (NOM/LOC/LIT)
+      ref mention="which" (PRO/LOC/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E52 (LOC/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E52 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="border" (NOM/LOC/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E53 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E53 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Egypt" (NAM/GPE/LIT)
+         ref name="Egypt"
+--------
+    ref entity AFP_ENG_20030630.0741-E54 (PER/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E54 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="troops" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E56 (PER/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E56 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="official" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E58 (ORG/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E58 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="AFP" (NAM/ORG/LIT)
+         ref name="AFP"
+--------
+    ref entity AFP_ENG_20030630.0741-E59 (ORG/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E59 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="army" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E6 (FAC/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E6 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="highway" (NOM/FAC/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E61 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E61 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="town" (NOM/GPE/LIT)
+      ref mention="Bethlehem" (NAM/GPE/LIT)
+      ref mention="its" (PRO/GPE/LIT)
+         ref name="Bethlehem"
+--------
+    ref entity AFP_ENG_20030630.0741-E62 (LOC/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E62 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="area" (NOM/LOC/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E63 (PER/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E63 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Prime Minister" (NOM/PER/LIT)
+      ref mention="Ariel Sharon" (NAM/PER/LIT)
+      ref mention="Sharon" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="Sharon" (NAM/PER/LIT)
+      ref mention="Sharon" (NAM/PER/LIT)
+         ref name="Ariel Sharon"
+         ref name="Sharon"
+         ref name="Sharon"
+         ref name="Sharon"
+--------
+    ref entity AFP_ENG_20030630.0741-E66 (PER/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E66 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Mahmud Abbas" (NAM/PER/LIT)
+         ref name="Mahmud Abbas"
+--------
+    ref entity AFP_ENG_20030630.0741-E68 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E68 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Jerusalem" (NAM/LOC/LIT)
+         ref name="Jerusalem"
+--------
+    ref entity AFP_ENG_20030630.0741-E69 (ORG/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E69 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="radio" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E7 (ORG/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E7 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="groups" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E71 (ORG/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E71 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="service" (NAM/ORG/LIT)
+         ref name="service"
+--------
+    ref entity AFP_ENG_20030630.0741-E72 (PER/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E72 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="prisoners" (NOM/PER/LIT)
+      ref mention="ones" (PRO/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E74 (ORG/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E74 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="factions" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E77 (ORG/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E77 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="groups" (NOM/ORG/LIT)
+      ref mention="Hamas" (NAM/ORG/LIT)
+      ref mention="Islamic Jihad" (NAM/ORG/LIT)
+      ref mention="their" (PRO/ORG/LIT)
+      ref mention="They" (PRO/ORG/LIT)
+         ref name="Hamas"
+         ref name="Islamic Jihad"
+--------
+    ref entity AFP_ENG_20030630.0741-E80 (PER/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E80 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="members" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E81 (PER/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E81 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="prisoners" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E83 (PER/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E83 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="leader" (NOM/PER/LIT)
+      ref mention="Yasser Arafa" (NAM/PER/LIT)
+      ref mention="leader" (NOM/PER/LIT)
+      ref mention="Yasser Arafat" (NAM/PER/LIT)
+         ref name="Yasser Arafa"
+         ref name="Yasser Arafat"
+--------
+    ref entity AFP_ENG_20030630.0741-E85 (ORG/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E85 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Front" (NAM/ORG/LIT)
+         ref name="Front"
+--------
+    ref entity AFP_ENG_20030630.0741-E86 (PER/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E86 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="Bulgarian" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E87 (VEH/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E87 (VEH/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (VEH/NOM/SPC)
+      ref mention="truck" (NOM/VEH/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E88 (PER/NOM/GEN)
+    tst entity AFP_ENG_20030630.0741-E88 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="troop" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E89 (GPE/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E89 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="town" (NOM/LOC/LIT)
+      ref mention="Jenin" (NAM/LOC/LIT)
+         ref name="Jenin"
+--------
+    ref entity AFP_ENG_20030630.0741-E9 (ORG/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E9 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Al-Aqsa Martyrs Brigades" (NAM/ORG/LIT)
+      ref mention="offshoot" (NOM/ORG/LIT)
+      ref mention="group" (NOM/ORG/LIT)
+      ref mention="its" (PRO/ORG/LIT)
+      ref mention="Al-Aqsa Martyrs Brigades" (NAM/ORG/LIT)
+      ref mention="group" (NOM/ORG/LIT)
+         ref name="Al-Aqsa Martyrs Brigades"
+         ref name="Al-Aqsa Martyrs Brigades"
+--------
+    ref entity AFP_ENG_20030630.0741-E90 (LOC/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E90 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="West Bank" (NAM/LOC/LIT)
+         ref name="West Bank"
+--------
+    ref entity AFP_ENG_20030630.0741-E91 (ORG/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E91 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="army" (NOM/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E93 (PER/NOM/USP)
+    tst entity AFP_ENG_20030630.0741-E93 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="sources" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E94 (PER/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E94 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="Jewish" (NOM/PER/LIT)
+      ref mention="settlers" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E96 (PER/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E96 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="member" (NOM/PER/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E98 (ORG/NOM/SPC)
+    tst entity AFP_ENG_20030630.0741-E98 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="factions" (NOM/ORG/LIT)
+      ref mention="they" (PRO/ORG/LIT)
+--------
+    ref entity AFP_ENG_20030630.0741-E99 (ORG/NAM/SPC)
+    tst entity AFP_ENG_20030630.0741-E99 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Palestine Liberation Organization (PLO" (NAM/ORG/LIT)
+         ref name="Palestine Liberation Organization (PLO"
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    FAC     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.00   0.00   0.00   0.00
+    GPE    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.67   0.00   0.00   0.00
+    LOC    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.33   0.00   0.00   0.00
+    ORG    32     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    26.67   0.00   0.00   0.00
+    PER    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.50   0.00   0.00   0.00
+    VEH     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.83   0.00   0.00   0.00
+    WEA     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total   107     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    46     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    76.67   0.00   0.00   0.00
+    NOM    58     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    23.33   0.00   0.00   0.00
+    PRO     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total   107     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2    33     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+0.2-0.5    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    23.33   0.00   0.00   0.00
+0.5-1.0    46     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    76.67   0.00   0.00   0.00
+  total   107     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    73     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    57.50   0.00   0.00   0.00
+      2    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.83   0.00   0.00   0.00
+    3-4     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.33   0.00   0.00   0.00
+    5-8     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.00   0.00   0.00   0.00
+     >8     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.33   0.00   0.00   0.00
+  total   107     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    74     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    NEG     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total   107     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir   107     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total   107     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Boundar     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.83   0.00   0.00   0.00
+Buildin     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.33   0.00   0.00   0.00
+GPE-Clu     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.67   0.00   0.00   0.00
+Governm    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.50   0.00   0.00   0.00
+  Group    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.00   0.00   0.00   0.00
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.50   0.00   0.00   0.00
+   Land     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.83   0.00   0.00   0.00
+Land-Re     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.33   0.00   0.00   0.00
+  Media     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.33   0.00   0.00   0.00
+ Nation     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.67   0.00   0.00   0.00
+Non-Gov    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.83   0.00   0.00   0.00
+   Path     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.67   0.00   0.00   0.00
+Populat     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.67   0.00   0.00   0.00
+Project     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Region-     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.33   0.00   0.00   0.00
+Region-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.83   0.00   0.00   0.00
+Special     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.67   0.00   0.00   0.00
+Undersp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total   107     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = FAC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Buildin     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.33   0.00   0.00   0.00
+   Path     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.67   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+GPE-Clu     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.67   0.00   0.00   0.00
+ Nation     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.67   0.00   0.00   0.00
+Populat     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.67   0.00   0.00   0.00
+Special     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.67   0.00   0.00   0.00
+  total    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.67   0.00   0.00   0.00
+
+Performance statistics for TYPE = LOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Boundar     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.83   0.00   0.00   0.00
+Land-Re     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.33   0.00   0.00   0.00
+Region-     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.33   0.00   0.00   0.00
+Region-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.83   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.33   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Governm    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.50   0.00   0.00   0.00
+  Media     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.33   0.00   0.00   0.00
+Non-Gov    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.83   0.00   0.00   0.00
+  total    32     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    26.67   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.00   0.00   0.00   0.00
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.50   0.00   0.00   0.00
+  total    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.50   0.00   0.00   0.00
+
+Performance statistics for TYPE = VEH:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Land     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.83   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.83   0.00   0.00   0.00
+
+Performance statistics for TYPE = WEA:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Project     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Undersp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+
+Entity Type confusion matrix for "newswire" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            7     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    15     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    13     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    32     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    36     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     2     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     2        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=107/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         USP         GEN         NEG 
+             SPC    74/69.2%      -           -           -     
+             USP      -         19/17.8%      -           -     
+             GEN      -           -         13/12.1%      -     
+             NEG      -           -           -          1/ 0.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=107/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Group Non-Governm  Individual  Government Region-Gene Population-      Nation        Path  all others 
+           Group    22/20.6%      -           -           -           -           -           -           -           -     
+  Non-Government      -         17/15.9%      -           -           -           -           -           -           -     
+      Individual      -           -         13/12.1%      -           -           -           -           -           -     
+      Government      -           -           -         12/11.2%      -           -           -           -           -     
+  Region-General      -           -           -           -          9/ 8.4%      -           -           -           -     
+  Population-Cen      -           -           -           -           -          8/ 7.5%      -           -           -     
+          Nation      -           -           -           -           -           -          5/ 4.7%      -           -     
+            Path      -           -           -           -           -           -           -          5/ 4.7%      -     
+      all others      -           -           -           -           -           -           -           -         16/15.0%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=107/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        PER         ORG         GPE         LOC         FAC         WEA         VEH 
+             PER    36/33.6%      -           -           -           -           -           -     
+             ORG      -         32/29.9%      -           -           -           -           -     
+             GPE      -           -         15/14.0%      -           -           -           -     
+             LOC      -           -           -         13/12.1%      -           -           -     
+             FAC      -           -           -           -          7/ 6.5%      -           -     
+             WEA      -           -           -           -           -          2/ 1.9%      -     
+             VEH      -           -           -           -           -           -          2/ 1.9%
+
+Entity Class confusion matrix for "newswire" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           74     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0    13     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     1     0        0.0   0.0 100.0   0.0
+  USP            0     0     0    19        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     5        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0    52        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0    13        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    19        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    13        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   102        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0   102        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    84        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0    27        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   213        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   213        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   213        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     9        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0    45        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0    31        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    58        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    66        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     2        0.0   0.0      0.0   0.0 100.0
+  WEA       0     0        0     0     2        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   213        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "newswire" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            9     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    45     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    31     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    58     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    66     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     2     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     2        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Mention Style confusion matrix for "newswire" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          213     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation AFP_ENG_20030630.0741-R1 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R1 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E88 (PER/Group/NOM/GEN), head="troop"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E88 (PER/Group/NOM/GEN), head="troop"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="Israeli troop"
+--------
+    ref relation AFP_ENG_20030630.0741-R10 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R10 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E14 (ORG/Non-Gov/PRO/USP), head="one"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E14 (ORG/Non-Gov/PRO/USP), head="one"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E9 (ORG/Non-Gov/NAM/SPC), name="Al-Aqsa Martyrs Brigades"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E9 (ORG/Non-Gov/NAM/SPC), name="Al-Aqsa Martyrs Brigades"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="one of its branches"
+--------
+    ref relation AFP_ENG_20030630.0741-R11 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R11 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E15 (ORG/Non-Gov/NOM/SPC), head="branches"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E15 (ORG/Non-Gov/NOM/SPC), head="branches"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E9 (ORG/Non-Gov/NAM/SPC), name="Al-Aqsa Martyrs Brigades"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E9 (ORG/Non-Gov/NAM/SPC), name="Al-Aqsa Martyrs Brigades"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="its branches"
+--------
+    ref relation AFP_ENG_20030630.0741-R12 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R12 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E19 (PER/Individ/NOM/SPC), head="source"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E19 (PER/Individ/NOM/SPC), head="source"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="A Palestinian security source"
+--------
+    ref relation AFP_ENG_20030630.0741-R13 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R13 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E21 (PER/Group/NOM/USP), head="officers"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E21 (PER/Group/NOM/USP), head="officers"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E22 (ORG/Governm/NOM/GEN), head="police"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E22 (ORG/Governm/NOM/GEN), head="police"
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000
+      ref extent="police officers"
+--------
+    ref relation AFP_ENG_20030630.0741-R14 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R14 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E21 (PER/Group/NOM/USP), head="officers"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E21 (PER/Group/NOM/USP), head="officers"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="Palestinian police"
+      ref extent="Palestinian police"
+--------
+    ref relation AFP_ENG_20030630.0741-R15 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R15 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E26 (PER/Group/NOM/USP), head="troops"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E26 (PER/Group/NOM/USP), head="troops"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="Israeli troops"
+--------
+    ref relation AFP_ENG_20030630.0741-R16 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R16 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E28 (GPE/Populat/NAM/SPC), name="Beit Hanun"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E28 (GPE/Populat/NAM/SPC), name="Beit Hanun"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E141 (LOC/Region-/NAM/SPC), name="Gaza"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E141 (LOC/Region-/NAM/SPC), name="Gaza"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="the northern Gaza town of Beit Hanun"
+--------
+    ref relation AFP_ENG_20030630.0741-R18 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R18 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E34 (GPE/Populat/NOM/USP), head="communities"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E34 (GPE/Populat/NOM/USP), head="communities"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="nearby Israeli communities"
+--------
+    ref relation AFP_ENG_20030630.0741-R19 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R19 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E36 (PER/Group/NOM/USP), head="forces"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E36 (PER/Group/NOM/USP), head="forces"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="Palestinian security forces"
+--------
+    ref relation AFP_ENG_20030630.0741-R2 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R2 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E148 (PER/Group/NOM/SPC), head="troops"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E148 (PER/Group/NOM/SPC), head="troops"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="Israeli forces"
+      ref extent="Israeli troops"
+--------
+    ref relation AFP_ENG_20030630.0741-R20 (PHYS/Near/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R20 (PHYS/Near/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E39 (FAC/Path/NAM/SPC), name="Netzarim junction"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E39 (FAC/Path/NAM/SPC), name="Netzarim junction"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E146 (GPE/Populat/NAM/SPC), name="Gaza City"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E146 (GPE/Populat/NAM/SPC), name="Gaza City"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="the Netzarim junction, just south of ..."
+--------
+    ref relation AFP_ENG_20030630.0741-R21 (PHYS/Near/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R21 (PHYS/Near/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E40 (FAC/Path/NAM/SPC), name="Kissufim junction"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E40 (FAC/Path/NAM/SPC), name="Kissufim junction"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E41 (LOC/Region-/NAM/SPC), name="Deir al-Balah"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E41 (LOC/Region-/NAM/SPC), name="Deir al-Balah"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="the Kissufim junction by central Deir..."
+--------
+    ref relation AFP_ENG_20030630.0741-R22 (PHYS/Near/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R22 (PHYS/Near/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E42 (FAC/Path/NAM/SPC), name="Guest House junction"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E42 (FAC/Path/NAM/SPC), name="Guest House junction"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E43 (GPE/Populat/NAM/SPC), name="Deir al-Balah"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E43 (GPE/Populat/NAM/SPC), name="Deir al-Balah"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="the Guest House junction just south o..."
+--------
+    ref relation AFP_ENG_20030630.0741-R23 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R23 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E46 (PER/Group/NOM/SPC), head="troops"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E46 (PER/Group/NOM/SPC), head="troops"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="Israeli troops"
+--------
+    ref relation AFP_ENG_20030630.0741-R24 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R24 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E47 (PER/Group/NOM/SPC), head="officers"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E47 (PER/Group/NOM/SPC), head="officers"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="six Palestinian police officers"
+--------
+    ref relation AFP_ENG_20030630.0741-R25 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R25 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E50 (LOC/Region-/NOM/SPC), head="section"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E50 (LOC/Region-/NOM/SPC), head="section"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E52 (LOC/Boundar/NOM/SPC), head="border"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E52 (LOC/Boundar/NOM/SPC), head="border"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="the Palestinian section of the border..."
+--------
+    ref relation AFP_ENG_20030630.0741-R26 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R26 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E54 (PER/Group/NOM/USP), head="troops"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E54 (PER/Group/NOM/USP), head="troops"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="Israeli troops"
+--------
+    ref relation AFP_ENG_20030630.0741-R27 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R27 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E56 (PER/Individ/NOM/SPC), head="official"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E56 (PER/Individ/NOM/SPC), head="official"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="A senior Palestinian security official"
+--------
+    ref relation AFP_ENG_20030630.0741-R28 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R28 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E59 (ORG/Governm/NOM/SPC), head="army"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E59 (ORG/Governm/NOM/SPC), head="army"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="the Israeli army"
+--------
+    ref relation AFP_ENG_20030630.0741-R29 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R29 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E61 (GPE/Populat/NAM/SPC), name="Bethlehem"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E61 (GPE/Populat/NAM/SPC), name="Bethlehem"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E143 (LOC/Region-/NAM/SPC), name="West Bank"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E143 (LOC/Region-/NAM/SPC), name="West Bank"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="the southern West Bank town of Bethlehem"
+--------
+    ref relation AFP_ENG_20030630.0741-R3 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R3 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E151 (ORG/Non-Gov/NOM/SPC), head="offshoo"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E151 (ORG/Non-Gov/NOM/SPC), head="offshoo"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E1 (ORG/Non-Gov/NAM/SPC), name="Fatah party"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E1 (ORG/Non-Gov/NAM/SPC), name="Fatah party"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="an armed offshoot of Palestinian lead..."
+--------
+    ref relation AFP_ENG_20030630.0741-R30 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R30 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E61 (GPE/Populat/NAM/SPC), name="Bethlehem"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E61 (GPE/Populat/NAM/SPC), name="Bethlehem"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E62 (LOC/Region-/NOM/SPC), head="area"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E62 (LOC/Region-/NOM/SPC), head="area"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="its surrounding area"
+--------
+    ref relation AFP_ENG_20030630.0741-R31 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R31 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E63 (PER/Individ/NAM/SPC), name="Ariel Sharon"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E63 (PER/Individ/NAM/SPC), name="Ariel Sharon"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="Israeli Prime Minister Ariel Sharon"
+--------
+    ref relation AFP_ENG_20030630.0741-R32 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R32 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E66 (PER/Individ/NAM/SPC), name="Mahmud Abbas"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E66 (PER/Individ/NAM/SPC), name="Mahmud Abbas"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="his Palestinian counterpart Mahmud Abbas"
+--------
+    ref relation AFP_ENG_20030630.0741-R33 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R33 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E69 (ORG/Media/NOM/USP), head="radio"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E69 (ORG/Media/NOM/USP), head="radio"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="Israeli public radio"
+--------
+    ref relation AFP_ENG_20030630.0741-R34 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R34 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E72 (PER/Group/NOM/USP), head="prisoners"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E72 (PER/Group/NOM/USP), head="prisoners"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="Palestinian prisoners"
+--------
+    ref relation AFP_ENG_20030630.0741-R35 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R35 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E74 (ORG/Non-Gov/NOM/SPC), head="factions"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E74 (ORG/Non-Gov/NOM/SPC), head="factions"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="the Palestinian factions"
+--------
+    ref relation AFP_ENG_20030630.0741-R36 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R36 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E80 (PER/Group/NOM/SPC), head="members"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E80 (PER/Group/NOM/SPC), head="members"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E77 (ORG/Non-Gov/NAM/SPC), name="Islamic Jihad"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E77 (ORG/Non-Gov/NAM/SPC), name="Islamic Jihad"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="their members"
+--------
+    ref relation AFP_ENG_20030630.0741-R37 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R37 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E83 (PER/Individ/NAM/SPC), name="Yasser Arafat"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E83 (PER/Individ/NAM/SPC), name="Yasser Arafat"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E1 (ORG/Non-Gov/NAM/SPC), name="Fatah party"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E1 (ORG/Non-Gov/NAM/SPC), name="Fatah party"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="the Fatah party of Palestinian leader..."
+--------
+    ref relation AFP_ENG_20030630.0741-R38 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R38 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E83 (PER/Individ/NAM/SPC), name="Yasser Arafat"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E83 (PER/Individ/NAM/SPC), name="Yasser Arafat"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="Palestinian leader Yasser Arafat"
+--------
+    ref relation AFP_ENG_20030630.0741-R39 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R39 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E89 (GPE/Populat/NAM/SPC), name="Jenin"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E89 (GPE/Populat/NAM/SPC), name="Jenin"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E90 (LOC/Region-/NAM/SPC), name="West Bank"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E90 (LOC/Region-/NAM/SPC), name="West Bank"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="the northern West Bank town of Jenin"
+--------
+    ref relation AFP_ENG_20030630.0741-R4 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R4 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E4 (PER/Group/NOM/USP), head="forces"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E4 (PER/Group/NOM/USP), head="forces"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="Palestinian security forces"
+--------
+    ref relation AFP_ENG_20030630.0741-R40 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R40 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E91 (ORG/Governm/NOM/SPC), head="army"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E91 (ORG/Governm/NOM/SPC), head="army"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="the Israeli army"
+--------
+    ref relation AFP_ENG_20030630.0741-R41 (PER-SOC/Lasting-Personal/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R41 (PER-SOC/Lasting-Personal/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E93 (PER/Group/NOM/USP), head="sources"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E93 (PER/Group/NOM/USP), head="sources"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E94 (PER/Group/NOM/SPC), head="settlers"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E94 (PER/Group/NOM/SPC), head="settlers"
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000
+      ref extent="sources close to the Jewish settlers"
+--------
+    ref relation AFP_ENG_20030630.0741-R42 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R42 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E94 (PER/Group/NOM/SPC), head="settlers"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E94 (PER/Group/NOM/SPC), head="settlers"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E94 (PER/Group/NOM/SPC), head="settlers"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E94 (PER/Group/NOM/SPC), head="settlers"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="the Jewish settlers"
+--------
+    ref relation AFP_ENG_20030630.0741-R43 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R43 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E96 (PER/Individ/NOM/SPC), head="member"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E96 (PER/Individ/NOM/SPC), head="member"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E9 (ORG/Non-Gov/NAM/SPC), name="Al-Aqsa Martyrs Brigades"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E9 (ORG/Non-Gov/NAM/SPC), name="Al-Aqsa Martyrs Brigades"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="A member of Al-Aqsa Martyrs Brigades"
+--------
+    ref relation AFP_ENG_20030630.0741-R44 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R44 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E98 (ORG/Non-Gov/NOM/SPC), head="factions"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E98 (ORG/Non-Gov/NOM/SPC), head="factions"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E99 (ORG/Non-Gov/NAM/SPC), name="Palestine Liberation Organization (PLO"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E99 (ORG/Non-Gov/NAM/SPC), name="Palestine Liberation Organization (PLO"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="Six political factions falling under ..."
+--------
+    ref relation AFP_ENG_20030630.0741-R45 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R45 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E103 (ORG/Governm/NAM/SPC), name="Authority"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E103 (ORG/Governm/NAM/SPC), name="Authority"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="the Palestinian Authority"
+--------
+    ref relation AFP_ENG_20030630.0741-R46 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R46 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E110 (PER/Individ/NAM/SPC), name="George W. Bush"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E110 (PER/Individ/NAM/SPC), name="George W. Bush"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E17 (GPE/Nation/NAM/SPC), name="United States"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E17 (GPE/Nation/NAM/SPC), name="United States"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="US President George W. Bush"
+--------
+    ref relation AFP_ENG_20030630.0741-R47 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R47 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E120 (PER/Group/NOM/GEN), head="people"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E120 (PER/Group/NOM/GEN), head="people"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="the Palestinian people"
+--------
+    ref relation AFP_ENG_20030630.0741-R48 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R48 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E123 (PER/Group/NOM/SPC), head="officials"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E123 (PER/Group/NOM/SPC), head="officials"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E124 (ORG/Non-Gov/NAM/SPC), name="Hamas"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E124 (ORG/Non-Gov/NAM/SPC), name="Hamas"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="Senior officials of Hamas and Islamic..."
+--------
+    ref relation AFP_ENG_20030630.0741-R49 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R49 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E123 (PER/Group/NOM/SPC), head="officials"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E123 (PER/Group/NOM/SPC), head="officials"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E125 (ORG/Non-Gov/NAM/SPC), name="Islamic Jihad"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E125 (ORG/Non-Gov/NAM/SPC), name="Islamic Jihad"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="Senior officials of Hamas and Islamic..."
+--------
+    ref relation AFP_ENG_20030630.0741-R50 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R50 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E128 (ORG/Governm/NOM/SPC), head="military"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E128 (ORG/Governm/NOM/SPC), head="military"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E128 (ORG/Governm/NOM/SPC), head="military"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E128 (ORG/Governm/NOM/SPC), head="military"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="Israeli military army"
+--------
+    ref relation AFP_ENG_20030630.0741-R51 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R51 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E128 (ORG/Governm/NOM/SPC), head="military"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E128 (ORG/Governm/NOM/SPC), head="military"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="Israeli military army"
+--------
+    ref relation AFP_ENG_20030630.0741-R52 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R52 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E133 (FAC/Buildin/NAM/SPC), name="compound"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E133 (FAC/Buildin/NAM/SPC), name="compound"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E134 (LOC/Land-Re/NAM/SPC), name="Temple Mount"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E134 (LOC/Land-Re/NAM/SPC), name="Temple Mount"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="the Temple Mount compound"
+--------
+    ref relation AFP_ENG_20030630.0741-R53 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R53 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E81 (PER/Group/NOM/USP), head="prisoners"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E81 (PER/Group/NOM/USP), head="prisoners"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref extent="Palestinian prisoners"
+--------
+    ref relation AFP_ENG_20030630.0741-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E6 (FAC/Path/NOM/SPC), head="highway"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E6 (FAC/Path/NOM/SPC), head="highway"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E150 (LOC/Region-/NAM/SPC), name="Gaza Strip"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E150 (LOC/Region-/NAM/SPC), name="Gaza Strip"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="Gaza's main highway"
+--------
+    ref relation AFP_ENG_20030630.0741-R7 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R7 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E7 (ORG/Non-Gov/NOM/SPC), head="groups"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E7 (ORG/Non-Gov/NOM/SPC), head="groups"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E5 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="four Palestinian militant groups"
+--------
+    ref relation AFP_ENG_20030630.0741-R8 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R8 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E9 (ORG/Non-Gov/NAM/SPC), name="Al-Aqsa Martyrs Brigades"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E9 (ORG/Non-Gov/NAM/SPC), name="Al-Aqsa Martyrs Brigades"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E1 (ORG/Non-Gov/NAM/SPC), name="Fatah party"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E1 (ORG/Non-Gov/NAM/SPC), name="Fatah party"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref extent="an armed offshoot of Fatah"
+--------
+    ref relation AFP_ENG_20030630.0741-R9 (PHYS/Located/Asserted/Unspecified)
+    tst relation AFP_ENG_20030630.0741-R9 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=AFP_ENG_20030630.0741-E12 (PER/Individ/NOM/SPC), head="worker"
+            Arg-1 tst arg: ID=AFP_ENG_20030630.0741-E12 (PER/Individ/NOM/SPC), head="worker"
+            Arg-2 ref arg: ID=AFP_ENG_20030630.0741-E13 (LOC/Region-/NAM/SPC), name="West Bank"
+            Arg-2 tst arg: ID=AFP_ENG_20030630.0741-E13 (LOC/Region-/NAM/SPC), name="West Bank"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref extent="a foreign worker was shot in the West..."
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+GEN-AFF     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.88   0.00   0.00   0.00
+ORG-AFF    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    40.14   0.00   0.00   0.00
+PART-WH    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    38.10   0.00   0.00   0.00
+PER-SOC     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.68   0.00   0.00   0.00
+   PHYS     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.20   0.00   0.00   0.00
+  total    51     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    51     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    51     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    51     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    51     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    51     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    51     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.44   0.00   0.00   0.00
+Employm    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.25   0.00   0.00   0.00
+Geograp     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.69   0.00   0.00   0.00
+Lasting     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.68   0.00   0.00   0.00
+Located     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.04   0.00   0.00   0.00
+Members     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.88   0.00   0.00   0.00
+   Near     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.16   0.00   0.00   0.00
+Org-Loc     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.44   0.00   0.00   0.00
+Subsidi    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.41   0.00   0.00   0.00
+  total    51     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.44   0.00   0.00   0.00
+Org-Loc     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.44   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.88   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.25   0.00   0.00   0.00
+Members     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.88   0.00   0.00   0.00
+  total    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    40.14   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.69   0.00   0.00   0.00
+Subsidi    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.41   0.00   0.00   0.00
+  total    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    38.10   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER-SOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Lasting     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.68   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.68   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.04   0.00   0.00   0.00
+   Near     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.16   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.20   0.00   0.00   0.00
+
+Relation Type confusion matrix for "newswire" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     7     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0    21     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0    18     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     1     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+       PHYS      0     0     0     0     0     0     4        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      4     0      100.0   0.0
+Org-Locatio      0     3        0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment     16     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     5     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     8     0        0.0 100.0   0.0
+ Subsidiary      0     0    10        0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PER-S COUNT............    PERCENT............
+    ref\tst: Busin Famil Lasti      Busin Famil Lasti 
+   Business      0     0     0        0.0   0.0   0.0
+     Family      0     0     0        0.0   0.0   0.0
+Lasting-Per      0     0     1        0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      1     0      100.0   0.0
+       Near      0     3        0.0 100.0
+
+Relation Modality confusion matrix for "newswire" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     51     0     0      100.0   0.0   0.0
+      Other      0     0     0        0.0   0.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=51/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted    51/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=51/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: Employment  Subsidiary Geographica  Membership Citizen-Res Org-Locatio        Near     Located  all others 
+      Employment    16/31.4%      -           -           -           -           -           -           -           -     
+      Subsidiary      -         10/19.6%      -           -           -           -           -           -           -     
+    Geographical      -           -          8/15.7%      -           -           -           -           -           -     
+      Membership      -           -           -          5/ 9.8%      -           -           -           -           -     
+  Citizen-Reside      -           -           -           -          4/ 7.8%      -           -           -           -     
+    Org-Location      -           -           -           -           -          3/ 5.9%      -           -           -     
+            Near      -           -           -           -           -           -          3/ 5.9%      -           -     
+         Located      -           -           -           -           -           -           -          1/ 2.0%      -     
+      all others      -           -           -           -           -           -           -           -          1/ 2.0%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=51/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified 
+     Unspecified    51/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=51/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    ORG-AFF  PART-WHOLE     GEN-AFF        PHYS     PER-SOC 
+         ORG-AFF    21/41.2%      -           -           -           -     
+      PART-WHOLE      -         18/35.3%      -           -           -     
+         GEN-AFF      -           -          7/13.7%      -           -     
+            PHYS      -           -           -          4/ 7.8%      -     
+         PER-SOC      -           -           -           -          1/ 2.0%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=102/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 
+           Arg-2    51/50.0%      -     
+           Arg-1      -         51/50.0%
+
+======== event mapping ========
+
+--------
+    ref event AFP_ENG_20030630.0741-EV1 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV1 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+         Attacker ref arg: ID=AFP_ENG_20030630.0741-E14 (ORG/Non-Gov/PRO/USP), head="one"
+         Attacker tst arg: ID=AFP_ENG_20030630.0741-E14 (ORG/Non-Gov/PRO/USP), head="one"
+            Place ref arg: ID=AFP_ENG_20030630.0741-E13 (LOC/Region-/NAM/SPC), name="West Bank"
+            Place tst arg: ID=AFP_ENG_20030630.0741-E13 (LOC/Region-/NAM/SPC), name="West Bank"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref anchor="attack", extent="the West Bank in a attack claimed by ..."
+--------
+    ref event AFP_ENG_20030630.0741-EV10 (Contact/Meet/Specific/Other/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV10 (Contact/Meet/Specific/Other/Positive/Past)
+      event score:  3.20000 out of 3.20000
+           Entity ref arg: ID=AFP_ENG_20030630.0741-E63 (PER/Individ/NAM/SPC), name="Ariel Sharon"
+           Entity tst arg: ID=AFP_ENG_20030630.0741-E63 (PER/Individ/NAM/SPC), name="Ariel Sharon"
+           Entity ref arg: ID=AFP_ENG_20030630.0741-E66 (PER/Individ/NAM/SPC), name="Mahmud Abbas"
+           Entity tst arg: ID=AFP_ENG_20030630.0741-E66 (PER/Individ/NAM/SPC), name="Mahmud Abbas"
+            Place ref arg: ID=AFP_ENG_20030630.0741-E68 (GPE/Populat/NAM/SPC), name="Jerusalem"
+            Place tst arg: ID=AFP_ENG_20030630.0741-E68 (GPE/Populat/NAM/SPC), name="Jerusalem"
+      Time-Within ref arg: ID=AFP_ENG_20030630.0741-T13 (TIM/---), extent="Tuesday"
+      Time-Within tst arg: ID=AFP_ENG_20030630.0741-T13 (TIM/---), extent="Tuesday"
+- in document AFP_ENG_20030630.0741:  score:  3.20000 out of 3.20000
+      ref anchor="meet", extent="Israeli Prime Minister Ariel Sharon w..."
+--------
+    ref event AFP_ENG_20030630.0741-EV11 (Justice/Release-Parole/Specific/Other/Positive/Unspecified)
+    tst event AFP_ENG_20030630.0741-EV11 (Justice/Release-Parole/Specific/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+           Person ref arg: ID=AFP_ENG_20030630.0741-E72 (PER/Group/NOM/USP), head="prisoners"
+           Person tst arg: ID=AFP_ENG_20030630.0741-E72 (PER/Group/NOM/USP), head="prisoners"
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000
+      ref anchor="released", extent="Palestinian prisoners to determine wh..."
+--------
+    ref event AFP_ENG_20030630.0741-EV12 (Conflict/Attack/Specific/Asserted/Positive/Present)
+    tst event AFP_ENG_20030630.0741-EV12 (Conflict/Attack/Specific/Asserted/Positive/Present)
+      event score:  2.00000 out of 2.00000
+         Attacker ref arg: ID=AFP_ENG_20030630.0741-E77 (ORG/Non-Gov/NAM/SPC), name="Islamic Jihad"
+         Attacker tst arg: ID=AFP_ENG_20030630.0741-E77 (ORG/Non-Gov/NAM/SPC), name="Islamic Jihad"
+           Target ref arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+           Target tst arg: ID=AFP_ENG_20030630.0741-E27 (GPE/Nation/NAM/SPC), name="Israel's"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref anchor="fighting", extent="the two most hardline groups fighting..."
+--------
+    ref event AFP_ENG_20030630.0741-EV13 (Conflict/Attack/Generic/Other/Negative/Unspecified)
+    tst event AFP_ENG_20030630.0741-EV13 (Conflict/Attack/Generic/Other/Negative/Unspecified)
+      event score:  0.50000 out of 0.50000
+           Target ref arg: ID=AFP_ENG_20030630.0741-E80 (PER/Group/NOM/SPC), head="members"
+           Target tst arg: ID=AFP_ENG_20030630.0741-E80 (PER/Group/NOM/SPC), head="members"
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000
+      ref anchor="attacks", extent="attacks against their members"
+--------
+    ref event AFP_ENG_20030630.0741-EV14 (Justice/Release-Parole/Specific/Other/Positive/Unspecified)
+    tst event AFP_ENG_20030630.0741-EV14 (Justice/Release-Parole/Specific/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+           Person ref arg: ID=AFP_ENG_20030630.0741-E81 (PER/Group/NOM/USP), head="prisoners"
+           Person tst arg: ID=AFP_ENG_20030630.0741-E81 (PER/Group/NOM/USP), head="prisoners"
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000
+      ref anchor="release", extent="release of Palestinian prisoners"
+--------
+    ref event AFP_ENG_20030630.0741-EV15 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV15 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.50000 out of 1.50000
+            Place ref arg: ID=AFP_ENG_20030630.0741-E89 (GPE/Populat/NAM/SPC), name="Jenin"
+            Place tst arg: ID=AFP_ENG_20030630.0741-E89 (GPE/Populat/NAM/SPC), name="Jenin"
+           Target ref arg: ID=AFP_ENG_20030630.0741-E86 (PER/Individ/NOM/SPC), head="Bulgarian"
+           Target tst arg: ID=AFP_ENG_20030630.0741-E86 (PER/Individ/NOM/SPC), head="Bulgarian"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref anchor="shot", extent="a 45-year-old Bulgarian was shot dead..."
+--------
+    ref event AFP_ENG_20030630.0741-EV16 (Life/Die/Specific/Asserted/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV16 (Life/Die/Specific/Asserted/Positive/Past)
+      event score:  1.50000 out of 1.50000
+            Place ref arg: ID=AFP_ENG_20030630.0741-E89 (GPE/Populat/NAM/SPC), name="Jenin"
+            Place tst arg: ID=AFP_ENG_20030630.0741-E89 (GPE/Populat/NAM/SPC), name="Jenin"
+           Victim ref arg: ID=AFP_ENG_20030630.0741-E86 (PER/Individ/NOM/SPC), head="Bulgarian"
+           Victim tst arg: ID=AFP_ENG_20030630.0741-E86 (PER/Individ/NOM/SPC), head="Bulgarian"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref anchor="dead", extent="a 45-year-old Bulgarian was shot dead..."
+--------
+    ref event AFP_ENG_20030630.0741-EV17 (Life/Die/Specific/Asserted/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV17 (Life/Die/Specific/Asserted/Positive/Past)
+      event score:  0.50000 out of 0.50000
+            Agent ref arg: ID=AFP_ENG_20030630.0741-E96 (PER/Individ/NOM/SPC), head="member"
+            Agent tst arg: ID=AFP_ENG_20030630.0741-E96 (PER/Individ/NOM/SPC), head="member"
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000
+      ref anchor="killing", extent="A member of Al-Aqsa Martyrs Brigades ..."
+--------
+    ref event AFP_ENG_20030630.0741-EV18 (Contact/Phone-Write/Specific/Asserted/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV18 (Contact/Phone-Write/Specific/Asserted/Positive/Past)
+      event score:  1.50000 out of 1.50000
+           Entity ref arg: ID=AFP_ENG_20030630.0741-E147 (ORG/Media/NAM/SPC), name="AFP"
+           Entity tst arg: ID=AFP_ENG_20030630.0741-E147 (ORG/Media/NAM/SPC), name="AFP"
+           Entity ref arg: ID=AFP_ENG_20030630.0741-E96 (PER/Individ/NOM/SPC), head="member"
+           Entity tst arg: ID=AFP_ENG_20030630.0741-E96 (PER/Individ/NOM/SPC), head="member"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref anchor="telephone call", extent="A member of Al-Aqsa Martyrs Brigades ..."
+--------
+    ref event AFP_ENG_20030630.0741-EV19 (Contact/Phone-Write/Specific/Asserted/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV19 (Contact/Phone-Write/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+           Entity ref arg: ID=AFP_ENG_20030630.0741-E110 (PER/Individ/NAM/SPC), name="George W. Bush"
+           Entity tst arg: ID=AFP_ENG_20030630.0741-E110 (PER/Individ/NAM/SPC), name="George W. Bush"
+           Entity ref arg: ID=AFP_ENG_20030630.0741-E113 (PER/Individ/NAM/SPC), name="Condoleezza Rice"
+           Entity tst arg: ID=AFP_ENG_20030630.0741-E113 (PER/Individ/NAM/SPC), name="Condoleezza Rice"
+- in document AFP_ENG_20030630.0741:  score:  2.00000 out of 2.00000
+      ref anchor="telephone", extent="US President George W. Bush heard by ..."
+--------
+    ref event AFP_ENG_20030630.0741-EV2 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+    tst event AFP_ENG_20030630.0741-EV2 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000
+      ref anchor="uprising", extent="uprising"
+--------
+    ref event AFP_ENG_20030630.0741-EV20 (Conflict/Attack/Generic/Asserted/Positive/Unspecified)
+    tst event AFP_ENG_20030630.0741-EV20 (Conflict/Attack/Generic/Asserted/Positive/Unspecified)
+      event score:  0.50000 out of 0.50000
+         Attacker ref arg: ID=AFP_ENG_20030630.0741-E123 (PER/Group/NOM/SPC), head="officials"
+         Attacker tst arg: ID=AFP_ENG_20030630.0741-E123 (PER/Group/NOM/SPC), head="officials"
+- in document AFP_ENG_20030630.0741:  score:  0.50000 out of 0.50000
+      ref anchor="armed struggle", extent="armed struggle remained their"
+--------
+    ref event AFP_ENG_20030630.0741-EV21 (Movement/Transport/Specific/Other/Positive/Unspecified)
+    tst event AFP_ENG_20030630.0741-EV21 (Movement/Transport/Specific/Other/Positive/Unspecified)
+      event score:  1.00000 out of 1.00000
+      Destination ref arg: ID=AFP_ENG_20030630.0741-E133 (FAC/Buildin/NAM/SPC), name="compound"
+      Destination tst arg: ID=AFP_ENG_20030630.0741-E133 (FAC/Buildin/NAM/SPC), name="compound"
+           Person ref arg: ID=AFP_ENG_20030630.0741-E131 (PER/Group/NOM/USP), head="Israelis"
+           Person tst arg: ID=AFP_ENG_20030630.0741-E131 (PER/Group/NOM/USP), head="Israelis"
+           Person ref arg: ID=AFP_ENG_20030630.0741-E132 (PER/Group/NOM/USP), head="tourists"
+           Person tst arg: ID=AFP_ENG_20030630.0741-E132 (PER/Group/NOM/USP), head="tourists"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref anchor="visit", extent="Israelis and foreign tourists have re..."
+--------
+    ref event AFP_ENG_20030630.0741-EV22 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+    tst event AFP_ENG_20030630.0741-EV22 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000
+      ref anchor="intifada", extent="intifada"
+--------
+    ref event AFP_ENG_20030630.0741-EV23 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+    tst event AFP_ENG_20030630.0741-EV23 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000
+      ref anchor="intifada", extent="intifada"
+--------
+    ref event AFP_ENG_20030630.0741-EV24 (Life/Injure/Specific/Asserted/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV24 (Life/Injure/Specific/Asserted/Positive/Past)
+      event score:  1.50000 out of 1.50000
+            Agent ref arg: ID=AFP_ENG_20030630.0741-E14 (ORG/Non-Gov/PRO/USP), head="one"
+            Agent tst arg: ID=AFP_ENG_20030630.0741-E14 (ORG/Non-Gov/PRO/USP), head="one"
+            Place ref arg: ID=AFP_ENG_20030630.0741-E13 (LOC/Region-/NAM/SPC), name="West Bank"
+            Place tst arg: ID=AFP_ENG_20030630.0741-E13 (LOC/Region-/NAM/SPC), name="West Bank"
+           Victim ref arg: ID=AFP_ENG_20030630.0741-E12 (PER/Individ/NOM/SPC), head="worker"
+           Victim tst arg: ID=AFP_ENG_20030630.0741-E12 (PER/Individ/NOM/SPC), head="worker"
+- in document AFP_ENG_20030630.0741:  score:  1.50000 out of 1.50000
+      ref anchor="shot", extent="a foreign worker was shot in the West..."
+--------
+    ref event AFP_ENG_20030630.0741-EV3 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV3 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.20000 out of 1.20000
+           Origin ref arg: ID=AFP_ENG_20030630.0741-E28 (GPE/Populat/NAM/SPC), name="Beit Hanun"
+           Origin tst arg: ID=AFP_ENG_20030630.0741-E28 (GPE/Populat/NAM/SPC), name="Beit Hanun"
+           Person ref arg: ID=AFP_ENG_20030630.0741-E26 (PER/Group/NOM/USP), head="troops"
+           Person tst arg: ID=AFP_ENG_20030630.0741-E26 (PER/Group/NOM/USP), head="troops"
+      Time-Within ref arg: ID=AFP_ENG_20030630.0741-T7 (TIM/---), extent="overnight"
+      Time-Within tst arg: ID=AFP_ENG_20030630.0741-T7 (TIM/---), extent="overnight"
+- in document AFP_ENG_20030630.0741:  score:  1.20000 out of 1.20000
+      ref anchor="withdrew", extent="Israeli troops withdrew overnight fro..."
+--------
+    ref event AFP_ENG_20030630.0741-EV4 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV4 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.70000 out of 1.70000
+         Attacker ref arg: ID=AFP_ENG_20030630.0741-E31 (ORG/Governm/NOM/SPC), head="army"
+         Attacker tst arg: ID=AFP_ENG_20030630.0741-E31 (ORG/Governm/NOM/SPC), head="army"
+            Place ref arg: ID=AFP_ENG_20030630.0741-E28 (GPE/Populat/NAM/SPC), name="Beit Hanun"
+            Place tst arg: ID=AFP_ENG_20030630.0741-E28 (GPE/Populat/NAM/SPC), name="Beit Hanun"
+           Target ref arg: ID=AFP_ENG_20030630.0741-E32 (ORG/Non-Gov/NOM/USP), head="groups"
+           Target tst arg: ID=AFP_ENG_20030630.0741-E32 (ORG/Non-Gov/NOM/USP), head="groups"
+      Time-Within ref arg: ID=AFP_ENG_20030630.0741-T8 (TIM/---), extent="two months ago"
+      Time-Within tst arg: ID=AFP_ENG_20030630.0741-T8 (TIM/---), extent="two months ago"
+- in document AFP_ENG_20030630.0741:  score:  1.70000 out of 1.70000
+      ref anchor="crush", extent="The army stormed Beit Hanun two month..."
+--------
+    ref event AFP_ENG_20030630.0741-EV5 (Conflict/Attack/Generic/Other/Negative/Unspecified)
+    tst event AFP_ENG_20030630.0741-EV5 (Conflict/Attack/Generic/Other/Negative/Unspecified)
+      event score:  0.00000 out of 0.00000
+         Attacker ref arg: ID=AFP_ENG_20030630.0741-E32 (ORG/Non-Gov/NOM/USP), head="groups"
+         Attacker tst arg: ID=AFP_ENG_20030630.0741-E32 (ORG/Non-Gov/NOM/USP), head="groups"
+       Instrument ref arg: ID=AFP_ENG_20030630.0741-E33 (WEA/Project/NOM/GEN), head="rocket"
+       Instrument tst arg: ID=AFP_ENG_20030630.0741-E33 (WEA/Project/NOM/GEN), head="rocket"
+           Target ref arg: ID=AFP_ENG_20030630.0741-E34 (GPE/Populat/NOM/USP), head="communities"
+           Target tst arg: ID=AFP_ENG_20030630.0741-E34 (GPE/Populat/NOM/USP), head="communities"
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000
+      ref anchor="attacks", extent="militant groups and prevent them from..."
+--------
+    ref event AFP_ENG_20030630.0741-EV6 (Conflict/Attack/Generic/Other/Negative/Unspecified)
+    tst event AFP_ENG_20030630.0741-EV6 (Conflict/Attack/Generic/Other/Negative/Unspecified)
+      event score:  0.00000 out of 0.00000
+         Attacker ref arg: ID=AFP_ENG_20030630.0741-E38 (PER/Group/NOM/GEN), head="militants"
+         Attacker tst arg: ID=AFP_ENG_20030630.0741-E38 (PER/Group/NOM/GEN), head="militants"
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000
+      ref anchor="attacks", extent="militants from launching attacks"
+--------
+    ref event AFP_ENG_20030630.0741-EV7 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV7 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+      Destination ref arg: ID=AFP_ENG_20030630.0741-E50 (LOC/Region-/NOM/SPC), head="section"
+      Destination tst arg: ID=AFP_ENG_20030630.0741-E50 (LOC/Region-/NOM/SPC), head="section"
+           Person ref arg: ID=AFP_ENG_20030630.0741-E47 (PER/Group/NOM/SPC), head="officers"
+           Person tst arg: ID=AFP_ENG_20030630.0741-E47 (PER/Group/NOM/SPC), head="officers"
+- in document AFP_ENG_20030630.0741:  score:  1.00000 out of 1.00000
+      ref anchor="return", extent="six Palestinian police officers to re..."
+--------
+    ref event AFP_ENG_20030630.0741-EV8 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+    tst event AFP_ENG_20030630.0741-EV8 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+- in document AFP_ENG_20030630.0741:  score:  0.00000 out of 0.00000
+      ref anchor="intifada", extent="intifada"
+--------
+    ref event AFP_ENG_20030630.0741-EV9 (Contact/Meet/Specific/Asserted/Positive/Past)
+    tst event AFP_ENG_20030630.0741-EV9 (Contact/Meet/Specific/Asserted/Positive/Past)
+      event score:  0.70000 out of 0.70000
+           Entity ref arg: ID=AFP_ENG_20030630.0741-E59 (ORG/Governm/NOM/SPC), head="army"
+           Entity tst arg: ID=AFP_ENG_20030630.0741-E59 (ORG/Governm/NOM/SPC), head="army"
+      Time-Within ref arg: ID=AFP_ENG_20030630.0741-T12 (TIM/---), extent="Monday"
+      Time-Within tst arg: ID=AFP_ENG_20030630.0741-T12 (TIM/---), extent="Monday"
+- in document AFP_ENG_20030630.0741:  score:  0.70000 out of 0.70000
+      ref anchor="meeting", extent="the Israeli army has agreed at a meet..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Conflic    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    33.80   0.00   0.00   0.00
+Contact     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.74   0.00   0.00   0.00
+Justice     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+   Life     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.43   0.00   0.00   0.00
+Movemen     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.02   0.00   0.00   0.00
+  total    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    77.93   0.00   0.00   0.00
+  Other     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.07   0.00   0.00   0.00
+  total    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    33.80   0.00   0.00   0.00
+    Die     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.39   0.00   0.00   0.00
+ Injure     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.04   0.00   0.00   0.00
+   Meet     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.31   0.00   0.00   0.00
+Phone-W     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.43   0.00   0.00   0.00
+Release     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Transpo     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.02   0.00   0.00   0.00
+  total    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Conflict:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    33.80   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    33.80   0.00   0.00   0.00
+
+Performance statistics for TYPE = Contact:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Meet     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.31   0.00   0.00   0.00
+Phone-W     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.43   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.74   0.00   0.00   0.00
+
+Performance statistics for TYPE = Justice:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Release     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Life:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    Die     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.39   0.00   0.00   0.00
+ Injure     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.04   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.43   0.00   0.00   0.00
+
+Performance statistics for TYPE = Movement:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.02   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.02   0.00   0.00   0.00
+
+Event Type confusion matrix for "newswire" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0    12     0     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     4     0     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     2     0     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     3     0     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     3     0     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Confl COUNT......    PERCENT......
+    ref\tst: Attac Demon      Attac Demon 
+     Attack     12     0      100.0   0.0
+Demonstrate      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Conta COUNT......    PERCENT......
+    ref\tst:  Meet Phone       Meet Phone 
+       Meet      2     0      100.0   0.0
+Phone-Write      0     2        0.0 100.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Justi COUNT........................................................................    PERCENT........................................................................
+    ref\tst: Acqui Appea Arres Charg Convi Execu Extra  Fine Pardo Relea Sente   Sue Trial      Acqui Appea Arres Charg Convi Execu Extra  Fine Pardo Relea Sente   Sue Trial 
+     Acquit      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+     Appeal      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Arrest-Jail      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Charge-Indi      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Convict      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Execute      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Extradite      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Fine      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+     Pardon      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Release-Par      0     0     0     0     0     0     0     0     0     2     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0   0.0
+   Sentence      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+        Sue      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Trial-Heari      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Life  COUNT..............................    PERCENT..............................
+    ref\tst: Be-Bo  Date   Die Divor Injur Marry      Be-Bo  Date   Die Divor Injur Marry 
+    Be-Born      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+       Date      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+        Die      0     0     2     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0
+    Divorce      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+     Injure      0     0     0     0     1     0        0.0   0.0   0.0   0.0 100.0   0.0
+      Marry      0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Movem COUNT    PERCENT
+    ref\tst: Trans      Trans 
+  Transport      3      100.0
+
+Event Modality confusion matrix for "newswire" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted     17     0      100.0   0.0
+      Other      0     7        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific     Generic 
+        Specific    20/83.3%      -     
+         Generic      -          4/16.7%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted    17/70.8%      -     
+           Other      -          7/29.2%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive    Negative 
+        Positive    21/87.5%      -     
+        Negative      -          3/12.5%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Attack   Transport Phone-Write Release-Par        Meet         Die      Injure 
+          Attack    12/50.0%      -           -           -           -           -           -     
+       Transport      -          3/12.5%      -           -           -           -           -     
+     Phone-Write      -           -          2/ 8.3%      -           -           -           -     
+  Release-Parole      -           -           -          2/ 8.3%      -           -           -     
+            Meet      -           -           -           -          2/ 8.3%      -           -     
+             Die      -           -           -           -           -          2/ 8.3%      -     
+          Injure      -           -           -           -           -           -          1/ 4.2%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past Unspecified     Present 
+            Past    12/50.0%      -           -     
+     Unspecified      -         11/45.8%      -     
+         Present      -           -          1/ 4.2%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Conflict     Contact    Movement        Life     Justice 
+        Conflict    12/50.0%      -           -           -           -     
+         Contact      -          4/16.7%      -           -           -     
+        Movement      -           -          3/12.5%      -           -     
+            Life      -           -           -          3/12.5%      -     
+         Justice      -           -           -           -          2/ 8.3%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=42/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Entity    Attacker       Place      Person      Target Time-Within      Victim       Agent  all others 
+          Entity     7/16.7%      -           -           -           -           -           -           -           -     
+        Attacker      -          6/14.3%      -           -           -           -           -           -           -     
+           Place      -           -          6/14.3%      -           -           -           -           -           -     
+          Person      -           -           -          6/14.3%      -           -           -           -           -     
+          Target      -           -           -           -          5/11.9%      -           -           -           -     
+     Time-Within      -           -           -           -           -          4/ 9.5%      -           -           -     
+          Victim      -           -           -           -           -           -          2/ 4.8%      -           -     
+           Agent      -           -           -           -           -           -           -          2/ 4.8%      -     
+      all others      -           -           -           -           -           -           -           -          4/ 9.5%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 AFP_ENG_20030630.0741-T1, ID=AFP_ENG_20030630.0741-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T1, ID=AFP_ENG_20030630.0741-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="20030630"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T10, ID=AFP_ENG_20030630.0741-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T10, ID=AFP_ENG_20030630.0741-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="30-minute"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T11, ID=AFP_ENG_20030630.0741-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T11, ID=AFP_ENG_20030630.0741-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="two or three-hour"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T12, ID=AFP_ENG_20030630.0741-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T12, ID=AFP_ENG_20030630.0741-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="Monday"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T13, ID=AFP_ENG_20030630.0741-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T13, ID=AFP_ENG_20030630.0741-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="Tuesday"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T14, ID=AFP_ENG_20030630.0741-T14, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T14, ID=AFP_ENG_20030630.0741-T14, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="Sunday"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T15, ID=AFP_ENG_20030630.0741-T15, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T15, ID=AFP_ENG_20030630.0741-T15, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="three-month"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T16, ID=AFP_ENG_20030630.0741-T16, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T16, ID=AFP_ENG_20030630.0741-T16, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="hours later"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T17, ID=AFP_ENG_20030630.0741-T17, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T17, ID=AFP_ENG_20030630.0741-T17, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="six months"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T18, ID=AFP_ENG_20030630.0741-T18, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T18, ID=AFP_ENG_20030630.0741-T18, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="the past several weeks"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T2, ID=AFP_ENG_20030630.0741-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T2, ID=AFP_ENG_20030630.0741-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="June 30"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T3, ID=AFP_ENG_20030630.0741-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T3, ID=AFP_ENG_20030630.0741-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="Monday"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T4, ID=AFP_ENG_20030630.0741-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T4, ID=AFP_ENG_20030630.0741-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="33-month-old"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T5, ID=AFP_ENG_20030630.0741-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T5, ID=AFP_ENG_20030630.0741-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="late Sunday"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T6, ID=AFP_ENG_20030630.0741-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T6, ID=AFP_ENG_20030630.0741-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="September 28, 2000"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T7, ID=AFP_ENG_20030630.0741-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T7, ID=AFP_ENG_20030630.0741-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="overnight"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T8, ID=AFP_ENG_20030630.0741-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T8, ID=AFP_ENG_20030630.0741-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="two months ago"
+--------
+    ref timex2 AFP_ENG_20030630.0741-T9, ID=AFP_ENG_20030630.0741-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 AFP_ENG_20030630.0741-T9, ID=AFP_ENG_20030630.0741-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document AFP_ENG_20030630.0741:
+          mention="years"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=18/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    18/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=18/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    18/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=18/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---    18/99.9%
+
+data input:               1.17 secs to load data
+entity eval:              0.18 secs to compute values,    0.05 secs to map,    0.12 secs to score
+relation eval:            0.63 secs to compute values,    0.02 secs to map,    0.09 secs to score
+event eval:               0.11 secs to compute values,    0.01 secs to map,    0.05 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.01 secs to compute values,    0.01 secs to map,    0.01 secs to score
+value eval:               0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+########

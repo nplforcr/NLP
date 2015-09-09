@@ -1,0 +1,1364 @@
+command line (run on 2005 Aug 21 at 10:35:10):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score72988 -t /tmp/score72988
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity APW_ENG_20030331.0410-E1 (PER/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E1 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="lawyer" (NOM/PER/LIT)
+      ref mention="Anders Nemeth" (NAM/PER/LIT)
+      ref mention="Nemeth" (NAM/PER/LIT)
+         ref name="Anders Nemeth"
+         ref name="Nemeth"
+--------
+    ref entity APW_ENG_20030331.0410-E10 (PER/NOM/SPC)
+    tst entity APW_ENG_20030331.0410-E10 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030331.0410:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="fan" (NOM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+--------
+    ref entity APW_ENG_20030331.0410-E11 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E11 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="club" (NOM/ORG/LIT)
+      ref mention="Duisburg" (NAM/ORG/LIT)
+         ref name="Duisburg"
+--------
+    ref entity APW_ENG_20030331.0410-E14 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E14 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Denmark" (NAM/LOC/LIT)
+      ref mention="Danish" (NAM/GPE/LIT)
+      ref mention="Denmark" (NAM/GPE/LIT)
+      ref mention="Denmark" (NAM/GPE/LIT)
+      ref mention="Danish" (NAM/GPE/LIT)
+         ref name="Denmark"
+         ref name="Danish"
+         ref name="Denmark"
+         ref name="Denmark"
+         ref name="Danish"
+--------
+    ref entity APW_ENG_20030331.0410-E15 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E15 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="COPENHAGEN" (NAM/LOC/LIT)
+      ref mention="capital" (NOM/LOC/LIT)
+      ref mention="Copenhagen" (NAM/LOC/LIT)
+         ref name="COPENHAGEN"
+         ref name="Copenhagen"
+--------
+    ref entity APW_ENG_20030331.0410-E18 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E18 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="AP" (NAM/ORG/LIT)
+         ref name="AP"
+--------
+    ref entity APW_ENG_20030331.0410-E19 (PER/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E19 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="international" (NOM/PER/LIT)
+      ref mention="Stig Toefting" (NAM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Toefting" (NAM/PER/LIT)
+      ref mention="He" (PRO/PER/LIT)
+      ref mention="Toefting" (NAM/PER/LIT)
+      ref mention="midfielder" (NOM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Toefting" (NAM/PER/LIT)
+      ref mention="Toefting" (NAM/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="Toefting" (NAM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Toefting" (NAM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Toefting" (NAM/PER/LIT)
+      ref mention="Toefting" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="player" (NOM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Toefting" (NAM/PER/LIT)
+         ref name="Stig Toefting"
+         ref name="Toefting"
+         ref name="Toefting"
+         ref name="Toefting"
+         ref name="Toefting"
+         ref name="Toefting"
+         ref name="Toefting"
+         ref name="Toefting"
+         ref name="Toefting"
+         ref name="Toefting"
+--------
+    ref entity APW_ENG_20030331.0410-E21 (PER/NOM/SPC)
+    tst entity APW_ENG_20030331.0410-E21 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030331.0410:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="workers" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030331.0410-E22 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030331.0410-E22 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030331.0410:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="restaurant" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030331.0410-E23 (PER/NOM/USP)
+    tst entity APW_ENG_20030331.0410-E23 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document APW_ENG_20030331.0410:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="teammates" (NOM/PER/LIT)
+--------
+    ref entity APW_ENG_20030331.0410-E24 (ORG/NOM/SPC)
+    tst entity APW_ENG_20030331.0410-E24 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document APW_ENG_20030331.0410:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="squad" (NOM/ORG/LIT)
+      ref mention="team" (NOM/ORG/LIT)
+      ref mention="it" (PRO/ORG/LIT)
+      ref mention="squad" (NOM/ORG/LIT)
+--------
+    ref entity APW_ENG_20030331.0410-E27 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E27 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="TV2" (NAM/ORG/LIT)
+      ref mention="TV2" (NAM/ORG/LIT)
+         ref name="TV2"
+         ref name="TV2"
+--------
+    ref entity APW_ENG_20030331.0410-E3 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E3 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="club" (NOM/ORG/LIT)
+      ref mention="Bolton" (NAM/ORG/LIT)
+      ref mention="Bolton" (NAM/ORG/LIT)
+      ref mention="club" (NOM/ORG/LIT)
+      ref mention="it" (PRO/ORG/LIT)
+      ref mention="Bolton" (NAM/ORG/LIT)
+         ref name="Bolton"
+         ref name="Bolton"
+         ref name="Bolton"
+--------
+    ref entity APW_ENG_20030331.0410-E5 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E5 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Premier League" (NAM/ORG/LIT)
+         ref name="Premier League"
+--------
+    ref entity APW_ENG_20030331.0410-E6 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E6 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="English" (NAM/GPE/LIT)
+         ref name="English"
+--------
+    ref entity APW_ENG_20030331.0410-E7 (ORG/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E7 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="club" (NOM/ORG/LIT)
+      ref mention="Hamburg" (NAM/ORG/LIT)
+         ref name="Hamburg"
+--------
+    ref entity APW_ENG_20030331.0410-E9 (GPE/NAM/SPC)
+    tst entity APW_ENG_20030331.0410-E9 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="German" (NAM/GPE/LIT)
+      ref mention="German" (NAM/GPE/LIT)
+         ref name="German"
+         ref name="German"
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    GPE     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.57   0.00   0.00   0.00
+    ORG     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    50.00   0.00   0.00   0.00
+    PER     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.43   0.00   0.00   0.00
+  total    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    85.71   0.00   0.00   0.00
+    NOM     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.29   0.00   0.00   0.00
+  total    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+0.2-0.5     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.29   0.00   0.00   0.00
+0.5-1.0    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    85.71   0.00   0.00   0.00
+  total    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.57   0.00   0.00   0.00
+      2     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    32.14   0.00   0.00   0.00
+    3-4     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.86   0.00   0.00   0.00
+    5-8     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.29   0.00   0.00   0.00
+     >8     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.14   0.00   0.00   0.00
+  total    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    USP     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.57   0.00   0.00   0.00
+  Group     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.57   0.00   0.00   0.00
+Individ     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.86   0.00   0.00   0.00
+  Media     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.29   0.00   0.00   0.00
+ Nation     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.43   0.00   0.00   0.00
+Populat     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.14   0.00   0.00   0.00
+ Sports     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    32.14   0.00   0.00   0.00
+  total    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Nation     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.43   0.00   0.00   0.00
+Populat     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.14   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    28.57   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.57   0.00   0.00   0.00
+  Media     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.29   0.00   0.00   0.00
+ Sports     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    32.14   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    50.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.57   0.00   0.00   0.00
+Individ     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.86   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.43   0.00   0.00   0.00
+
+Entity Type confusion matrix for "newswire" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     4     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     8     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0     5     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=17/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         USP 
+             SPC    16/94.1%      -     
+             USP      -          1/ 5.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=17/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Sports      Nation  Individual       Group       Media Population-  Commercial 
+          Sports     5/29.4%      -           -           -           -           -           -     
+          Nation      -          3/17.6%      -           -           -           -           -     
+      Individual      -           -          3/17.6%      -           -           -           -     
+           Group      -           -           -          2/11.8%      -           -           -     
+           Media      -           -           -           -          2/11.8%      -           -     
+  Population-Cen      -           -           -           -           -          1/ 5.9%      -     
+      Commercial      -           -           -           -           -           -          1/ 5.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=17/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        ORG         PER         GPE 
+             ORG     8/47.1%      -           -     
+             PER      -          5/29.4%      -     
+             GPE      -           -          4/23.5%
+
+Entity Class confusion matrix for "newswire" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           16     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     0     0     0        0.0   0.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0     1        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0    10        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0     9        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    12        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    31        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    31        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    16        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0    14        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0    61        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0    61        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    61        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0     7        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     4        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    19        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    31        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    61        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "newswire" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     7     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     4     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    19     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    31     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "newswire" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER           61     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation APW_ENG_20030331.0410-R1 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R1 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E3 (ORG/Sports/NAM/SPC), name="Bolton"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E3 (ORG/Sports/NAM/SPC), name="Bolton"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E5 (ORG/Sports/NAM/SPC), name="Premier League"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E5 (ORG/Sports/NAM/SPC), name="Premier League"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref extent="English Premier League club"
+--------
+    ref relation APW_ENG_20030331.0410-R10 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R10 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E7 (ORG/Sports/NAM/SPC), name="Hamburg"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E7 (ORG/Sports/NAM/SPC), name="Hamburg"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E9 (GPE/Nation/NAM/SPC), name="German"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E9 (GPE/Nation/NAM/SPC), name="German"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref extent="German club"
+--------
+    ref relation APW_ENG_20030331.0410-R11 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R11 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E11 (ORG/Sports/NAM/SPC), name="Duisburg"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E11 (ORG/Sports/NAM/SPC), name="Duisburg"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref extent="In 1999 he was given a 20-day suspend..."
+--------
+    ref relation APW_ENG_20030331.0410-R12 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R12 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E11 (ORG/Sports/NAM/SPC), name="Duisburg"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E11 (ORG/Sports/NAM/SPC), name="Duisburg"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E9 (GPE/Nation/NAM/SPC), name="German"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E9 (GPE/Nation/NAM/SPC), name="German"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref extent="German club"
+--------
+    ref relation APW_ENG_20030331.0410-R13 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R13 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E14 (GPE/Nation/NAM/SPC), name="Denmark"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E14 (GPE/Nation/NAM/SPC), name="Denmark"
+- in document APW_ENG_20030331.0410:  score:  1.50000 out of 1.50000
+      ref extent="Denmark's national team"
+--------
+    ref relation APW_ENG_20030331.0410-R14 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R14 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.70000 out of 1.70000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+       Time-After ref arg: ID=APW_ENG_20030331.0410-T12 (TIM/---), extent="1993"
+       Time-After tst arg: ID=APW_ENG_20030331.0410-T12 (TIM/---), extent="1993"
+- in document APW_ENG_20030331.0410:  score:  1.70000 out of 1.70000
+      ref extent="Toefting joined the Danish squad in 1..."
+--------
+    ref relation APW_ENG_20030331.0410-R15 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R15 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E14 (GPE/Nation/NAM/SPC), name="Denmark"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E14 (GPE/Nation/NAM/SPC), name="Denmark"
+- in document APW_ENG_20030331.0410:  score:  1.50000 out of 1.50000
+      ref extent="the Danish squad"
+--------
+    ref relation APW_ENG_20030331.0410-R16 (PHYS/Located/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R16 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.20000 out of 1.20000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E23 (PER/Group/NOM/USP), head="teammates"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E23 (PER/Group/NOM/USP), head="teammates"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E15 (GPE/Populat/NAM/SPC), name="COPENHAGEN"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E15 (GPE/Populat/NAM/SPC), name="COPENHAGEN"
+      Time-Within ref arg: ID=APW_ENG_20030331.0410-T2 (TIM/---), extent="October 2002"
+      Time-Within tst arg: ID=APW_ENG_20030331.0410-T2 (TIM/---), extent="October 2002"
+- in document APW_ENG_20030331.0410:  score:  1.20000 out of 1.20000
+      ref extent="Toefting was convicted in October 200..."
+--------
+    ref relation APW_ENG_20030331.0410-R2 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R2 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E15 (GPE/Populat/NAM/SPC), name="COPENHAGEN"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E15 (GPE/Populat/NAM/SPC), name="COPENHAGEN"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E14 (GPE/Nation/NAM/SPC), name="Denmark"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E14 (GPE/Nation/NAM/SPC), name="Denmark"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref extent="COPENHAGEN, Denmark"
+--------
+    ref relation APW_ENG_20030331.0410-R3 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R3 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E14 (GPE/Nation/NAM/SPC), name="Denmark"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E14 (GPE/Nation/NAM/SPC), name="Denmark"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref extent="Former Danish international"
+--------
+    ref relation APW_ENG_20030331.0410-R4 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R4 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E27 (ORG/Media/NAM/SPC), name="TV2"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E27 (ORG/Media/NAM/SPC), name="TV2"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E14 (GPE/Nation/NAM/SPC), name="Denmark"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E14 (GPE/Nation/NAM/SPC), name="Denmark"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref extent="Denmark's TV2"
+--------
+    ref relation APW_ENG_20030331.0410-R5 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R5 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E21 (PER/Group/NOM/SPC), head="workers"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E21 (PER/Group/NOM/SPC), head="workers"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E22 (ORG/Commerc/NOM/SPC), head="restaurant"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E22 (ORG/Commerc/NOM/SPC), head="restaurant"
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000
+      ref extent="a pair of restaurant workers"
+--------
+    ref relation APW_ENG_20030331.0410-R6 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R6 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E23 (PER/Group/NOM/USP), head="teammates"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E23 (PER/Group/NOM/USP), head="teammates"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+- in document APW_ENG_20030331.0410:  score:  0.50000 out of 0.50000
+      ref extent="national squad teammates"
+--------
+    ref relation APW_ENG_20030331.0410-R7 (PHYS/Located/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R7 (PHYS/Located/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E15 (GPE/Populat/NAM/SPC), name="COPENHAGEN"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E15 (GPE/Populat/NAM/SPC), name="COPENHAGEN"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref extent="Toefting was convicted in October 200..."
+--------
+    ref relation APW_ENG_20030331.0410-R8 (PHYS/Located/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R8 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E21 (PER/Group/NOM/SPC), head="workers"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E21 (PER/Group/NOM/SPC), head="workers"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E15 (GPE/Populat/NAM/SPC), name="COPENHAGEN"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E15 (GPE/Populat/NAM/SPC), name="COPENHAGEN"
+- in document APW_ENG_20030331.0410:  score:  1.50000 out of 1.50000
+      ref extent="Toefting was convicted in October 200..."
+--------
+    ref relation APW_ENG_20030331.0410-R9 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation APW_ENG_20030331.0410-R9 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=APW_ENG_20030331.0410-E3 (ORG/Sports/NAM/SPC), name="Bolton"
+            Arg-1 tst arg: ID=APW_ENG_20030331.0410-E3 (ORG/Sports/NAM/SPC), name="Bolton"
+            Arg-2 ref arg: ID=APW_ENG_20030331.0410-E6 (GPE/Nation/NAM/SPC), name="English"
+            Arg-2 tst arg: ID=APW_ENG_20030331.0410-E6 (GPE/Nation/NAM/SPC), name="English"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref extent="English Premier League club"
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+GEN-AFF     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    35.32   0.00   0.00   0.00
+ORG-AFF     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    26.77   0.00   0.00   0.00
+PART-WH     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.45   0.00   0.00   0.00
+   PHYS     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.47   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    26.77   0.00   0.00   0.00
+Geograp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.43   0.00   0.00   0.00
+Located     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.47   0.00   0.00   0.00
+Org-Loc     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    35.32   0.00   0.00   0.00
+Subsidi     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.01   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Org-Loc     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    35.32   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    35.32   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    26.77   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    26.77   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.43   0.00   0.00   0.00
+Subsidi     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.01   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.45   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.47   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.47   0.00   0.00   0.00
+
+Relation Type confusion matrix for "newswire" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     5     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     5     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0     3     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       PHYS      0     0     0     0     0     0     3        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      0     0        0.0   0.0
+Org-Locatio      0     5        0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      5     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     1     0        0.0 100.0   0.0
+ Subsidiary      0     0     2        0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      3     0      100.0   0.0
+       Near      0     0        0.0   0.0
+
+Relation Modality confusion matrix for "newswire" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     16     0     0      100.0   0.0   0.0
+      Other      0     0     0        0.0   0.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=16/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted    16/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=16/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Org-Locatio  Employment     Located  Subsidiary Geographica 
+    Org-Location     5/31.2%      -           -           -           -     
+      Employment      -          5/31.2%      -           -           -     
+         Located      -           -          3/18.8%      -           -     
+      Subsidiary      -           -           -          2/12.5%      -     
+    Geographical      -           -           -           -          1/ 6.2%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=16/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified 
+     Unspecified    16/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=16/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    GEN-AFF     ORG-AFF  PART-WHOLE        PHYS 
+         GEN-AFF     5/31.2%      -           -           -     
+         ORG-AFF      -          5/31.2%      -           -     
+      PART-WHOLE      -           -          3/18.8%      -     
+            PHYS      -           -           -          3/18.8%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=34/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1  Time-After Time-Within 
+           Arg-2    16/47.1%      -           -           -     
+           Arg-1      -         16/47.1%      -           -     
+      Time-After      -           -          1/ 2.9%      -     
+     Time-Within      -           -           -          1/ 2.9%
+
+======== event mapping ========
+
+--------
+    ref event APW_ENG_20030331.0410-EV1 (Justice/Appeal/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV1 (Justice/Appeal/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+            Crime ref arg: ID=APW_ENG_20030331.0410-V2 (Cri/---), extent="assault"
+            Crime tst arg: ID=APW_ENG_20030331.0410-V2 (Cri/---), extent="assault"
+        Plaintiff ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+        Plaintiff tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref anchor="appeal", extent="Former Danish international Stig Toef..."
+      ref anchor="appealed", extent="He was sentenced to four months in pr..."
+      ref anchor="appeal", extent="Toefting's decision to drop his appeal"
+--------
+    ref event APW_ENG_20030331.0410-EV10 (Justice/Appeal/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV10 (Justice/Appeal/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+        Plaintiff ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+        Plaintiff tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000
+      ref anchor="appeal", extent="Toefting said English Premier League ..."
+--------
+    ref event APW_ENG_20030331.0410-EV11 (Personnel/Start-Position/Specific/Other/Positive/Future)
+    tst event APW_ENG_20030331.0410-EV11 (Personnel/Start-Position/Specific/Other/Positive/Future)
+      event score:  2.00000 out of 2.00000
+           Entity ref arg: ID=APW_ENG_20030331.0410-E3 (ORG/Sports/NAM/SPC), name="Bolton"
+           Entity tst arg: ID=APW_ENG_20030331.0410-E3 (ORG/Sports/NAM/SPC), name="Bolton"
+           Person ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+           Person tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref anchor="return", extent="Toefting would return to Bolton"
+--------
+    ref event APW_ENG_20030331.0410-EV12 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV12 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+      event score:  2.20000 out of 2.20000
+           Entity ref arg: ID=APW_ENG_20030331.0410-E3 (ORG/Sports/NAM/SPC), name="Bolton"
+           Entity tst arg: ID=APW_ENG_20030331.0410-E3 (ORG/Sports/NAM/SPC), name="Bolton"
+           Person ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+           Person tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+      Time-Within ref arg: ID=APW_ENG_20030331.0410-T8 (TIM/---), extent="February 2002"
+      Time-Within tst arg: ID=APW_ENG_20030331.0410-T8 (TIM/---), extent="February 2002"
+- in document APW_ENG_20030331.0410:  score:  2.20000 out of 2.20000
+      ref anchor="transferred", extent="Toefting transferred to Bolton in Feb..."
+--------
+    ref event APW_ENG_20030331.0410-EV13 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV13 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  2.20000 out of 2.20000
+           Entity ref arg: ID=APW_ENG_20030331.0410-E7 (ORG/Sports/NAM/SPC), name="Hamburg"
+           Entity tst arg: ID=APW_ENG_20030331.0410-E7 (ORG/Sports/NAM/SPC), name="Hamburg"
+           Person ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+           Person tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+      Time-Within ref arg: ID=APW_ENG_20030331.0410-T8 (TIM/---), extent="February 2002"
+      Time-Within tst arg: ID=APW_ENG_20030331.0410-T8 (TIM/---), extent="February 2002"
+- in document APW_ENG_20030331.0410:  score:  2.20000 out of 2.20000
+      ref anchor="transferred", extent="Toefting transferred to Bolton in Feb..."
+--------
+    ref event APW_ENG_20030331.0410-EV14 (Justice/Convict/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV14 (Justice/Convict/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+        Defendant ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+        Defendant tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000
+      ref anchor="convicted", extent="Toefting has been convicted"
+--------
+    ref event APW_ENG_20030331.0410-EV15 (Justice/Sentence/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV15 (Justice/Sentence/Specific/Asserted/Positive/Past)
+      event score:  2.20000 out of 2.20000
+            Crime ref arg: ID=APW_ENG_20030331.0410-V6 (Cri/---), extent="assaulting a fan who berated him for ..."
+            Crime tst arg: ID=APW_ENG_20030331.0410-V6 (Cri/---), extent="assaulting a fan who berated him for ..."
+        Defendant ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+        Defendant tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+      Time-Within ref arg: ID=APW_ENG_20030331.0410-T9 (TIM/---), extent="1999"
+      Time-Within tst arg: ID=APW_ENG_20030331.0410-T9 (TIM/---), extent="1999"
+- in document APW_ENG_20030331.0410:  score:  2.20000 out of 2.20000
+      ref anchor="sentence", extent="1999 he was given a 20-day suspended ..."
+--------
+    ref event APW_ENG_20030331.0410-EV16 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV16 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.50000 out of 1.50000
+         Attacker ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+         Attacker tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+           Target ref arg: ID=APW_ENG_20030331.0410-E10 (PER/Individ/NOM/SPC), head="fan"
+           Target tst arg: ID=APW_ENG_20030331.0410-E10 (PER/Individ/NOM/SPC), head="fan"
+- in document APW_ENG_20030331.0410:  score:  1.50000 out of 1.50000
+      ref anchor="assaulting", extent="he was given a 20-day suspended sente..."
+--------
+    ref event APW_ENG_20030331.0410-EV17 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV17 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  1.50000 out of 1.50000
+           Entity ref arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+           Entity tst arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+           Person ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+           Person tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+- in document APW_ENG_20030331.0410:  score:  1.50000 out of 1.50000
+      ref anchor="retired", extent="The popular player _ known for his te..."
+--------
+    ref event APW_ENG_20030331.0410-EV18 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV18 (Personnel/Start-Position/Specific/Asserted/Positive/Past)
+      event score:  1.70000 out of 1.70000
+           Entity ref arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+           Entity tst arg: ID=APW_ENG_20030331.0410-E24 (ORG/Sports/NOM/SPC), head="squad"
+           Person ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+           Person tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+      Time-Within ref arg: ID=APW_ENG_20030331.0410-T12 (TIM/---), extent="1993"
+      Time-Within tst arg: ID=APW_ENG_20030331.0410-T12 (TIM/---), extent="1993"
+- in document APW_ENG_20030331.0410:  score:  1.70000 out of 1.70000
+      ref anchor="joined", extent="Toefting joined the Danish squad in 1993"
+--------
+    ref event APW_ENG_20030331.0410-EV2 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV2 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+         Attacker ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+         Attacker tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+- in document APW_ENG_20030331.0410:  score:  1.00000 out of 1.00000
+      ref anchor="assault", extent="Former Danish international Stig Toef..."
+--------
+    ref event APW_ENG_20030331.0410-EV3 (Justice/Convict/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV3 (Justice/Convict/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+            Crime ref arg: ID=APW_ENG_20030331.0410-V2 (Cri/---), extent="assault"
+            Crime tst arg: ID=APW_ENG_20030331.0410-V2 (Cri/---), extent="assault"
+        Defendant ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+        Defendant tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref anchor="conviction", extent="Former Danish international Stig Toef..."
+--------
+    ref event APW_ENG_20030331.0410-EV4 (Justice/Sentence/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV4 (Justice/Sentence/Specific/Asserted/Positive/Past)
+      event score:  3.00000 out of 3.00000
+            Crime ref arg: ID=APW_ENG_20030331.0410-V2 (Cri/---), extent="assault"
+            Crime tst arg: ID=APW_ENG_20030331.0410-V2 (Cri/---), extent="assault"
+        Defendant ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+        Defendant tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+         Sentence ref arg: ID=APW_ENG_20030331.0410-V3 (Sen/---), extent="a four-month jail sentence"
+         Sentence tst arg: ID=APW_ENG_20030331.0410-V3 (Sen/---), extent="a four-month jail sentence"
+- in document APW_ENG_20030331.0410:  score:  3.00000 out of 3.00000
+      ref anchor="sentence", extent="Former Danish international Stig Toef..."
+--------
+    ref event APW_ENG_20030331.0410-EV5 (Justice/Convict/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV5 (Justice/Convict/Specific/Asserted/Positive/Past)
+      event score:  2.20000 out of 2.20000
+            Crime ref arg: ID=APW_ENG_20030331.0410-V4 (Cri/---), extent="assaulting a pair of restaurant worke..."
+            Crime tst arg: ID=APW_ENG_20030331.0410-V4 (Cri/---), extent="assaulting a pair of restaurant worke..."
+        Defendant ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+        Defendant tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+      Time-Within ref arg: ID=APW_ENG_20030331.0410-T2 (TIM/---), extent="October 2002"
+      Time-Within tst arg: ID=APW_ENG_20030331.0410-T2 (TIM/---), extent="October 2002"
+- in document APW_ENG_20030331.0410:  score:  2.20000 out of 2.20000
+      ref anchor="convicted", extent="Toefting was convicted in October 200..."
+--------
+    ref event APW_ENG_20030331.0410-EV6 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV6 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.70000 out of 1.70000
+         Attacker ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+         Attacker tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+           Target ref arg: ID=APW_ENG_20030331.0410-E21 (PER/Group/NOM/SPC), head="workers"
+           Target tst arg: ID=APW_ENG_20030331.0410-E21 (PER/Group/NOM/SPC), head="workers"
+      Time-Within ref arg: ID=APW_ENG_20030331.0410-T3 (TIM/---), extent="a night"
+      Time-Within tst arg: ID=APW_ENG_20030331.0410-T3 (TIM/---), extent="a night"
+- in document APW_ENG_20030331.0410:  score:  1.70000 out of 1.70000
+      ref anchor="assaulting", extent="Toefting was convicted in October 200..."
+--------
+    ref event APW_ENG_20030331.0410-EV7 (Justice/Sentence/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV7 (Justice/Sentence/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+        Defendant ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+        Defendant tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+         Sentence ref arg: ID=APW_ENG_20030331.0410-V5 (Sen/---), extent="four months in prison"
+         Sentence tst arg: ID=APW_ENG_20030331.0410-V5 (Sen/---), extent="four months in prison"
+- in document APW_ENG_20030331.0410:  score:  2.00000 out of 2.00000
+      ref anchor="sentenced", extent="He was sentenced to four months in pr..."
+      ref anchor="sentence", extent="Toefting's lawyer Anders Nemeth, repo..."
+      ref anchor="sentence", extent="Toefting would return to Bolton after..."
+--------
+    ref event APW_ENG_20030331.0410-EV8 (Justice/Trial-Hearing/Specific/Asserted/Positive/Future)
+    tst event APW_ENG_20030331.0410-EV8 (Justice/Trial-Hearing/Specific/Asserted/Positive/Future)
+      event score:  0.20000 out of 0.20000
+      Time-Within ref arg: ID=APW_ENG_20030331.0410-T5 (TIM/---), extent="April 10"
+      Time-Within tst arg: ID=APW_ENG_20030331.0410-T5 (TIM/---), extent="April 10"
+- in document APW_ENG_20030331.0410:  score:  0.20000 out of 0.20000
+      ref anchor="hearing", extent="hearing was scheduled for April 10"
+--------
+    ref event APW_ENG_20030331.0410-EV9 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+    tst event APW_ENG_20030331.0410-EV9 (Personnel/End-Position/Specific/Asserted/Positive/Past)
+      event score:  2.20000 out of 2.20000
+           Entity ref arg: ID=APW_ENG_20030331.0410-E3 (ORG/Sports/NAM/SPC), name="Bolton"
+           Entity tst arg: ID=APW_ENG_20030331.0410-E3 (ORG/Sports/NAM/SPC), name="Bolton"
+           Person ref arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+           Person tst arg: ID=APW_ENG_20030331.0410-E19 (PER/Individ/NAM/SPC), name="Stig Toefting"
+      Time-Within ref arg: ID=APW_ENG_20030331.0410-T7 (TIM/---), extent="Earlier this month"
+      Time-Within tst arg: ID=APW_ENG_20030331.0410-T7 (TIM/---), extent="Earlier this month"
+- in document APW_ENG_20030331.0410:  score:  2.20000 out of 2.20000
+      ref anchor="go", extent="Earlier this month, Toefting said Eng..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Conflic     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.29   0.00   0.00   0.00
+Justice     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    49.37   0.00   0.00   0.00
+Personn     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    37.34   0.00   0.00   0.00
+  total    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    93.67   0.00   0.00   0.00
+  Other     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.33   0.00   0.00   0.00
+  total    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Appeal     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.49   0.00   0.00   0.00
+ Attack     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.29   0.00   0.00   0.00
+Convict     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.46   0.00   0.00   0.00
+End-Pos     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.67   0.00   0.00   0.00
+Sentenc     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.78   0.00   0.00   0.00
+Start-P     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.67   0.00   0.00   0.00
+Trial-H     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.63   0.00   0.00   0.00
+  total    18     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Conflict:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.29   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.29   0.00   0.00   0.00
+
+Performance statistics for TYPE = Justice:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Appeal     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.49   0.00   0.00   0.00
+Convict     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.46   0.00   0.00   0.00
+Sentenc     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.78   0.00   0.00   0.00
+Trial-H     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.63   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    49.37   0.00   0.00   0.00
+
+Performance statistics for TYPE = Personnel:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+End-Pos     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.67   0.00   0.00   0.00
+Start-P     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.67   0.00   0.00   0.00
+  total     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    37.34   0.00   0.00   0.00
+
+Event Type confusion matrix for "newswire" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     3     0     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     9     0     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     6     0        0.0   0.0   0.0   0.0   0.0   0.0 100.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Confl COUNT......    PERCENT......
+    ref\tst: Attac Demon      Attac Demon 
+     Attack      3     0      100.0   0.0
+Demonstrate      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Justi COUNT........................................................................    PERCENT........................................................................
+    ref\tst: Acqui Appea Arres Charg Convi Execu Extra  Fine Pardo Relea Sente   Sue Trial      Acqui Appea Arres Charg Convi Execu Extra  Fine Pardo Relea Sente   Sue Trial 
+     Acquit      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+     Appeal      0     2     0     0     0     0     0     0     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Arrest-Jail      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Charge-Indi      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Convict      0     0     0     0     3     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Execute      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Extradite      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Fine      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+     Pardon      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Release-Par      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Sentence      0     0     0     0     0     0     0     0     0     0     3     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+        Sue      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Trial-Heari      0     0     0     0     0     0     0     0     0     0     0     0     1        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Perso COUNT..................    PERCENT..................
+    ref\tst: Elect End-P Nomin Start      Elect End-P Nomin Start 
+      Elect      0     0     0     0        0.0   0.0   0.0   0.0
+End-Positio      0     3     0     0        0.0 100.0   0.0   0.0
+   Nominate      0     0     0     0        0.0   0.0   0.0   0.0
+Start-Posit      0     0     0     3        0.0   0.0   0.0 100.0
+
+Event Modality confusion matrix for "newswire" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted     17     0      100.0   0.0
+      Other      0     1        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=18/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific 
+        Specific    18/99.9%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=18/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted    17/94.4%      -     
+           Other      -          1/ 5.6%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=18/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive 
+        Positive    18/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=18/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Start-Posit      Attack End-Positio    Sentence     Convict      Appeal Trial-Heari 
+  Start-Position     3/16.7%      -           -           -           -           -           -     
+          Attack      -          3/16.7%      -           -           -           -           -     
+    End-Position      -           -          3/16.7%      -           -           -           -     
+        Sentence      -           -           -          3/16.7%      -           -           -     
+         Convict      -           -           -           -          3/16.7%      -           -     
+          Appeal      -           -           -           -           -          2/11.1%      -     
+   Trial-Hearing      -           -           -           -           -           -          1/ 5.6%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=18/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past      Future 
+            Past    16/88.9%      -     
+          Future      -          2/11.1%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=18/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Justice   Personnel    Conflict 
+         Justice     9/50.0%      -           -     
+       Personnel      -          6/33.3%      -     
+        Conflict      -           -          3/16.7%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=40/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Time-Within      Entity   Defendant      Person       Crime    Attacker      Target    Sentence  all others 
+     Time-Within     8/20.0%      -           -           -           -           -           -           -           -     
+          Entity      -          6/15.0%      -           -           -           -           -           -           -     
+       Defendant      -           -          6/15.0%      -           -           -           -           -           -     
+          Person      -           -           -          6/15.0%      -           -           -           -           -     
+           Crime      -           -           -           -          5/12.5%      -           -           -           -     
+        Attacker      -           -           -           -           -          3/ 7.5%      -           -           -     
+          Target      -           -           -           -           -           -          2/ 5.0%      -           -     
+        Sentence      -           -           -           -           -           -           -          2/ 5.0%      -     
+      all others      -           -           -           -           -           -           -           -          2/ 5.0%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 APW_ENG_20030331.0410-T1, ID=APW_ENG_20030331.0410-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T1, ID=APW_ENG_20030331.0410-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="Monday"
+--------
+    ref timex2 APW_ENG_20030331.0410-T10, ID=APW_ENG_20030331.0410-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T10, ID=APW_ENG_20030331.0410-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="20-day"
+--------
+    ref timex2 APW_ENG_20030331.0410-T11, ID=APW_ENG_20030331.0410-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T11, ID=APW_ENG_20030331.0410-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="2002"
+--------
+    ref timex2 APW_ENG_20030331.0410-T12, ID=APW_ENG_20030331.0410-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T12, ID=APW_ENG_20030331.0410-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="1993"
+--------
+    ref timex2 APW_ENG_20030331.0410-T13, ID=APW_ENG_20030331.0410-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T13, ID=APW_ENG_20030331.0410-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="20030331"
+--------
+    ref timex2 APW_ENG_20030331.0410-T2, ID=APW_ENG_20030331.0410-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T2, ID=APW_ENG_20030331.0410-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="October 2002"
+--------
+    ref timex2 APW_ENG_20030331.0410-T3, ID=APW_ENG_20030331.0410-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T3, ID=APW_ENG_20030331.0410-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="a night"
+--------
+    ref timex2 APW_ENG_20030331.0410-T4, ID=APW_ENG_20030331.0410-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T4, ID=APW_ENG_20030331.0410-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="four months"
+--------
+    ref timex2 APW_ENG_20030331.0410-T5, ID=APW_ENG_20030331.0410-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T5, ID=APW_ENG_20030331.0410-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="April 10"
+--------
+    ref timex2 APW_ENG_20030331.0410-T6, ID=APW_ENG_20030331.0410-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T6, ID=APW_ENG_20030331.0410-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="33-year"
+--------
+    ref timex2 APW_ENG_20030331.0410-T7, ID=APW_ENG_20030331.0410-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T7, ID=APW_ENG_20030331.0410-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="Earlier this month"
+--------
+    ref timex2 APW_ENG_20030331.0410-T8, ID=APW_ENG_20030331.0410-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T8, ID=APW_ENG_20030331.0410-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="February 2002"
+--------
+    ref timex2 APW_ENG_20030331.0410-T9, ID=APW_ENG_20030331.0410-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 APW_ENG_20030331.0410-T9, ID=APW_ENG_20030331.0410-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document APW_ENG_20030331.0410:
+          mention="1999"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    13/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    13/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=13/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---    13/99.9%
+
+======== value mapping ========
+
+--------
+    ref value APW_ENG_20030331.0410-V1, ID=APW_ENG_20030331.0410-V1, TYPE=Job-Title
+    tst value APW_ENG_20030331.0410-V1, ID=APW_ENG_20030331.0410-V1, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:
+          mention="Danish international"
+--------
+    ref value APW_ENG_20030331.0410-V2, ID=APW_ENG_20030331.0410-V2, TYPE=Crime
+    tst value APW_ENG_20030331.0410-V2, ID=APW_ENG_20030331.0410-V2, TYPE=Crime
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:
+          mention="assault"
+--------
+    ref value APW_ENG_20030331.0410-V3, ID=APW_ENG_20030331.0410-V3, TYPE=Sentence
+    tst value APW_ENG_20030331.0410-V3, ID=APW_ENG_20030331.0410-V3, TYPE=Sentence
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:
+          mention="a four-month jail sentence"
+--------
+    ref value APW_ENG_20030331.0410-V4, ID=APW_ENG_20030331.0410-V4, TYPE=Crime
+    tst value APW_ENG_20030331.0410-V4, ID=APW_ENG_20030331.0410-V4, TYPE=Crime
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:
+          mention="assaulting a pair of restaurant worke..."
+--------
+    ref value APW_ENG_20030331.0410-V5, ID=APW_ENG_20030331.0410-V5, TYPE=Sentence
+    tst value APW_ENG_20030331.0410-V5, ID=APW_ENG_20030331.0410-V5, TYPE=Sentence
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:
+          mention="four months in prison"
+--------
+    ref value APW_ENG_20030331.0410-V6, ID=APW_ENG_20030331.0410-V6, TYPE=Crime
+    tst value APW_ENG_20030331.0410-V6, ID=APW_ENG_20030331.0410-V6, TYPE=Crime
+      value score:  1.00000 out of 1.00000
+- in document APW_ENG_20030331.0410:
+          mention="assaulting a fan who berated him for ..."
+
+======== value scoring ========
+
+Value Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=6/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Crime    Sentence   Job-Title 
+           Crime     3/50.0%      -           -     
+        Sentence      -          2/33.3%      -     
+       Job-Title      -           -          1/16.7%
+
+data input:               0.38 secs to load data
+entity eval:              0.05 secs to compute values,    0.01 secs to map,    0.03 secs to score
+relation eval:            0.08 secs to compute values,    0.01 secs to map,    0.04 secs to score
+event eval:               0.16 secs to compute values,    0.02 secs to map,    0.04 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.01 secs to compute values,    0.00 secs to map,    0.00 secs to score
+value eval:               0.00 secs to compute values,    0.01 secs to map,    0.01 secs to score
+########

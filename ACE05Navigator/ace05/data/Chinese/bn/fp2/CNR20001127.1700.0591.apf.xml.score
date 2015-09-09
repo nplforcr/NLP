@@ -1,0 +1,1691 @@
+command line (run on 2005 Aug 21 at 02:14:16):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score48300 -t /tmp/score48300
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity CNR20001127.1700.0591-E1 (FAC/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E1 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="罗浮海关" (NAM/FAC/LIT)
+         ref name="罗浮海关"
+--------
+    ref entity CNR20001127.1700.0591-E10 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E10 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="珠海" (NAM/GPE/LIT)
+      ref mention="珠海" (NAM/GPE/LIT)
+         ref name="珠海"
+         ref name="珠海"
+--------
+    ref entity CNR20001127.1700.0591-E11 (LOC/NOM/USP)
+    tst entity CNR20001127.1700.0591-E11 (LOC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (LOC/NOM/USP)
+      ref mention="内地" (NOM/LOC/LIT)
+      ref mention="内 地" (NOM/LOC/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E12 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E12 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="台" (NAM/GPE/LIT)
+      ref mention="台湾" (NAM/GPE/LIT)
+      ref mention="同胞" (NOM/PER/LIT)
+      ref mention="台湾" (NAM/LOC/LIT)
+      ref mention="台湾" (NAM/GPE/LIT)
+      ref mention="同胞" (NOM/PER/LIT)
+      ref mention="台 湾" (NAM/GPE/LIT)
+      ref mention="同胞" (NOM/PER/LIT)
+      ref mention="台湾" (NAM/GPE/LIT)
+      ref mention="台湾" (NAM/GPE/LIT)
+      ref mention="台湾" (NAM/GPE/LIT)
+      ref mention="台湾" (NAM/GPE/LIT)
+      ref mention="台湾" (NAM/GPE/LIT)
+         ref name="台"
+         ref name="台湾"
+         ref name="台湾"
+         ref name="台湾"
+         ref name="台 湾"
+         ref name="台湾"
+         ref name="台湾"
+         ref name="台湾"
+         ref name="台湾"
+         ref name="台湾"
+--------
+    ref entity CNR20001127.1700.0591-E13 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E13 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="澳" (NAM/GPE/LIT)
+      ref mention="澳" (NAM/GPE/LIT)
+      ref mention="澳" (NAM/GPE/LIT)
+         ref name="澳"
+         ref name="澳"
+         ref name="澳"
+--------
+    ref entity CNR20001127.1700.0591-E14 (GPE/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E14 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="地区" (NOM/GPE/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E15 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E15 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="祖国" (NOM/GPE/LIT)
+      ref mention="国" (NOM/GPE/LIT)
+      ref mention="祖国" (NOM/GPE/LIT)
+      ref mention="祖国" (NOM/GPE/LIT)
+      ref mention="祖国" (NOM/GPE/LIT)
+      ref mention="中国" (NAM/GPE/LIT)
+      ref mention="祖国" (NOM/GPE/LIT)
+      ref mention="祖国" (NOM/GPE/LIT)
+      ref mention="祖国" (NOM/GPE/LIT)
+      ref mention="祖国" (NOM/GPE/LIT)
+         ref name="中国"
+--------
+    ref entity CNR20001127.1700.0591-E16 (LOC/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E16 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="深圳经济特区" (NAM/LOC/LIT)
+      ref mention="经济特区" (NAM/LOC/LIT)
+         ref name="深圳经济特区"
+         ref name="经济特区"
+--------
+    ref entity CNR20001127.1700.0591-E17 (PER/NOM/USP)
+    tst entity CNR20001127.1700.0591-E17 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="外商" (NOM/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E18 (PER/NOM/USP)
+    tst entity CNR20001127.1700.0591-E18 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="港商" (NOM/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E19 (ORG/NOM/GEN)
+    tst entity CNR20001127.1700.0591-E19 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="企业" (NOM/ORG/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E2 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E2 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="罗湖区" (NAM/GPE/LIT)
+         ref name="罗湖区"
+--------
+    ref entity CNR20001127.1700.0591-E20 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E20 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="深圳" (NAM/GPE/LIT)
+      ref mention="深圳" (NAM/GPE/LIT)
+      ref mention="深圳" (NAM/GPE/LIT)
+      ref mention="深圳" (NAM/GPE/LIT)
+      ref mention="深圳" (NAM/GPE/LIT)
+      ref mention="深圳" (NAM/GPE/LIT)
+      ref mention="深圳" (NAM/GPE/LIT)
+      ref mention="深圳" (NAM/GPE/LIT)
+      ref mention="人民" (NOM/PER/LIT)
+         ref name="深圳"
+         ref name="深圳"
+         ref name="深圳"
+         ref name="深圳"
+         ref name="深圳"
+         ref name="深圳"
+         ref name="深圳"
+         ref name="深圳"
+--------
+    ref entity CNR20001127.1700.0591-E21 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E21 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="大陆" (NOM/GPE/LIT)
+      ref mention="大陆" (NOM/GPE/LIT)
+      ref mention="陆" (NAM/LOC/LIT)
+      ref mention="大陆" (NOM/LOC/LIT)
+      ref mention="大陆" (NOM/GPE/LIT)
+      ref mention="大陆" (NOM/GPE/LIT)
+         ref name="陆"
+--------
+    ref entity CNR20001127.1700.0591-E22 (GPE/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E22 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="同胞" (NOM/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E23 (LOC/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E23 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="厦门特区" (NAM/LOC/LIT)
+      ref mention="厦门特区" (NAM/LOC/LIT)
+      ref mention="地区" (NOM/LOC/LIT)
+         ref name="厦门特区"
+         ref name="厦门特区"
+--------
+    ref entity CNR20001127.1700.0591-E24 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E24 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="福建" (NAM/GPE/LIT)
+         ref name="福建"
+--------
+    ref entity CNR20001127.1700.0591-E25 (PER/PRO/USP)
+    tst entity CNR20001127.1700.0591-E25 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="80%祖" (PRO/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E26 (FAC/PRO/USP)
+    tst entity CNR20001127.1700.0591-E26 (FAC/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (FAC/PRO/USP)
+      ref mention="1/ 10" (PRO/FAC/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E28 (GPE/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E28 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="两岸" (NOM/GPE/LIT)
+      ref mention="两岸" (NOM/LOC/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E3 (FAC/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E3 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="住 宅楼" (NOM/FAC/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E30 (ORG/PRO/SPC)
+    tst entity CNR20001127.1700.0591-E30 (ORG/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document CNR20001127.1700.0591:  score:  0.10000 out of 0.10000  (ORG/PRO/SPC)
+      ref mention="半数" (PRO/ORG/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E31 (PER/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E31 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="同胞" (NOM/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E32 (PER/PRO/SPC)
+    tst entity CNR20001127.1700.0591-E32 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document CNR20001127.1700.0591:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="一半以上" (PRO/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E33 (PER/NOM/GEN)
+    tst entity CNR20001127.1700.0591-E33 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="台商" (NOM/PER/LIT)
+      ref mention="台商" (NOM/PER/LIT)
+      ref mention="台商" (NOM/PER/LIT)
+      ref mention="台商" (NOM/PER/LIT)
+      ref mention="台商" (NOM/PER/LIT)
+      ref mention="台商" (NOM/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E34 (LOC/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E34 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="吉美" (NAM/LOC/LIT)
+         ref name="吉美"
+--------
+    ref entity CNR20001127.1700.0591-E35 (LOC/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E35 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="杏林" (NAM/LOC/LIT)
+         ref name="杏林"
+--------
+    ref entity CNR20001127.1700.0591-E36 (LOC/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E36 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="海汤" (NAM/LOC/LIT)
+      ref mention="投资区" (NOM/LOC/LIT)
+      ref mention="海汤" (NAM/LOC/LIT)
+      ref mention="市区" (NOM/LOC/LIT)
+         ref name="海汤"
+         ref name="海汤"
+--------
+    ref entity CNR20001127.1700.0591-E37 (LOC/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E37 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="投资区" (NOM/LOC/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E38 (LOC/NOM/GEN)
+    tst entity CNR20001127.1700.0591-E38 (LOC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (LOC/NOM/GEN)
+      ref mention="投资区" (NOM/LOC/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E4 (PER/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E4 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="住户" (NOM/PER/LIT)
+      ref mention="香港人" (NOM/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E42 (LOC/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E42 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="海汤新 港区" (NAM/LOC/LIT)
+      ref mention="热点" (NOM/LOC/LIT)
+         ref name="海汤新 港区"
+--------
+    ref entity CNR20001127.1700.0591-E43 (VEH/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E43 (VEH/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (VEH/NOM/SPC)
+      ref mention="船" (NOM/VEH/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E44 (VEH/NOM/GEN)
+    tst entity CNR20001127.1700.0591-E44 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="集装箱" (NOM/VEH/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E46 (ORG/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E46 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="巨子" (NOM/ORG/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E47 (ORG/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E47 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="龙玉集团" (NAM/ORG/LIT)
+         ref name="龙玉集团"
+--------
+    ref entity CNR20001127.1700.0591-E48 (ORG/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E48 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="统一集团" (NAM/ORG/LIT)
+         ref name="统一集团"
+--------
+    ref entity CNR20001127.1700.0591-E49 (ORG/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E49 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="宏基电脑" (NAM/ORG/LIT)
+         ref name="宏基电脑"
+--------
+    ref entity CNR20001127.1700.0591-E50 (ORG/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E50 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="企业集团" (NOM/ORG/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E51 (ORG/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E51 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="企业" (NOM/ORG/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E52 (PER/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E52 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="台商" (NOM/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E53 (PER/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E53 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="人士" (NOM/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E54 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E54 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="嘉易" (NAM/GPE/LIT)
+      ref mention="嘉 易" (NAM/GPE/LIT)
+         ref name="嘉易"
+         ref name="嘉 易"
+--------
+    ref entity CNR20001127.1700.0591-E55 (ORG/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E55 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="当局" (NOM/ORG/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E56 (PER/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E56 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="记者" (NOM/PER/LIT)
+      ref mention="记者" (NOM/PER/LIT)
+      ref mention="我们" (PRO/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E57 (LOC/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E57 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="特区" (NOM/LOC/LIT)
+      ref mention="特区" (NOM/LOC/LIT)
+      ref mention="特区" (NAM/LOC/LIT)
+      ref mention="桥头堡" (NOM/LOC/LIT)
+      ref mention="经济特区" (NOM/LOC/LIT)
+      ref mention="经济特区" (NOM/LOC/LIT)
+      ref mention="特区" (NOM/LOC/LIT)
+         ref name="特区"
+--------
+    ref entity CNR20001127.1700.0591-E59 (ORG/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E59 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="中央台" (NAM/ORG/LIT)
+         ref name="中央台"
+--------
+    ref entity CNR20001127.1700.0591-E6 (FAC/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E6 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="楼房" (NOM/FAC/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E60 (ORG/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E60 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="企业" (NOM/ORG/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E62 (PER/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E62 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="杜昌华" (NAM/PER/LIT)
+         ref name="杜昌华"
+--------
+    ref entity CNR20001127.1700.0591-E63 (PER/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E63 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="石敏" (NAM/PER/LIT)
+         ref name="石敏"
+--------
+    ref entity CNR20001127.1700.0591-E64 (FAC/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E64 (FAC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (FAC/NAM/SPC)
+      ref mention="深圳机场" (NAM/FAC/LIT)
+         ref name="深圳机场"
+--------
+    ref entity CNR20001127.1700.0591-E65 (LOC/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E65 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="市区" (NOM/LOC/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E66 (FAC/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E66 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="公路" (NOM/FAC/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E67 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E67 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="香港" (NAM/GPE/LIT)
+      ref mention="港" (NAM/LOC/LIT)
+      ref mention="香港" (NAM/LOC/LIT)
+      ref mention="港" (NAM/GPE/LIT)
+      ref mention="香港" (NAM/LOC/LIT)
+      ref mention="香 港" (NAM/GPE/LIT)
+      ref mention="香港" (NAM/LOC/LIT)
+      ref mention="香港" (NAM/GPE/LIT)
+      ref mention="港" (NAM/GPE/LIT)
+      ref mention="香港" (NAM/GPE/LIT)
+      ref mention="港" (NAM/GPE/LIT)
+         ref name="香港"
+         ref name="港"
+         ref name="香港"
+         ref name="港"
+         ref name="香港"
+         ref name="香 港"
+         ref name="香港"
+         ref name="香港"
+         ref name="港"
+         ref name="香港"
+         ref name="港"
+--------
+    ref entity CNR20001127.1700.0591-E68 (GPE/NOM/SPC)
+    tst entity CNR20001127.1700.0591-E68 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNR20001127.1700.0591:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="两地" (NOM/GPE/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E69 (VEH/NOM/USP)
+    tst entity CNR20001127.1700.0591-E69 (VEH/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (VEH/NOM/USP)
+      ref mention="汽车" (NOM/VEH/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E7 (PER/NOM/USP)
+    tst entity CNR20001127.1700.0591-E7 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="香港人" (NOM/PER/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E70 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E70 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="广东" (NAM/GPE/LIT)
+         ref name="广东"
+--------
+    ref entity CNR20001127.1700.0591-E71 (LOC/NOM/USP)
+    tst entity CNR20001127.1700.0591-E71 (LOC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (LOC/NOM/USP)
+      ref mention="各地" (NOM/LOC/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E72 (VEH/NOM/USP)
+    tst entity CNR20001127.1700.0591-E72 (VEH/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000  (VEH/NOM/USP)
+      ref mention="卡 车" (NOM/VEH/LIT)
+--------
+    ref entity CNR20001127.1700.0591-E8 (PER/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E8 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="邓小平" (NAM/PER/LIT)
+      ref mention="同志" (NOM/PER/LIT)
+         ref name="邓小平"
+--------
+    ref entity CNR20001127.1700.0591-E9 (GPE/NAM/SPC)
+    tst entity CNR20001127.1700.0591-E9 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="厦门" (NAM/GPE/LIT)
+      ref mention="厦门" (NAM/GPE/LIT)
+      ref mention="地区" (NOM/GPE/LIT)
+      ref mention="厦门" (NAM/GPE/LIT)
+      ref mention="第一站" (NOM/GPE/LIT)
+      ref mention="厦门" (NAM/LOC/LIT)
+      ref mention="厦门" (NAM/LOC/LIT)
+      ref mention="厦门" (NAM/GPE/LIT)
+      ref mention="厦门" (NAM/LOC/LIT)
+      ref mention="厦门" (NAM/GPE/LIT)
+      ref mention="厦门" (NAM/GPE/LIT)
+         ref name="厦门"
+         ref name="厦门"
+         ref name="厦门"
+         ref name="厦门"
+         ref name="厦门"
+         ref name="厦门"
+         ref name="厦门"
+         ref name="厦门"
+         ref name="厦门"
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    FAC     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.16   0.00   0.00   0.00
+    GPE    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.65   0.00   0.00   0.00
+    LOC    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.94   0.00   0.00   0.00
+    ORG    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.28   0.00   0.00   0.00
+    PER    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.66   0.00   0.00   0.00
+    VEH     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+  total    63     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    73.30   0.00   0.00   0.00
+    NOM    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    26.18   0.00   0.00   0.00
+    PRO     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.52   0.00   0.00   0.00
+  total    63     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.52   0.00   0.00   0.00
+0.2-0.5    20     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    26.18   0.00   0.00   0.00
+0.5-1.0    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    73.30   0.00   0.00   0.00
+  total    63     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    43     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    56.81   0.00   0.00   0.00
+      2     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.71   0.00   0.00   0.00
+    3-4     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.16   0.00   0.00   0.00
+    5-8     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.24   0.00   0.00   0.00
+     >8     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.09   0.00   0.00   0.00
+  total    63     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    50     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    63     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    63     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    63     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Airport     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.62   0.00   0.00   0.00
+Buildin     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.24   0.00   0.00   0.00
+Commerc     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.35   0.00   0.00   0.00
+Governm     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+  Group    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.50   0.00   0.00   0.00
+Individ     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.16   0.00   0.00   0.00
+   Land     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  Media     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.62   0.00   0.00   0.00
+ Nation     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.62   0.00   0.00   0.00
+   Path     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+Populat    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.25   0.00   0.00   0.00
+Region-    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.94   0.00   0.00   0.00
+Special     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.54   0.00   0.00   0.00
+State-o     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.24   0.00   0.00   0.00
+Subarea     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  Water     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+  total    63     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = FAC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Airport     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.62   0.00   0.00   0.00
+Buildin     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.24   0.00   0.00   0.00
+   Path     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+  total     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.16   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Nation     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.62   0.00   0.00   0.00
+Populat    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    22.25   0.00   0.00   0.00
+Special     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.54   0.00   0.00   0.00
+State-o     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.24   0.00   0.00   0.00
+  total    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.65   0.00   0.00   0.00
+
+Performance statistics for TYPE = LOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Region-    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.94   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.94   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    13.35   0.00   0.00   0.00
+Governm     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+  Media     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.62   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.28   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.50   0.00   0.00   0.00
+Individ     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.16   0.00   0.00   0.00
+  total    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.66   0.00   0.00   0.00
+
+Performance statistics for TYPE = VEH:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Land     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Subarea     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  Water     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.31   0.00   0.00   0.00
+
+Entity Type confusion matrix for "broadcast news" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            6     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    16     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    12     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    11     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    14     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     4     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=63/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         USP         GEN 
+             SPC    50/79.4%      -           -     
+             USP      -          9/14.3%      -     
+             GEN      -           -          4/ 6.3%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=63/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Region-Gene Population-       Group  Commercial Building-Gr  Individual     Special        Land  all others 
+  Region-General    12/19.0%      -           -           -           -           -           -           -           -     
+  Population-Cen      -         10/15.9%      -           -           -           -           -           -           -     
+           Group      -           -         10/15.9%      -           -           -           -           -           -     
+      Commercial      -           -           -          9/14.3%      -           -           -           -           -     
+  Building-Groun      -           -           -           -          4/ 6.3%      -           -           -           -     
+      Individual      -           -           -           -           -          4/ 6.3%      -           -           -     
+         Special      -           -           -           -           -           -          3/ 4.8%      -           -     
+            Land      -           -           -           -           -           -           -          2/ 3.2%      -     
+      all others      -           -           -           -           -           -           -           -          9/14.3%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=63/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        GPE         PER         LOC         ORG         FAC         VEH 
+             GPE    16/25.4%      -           -           -           -           -     
+             PER      -         14/22.2%      -           -           -           -     
+             LOC      -           -         12/19.0%      -           -           -     
+             ORG      -           -           -         11/17.5%      -           -     
+             FAC      -           -           -           -          6/ 9.5%      -     
+             VEH      -           -           -           -           -          4/ 6.3%
+
+Entity Class confusion matrix for "broadcast news" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           50     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     4     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0     9        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     2        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0    50        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0    10        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0     4        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0     3        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    69        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    69        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    71        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0     5        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   145        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   145        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   145        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     6        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0    59        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0    37        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    11        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    28        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     4        0.0   0.0      0.0   0.0 100.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   145        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "broadcast news" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            6     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    59     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    37     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    11     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    28     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     4     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "broadcast news" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          145     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation CNR20001127.1700.0591-R1 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R1 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E56 (PER/Group/NOM/SPC), head="我们"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E56 (PER/Group/NOM/SPC), head="我们"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E59 (ORG/Media/NAM/SPC), name="中央台"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E59 (ORG/Media/NAM/SPC), name="中央台"
+- in document CNR20001127.1700.0591:  score:  1.50000 out of 1.50000
+      ref extent="中央台记者"
+--------
+    ref relation CNR20001127.1700.0591-R10 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R10 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E25 (PER/Group/PRO/USP), head="80%祖"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E25 (PER/Group/PRO/USP), head="80%祖"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000
+      ref extent="台湾 同胞80%祖"
+--------
+    ref relation CNR20001127.1700.0591-R11 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R11 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E25 (PER/Group/PRO/USP), head="80%祖"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E25 (PER/Group/PRO/USP), head="80%祖"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E24 (GPE/State-o/NAM/SPC), name="福建"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E24 (GPE/State-o/NAM/SPC), name="福建"
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000
+      ref extent="台湾 同胞80%祖籍福建"
+--------
+    ref relation CNR20001127.1700.0591-R12 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R12 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E21 (GPE/Special/NAM/SPC), name="陆"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E21 (GPE/Special/NAM/SPC), name="陆"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E15 (GPE/Nation/NAM/SPC), name="中国"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E15 (GPE/Nation/NAM/SPC), name="中国"
+- in document CNR20001127.1700.0591:  score:  2.00000 out of 2.00000
+      ref extent="祖国大陆"
+      ref extent="祖国大陆"
+      ref extent="祖国大陆"
+--------
+    ref relation CNR20001127.1700.0591-R13 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R13 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E21 (GPE/Special/NAM/SPC), name="陆"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E21 (GPE/Special/NAM/SPC), name="陆"
+- in document CNR20001127.1700.0591:  score:  2.00000 out of 2.00000
+      ref extent="台湾 同胞80%祖籍福建，而厦..."
+--------
+    ref relation CNR20001127.1700.0591-R14 (GEN-AFF/Org-Location/Asserted/Past)
+    tst relation CNR20001127.1700.0591-R14 (GEN-AFF/Org-Location/Asserted/Past)
+      relation score:  1.30000 out of 1.30000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E30 (ORG/Commerc/PRO/SPC), head="半数"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E30 (ORG/Commerc/PRO/SPC), head="半数"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+      Time-Before ref arg: ID=CNR20001127.1700.0591-T9 (TIM/---), extent="1990年"
+      Time-Before tst arg: ID=CNR20001127.1700.0591-T9 (TIM/---), extent="1990年"
+- in document CNR20001127.1700.0591:  score:  1.30000 out of 1.30000
+      ref extent="1990年之前， 台 湾同胞在大�..."
+--------
+    ref relation CNR20001127.1700.0591-R15 (GEN-AFF/Org-Location/Asserted/Past)
+    tst relation CNR20001127.1700.0591-R15 (GEN-AFF/Org-Location/Asserted/Past)
+      relation score:  1.70000 out of 1.70000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E60 (ORG/Commerc/NOM/SPC), head="企业"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E60 (ORG/Commerc/NOM/SPC), head="企业"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E21 (GPE/Special/NAM/SPC), name="陆"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E21 (GPE/Special/NAM/SPC), name="陆"
+      Time-Before ref arg: ID=CNR20001127.1700.0591-T9 (TIM/---), extent="1990年"
+      Time-Before tst arg: ID=CNR20001127.1700.0591-T9 (TIM/---), extent="1990年"
+- in document CNR20001127.1700.0591:  score:  1.70000 out of 1.70000
+      ref extent="1990年之前， 台 湾同胞在大�..."
+--------
+    ref relation CNR20001127.1700.0591-R16 (PHYS/Located/Asserted/Past)
+    tst relation CNR20001127.1700.0591-R16 (PHYS/Located/Asserted/Past)
+      relation score:  1.10000 out of 1.10000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E32 (PER/Group/PRO/SPC), head="一半以上"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E32 (PER/Group/PRO/SPC), head="一半以上"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+- in document CNR20001127.1700.0591:  score:  1.10000 out of 1.10000
+      ref extent="来往两岸的台湾同胞， 一半..."
+--------
+    ref relation CNR20001127.1700.0591-R17 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R17 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E37 (LOC/Region-/NOM/SPC), head="投资区"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E37 (LOC/Region-/NOM/SPC), head="投资区"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E23 (LOC/Region-/NAM/SPC), name="厦门特区"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E23 (LOC/Region-/NAM/SPC), name="厦门特区"
+- in document CNR20001127.1700.0591:  score:  1.50000 out of 1.50000
+      ref extent="厦门特区也充 分利用这一优..."
+--------
+    ref relation CNR20001127.1700.0591-R19 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R19 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E23 (LOC/Region-/NAM/SPC), name="厦门特区"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E23 (LOC/Region-/NAM/SPC), name="厦门特区"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E21 (GPE/Special/NAM/SPC), name="陆"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E21 (GPE/Special/NAM/SPC), name="陆"
+- in document CNR20001127.1700.0591:  score:  2.00000 out of 2.00000
+      ref extent="祖国大陆台商投资区最多、�..."
+--------
+    ref relation CNR20001127.1700.0591-R2 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R2 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E71 (LOC/Region-/NOM/USP), head="各地"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E71 (LOC/Region-/NOM/USP), head="各地"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E70 (GPE/State-o/NAM/SPC), name="广东"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E70 (GPE/State-o/NAM/SPC), name="广东"
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000
+      ref extent="广东 各地"
+--------
+    ref relation CNR20001127.1700.0591-R20 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R20 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E36 (LOC/Region-/NAM/SPC), name="海汤"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E36 (LOC/Region-/NAM/SPC), name="海汤"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+- in document CNR20001127.1700.0591:  score:  2.00000 out of 2.00000
+      ref extent="其中最大的台商投资区 海汤..."
+      ref extent="厦门未来的新市区"
+--------
+    ref relation CNR20001127.1700.0591-R22 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R22 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E50 (ORG/Commerc/NOM/SPC), head="企业集团"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E50 (ORG/Commerc/NOM/SPC), head="企业集团"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+- in document CNR20001127.1700.0591:  score:  1.50000 out of 1.50000
+      ref extent="包括龙玉集团、统一集团 、..."
+--------
+    ref relation CNR20001127.1700.0591-R23 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R23 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E53 (PER/Individ/NOM/SPC), head="人士"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E53 (PER/Individ/NOM/SPC), head="人士"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+- in document CNR20001127.1700.0591:  score:  1.50000 out of 1.50000
+      ref extent="前不 久访问厦门的一位台湾..."
+--------
+    ref relation CNR20001127.1700.0591-R24 (PHYS/Located/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R24 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E53 (PER/Individ/NOM/SPC), head="人士"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E53 (PER/Individ/NOM/SPC), head="人士"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+- in document CNR20001127.1700.0591:  score:  1.50000 out of 1.50000
+      ref extent="前不 久访问厦门的一位台湾..."
+--------
+    ref relation CNR20001127.1700.0591-R25 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R25 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E54 (GPE/Populat/NAM/SPC), name="嘉 易"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E54 (GPE/Populat/NAM/SPC), name="嘉 易"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+- in document CNR20001127.1700.0591:  score:  2.00000 out of 2.00000
+      ref extent="台湾的 嘉易"
+--------
+    ref relation CNR20001127.1700.0591-R26 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R26 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E55 (ORG/Governm/NOM/SPC), head="当局"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E55 (ORG/Governm/NOM/SPC), head="当局"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+- in document CNR20001127.1700.0591:  score:  1.50000 out of 1.50000
+      ref extent="台湾当局"
+--------
+    ref relation CNR20001127.1700.0591-R28 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R28 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E57 (LOC/Region-/NAM/SPC), name="特区"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E57 (LOC/Region-/NAM/SPC), name="特区"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E15 (GPE/Nation/NAM/SPC), name="中国"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E15 (GPE/Nation/NAM/SPC), name="中国"
+- in document CNR20001127.1700.0591:  score:  2.00000 out of 2.00000
+      ref extent="利 用经济特区促进祖国的统..."
+--------
+    ref relation CNR20001127.1700.0591-R3 (PHYS/Near/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R3 (PHYS/Near/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E2 (GPE/Populat/NAM/SPC), name="罗湖区"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E2 (GPE/Populat/NAM/SPC), name="罗湖区"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E67 (GPE/Populat/NAM/SPC), name="香 港"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E67 (GPE/Populat/NAM/SPC), name="香 港"
+- in document CNR20001127.1700.0591:  score:  2.00000 out of 2.00000
+      ref extent="临近香港的罗湖区"
+--------
+    ref relation CNR20001127.1700.0591-R4 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R4 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E3 (FAC/Buildin/NOM/SPC), head="住 宅楼"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E3 (FAC/Buildin/NOM/SPC), head="住 宅楼"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E2 (GPE/Populat/NAM/SPC), name="罗湖区"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E2 (GPE/Populat/NAM/SPC), name="罗湖区"
+- in document CNR20001127.1700.0591:  score:  1.50000 out of 1.50000
+      ref extent="在临近香港的罗湖区，一座�..."
+--------
+    ref relation CNR20001127.1700.0591-R5 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R5 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E4 (PER/Group/NOM/SPC), head="香港人"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E4 (PER/Group/NOM/SPC), head="香港人"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E3 (FAC/Buildin/NOM/SPC), head="住 宅楼"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E3 (FAC/Buildin/NOM/SPC), head="住 宅楼"
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000
+      ref extent="一座座新矗 立的住 宅楼大�..."
+--------
+    ref relation CNR20001127.1700.0591-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R6 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E6 (FAC/Buildin/NOM/SPC), head="楼房"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E6 (FAC/Buildin/NOM/SPC), head="楼房"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E20 (GPE/Populat/NAM/SPC), name="深圳"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E20 (GPE/Populat/NAM/SPC), name="深圳"
+- in document CNR20001127.1700.0591:  score:  1.50000 out of 1.50000
+      ref extent="深圳去年售出的楼房"
+--------
+    ref relation CNR20001127.1700.0591-R7 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R7 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E7 (PER/Group/NOM/USP), head="香港人"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E7 (PER/Group/NOM/USP), head="香港人"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E26 (FAC/Buildin/PRO/USP), head="1/ 10"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E26 (FAC/Buildin/PRO/USP), head="1/ 10"
+- in document CNR20001127.1700.0591:  score:  0.00000 out of 0.00000
+      ref extent="深圳去年售出的楼房中有1/ 1..."
+--------
+    ref relation CNR20001127.1700.0591-R8 (PHYS/Near/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R8 (PHYS/Near/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E20 (GPE/Populat/NAM/SPC), name="深圳"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E20 (GPE/Populat/NAM/SPC), name="深圳"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E67 (GPE/Populat/NAM/SPC), name="香 港"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E67 (GPE/Populat/NAM/SPC), name="香 港"
+- in document CNR20001127.1700.0591:  score:  2.00000 out of 2.00000
+      ref extent="深圳毗邻香港"
+--------
+    ref relation CNR20001127.1700.0591-R9 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation CNR20001127.1700.0591-R9 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNR20001127.1700.0591-E19 (ORG/Commerc/NOM/GEN), head="企业"
+            Arg-1 tst arg: ID=CNR20001127.1700.0591-E19 (ORG/Commerc/NOM/GEN), head="企业"
+            Arg-2 ref arg: ID=CNR20001127.1700.0591-E16 (LOC/Region-/NAM/SPC), name="深圳经济特区"
+            Arg-2 tst arg: ID=CNR20001127.1700.0591-E16 (LOC/Region-/NAM/SPC), name="深圳经济特区"
+- in document CNR20001127.1700.0591:  score:  1.00000 out of 1.00000
+      ref extent="经济特区实行灵 活的管理体..."
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    ART     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.70   0.00   0.00   0.00
+GEN-AFF     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.26   0.00   0.00   0.00
+ORG-AFF     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.04   0.00   0.00   0.00
+PART-WH    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    51.21   0.00   0.00   0.00
+   PHYS     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.79   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.43   0.00   0.00   0.00
+Employm     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.04   0.00   0.00   0.00
+Geograp    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    47.17   0.00   0.00   0.00
+Located     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.01   0.00   0.00   0.00
+   Near     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.78   0.00   0.00   0.00
+Org-Loc     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.82   0.00   0.00   0.00
+Subsidi     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.04   0.00   0.00   0.00
+User-Ow     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.70   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ART:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+User-Ow     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.70   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.70   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.43   0.00   0.00   0.00
+Org-Loc     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.82   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.26   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.04   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.04   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    47.17   0.00   0.00   0.00
+Subsidi     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.04   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    51.21   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.01   0.00   0.00   0.00
+   Near     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.78   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    17.79   0.00   0.00   0.00
+
+Relation Type confusion matrix for "broadcast news" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      2     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     7     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     1     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0    11     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       PHYS      0     0     0     0     0     0     4        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=ART   COUNT    PERCENT
+    ref\tst: User-      User- 
+User-Owner-      2      100.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      3     0      100.0   0.0
+Org-Locatio      0     4        0.0 100.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      1     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0    10     0        0.0 100.0   0.0
+ Subsidiary      0     0     1        0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "broadcast news" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      2     0      100.0   0.0
+       Near      0     2        0.0 100.0
+
+Relation Modality confusion matrix for "broadcast news" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     25     0     0      100.0   0.0   0.0
+      Other      0     0     0        0.0   0.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=25/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted    25/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=25/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Geographica Org-Locatio Citizen-Res     Located User-Owner-        Near  Employment  Subsidiary 
+    Geographical    10/40.0%      -           -           -           -           -           -           -     
+    Org-Location      -          4/16.0%      -           -           -           -           -           -     
+  Citizen-Reside      -           -          3/12.0%      -           -           -           -           -     
+         Located      -           -           -          2/ 8.0%      -           -           -           -     
+  User-Owner-Inv      -           -           -           -          2/ 8.0%      -           -           -     
+            Near      -           -           -           -           -          2/ 8.0%      -           -     
+      Employment      -           -           -           -           -           -          1/ 4.0%      -     
+      Subsidiary      -           -           -           -           -           -           -          1/ 4.0%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=25/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past 
+     Unspecified    22/88.0%      -     
+            Past      -          3/12.0%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=25/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: PART-WHOLE     GEN-AFF        PHYS         ART     ORG-AFF 
+      PART-WHOLE    11/44.0%      -           -           -           -     
+         GEN-AFF      -          7/28.0%      -           -           -     
+            PHYS      -           -          4/16.0%      -           -     
+             ART      -           -           -          2/ 8.0%      -     
+         ORG-AFF      -           -           -           -          1/ 4.0%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=52/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 Time-Before 
+           Arg-2    25/48.1%      -           -     
+           Arg-1      -         25/48.1%      -     
+     Time-Before      -           -          2/ 3.8%
+
+======== event mapping ========
+
+--------
+    ref event CNR20001127.1700.0591-EV1 (Movement/Transport/Generic/Asserted/Positive/Past)
+    tst event CNR20001127.1700.0591-EV1 (Movement/Transport/Generic/Asserted/Positive/Past)
+      event score:  3.20000 out of 3.20000
+            Agent ref arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+            Agent tst arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+      Destination ref arg: ID=CNR20001127.1700.0591-E21 (GPE/Special/NAM/SPC), name="陆"
+      Destination tst arg: ID=CNR20001127.1700.0591-E21 (GPE/Special/NAM/SPC), name="陆"
+           Origin ref arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+           Origin tst arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+      Time-Within ref arg: ID=CNR20001127.1700.0591-T8 (TIM/---), extent="80年代末"
+      Time-Within tst arg: ID=CNR20001127.1700.0591-T8 (TIM/---), extent="80年代末"
+- in document CNR20001127.1700.0591:  score:  3.20000 out of 3.20000
+      ref anchor="登", extent="80年代末，两岸关系开始解�..."
+--------
+    ref event CNR20001127.1700.0591-EV2 (Movement/Transport/Generic/Asserted/Positive/Past)
+    tst event CNR20001127.1700.0591-EV2 (Movement/Transport/Generic/Asserted/Positive/Past)
+      event score:  1.70000 out of 1.70000
+      Destination ref arg: ID=CNR20001127.1700.0591-E28 (GPE/Special/NOM/SPC), head="两岸"
+      Destination tst arg: ID=CNR20001127.1700.0591-E28 (GPE/Special/NOM/SPC), head="两岸"
+           Origin ref arg: ID=CNR20001127.1700.0591-E28 (GPE/Special/NOM/SPC), head="两岸"
+           Origin tst arg: ID=CNR20001127.1700.0591-E28 (GPE/Special/NOM/SPC), head="两岸"
+           Person ref arg: ID=CNR20001127.1700.0591-E31 (PER/Group/NOM/SPC), head="同胞"
+           Person tst arg: ID=CNR20001127.1700.0591-E31 (PER/Group/NOM/SPC), head="同胞"
+      Time-Before ref arg: ID=CNR20001127.1700.0591-T9 (TIM/---), extent="1990年"
+      Time-Before tst arg: ID=CNR20001127.1700.0591-T9 (TIM/---), extent="1990年"
+- in document CNR20001127.1700.0591:  score:  1.70000 out of 1.70000
+      ref anchor="来往", extent="1990年之前， 台 湾同胞在大�..."
+--------
+    ref event CNR20001127.1700.0591-EV3 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event CNR20001127.1700.0591-EV3 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  2.30000 out of 2.30000
+      Destination ref arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+      Destination tst arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+           Origin ref arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+           Origin tst arg: ID=CNR20001127.1700.0591-E12 (GPE/Special/NAM/SPC), name="台 湾"
+           Person ref arg: ID=CNR20001127.1700.0591-E32 (PER/Group/PRO/SPC), head="一半以上"
+           Person tst arg: ID=CNR20001127.1700.0591-E32 (PER/Group/PRO/SPC), head="一半以上"
+      Time-Before ref arg: ID=CNR20001127.1700.0591-T9 (TIM/---), extent="1990年"
+      Time-Before tst arg: ID=CNR20001127.1700.0591-T9 (TIM/---), extent="1990年"
+- in document CNR20001127.1700.0591:  score:  2.30000 out of 2.30000
+      ref anchor="取到", extent="1990年之前， 台 湾同胞在大�..."
+--------
+    ref event CNR20001127.1700.0591-EV4 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event CNR20001127.1700.0591-EV4 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.70000 out of 1.70000
+      Destination ref arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+      Destination tst arg: ID=CNR20001127.1700.0591-E9 (GPE/Populat/NAM/SPC), name="厦门"
+           Person ref arg: ID=CNR20001127.1700.0591-E53 (PER/Individ/NOM/SPC), head="人士"
+           Person tst arg: ID=CNR20001127.1700.0591-E53 (PER/Individ/NOM/SPC), head="人士"
+      Time-Within ref arg: ID=CNR20001127.1700.0591-T11 (TIM/---), extent="前不 久"
+      Time-Within tst arg: ID=CNR20001127.1700.0591-T11 (TIM/---), extent="前不 久"
+- in document CNR20001127.1700.0591:  score:  1.70000 out of 1.70000
+      ref anchor="访问", extent="前不 久访问厦门的一位台湾..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Movemen     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Movement:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Event Type confusion matrix for "broadcast news" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     4     0     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "broadcast news" sources (for mapped events):
+  type=Movem COUNT    PERCENT
+    ref\tst: Trans      Trans 
+  Transport      4      100.0
+
+Event Modality confusion matrix for "broadcast news" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted      4     0      100.0   0.0
+      Other      0     0        0.0   0.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific     Generic 
+        Specific     2/50.0%      -     
+         Generic      -          2/50.0%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted     4/99.9%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive 
+        Positive     4/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:  Transport 
+       Transport     4/99.9%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past 
+            Past     4/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Movement 
+        Movement     4/99.9%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=15/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Destination      Origin      Person Time-Before Time-Within       Agent 
+     Destination     4/26.7%      -           -           -           -           -     
+          Origin      -          3/20.0%      -           -           -           -     
+          Person      -           -          3/20.0%      -           -           -     
+     Time-Before      -           -           -          2/13.3%      -           -     
+     Time-Within      -           -           -           -          2/13.3%      -     
+           Agent      -           -           -           -           -          1/ 6.7%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 CNR20001127.1700.0591-T1, ID=CNR20001127.1700.0591-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T1, ID=CNR20001127.1700.0591-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="11/27/2000 17:09:51.37"
+--------
+    ref timex2 CNR20001127.1700.0591-T10, ID=CNR20001127.1700.0591-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T10, ID=CNR20001127.1700.0591-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="目前"
+--------
+    ref timex2 CNR20001127.1700.0591-T11, ID=CNR20001127.1700.0591-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T11, ID=CNR20001127.1700.0591-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="前不 久"
+--------
+    ref timex2 CNR20001127.1700.0591-T12, ID=CNR20001127.1700.0591-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T12, ID=CNR20001127.1700.0591-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="10年来"
+--------
+    ref timex2 CNR20001127.1700.0591-T13, ID=CNR20001127.1700.0591-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T13, ID=CNR20001127.1700.0591-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="10年"
+--------
+    ref timex2 CNR20001127.1700.0591-T14, ID=CNR20001127.1700.0591-T14, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T14, ID=CNR20001127.1700.0591-T14, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="现在"
+--------
+    ref timex2 CNR20001127.1700.0591-T15, ID=CNR20001127.1700.0591-T15, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T15, ID=CNR20001127.1700.0591-T15, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="5年"
+--------
+    ref timex2 CNR20001127.1700.0591-T2, ID=CNR20001127.1700.0591-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T2, ID=CNR20001127.1700.0591-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="去年"
+--------
+    ref timex2 CNR20001127.1700.0591-T3, ID=CNR20001127.1700.0591-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T3, ID=CNR20001127.1700.0591-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="20年前"
+--------
+    ref timex2 CNR20001127.1700.0591-T4, ID=CNR20001127.1700.0591-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T4, ID=CNR20001127.1700.0591-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="目前"
+--------
+    ref timex2 CNR20001127.1700.0591-T5, ID=CNR20001127.1700.0591-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T5, ID=CNR20001127.1700.0591-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="目前"
+--------
+    ref timex2 CNR20001127.1700.0591-T6, ID=CNR20001127.1700.0591-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T6, ID=CNR20001127.1700.0591-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="近20年来"
+--------
+    ref timex2 CNR20001127.1700.0591-T7, ID=CNR20001127.1700.0591-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T7, ID=CNR20001127.1700.0591-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="20年 里"
+--------
+    ref timex2 CNR20001127.1700.0591-T8, ID=CNR20001127.1700.0591-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T8, ID=CNR20001127.1700.0591-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="80年代末"
+--------
+    ref timex2 CNR20001127.1700.0591-T9, ID=CNR20001127.1700.0591-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNR20001127.1700.0591-T9, ID=CNR20001127.1700.0591-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNR20001127.1700.0591:
+          mention="1990年"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=15/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    15/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=15/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    15/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=15/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---    15/99.9%
+
+======== value mapping ========
+
+--------
+    ref value CNR20001127.1700.0591-V1, ID=CNR20001127.1700.0591-V1, SUBTYPE=Percent, TYPE=Numeric
+    tst value CNR20001127.1700.0591-V1, ID=CNR20001127.1700.0591-V1, SUBTYPE=Percent, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:
+          mention="1/ 10"
+--------
+    ref value CNR20001127.1700.0591-V2, ID=CNR20001127.1700.0591-V2, SUBTYPE=Percent, TYPE=Numeric
+    tst value CNR20001127.1700.0591-V2, ID=CNR20001127.1700.0591-V2, SUBTYPE=Percent, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:
+          mention="80%祖"
+--------
+    ref value CNR20001127.1700.0591-V3, ID=CNR20001127.1700.0591-V3, SUBTYPE=Percent, TYPE=Numeric
+    tst value CNR20001127.1700.0591-V3, ID=CNR20001127.1700.0591-V3, SUBTYPE=Percent, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:
+          mention="半数"
+--------
+    ref value CNR20001127.1700.0591-V4, ID=CNR20001127.1700.0591-V4, SUBTYPE=Percent, TYPE=Numeric
+    tst value CNR20001127.1700.0591-V4, ID=CNR20001127.1700.0591-V4, SUBTYPE=Percent, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:
+          mention="一半以上"
+--------
+    ref value CNR20001127.1700.0591-V5, ID=CNR20001127.1700.0591-V5, SUBTYPE=Percent, TYPE=Numeric
+    tst value CNR20001127.1700.0591-V5, ID=CNR20001127.1700.0591-V5, SUBTYPE=Percent, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:
+          mention="70"
+--------
+    ref value CNR20001127.1700.0591-V6, ID=CNR20001127.1700.0591-V6, SUBTYPE=Percent, TYPE=Numeric
+    tst value CNR20001127.1700.0591-V6, ID=CNR20001127.1700.0591-V6, SUBTYPE=Percent, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document CNR20001127.1700.0591:
+          mention="80%来"
+
+======== value scoring ========
+
+Value Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=6/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Percent 
+         Percent     6/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=6/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Numeric 
+         Numeric     6/99.9%
+
+data input:               0.60 secs to load data
+entity eval:              0.11 secs to compute values,    0.03 secs to map,    0.09 secs to score
+relation eval:            0.16 secs to compute values,    0.02 secs to map,    0.05 secs to score
+event eval:               0.01 secs to compute values,    0.01 secs to map,    0.02 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.01 secs to compute values,    0.01 secs to map,    0.00 secs to score
+value eval:               0.00 secs to compute values,    0.01 secs to map,    0.01 secs to score
+########

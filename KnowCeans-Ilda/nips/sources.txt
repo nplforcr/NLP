@@ -1,0 +1,28 @@
+Sources and citation extraction process of the NIPS0-12 data set.
+
+Sources:
+OCR'ed files: http://nips.djvuzone.org/
+Original files: http://books.nips.cc/
+ --> year/volume information
+ --> labels (similar labels have been merged, nips.labels.extract)
+Preprocessed MAT files: http://cs.nyu.edu/~roweis/data.html
+ --> term vectors
+ --> document titles
+ --> vocabulary  
+Text files: http://cs.nyu.edu/~roweis/data.html, http://ai.stanford.edu/~gal/
+ --> citation entries (via searches for nips title and abbreviations and manual
+     association with author/title/docnames)
+     
+Citations (*.cite and *.ment files) created by processing nips article texts: 
+
+ - indexing author surnames
+ - regex search for nips mentioning in references lists:  
+ -  1: NIPS
+    2: Neural [^\n]*?Information Processing[^\n]
+    3: Neural\\s+(?:Network)?\\s+Information\\s+Processing
+    4: Neur.{1,15}Inf.{1,10}Proc.{1,10}Syst.{1,10}[^\n]*
+    5: Neur.{1,15}Inf.{1,10}[^\n]* (location in last half of paper)
+    6: Inf.{1,15}Proc.{1,10}[^\n]* (location in last half of paper)
+ - manual pruning of inconclusive citation candidates 
+ 
+ (see processing subdirectory for details)

@@ -1,0 +1,1484 @@
+command line (run on 2005 Aug 21 at 12:41:14):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score61944 -t /tmp/score61944
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity fsh_29105-E1 (PER/PRO/GEN)
+    tst entity fsh_29105-E1 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="somebody" (PRO/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+      ref mention="somebody" (PRO/PER/LIT)
+      ref mention="that" (PRO/PER/LIT)
+--------
+    ref entity fsh_29105-E10 (PER/NOM/SPC)
+    tst entity fsh_29105-E10 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document fsh_29105:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="governors" (NOM/PER/LIT)
+      ref mention="people" (NOM/PER/LIT)
+      ref mention="those" (PRO/PER/LIT)
+      ref mention="people" (NOM/PER/LIT)
+--------
+    ref entity fsh_29105-E11 (GPE/NAM/SPC)
+    tst entity fsh_29105-E11 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="New Mexico" (NAM/ORG/LIT)
+         ref name="New Mexico"
+--------
+    ref entity fsh_29105-E12 (GPE/NAM/SPC)
+    tst entity fsh_29105-E12 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Arizona" (NAM/ORG/LIT)
+         ref name="Arizona"
+--------
+    ref entity fsh_29105-E13 (PER/PRO/USP)
+    tst entity fsh_29105-E13 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="You" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="You" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+--------
+    ref entity fsh_29105-E14 (GPE/NAM/SPC)
+    tst entity fsh_29105-E14 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Kansas" (NAM/ORG/LIT)
+      ref mention="Kansas" (NAM/LOC/LIT)
+         ref name="Kansas"
+         ref name="Kansas"
+--------
+    ref entity fsh_29105-E15 (PER/NOM/SPC)
+    tst entity fsh_29105-E15 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document fsh_29105:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="governor" (NOM/PER/LIT)
+--------
+    ref entity fsh_29105-E16 (GPE/NAM/SPC)
+    tst entity fsh_29105-E16 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="North Carolina" (NAM/ORG/LIT)
+      ref mention="North Carolina" (NAM/LOC/LIT)
+         ref name="North Carolina"
+         ref name="North Carolina"
+--------
+    ref entity fsh_29105-E18 (PER/NAM/SPC)
+    tst entity fsh_29105-E18 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="You" (PRO/PER/LIT)
+      ref mention="guy" (NOM/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="one" (PRO/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+      ref mention="A" (NAM/PER/LIT)
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+         ref name="A"
+--------
+    ref entity fsh_29105-E2 (PER/PRO/SPC)
+    tst entity fsh_29105-E2 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document fsh_29105:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="they" (PRO/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+      ref mention="They" (PRO/PER/LIT)
+--------
+    ref entity fsh_29105-E21 (PER/PRO/SPC)
+    tst entity fsh_29105-E21 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document fsh_29105:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="our" (PRO/PER/LIT)
+--------
+    ref entity fsh_29105-E22 (GPE/NAM/SPC)
+    tst entity fsh_29105-E22 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="town" (NOM/LOC/LIT)
+      ref mention="Paris" (NAM/GPE/LIT)
+         ref name="Paris"
+--------
+    ref entity fsh_29105-E23 (GPE/NAM/SPC)
+    tst entity fsh_29105-E23 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Tennessee" (NAM/LOC/LIT)
+         ref name="Tennessee"
+--------
+    ref entity fsh_29105-E24 (GPE/NAM/SPC)
+    tst entity fsh_29105-E24 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Jackson" (NAM/LOC/LIT)
+      ref mention="town" (NOM/GPE/LIT)
+      ref mention="Jackson" (NAM/LOC/LIT)
+         ref name="Jackson"
+         ref name="Jackson"
+--------
+    ref entity fsh_29105-E26 (GPE/NAM/SPC)
+    tst entity fsh_29105-E26 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Nashville" (NAM/LOC/LIT)
+      ref mention="town" (NOM/GPE/LIT)
+         ref name="Nashville"
+--------
+    ref entity fsh_29105-E28 (GPE/NAM/SPC)
+    tst entity fsh_29105-E28 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Arkansas" (NAM/LOC/LIT)
+      ref mention="state" (NOM/GPE/LIT)
+         ref name="Arkansas"
+--------
+    ref entity fsh_29105-E29 (PER/NAM/SPC)
+    tst entity fsh_29105-E29 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Bill Clinton" (NAM/PER/LIT)
+      ref mention="guy" (NOM/PER/LIT)
+      ref mention="governor" (NOM/PER/LIT)
+      ref mention="guy" (NOM/PER/LIT)
+      ref mention="guy" (NOM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="guy" (NOM/PER/LIT)
+      ref mention="Bill Clinton" (NAM/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="dump" (NOM/PER/LIT)
+      ref mention="He" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="scholar" (NOM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="He" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="He" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="Clinton" (NAM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="himself" (PRO/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="President" (NOM/PER/LIT)
+         ref name="Bill Clinton"
+         ref name="Bill Clinton"
+         ref name="Clinton"
+--------
+    ref entity fsh_29105-E3 (ORG/NOM/GEN)
+    tst entity fsh_29105-E3 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="giants" (NOM/ORG/LIT)
+--------
+    ref entity fsh_29105-E31 (PER/NOM/GEN)
+    tst entity fsh_29105-E31 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="President" (NOM/PER/LIT)
+      ref mention="president" (NOM/PER/LIT)
+      ref mention="President" (NOM/PER/LIT)
+--------
+    ref entity fsh_29105-E32 (PER/NOM/SPC)
+    tst entity fsh_29105-E32 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document fsh_29105:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="friends" (NOM/PER/LIT)
+      ref mention="They" (PRO/PER/LIT)
+      ref mention="friends" (NOM/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="your" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="your" (PRO/PER/LIT)
+--------
+    ref entity fsh_29105-E34 (PER/NAM/SPC)
+    tst entity fsh_29105-E34 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="George Bush" (NAM/PER/LIT)
+      ref mention="George Bush" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+         ref name="George Bush"
+         ref name="George Bush"
+--------
+    ref entity fsh_29105-E35 (PER/NOM/SPC)
+    tst entity fsh_29105-E35 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document fsh_29105:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="people" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+--------
+    ref entity fsh_29105-E36 (PER/NAM/SPC)
+    tst entity fsh_29105-E36 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Jerry Brown" (NAM/PER/LIT)
+         ref name="Jerry Brown"
+--------
+    ref entity fsh_29105-E37 (PER/NOM/USP)
+    tst entity fsh_29105-E37 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="people" (NOM/PER/LIT)
+--------
+    ref entity fsh_29105-E38 (PER/NAM/SPC)
+    tst entity fsh_29105-E38 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Tipper" (NAM/PER/LIT)
+         ref name="Tipper"
+--------
+    ref entity fsh_29105-E39 (PER/NAM/SPC)
+    tst entity fsh_29105-E39 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Al" (NAM/PER/LIT)
+         ref name="Al"
+--------
+    ref entity fsh_29105-E4 (PER/NAM/SPC)
+    tst entity fsh_29105-E4 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Hillary" (NAM/PER/LIT)
+      ref mention="She" (PRO/PER/LIT)
+      ref mention="Hillary" (NAM/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+      ref mention="Senator" (NOM/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+      ref mention="woman" (NOM/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+      ref mention="candidate" (NOM/PER/LIT)
+      ref mention="Hillary" (NAM/PER/LIT)
+         ref name="Hillary"
+         ref name="Hillary"
+         ref name="Hillary"
+--------
+    ref entity fsh_29105-E40 (ORG/NOM/SPC)
+    tst entity fsh_29105-E40 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document fsh_29105:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="Democrats" (NOM/ORG/LIT)
+      ref mention="they" (PRO/ORG/LIT)
+      ref mention="they" (PRO/ORG/LIT)
+--------
+    ref entity fsh_29105-E42 (PER/PRO/SPC)
+    tst entity fsh_29105-E42 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document fsh_29105:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="us" (PRO/PER/LIT)
+      ref mention="us" (PRO/PER/LIT)
+--------
+    ref entity fsh_29105-E43 (PER/NOM/GEN)
+    tst entity fsh_29105-E43 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="they" (PRO/PER/LIT)
+      ref mention="people" (NOM/PER/LIT)
+      ref mention="people" (NOM/PER/LIT)
+      ref mention="They" (PRO/PER/LIT)
+--------
+    ref entity fsh_29105-E44 (PER/NOM/GEN)
+    tst entity fsh_29105-E44 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="governor" (NOM/PER/LIT)
+--------
+    ref entity fsh_29105-E45 (PER/PRO/SPC)
+    tst entity fsh_29105-E45 (PER/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document fsh_29105:  score:  0.10000 out of 0.10000  (PER/PRO/SPC)
+      ref mention="one" (PRO/PER/LIT)
+      ref mention="She" (PRO/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+      ref mention="She" (PRO/PER/LIT)
+      ref mention="She" (PRO/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+      ref mention="she" (PRO/PER/LIT)
+--------
+    ref entity fsh_29105-E46 (PER/PRO/GEN)
+    tst entity fsh_29105-E46 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="you" (PRO/PER/LIT)
+--------
+    ref entity fsh_29105-E47 (PER/NAM/SPC)
+    tst entity fsh_29105-E47 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Christie Whitman" (NAM/PER/LIT)
+      ref mention="governor" (NOM/PER/LIT)
+      ref mention="her" (PRO/PER/LIT)
+         ref name="Christie Whitman"
+--------
+    ref entity fsh_29105-E49 (GPE/NAM/SPC)
+    tst entity fsh_29105-E49 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="New Jersey" (NAM/ORG/LIT)
+         ref name="New Jersey"
+--------
+    ref entity fsh_29105-E50 (PER/NOM/GEN)
+    tst entity fsh_29105-E50 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="leaders" (NOM/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+--------
+    ref entity fsh_29105-E52 (ORG/NOM/GEN)
+    tst entity fsh_29105-E52 (ORG/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000  (ORG/NOM/GEN)
+      ref mention="press" (NOM/ORG/LIT)
+--------
+    ref entity fsh_29105-E53 (PER/NOM/SPC)
+    tst entity fsh_29105-E53 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document fsh_29105:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="candidates" (NOM/PER/LIT)
+--------
+    ref entity fsh_29105-E56 (PER/NAM/SPC)
+    tst entity fsh_29105-E56 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="my" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="He" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="him" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+      ref mention="B" (NAM/PER/LIT)
+      ref mention="I" (PRO/PER/LIT)
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+         ref name="B"
+--------
+    ref entity fsh_29105-E57 (PER/NAM/SPC)
+    tst entity fsh_29105-E57 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document fsh_29105:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Dean" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+         ref name="Dean"
+--------
+    ref entity fsh_29105-E6 (PER/NOM/GEN)
+    tst entity fsh_29105-E6 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="woman" (NOM/PER/LIT)
+      ref mention="President" (NOM/PER/LIT)
+--------
+    ref entity fsh_29105-E9 (GPE/PRO/SPC)
+    tst entity fsh_29105-E9 (GPE/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document fsh_29105:  score:  0.10000 out of 0.10000  (GPE/PRO/SPC)
+      ref mention="we" (PRO/PER/LIT)
+      ref mention="we" (PRO/PER/LIT)
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    GPE    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.98   0.00   0.00   0.00
+    ORG     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.13   0.00   0.00   0.00
+    PER    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    54.89   0.00   0.00   0.00
+  total    42     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    20     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    85.11   0.00   0.00   0.00
+    NOM    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.77   0.00   0.00   0.00
+    PRO     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.13   0.00   0.00   0.00
+  total    42     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.13   0.00   0.00   0.00
+0.2-0.5     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.77   0.00   0.00   0.00
+0.5-1.0    20     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    85.11   0.00   0.00   0.00
+  total    42     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.04   0.00   0.00   0.00
+      2    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    26.38   0.00   0.00   0.00
+    3-4    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.74   0.00   0.00   0.00
+    5-8     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     4.68   0.00   0.00   0.00
+     >8     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.15   0.00   0.00   0.00
+  total    42     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    42     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+telepho    42     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    42     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  Group    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.79   0.00   0.00   0.00
+Indeter     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    45.11   0.00   0.00   0.00
+  Media     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+ Nation     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.43   0.00   0.00   0.00
+Non-Gov     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.13   0.00   0.00   0.00
+Populat     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.77   0.00   0.00   0.00
+State-o     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.79   0.00   0.00   0.00
+  total    42     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Nation     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.43   0.00   0.00   0.00
+Populat     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.77   0.00   0.00   0.00
+State-o     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.79   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    42.98   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Commerc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  Media     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Non-Gov     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.13   0.00   0.00   0.00
+  total     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     2.13   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.79   0.00   0.00   0.00
+Indeter     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ    16     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    45.11   0.00   0.00   0.00
+  total    28     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    54.89   0.00   0.00   0.00
+
+Entity Type confusion matrix for "telephone" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    11     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     3     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    28     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=42/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         GEN         USP 
+             SPC    31/73.8%      -           -     
+             GEN      -          9/21.4%      -     
+             USP      -           -          2/ 4.8%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=42/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: Individual       Group State-or-Pr Population- Indetermina Non-Governm  Commercial       Media  all others 
+      Individual    16/38.1%      -           -           -           -           -           -           -           -     
+           Group      -         10/23.8%      -           -           -           -           -           -           -     
+  State-or-Provi      -           -          7/16.7%      -           -           -           -           -           -     
+  Population-Cen      -           -           -          3/ 7.1%      -           -           -           -           -     
+   Indeterminate      -           -           -           -          2/ 4.8%      -           -           -           -     
+  Non-Government      -           -           -           -           -          1/ 2.4%      -           -           -     
+      Commercial      -           -           -           -           -           -          1/ 2.4%      -           -     
+           Media      -           -           -           -           -           -           -          1/ 2.4%      -     
+      all others      -           -           -           -           -           -           -           -          1/ 2.4%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=42/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        PER         GPE         ORG 
+             PER    28/66.7%      -           -     
+             GPE      -         11/26.2%      -     
+             ORG      -           -          3/ 7.1%
+
+Entity Class confusion matrix for "telephone" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           31     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     9     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0     2        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0    13        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  ORG       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  PER       0     0        0     0    72        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    85        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    85        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    38        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0   159        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   282        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   282        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   282        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0     4        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     8        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    10        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0   260        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   282        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "telephone" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     4     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     8     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    10     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0   260     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "telephone" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          282     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation fsh_29105-R1 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation fsh_29105-R1 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=fsh_29105-E10 (PER/Group/NOM/SPC), head="governors"
+            Arg-1 tst arg: ID=fsh_29105-E10 (PER/Group/NOM/SPC), head="governors"
+            Arg-2 ref arg: ID=fsh_29105-E11 (GPE/State-o/NAM/SPC), name="New Mexico"
+            Arg-2 tst arg: ID=fsh_29105-E11 (GPE/State-o/NAM/SPC), name="New Mexico"
+- in document fsh_29105:  score:  1.50000 out of 1.50000
+      ref extent="the governors, of New Mexico, or is i..."
+--------
+    ref relation fsh_29105-R11 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation fsh_29105-R11 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=fsh_29105-E18 (PER/Individ/NAM/SPC), name="A"
+            Arg-1 tst arg: ID=fsh_29105-E18 (PER/Individ/NAM/SPC), name="A"
+            Arg-2 ref arg: ID=fsh_29105-E40 (ORG/Non-Gov/NOM/SPC), head="Democrats"
+            Arg-2 tst arg: ID=fsh_29105-E40 (ORG/Non-Gov/NOM/SPC), head="Democrats"
+- in document fsh_29105:  score:  1.50000 out of 1.50000
+      ref extent="I worked at the Democrats Convention ..."
+--------
+    ref relation fsh_29105-R12 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation fsh_29105-R12 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.10000 out of 1.10000
+            Arg-1 ref arg: ID=fsh_29105-E45 (PER/Individ/PRO/SPC), head="one"
+            Arg-1 tst arg: ID=fsh_29105-E45 (PER/Individ/PRO/SPC), head="one"
+            Arg-2 ref arg: ID=fsh_29105-E14 (GPE/State-o/NAM/SPC), name="Kansas"
+            Arg-2 tst arg: ID=fsh_29105-E14 (GPE/State-o/NAM/SPC), name="Kansas"
+- in document fsh_29105:  score:  1.10000 out of 1.10000
+      ref extent="the one from Kansas"
+--------
+    ref relation fsh_29105-R13 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation fsh_29105-R13 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=fsh_29105-E47 (PER/Individ/NAM/SPC), name="Christie Whitman"
+            Arg-1 tst arg: ID=fsh_29105-E47 (PER/Individ/NAM/SPC), name="Christie Whitman"
+            Arg-2 ref arg: ID=fsh_29105-E49 (GPE/State-o/NAM/SPC), name="New Jersey"
+            Arg-2 tst arg: ID=fsh_29105-E49 (GPE/State-o/NAM/SPC), name="New Jersey"
+- in document fsh_29105:  score:  2.00000 out of 2.00000
+      ref extent="Christie Whitman, the governor of New..."
+--------
+    ref relation fsh_29105-R2 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation fsh_29105-R2 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=fsh_29105-E10 (PER/Group/NOM/SPC), head="governors"
+            Arg-1 tst arg: ID=fsh_29105-E10 (PER/Group/NOM/SPC), head="governors"
+            Arg-2 ref arg: ID=fsh_29105-E12 (GPE/State-o/NAM/SPC), name="Arizona"
+            Arg-2 tst arg: ID=fsh_29105-E12 (GPE/State-o/NAM/SPC), name="Arizona"
+- in document fsh_29105:  score:  1.50000 out of 1.50000
+      ref extent="the governors, of New Mexico, or is i..."
+--------
+    ref relation fsh_29105-R3 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation fsh_29105-R3 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=fsh_29105-E10 (PER/Group/NOM/SPC), head="governors"
+            Arg-1 tst arg: ID=fsh_29105-E10 (PER/Group/NOM/SPC), head="governors"
+            Arg-2 ref arg: ID=fsh_29105-E14 (GPE/State-o/NAM/SPC), name="Kansas"
+            Arg-2 tst arg: ID=fsh_29105-E14 (GPE/State-o/NAM/SPC), name="Kansas"
+- in document fsh_29105:  score:  1.50000 out of 1.50000
+      ref extent="the governors, of New Mexico, or is i..."
+--------
+    ref relation fsh_29105-R4 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation fsh_29105-R4 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=fsh_29105-E15 (PER/Individ/NOM/SPC), head="governor"
+            Arg-1 tst arg: ID=fsh_29105-E15 (PER/Individ/NOM/SPC), head="governor"
+            Arg-2 ref arg: ID=fsh_29105-E16 (GPE/State-o/NAM/SPC), name="North Carolina"
+            Arg-2 tst arg: ID=fsh_29105-E16 (GPE/State-o/NAM/SPC), name="North Carolina"
+- in document fsh_29105:  score:  1.50000 out of 1.50000
+      ref extent="the governor of North Carolina"
+--------
+    ref relation fsh_29105-R5 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation fsh_29105-R5 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=fsh_29105-E22 (GPE/Populat/NAM/SPC), name="Paris"
+            Arg-1 tst arg: ID=fsh_29105-E22 (GPE/Populat/NAM/SPC), name="Paris"
+            Arg-2 ref arg: ID=fsh_29105-E23 (GPE/State-o/NAM/SPC), name="Tennessee"
+            Arg-2 tst arg: ID=fsh_29105-E23 (GPE/State-o/NAM/SPC), name="Tennessee"
+- in document fsh_29105:  score:  2.00000 out of 2.00000
+      ref extent="a small town in Tennessee called Paris"
+--------
+    ref relation fsh_29105-R6 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Past)
+    tst relation fsh_29105-R6 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=fsh_29105-E18 (PER/Individ/NAM/SPC), name="A"
+            Arg-1 tst arg: ID=fsh_29105-E18 (PER/Individ/NAM/SPC), name="A"
+            Arg-2 ref arg: ID=fsh_29105-E22 (GPE/Populat/NAM/SPC), name="Paris"
+            Arg-2 tst arg: ID=fsh_29105-E22 (GPE/Populat/NAM/SPC), name="Paris"
+- in document fsh_29105:  score:  2.00000 out of 2.00000
+      ref extent="He -- we ha- -- I came from a small t..."
+--------
+    ref relation fsh_29105-R7 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation fsh_29105-R7 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=fsh_29105-E29 (PER/Individ/NAM/SPC), name="Bill Clinton"
+            Arg-1 tst arg: ID=fsh_29105-E29 (PER/Individ/NAM/SPC), name="Bill Clinton"
+            Arg-2 ref arg: ID=fsh_29105-E28 (GPE/State-o/NAM/SPC), name="Arkansas"
+            Arg-2 tst arg: ID=fsh_29105-E28 (GPE/State-o/NAM/SPC), name="Arkansas"
+- in document fsh_29105:  score:  2.00000 out of 2.00000
+      ref extent="this little guy, uh the governor of A..."
+--------
+    ref relation fsh_29105-R8 (PER-SOC/Lasting-Personal/Asserted/Unspecified)
+    tst relation fsh_29105-R8 (PER-SOC/Lasting-Personal/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=fsh_29105-E18 (PER/Individ/NAM/SPC), name="A"
+            Arg-1 tst arg: ID=fsh_29105-E18 (PER/Individ/NAM/SPC), name="A"
+            Arg-2 ref arg: ID=fsh_29105-E32 (PER/Group/NOM/SPC), head="friends"
+            Arg-2 tst arg: ID=fsh_29105-E32 (PER/Group/NOM/SPC), head="friends"
+- in document fsh_29105:  score:  1.50000 out of 1.50000
+      ref extent="my friends"
+      ref extent="my friends"
+--------
+    ref relation fsh_29105-R9 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Past)
+    tst relation fsh_29105-R9 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Past)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=fsh_29105-E29 (PER/Individ/NAM/SPC), name="Bill Clinton"
+            Arg-1 tst arg: ID=fsh_29105-E29 (PER/Individ/NAM/SPC), name="Bill Clinton"
+            Arg-2 ref arg: ID=fsh_29105-E28 (GPE/State-o/NAM/SPC), name="Arkansas"
+            Arg-2 tst arg: ID=fsh_29105-E28 (GPE/State-o/NAM/SPC), name="Arkansas"
+- in document fsh_29105:  score:  2.00000 out of 2.00000
+      ref extent="Oh no, no, he's too young, and he cam..."
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+GEN-AFF     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.90   0.00   0.00   0.00
+ORG-AFF     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    62.69   0.00   0.00   0.00
+PART-WH     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.95   0.00   0.00   0.00
+PER-SOC     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.46   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+telepho    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.90   0.00   0.00   0.00
+Employm     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    62.69   0.00   0.00   0.00
+Geograp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.95   0.00   0.00   0.00
+Lasting     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.46   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.90   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.90   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    62.69   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    62.69   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.95   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.95   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER-SOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Lasting     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.46   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.46   0.00   0.00   0.00
+
+Relation Type confusion matrix for "telephone" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     2     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     8     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0     1     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     1     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+       PHYS      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "telephone" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      2     0      100.0   0.0
+Org-Locatio      0     0        0.0   0.0
+
+Relation Subtype confusion matrix for "telephone" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      8     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "telephone" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     1     0        0.0 100.0   0.0
+ Subsidiary      0     0     0        0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "telephone" sources (for mapped relations):
+  type=PER-S COUNT............    PERCENT............
+    ref\tst: Busin Famil Lasti      Busin Famil Lasti 
+   Business      0     0     0        0.0   0.0   0.0
+     Family      0     0     0        0.0   0.0   0.0
+Lasting-Per      0     0     1        0.0   0.0 100.0
+
+Relation Modality confusion matrix for "telephone" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     12     0     0      100.0   0.0   0.0
+      Other      0     0     0        0.0   0.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted    12/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: Employment Citizen-Res Geographica Lasting-Per 
+      Employment     8/66.7%      -           -           -     
+  Citizen-Reside      -          2/16.7%      -           -     
+    Geographical      -           -          1/ 8.3%      -     
+  Lasting-Person      -           -           -          1/ 8.3%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past 
+     Unspecified    10/83.3%      -     
+            Past      -          2/16.7%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=12/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    ORG-AFF     GEN-AFF  PART-WHOLE     PER-SOC 
+         ORG-AFF     8/66.7%      -           -           -     
+         GEN-AFF      -          2/16.7%      -           -     
+      PART-WHOLE      -           -          1/ 8.3%      -     
+         PER-SOC      -           -           -          1/ 8.3%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=24/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 
+           Arg-2    12/50.0%      -     
+           Arg-1      -         12/50.0%
+
+======== event mapping ========
+
+--------
+    ref event fsh_29105-EV1 (Personnel/Elect/Generic/Asserted/Positive/Unspecified)
+    tst event fsh_29105-EV1 (Personnel/Elect/Generic/Asserted/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+- in document fsh_29105:  score:  0.00000 out of 0.00000
+      ref anchor="Elections", extent="Elections"
+--------
+    ref event fsh_29105-EV2 (Personnel/Elect/Specific/Asserted/Positive/Past)
+    tst event fsh_29105-EV2 (Personnel/Elect/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+           Entity ref arg: ID=fsh_29105-E56 (PER/Individ/NAM/SPC), name="B"
+           Entity tst arg: ID=fsh_29105-E56 (PER/Individ/NAM/SPC), name="B"
+           Person ref arg: ID=fsh_29105-E57 (PER/Individ/NAM/SPC), name="Dean"
+           Person tst arg: ID=fsh_29105-E57 (PER/Individ/NAM/SPC), name="Dean"
+- in document fsh_29105:  score:  2.00000 out of 2.00000
+      ref anchor="election", extent="I liked Dean a lot I must say, in thi..."
+--------
+    ref event fsh_29105-EV3 (Contact/Meet/Specific/Asserted/Positive/Past)
+    tst event fsh_29105-EV3 (Contact/Meet/Specific/Asserted/Positive/Past)
+      event score:  4.00000 out of 4.00000
+           Entity ref arg: ID=fsh_29105-E18 (PER/Individ/NAM/SPC), name="A"
+           Entity tst arg: ID=fsh_29105-E18 (PER/Individ/NAM/SPC), name="A"
+           Entity ref arg: ID=fsh_29105-E38 (PER/Individ/NAM/SPC), name="Tipper"
+           Entity tst arg: ID=fsh_29105-E38 (PER/Individ/NAM/SPC), name="Tipper"
+           Entity ref arg: ID=fsh_29105-E39 (PER/Individ/NAM/SPC), name="Al"
+           Entity tst arg: ID=fsh_29105-E39 (PER/Individ/NAM/SPC), name="Al"
+           Entity ref arg: ID=fsh_29105-E4 (PER/Individ/NAM/SPC), name="Hillary"
+           Entity tst arg: ID=fsh_29105-E4 (PER/Individ/NAM/SPC), name="Hillary"
+- in document fsh_29105:  score:  4.00000 out of 4.00000
+      ref anchor="met", extent="I met Hillary, and and Tipper and Al"
+--------
+    ref event fsh_29105-EV4 (Contact/Meet/Specific/Asserted/Negative/Past)
+    tst event fsh_29105-EV4 (Contact/Meet/Specific/Asserted/Negative/Past)
+      event score:  2.00000 out of 2.00000
+           Entity ref arg: ID=fsh_29105-E18 (PER/Individ/NAM/SPC), name="A"
+           Entity tst arg: ID=fsh_29105-E18 (PER/Individ/NAM/SPC), name="A"
+           Entity ref arg: ID=fsh_29105-E29 (PER/Individ/NAM/SPC), name="Bill Clinton"
+           Entity tst arg: ID=fsh_29105-E29 (PER/Individ/NAM/SPC), name="Bill Clinton"
+- in document fsh_29105:  score:  2.00000 out of 2.00000
+      ref anchor="meet", extent="I almost got to meet him"
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Contact     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.00   0.00   0.00   0.00
+Personn     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+telepho     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Elect     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+   Meet     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Contact:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Meet     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.00   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Personnel:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Elect     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.00   0.00   0.00   0.00
+
+Event Type confusion matrix for "telephone" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     2     0     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     2     0        0.0   0.0   0.0   0.0   0.0   0.0 100.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "telephone" sources (for mapped events):
+  type=Conta COUNT......    PERCENT......
+    ref\tst:  Meet Phone       Meet Phone 
+       Meet      2     0      100.0   0.0
+Phone-Write      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "telephone" sources (for mapped events):
+  type=Perso COUNT..................    PERCENT..................
+    ref\tst: Elect End-P Nomin Start      Elect End-P Nomin Start 
+      Elect      2     0     0     0      100.0   0.0   0.0   0.0
+End-Positio      0     0     0     0        0.0   0.0   0.0   0.0
+   Nominate      0     0     0     0        0.0   0.0   0.0   0.0
+Start-Posit      0     0     0     0        0.0   0.0   0.0   0.0
+
+Event Modality confusion matrix for "telephone" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted      4     0      100.0   0.0
+      Other      0     0        0.0   0.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific     Generic 
+        Specific     3/75.0%      -     
+         Generic      -          1/25.0%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted     4/99.9%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive    Negative 
+        Positive     3/75.0%      -     
+        Negative      -          1/25.0%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Elect        Meet 
+           Elect     2/50.0%      -     
+            Meet      -          2/50.0%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past Unspecified 
+            Past     3/75.0%      -     
+     Unspecified      -          1/25.0%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:  Personnel     Contact 
+       Personnel     2/50.0%      -     
+         Contact      -          2/50.0%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=8/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Entity      Person 
+          Entity     7/87.5%      -     
+          Person      -          1/12.5%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 fsh_29105-T1, ID=fsh_29105-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 fsh_29105-T1, ID=fsh_29105-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document fsh_29105:
+          mention="2008"
+--------
+    ref timex2 fsh_29105-T2, ID=fsh_29105-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 fsh_29105-T2, ID=fsh_29105-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document fsh_29105:
+          mention="2008"
+--------
+    ref timex2 fsh_29105-T3, ID=fsh_29105-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 fsh_29105-T3, ID=fsh_29105-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document fsh_29105:
+          mention="nineteen eighty"
+--------
+    ref timex2 fsh_29105-T4, ID=fsh_29105-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 fsh_29105-T4, ID=fsh_29105-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document fsh_29105:
+          mention="four years later"
+--------
+    ref timex2 fsh_29105-T5, ID=fsh_29105-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 fsh_29105-T5, ID=fsh_29105-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document fsh_29105:
+          mention="eight years later"
+--------
+    ref timex2 fsh_29105-T6, ID=fsh_29105-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 fsh_29105-T6, ID=fsh_29105-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document fsh_29105:
+          mention="a long time later"
+--------
+    ref timex2 fsh_29105-T7, ID=fsh_29105-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 fsh_29105-T7, ID=fsh_29105-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document fsh_29105:
+          mention="his term in office"
+--------
+    ref timex2 fsh_29105-T8, ID=fsh_29105-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 fsh_29105-T8, ID=fsh_29105-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document fsh_29105:
+          mention="20041129-19:27:20"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+telepho     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=8/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     8/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=8/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     8/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=8/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---     8/99.9%
+
+======== value mapping ========
+
+--------
+    ref value fsh_29105-V1, ID=fsh_29105-V1, TYPE=Job-Title
+    tst value fsh_29105-V1, ID=fsh_29105-V1, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document fsh_29105:
+          mention="President"
+--------
+    ref value fsh_29105-V2, ID=fsh_29105-V2, TYPE=Job-Title
+    tst value fsh_29105-V2, ID=fsh_29105-V2, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document fsh_29105:
+          mention="Vice President"
+--------
+    ref value fsh_29105-V3, ID=fsh_29105-V3, TYPE=Job-Title
+    tst value fsh_29105-V3, ID=fsh_29105-V3, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document fsh_29105:
+          mention="President"
+--------
+    ref value fsh_29105-V4, ID=fsh_29105-V4, TYPE=Job-Title
+    tst value fsh_29105-V4, ID=fsh_29105-V4, TYPE=Job-Title
+      value score:  1.00000 out of 1.00000
+- in document fsh_29105:
+          mention="President"
+
+======== value scoring ========
+
+Value Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+telepho     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=4/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:  Job-Title 
+       Job-Title     4/99.9%
+
+data input:               0.88 secs to load data
+entity eval:              0.28 secs to compute values,    0.05 secs to map,    0.09 secs to score
+relation eval:            0.04 secs to compute values,    0.01 secs to map,    0.02 secs to score
+event eval:               0.00 secs to compute values,    0.01 secs to map,    0.02 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.01 secs to compute values,    0.00 secs to map,    0.00 secs to score
+value eval:               0.00 secs to compute values,    0.00 secs to map,    0.01 secs to score
+########

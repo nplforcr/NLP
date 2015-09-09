@@ -1,0 +1,1676 @@
+command line (run on 2005 Aug 21 at 12:29:01):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score56205 -t /tmp/score56205
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E1 (PER/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E1 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="correspondent" (NOM/PER/LIT)
+      ref mention="Tim Ewart" (NAM/PER/LIT)
+      ref mention="TIM EWART" (NAM/PER/LIT)
+      ref mention="CORRESPONDENT" (NOM/PER/LIT)
+      ref mention="EWART" (NAM/PER/LIT)
+      ref mention="Tim Ewart" (NAM/PER/LIT)
+         ref name="Tim Ewart"
+         ref name="TIM EWART"
+         ref name="EWART"
+         ref name="Tim Ewart"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E10 (GPE/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E10 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="American" (NAM/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="U.S" (NAM/GPE/LIT)
+      ref mention="America" (NAM/ORG/LIT)
+         ref name="American"
+         ref name="U.S"
+         ref name="U.S"
+         ref name="U.S"
+         ref name="America"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E11 (PER/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E11 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Republican Guard" (NAM/PER/LIT)
+      ref mention="soldiers" (NOM/PER/LIT)
+      ref mention="Republican Guard" (NAM/PER/LIT)
+      ref mention="force" (NOM/PER/LIT)
+         ref name="Republican Guard"
+         ref name="Republican Guard"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E13 (PER/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E13 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Saddam Hussein" (NAM/PER/LIT)
+      ref mention="his" (PRO/PER/LIT)
+      ref mention="Saddam" (NAM/PER/LIT)
+      ref mention="Saddam Hussein" (NAM/PER/LIT)
+         ref name="Saddam Hussein"
+         ref name="Saddam"
+         ref name="Saddam Hussein"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E14 (VEH/NOM/GEN)
+    tst entity CNN_IP_20030402.1600.02-1-E14 (VEH/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (VEH/NOM/GEN)
+      ref mention="aircraft" (NOM/VEH/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E15 (GPE/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E15 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="coalition" (NOM/GPE/LIT)
+      ref mention="coalition" (NOM/GPE/LIT)
+      ref mention="coalition" (NOM/GPE/LIT)
+      ref mention="coalition" (NOM/GPE/LIT)
+      ref mention="coalition" (NOM/GPE/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E16 (LOC/NOM/GEN)
+    tst entity CNN_IP_20030402.1600.02-1-E16 (LOC/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (LOC/NOM/GEN)
+      ref mention="skies" (NOM/LOC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E18 (PER/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E18 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="commanders" (NOM/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E21 (PER/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E21 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="BRIG. GEN" (NOM/PER/LIT)
+      ref mention="VINCENT BROOKS" (NAM/PER/LIT)
+         ref name="VINCENT BROOKS"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E23 (ORG/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E23 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="CENTRAL COMMAND" (NAM/ORG/LIT)
+         ref name="CENTRAL COMMAND"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E25 (PER/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E25 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="We" (PRO/PER/LIT)
+      ref mention="Americans" (NOM/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E26 (ORG/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E26 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="regime" (NOM/ORG/LIT)
+      ref mention="regime" (NOM/ORG/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E27 (PER/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E27 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="WOODRUFF" (NAM/PER/LIT)
+      ref mention="WOODRUFF" (NAM/PER/LIT)
+         ref name="WOODRUFF"
+         ref name="WOODRUFF"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E28 (GPE/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E28 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="British" (NAM/GPE/LIT)
+      ref mention="British" (NAM/GPE/LIT)
+         ref name="British"
+         ref name="British"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E3 (ORG/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E3 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="ITN" (NAM/ORG/LIT)
+      ref mention="ITN" (NAM/ORG/LIT)
+      ref mention="ITV News" (NAM/ORG/LIT)
+         ref name="ITN"
+         ref name="ITN"
+         ref name="ITV News"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E30 (LOC/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E30 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="outskirts" (NOM/LOC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E31 (FAC/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E31 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="building" (NOM/FAC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E32 (PER/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E32 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="fighters" (NOM/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E33 (GPE/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E33 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+      ref mention="Iraq" (NAM/GPE/LIT)
+      ref mention="Iraq" (NAM/GPE/LIT)
+      ref mention="Iraq" (NAM/GPE/LIT)
+      ref mention="we Iraqis" (PRO/PER/LIT)
+      ref mention="Iraqi" (NAM/GPE/LIT)
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraqi"
+         ref name="Iraq"
+         ref name="Iraq"
+         ref name="Iraq"
+         ref name="Iraqi"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E35 (PER/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E35 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="loyalists" (NOM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E37 (LOC/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E37 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="Iraq" (NAM/LOC/LIT)
+         ref name="Iraq"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E38 (LOC/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E38 (LOC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (LOC/NOM/USP)
+      ref mention="south" (NOM/LOC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E39 (LOC/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E39 (LOC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (LOC/NOM/USP)
+      ref mention="orth" (NOM/LOC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E40 (LOC/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E40 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="hills" (NOM/LOC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E41 (LOC/NAM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E41 (LOC/NAM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (LOC/NAM/USP)
+      ref mention="Iraq" (NAM/LOC/LIT)
+      ref mention="northern Iraq" (NOM/LOC/LIT)
+      ref mention="Iraq" (NOM/LOC/LIT)
+      ref mention="Iraq" (NOM/LOC/LIT)
+         ref name="Iraq"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E43 (LOC/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E43 (LOC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (LOC/NOM/USP)
+      ref mention="positions" (NOM/LOC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E45 (GPE/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E45 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="city" (NOM/LOC/LIT)
+      ref mention="Kirkuk" (NAM/LOC/LIT)
+      ref mention="there" (PRO/LOC/LIT)
+      ref mention="Kirkuk" (NAM/LOC/LIT)
+      ref mention="heartland" (NOM/LOC/LIT)
+      ref mention="Kirkuk" (NAM/LOC/LIT)
+      ref mention="Kirkuk" (NAM/LOC/LIT)
+      ref mention="capital" (NOM/LOC/LIT)
+      ref mention="Kirkuk" (NAM/LOC/LIT)
+      ref mention="Kirkuk" (NAM/LOC/LIT)
+         ref name="Kirkuk"
+         ref name="Kirkuk"
+         ref name="Kirkuk"
+         ref name="Kirkuk"
+         ref name="Kirkuk"
+         ref name="Kirkuk"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E46 (PER/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E46 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Brent Sadler" (NAM/PER/LIT)
+      ref mention="BRENT SADLER" (NAM/PER/LIT)
+      ref mention="CORRESPONDENT" (NOM/PER/LIT)
+      ref mention="me" (PRO/PER/LIT)
+      ref mention="SADLER" (NAM/PER/LIT)
+      ref mention="Brent Sadler" (NAM/PER/LIT)
+         ref name="Brent Sadler"
+         ref name="BRENT SADLER"
+         ref name="SADLER"
+         ref name="Brent Sadler"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E47 (ORG/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E47 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="CNN" (NAM/ORG/LIT)
+      ref mention="CNN" (NAM/ORG/LIT)
+      ref mention="CNN" (NAM/ORG/LIT)
+         ref name="CNN"
+         ref name="CNN"
+         ref name="CNN"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E50 (FAC/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E50 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="road" (NOM/FAC/LIT)
+      ref mention="road" (NOM/FAC/LIT)
+      ref mention="that" (PRO/FAC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E51 (LOC/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E51 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="wealth" (NOM/LOC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E52 (PER/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E52 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="forces" (NOM/PER/LIT)
+      ref mention="forces" (NOM/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+      ref mention="Kurds" (NOM/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E53 (PER/NOM/GEN)
+    tst entity CNN_IP_20030402.1600.02-1-E53 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="Kurdish" (NOM/PER/LIT)
+      ref mention="Kurdish" (NOM/PER/LIT)
+      ref mention="Kurdish" (NOM/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E55 (LOC/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E55 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="land" (NOM/LOC/LIT)
+      ref mention="positions" (NOM/LOC/LIT)
+      ref mention="checkpoint" (NOM/LOC/LIT)
+      ref mention="land" (NOM/LOC/LIT)
+      ref mention="territory" (NOM/LOC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E58 (PER/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E58 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="soldiers" (NOM/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E62 (PER/PRO/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E62 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="us" (PRO/PER/LIT)
+      ref mention="We" (PRO/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E63 (FAC/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E63 (FAC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (FAC/NOM/USP)
+      ref mention="bunkers" (NOM/FAC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E65 (VEH/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E65 (VEH/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (VEH/NOM/USP)
+      ref mention="warplanes" (NOM/VEH/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E66 (PER/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E66 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="forces" (NOM/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E67 (FAC/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E67 (FAC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (FAC/NOM/SPC)
+      ref mention="field" (NOM/FAC/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E68 (PER/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E68 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="forces" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E69 (PER/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E69 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="opposition" (NOM/PER/LIT)
+      ref mention="opposition" (NOM/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E7 (PER/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E7 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="These" (PRO/PER/LIT)
+      ref mention="soldiers" (NOM/PER/LIT)
+      ref mention="They" (PRO/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E70 (PER/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E70 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="MINISTER" (NOM/PER/LIT)
+      ref mention="BARHAM SALEH" (NAM/PER/LIT)
+         ref name="BARHAM SALEH"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E72 (ORG/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E72 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="GOV" (NOM/ORG/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E73 (GPE/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E73 (GPE/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (GPE/NOM/SPC)
+      ref mention="KURDISTAN" (NOM/GPE/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E75 (WEA/NOM/GEN)
+    tst entity CNN_IP_20030402.1600.02-1-E75 (WEA/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (WEA/NOM/GEN)
+      ref mention="artillery" (NOM/WEA/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E77 (GPE/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E77 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Baghdad" (NAM/LOC/LIT)
+      ref mention="Baghdad" (NAM/LOC/LIT)
+      ref mention="Baghdad" (NAM/LOC/LIT)
+      ref mention="Baghdad" (NAM/LOC/LIT)
+      ref mention="capital" (NOM/LOC/LIT)
+         ref name="Baghdad"
+         ref name="Baghdad"
+         ref name="Baghdad"
+         ref name="Baghdad"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E78 (GPE/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E78 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="city" (NOM/LOC/LIT)
+      ref mention="Karbala" (NAM/LOC/LIT)
+      ref mention="there" (PRO/LOC/LIT)
+      ref mention="Karbala" (NAM/LOC/LIT)
+         ref name="Karbala"
+         ref name="Karbala"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E79 (PER/NOM/GEN)
+    tst entity CNN_IP_20030402.1600.02-1-E79 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="Shiite" (NOM/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E80 (PER/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E80 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="troops" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E83 (PER/NOM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E83 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="forces" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+      ref mention="troops" (NOM/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+      ref mention="troops" (NOM/PER/LIT)
+      ref mention="British" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E84 (PER/NOM/USP)
+    tst entity CNN_IP_20030402.1600.02-1-E84 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="targets" (NOM/PER/LIT)
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E85 (GPE/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E85 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Basra" (NAM/LOC/LIT)
+      ref mention="town" (NOM/LOC/LIT)
+      ref mention="Basra" (NAM/LOC/LIT)
+      ref mention="town" (NOM/LOC/LIT)
+      ref mention="here" (PRO/LOC/LIT)
+      ref mention="Basra" (NAM/LOC/LIT)
+      ref mention="here" (PRO/LOC/LIT)
+      ref mention="Basra" (NAM/GPE/LIT)
+         ref name="Basra"
+         ref name="Basra"
+         ref name="Basra"
+         ref name="Basra"
+--------
+    ref entity CNN_IP_20030402.1600.02-1-E9 (ORG/NAM/SPC)
+    tst entity CNN_IP_20030402.1600.02-1-E9 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="3rd Infantry" (NAM/ORG/LIT)
+         ref name="3rd Infantry"
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    FAC     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.45   0.00   0.00   0.00
+    GPE     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.09   0.00   0.00   0.00
+    LOC    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.91   0.00   0.00   0.00
+    ORG     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+    PER    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.36   0.00   0.00   0.00
+    VEH     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    WEA     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    55     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    20     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    69.09   0.00   0.00   0.00
+    NOM    34     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.91   0.00   0.00   0.00
+    PRO     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    55     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+0.2-0.5    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.91   0.00   0.00   0.00
+0.5-1.0    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    69.09   0.00   0.00   0.00
+  total    55     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.27   0.00   0.00   0.00
+      2    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+    3-4    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    23.64   0.00   0.00   0.00
+    5-8     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    23.64   0.00   0.00   0.00
+     >8     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.27   0.00   0.00   0.00
+  total    55     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP    14     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    55     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    55     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    55     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    Air     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Buildin     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.82   0.00   0.00   0.00
+Celesti     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Governm     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.91   0.00   0.00   0.00
+  Group    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.55   0.00   0.00   0.00
+Individ     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.82   0.00   0.00   0.00
+Land-Re     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.82   0.00   0.00   0.00
+  Media     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.27   0.00   0.00   0.00
+ Nation     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.73   0.00   0.00   0.00
+   Path     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.82   0.00   0.00   0.00
+  Plant     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.82   0.00   0.00   0.00
+Populat     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.55   0.00   0.00   0.00
+Region-     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+Shootin     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+State-o     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.82   0.00   0.00   0.00
+  total    55     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = FAC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Buildin     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.82   0.00   0.00   0.00
+   Path     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.82   0.00   0.00   0.00
+  Plant     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.82   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.45   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Nation     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.73   0.00   0.00   0.00
+Populat     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.55   0.00   0.00   0.00
+State-o     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.82   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.09   0.00   0.00   0.00
+
+Performance statistics for TYPE = LOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Celesti     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Land-Re     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.82   0.00   0.00   0.00
+Region-     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.09   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.91   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Governm     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.91   0.00   0.00   0.00
+  Media     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.27   0.00   0.00   0.00
+  total     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.18   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.55   0.00   0.00   0.00
+Individ     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    21.82   0.00   0.00   0.00
+  total    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.36   0.00   0.00   0.00
+
+Performance statistics for TYPE = VEH:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    Air     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = WEA:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Shootin     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+
+Entity Type confusion matrix for "broadcast conversation" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            4     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0     9     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    10     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0     6     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    23     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     2     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     1        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=55/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         USP         GEN 
+             SPC    36/65.5%      -           -     
+             USP      -         14/25.5%      -     
+             GEN      -           -          5/ 9.1%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=55/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Group Region-Gene  Individual      Nation Population-  Government       Media         Air  all others 
+           Group    17/30.9%      -           -           -           -           -           -           -           -     
+  Region-General      -          8/14.5%      -           -           -           -           -           -           -     
+      Individual      -           -          6/10.9%      -           -           -           -           -           -     
+          Nation      -           -           -          4/ 7.3%      -           -           -           -           -     
+  Population-Cen      -           -           -           -          4/ 7.3%      -           -           -           -     
+      Government      -           -           -           -           -          4/ 7.3%      -           -           -     
+           Media      -           -           -           -           -           -          2/ 3.6%      -           -     
+             Air      -           -           -           -           -           -           -          2/ 3.6%      -     
+      all others      -           -           -           -           -           -           -           -          8/14.5%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=55/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        PER         LOC         GPE         ORG         FAC         VEH         WEA 
+             PER    23/41.8%      -           -           -           -           -           -     
+             LOC      -         10/18.2%      -           -           -           -           -     
+             GPE      -           -          9/16.4%      -           -           -           -     
+             ORG      -           -           -          6/10.9%      -           -           -     
+             FAC      -           -           -           -          4/ 7.3%      -           -     
+             VEH      -           -           -           -           -          2/ 3.6%      -     
+             WEA      -           -           -           -           -           -          1/ 1.8%
+
+Entity Class confusion matrix for "broadcast conversation" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           36     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     5     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0    14        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0    33        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     2        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0     8        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    17        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    60        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    60        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    69        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0    21        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   150        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   150        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   150        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     6        0.0   0.0      0.0   0.0 100.0
+  GPE       0     0        0     0    23        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0    43        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    12        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    63        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     2        0.0   0.0      0.0   0.0 100.0
+  WEA       0     0        0     0     1        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   150        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "broadcast conversation" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            6     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    23     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    43     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    12     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    63     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     2     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0
+  WEA            0     0     0     0     0     0     1        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Mention Style confusion matrix for "broadcast conversation" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          150     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R1 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R1 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E68 (PER/Group/NOM/SPC), head="forces"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E68 (PER/Group/NOM/SPC), head="forces"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E15 (GPE/Nation/NOM/SPC), head="coalition"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E15 (GPE/Nation/NOM/SPC), head="coalition"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref extent="coalition forces"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R10 (PHYS/Near/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R10 (PHYS/Near/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E7 (PER/Group/NOM/SPC), head="soldiers"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E7 (PER/Group/NOM/SPC), head="soldiers"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E78 (GPE/Populat/NAM/SPC), name="Karbala"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E78 (GPE/Populat/NAM/SPC), name="Karbala"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.50000 out of 1.50000
+      ref extent="soldiers of the U.S. 3rd Infantry, fi..."
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R11 (PHYS/Near/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R11 (PHYS/Near/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E78 (GPE/Populat/NAM/SPC), name="Karbala"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E78 (GPE/Populat/NAM/SPC), name="Karbala"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E77 (GPE/Populat/NAM/SPC), name="Baghdad"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E77 (GPE/Populat/NAM/SPC), name="Baghdad"
+- in document CNN_IP_20030402.1600.02-1:  score:  2.00000 out of 2.00000
+      ref extent="Karbala, southwest of Baghdad"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R12 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R12 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E15 (GPE/Nation/NOM/SPC), head="coalition"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E15 (GPE/Nation/NOM/SPC), head="coalition"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E14 (VEH/Air/NOM/GEN), head="aircraft"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E14 (VEH/Air/NOM/GEN), head="aircraft"
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000
+      ref extent="coalition aircraft"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R13 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R13 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E18 (PER/Group/NOM/SPC), head="commanders"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E18 (PER/Group/NOM/SPC), head="commanders"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E10 (GPE/Nation/NAM/SPC), name="American"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E10 (GPE/Nation/NAM/SPC), name="American"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.50000 out of 1.50000
+      ref extent="U.S. commanders"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R14 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R14 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E23 (ORG/Governm/NAM/SPC), name="CENTRAL COMMAND"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E23 (ORG/Governm/NAM/SPC), name="CENTRAL COMMAND"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E10 (GPE/Nation/NAM/SPC), name="American"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E10 (GPE/Nation/NAM/SPC), name="American"
+- in document CNN_IP_20030402.1600.02-1:  score:  2.00000 out of 2.00000
+      ref extent="U.S. CENTRAL COMMAND"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R16 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R16 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E30 (LOC/Region-/NOM/SPC), head="outskirts"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E30 (LOC/Region-/NOM/SPC), head="outskirts"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E85 (GPE/Populat/NAM/SPC), name="Basra"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E85 (GPE/Populat/NAM/SPC), name="Basra"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.50000 out of 1.50000
+      ref extent="the outskirts of the town"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R17 (PHYS/Located/Asserted/Past)
+    tst relation CNN_IP_20030402.1600.02-1-R17 (PHYS/Located/Asserted/Past)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E32 (PER/Group/NOM/USP), head="fighters"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E32 (PER/Group/NOM/USP), head="fighters"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E31 (FAC/Buildin/NOM/SPC), head="building"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E31 (FAC/Buildin/NOM/SPC), head="building"
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000
+      ref extent="another building they said housed Ira..."
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R19 (PHYS/Located/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R19 (PHYS/Located/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E1 (PER/Individ/NAM/SPC), name="Tim Ewart"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E1 (PER/Individ/NAM/SPC), name="Tim Ewart"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E37 (LOC/Region-/NAM/SPC), name="Iraq"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E37 (LOC/Region-/NAM/SPC), name="Iraq"
+- in document CNN_IP_20030402.1600.02-1:  score:  2.00000 out of 2.00000
+      ref extent="Tim Ewart, ITV News, southern Iraq"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R2 (PHYS/Located/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R2 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E68 (PER/Group/NOM/SPC), head="forces"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E68 (PER/Group/NOM/SPC), head="forces"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E78 (GPE/Populat/NAM/SPC), name="Karbala"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E78 (GPE/Populat/NAM/SPC), name="Karbala"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.50000 out of 1.50000
+      ref extent="As coalition forces push ahead in the..."
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R20 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R20 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  0.50000 out of 0.50000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E40 (LOC/Land-Re/NOM/SPC), head="hills"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E40 (LOC/Land-Re/NOM/SPC), head="hills"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E41 (LOC/Region-/NAM/USP), name="Iraq"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E41 (LOC/Region-/NAM/USP), name="Iraq"
+- in document CNN_IP_20030402.1600.02-1:  score:  0.50000 out of 0.50000
+      ref extent="the rolling hills of northern Iraq"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R21 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R21 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E46 (PER/Individ/NAM/SPC), name="Brent Sadler"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E46 (PER/Individ/NAM/SPC), name="Brent Sadler"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E47 (ORG/Media/NAM/SPC), name="CNN"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E47 (ORG/Media/NAM/SPC), name="CNN"
+- in document CNN_IP_20030402.1600.02-1:  score:  2.00000 out of 2.00000
+      ref extent="CNN's Brent Sadler"
+      ref extent="CNN CORRESPONDENT"
+      ref extent="Brent Sadler, CNN, near Kirkuk in nor..."
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R22 (PHYS/Located/Asserted/Present)
+    tst relation CNN_IP_20030402.1600.02-1-R22 (PHYS/Located/Asserted/Present)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E46 (PER/Individ/NAM/SPC), name="Brent Sadler"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E46 (PER/Individ/NAM/SPC), name="Brent Sadler"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E45 (GPE/Populat/NAM/SPC), name="Kirkuk"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E45 (GPE/Populat/NAM/SPC), name="Kirkuk"
+- in document CNN_IP_20030402.1600.02-1:  score:  2.00000 out of 2.00000
+      ref extent="CNN's Brent Sadler is there"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R24 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R24 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E45 (GPE/Populat/NAM/SPC), name="Kirkuk"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E45 (GPE/Populat/NAM/SPC), name="Kirkuk"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E51 (LOC/Region-/NOM/SPC), head="wealth"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E51 (LOC/Region-/NOM/SPC), head="wealth"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.50000 out of 1.50000
+      ref extent="the heartland of northern Iraq's oil ..."
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R25 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R25 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E52 (PER/Group/NOM/USP), head="forces"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E52 (PER/Group/NOM/USP), head="forces"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E33 (GPE/Nation/NAM/SPC), name="Iraqi"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E33 (GPE/Nation/NAM/SPC), name="Iraqi"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref extent="Iraqi Kurdish forces"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R26 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R26 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E52 (PER/Group/NOM/USP), head="forces"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E52 (PER/Group/NOM/USP), head="forces"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E53 (PER/Group/NOM/GEN), head="Kurdish"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E53 (PER/Group/NOM/GEN), head="Kurdish"
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000
+      ref extent="Iraqi Kurdish forces"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R27 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R27 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E58 (PER/Group/NOM/SPC), head="soldiers"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E58 (PER/Group/NOM/SPC), head="soldiers"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E33 (GPE/Nation/NAM/SPC), name="Iraqi"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E33 (GPE/Nation/NAM/SPC), name="Iraqi"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.50000 out of 1.50000
+      ref extent="Iraqi soldiers"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R28 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R28 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  0.00000 out of 0.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E53 (PER/Group/NOM/GEN), head="Kurdish"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E53 (PER/Group/NOM/GEN), head="Kurdish"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E52 (PER/Group/NOM/USP), head="forces"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E52 (PER/Group/NOM/USP), head="forces"
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000
+      ref extent="Kurdish forces"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R29 (PHYS/Located/Asserted/Present)
+    tst relation CNN_IP_20030402.1600.02-1-R29 (PHYS/Located/Asserted/Present)
+      relation score:  0.70000 out of 0.70000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E62 (PER/Group/PRO/USP), head="us"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E62 (PER/Group/PRO/USP), head="us"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E55 (LOC/Region-/NOM/SPC), head="checkpoint"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E55 (LOC/Region-/NOM/SPC), head="checkpoint"
+      Time-Within ref arg: ID=CNN_IP_20030402.1600.02-1-T5 (TIM/---), extent="now"
+      Time-Within tst arg: ID=CNN_IP_20030402.1600.02-1-T5 (TIM/---), extent="now"
+- in document CNN_IP_20030402.1600.02-1:  score:  0.70000 out of 0.70000
+      ref extent="We are now between the lines, a no ma..."
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R3 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R3 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E80 (PER/Group/NOM/USP), head="troops"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E80 (PER/Group/NOM/USP), head="troops"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E10 (GPE/Nation/NAM/SPC), name="American"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E10 (GPE/Nation/NAM/SPC), name="American"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref extent="American troops"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R30 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R30 (ART/User-Owner-Inventor-Manufacturer/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E33 (GPE/Nation/NAM/SPC), name="Iraqi"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E33 (GPE/Nation/NAM/SPC), name="Iraqi"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E63 (FAC/Buildin/NOM/USP), head="bunkers"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E63 (FAC/Buildin/NOM/USP), head="bunkers"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref extent="abandoned Iraqi bunkers"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R31 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R31 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E45 (GPE/Populat/NAM/SPC), name="Kirkuk"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E45 (GPE/Populat/NAM/SPC), name="Kirkuk"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E41 (LOC/Region-/NAM/USP), name="Iraq"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E41 (LOC/Region-/NAM/USP), name="Iraq"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref extent="The oil capital of northern Iraq"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R32 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R32 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E69 (PER/Group/NOM/USP), head="opposition"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E69 (PER/Group/NOM/USP), head="opposition"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E33 (GPE/Nation/NAM/SPC), name="Iraqi"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E33 (GPE/Nation/NAM/SPC), name="Iraqi"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref extent="Iraq's armed opposition, including th..."
+      ref extent="the Iraqi opposition"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R33 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R33 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E72 (ORG/Governm/NOM/SPC), head="GOV"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E72 (ORG/Governm/NOM/SPC), head="GOV"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E73 (GPE/State-o/NOM/SPC), head="KURDISTAN"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E73 (GPE/State-o/NOM/SPC), head="KURDISTAN"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref extent="KURDISTAN REGIONAL GOV"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R36 (PHYS/Located/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R36 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E46 (PER/Individ/NAM/SPC), name="Brent Sadler"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E46 (PER/Individ/NAM/SPC), name="Brent Sadler"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E41 (LOC/Region-/NAM/USP), name="Iraq"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E41 (LOC/Region-/NAM/USP), name="Iraq"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref extent="Brent Sadler, CNN, near Kirkuk in nor..."
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R37 (PHYS/Near/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R37 (PHYS/Near/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E46 (PER/Individ/NAM/SPC), name="Brent Sadler"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E46 (PER/Individ/NAM/SPC), name="Brent Sadler"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E45 (GPE/Populat/NAM/SPC), name="Kirkuk"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E45 (GPE/Populat/NAM/SPC), name="Kirkuk"
+- in document CNN_IP_20030402.1600.02-1:  score:  2.00000 out of 2.00000
+      ref extent="Brent Sadler, CNN, near Kirkuk in nor..."
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R4 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R4 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E83 (PER/Group/NOM/SPC), head="British"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E83 (PER/Group/NOM/SPC), head="British"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E28 (GPE/Nation/NAM/SPC), name="British"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E28 (GPE/Nation/NAM/SPC), name="British"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.50000 out of 1.50000
+      ref extent="British forces"
+      ref extent="British troops"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R5 (PHYS/Near/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R5 (PHYS/Near/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E84 (PER/Group/NOM/USP), head="targets"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E84 (PER/Group/NOM/USP), head="targets"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E85 (GPE/Populat/NAM/SPC), name="Basra"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E85 (GPE/Populat/NAM/SPC), name="Basra"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref extent="targets around Basra"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R6 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R6 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E1 (PER/Individ/NAM/SPC), name="Tim Ewart"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E1 (PER/Individ/NAM/SPC), name="Tim Ewart"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E3 (ORG/Media/NAM/SPC), name="ITV News"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E3 (ORG/Media/NAM/SPC), name="ITV News"
+- in document CNN_IP_20030402.1600.02-1:  score:  2.00000 out of 2.00000
+      ref extent="ITN correspondent"
+      ref extent="ITN CORRESPONDENT"
+      ref extent="Tim Ewart, ITV News, southern Iraq"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R8 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R8 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E9 (ORG/Governm/NAM/SPC), name="3rd Infantry"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E9 (ORG/Governm/NAM/SPC), name="3rd Infantry"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E10 (GPE/Nation/NAM/SPC), name="American"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E10 (GPE/Nation/NAM/SPC), name="American"
+- in document CNN_IP_20030402.1600.02-1:  score:  2.00000 out of 2.00000
+      ref extent="the U.S. 3rd Infantry"
+--------
+    ref relation CNN_IP_20030402.1600.02-1-R9 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation CNN_IP_20030402.1600.02-1-R9 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=CNN_IP_20030402.1600.02-1-E7 (PER/Group/NOM/SPC), head="soldiers"
+            Arg-1 tst arg: ID=CNN_IP_20030402.1600.02-1-E7 (PER/Group/NOM/SPC), head="soldiers"
+            Arg-2 ref arg: ID=CNN_IP_20030402.1600.02-1-E9 (ORG/Governm/NAM/SPC), name="3rd Infantry"
+            Arg-2 tst arg: ID=CNN_IP_20030402.1600.02-1-E9 (ORG/Governm/NAM/SPC), name="3rd Infantry"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.50000 out of 1.50000
+      ref extent="soldiers of the U.S. 3rd Infantry, fi..."
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    ART     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.83   0.00   0.00   0.00
+GEN-AFF     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.10   0.00   0.00   0.00
+ORG-AFF     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.61   0.00   0.00   0.00
+PART-WH     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.23   0.00   0.00   0.00
+   PHYS    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.22   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.10   0.00   0.00   0.00
+Employm     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    26.79   0.00   0.00   0.00
+Geograp     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.48   0.00   0.00   0.00
+Located     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.64   0.00   0.00   0.00
+Members     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.83   0.00   0.00   0.00
+   Near     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.58   0.00   0.00   0.00
+Subsidi     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.76   0.00   0.00   0.00
+User-Ow     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.83   0.00   0.00   0.00
+  total    31     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ART:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+User-Ow     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.83   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.83   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.10   0.00   0.00   0.00
+  total     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.10   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    26.79   0.00   0.00   0.00
+Members     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.83   0.00   0.00   0.00
+  total     8     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.61   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    11.48   0.00   0.00   0.00
+Subsidi     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.76   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.23   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    19.64   0.00   0.00   0.00
+   Near     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    16.58   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    36.22   0.00   0.00   0.00
+
+Relation Type confusion matrix for "broadcast conversation" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      2     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     4     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0     8     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0     7     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       PHYS      0     0     0     0     0     0    10        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "broadcast conversation" sources (for mapped relations):
+  type=ART   COUNT    PERCENT
+    ref\tst: User-      User- 
+User-Owner-      2      100.0
+
+Relation Subtype confusion matrix for "broadcast conversation" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      4     0      100.0   0.0
+Org-Locatio      0     0        0.0   0.0
+
+Relation Subtype confusion matrix for "broadcast conversation" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      7     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     1     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "broadcast conversation" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     4     0        0.0 100.0   0.0
+ Subsidiary      0     0     3        0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "broadcast conversation" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      6     0      100.0   0.0
+       Near      0     4        0.0 100.0
+
+Relation Modality confusion matrix for "broadcast conversation" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     31     0     0      100.0   0.0   0.0
+      Other      0     0     0        0.0   0.0   0.0
+Unspecified      0     0     0        0.0   0.0   0.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=31/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted 
+        Asserted    31/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=31/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: Employment     Located Geographica        Near Citizen-Res  Subsidiary User-Owner-  Membership 
+      Employment     7/22.6%      -           -           -           -           -           -           -     
+         Located      -          6/19.4%      -           -           -           -           -           -     
+    Geographical      -           -          4/12.9%      -           -           -           -           -     
+            Near      -           -           -          4/12.9%      -           -           -           -     
+  Citizen-Reside      -           -           -           -          4/12.9%      -           -           -     
+      Subsidiary      -           -           -           -           -          3/ 9.7%      -           -     
+  User-Owner-Inv      -           -           -           -           -           -          2/ 6.5%      -     
+      Membership      -           -           -           -           -           -           -          1/ 3.2%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=31/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified     Present        Past 
+     Unspecified    28/90.3%      -           -     
+         Present      -          2/ 6.5%      -     
+            Past      -           -          1/ 3.2%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=31/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       PHYS     ORG-AFF  PART-WHOLE     GEN-AFF         ART 
+            PHYS    10/32.3%      -           -           -           -     
+         ORG-AFF      -          8/25.8%      -           -           -     
+      PART-WHOLE      -           -          7/22.6%      -           -     
+         GEN-AFF      -           -           -          4/12.9%      -     
+             ART      -           -           -           -          2/ 6.5%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=63/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 Time-Within 
+           Arg-2    31/49.2%      -           -     
+           Arg-1      -         31/49.2%      -     
+     Time-Within      -           -          1/ 1.6%
+
+======== event mapping ========
+
+--------
+    ref event CNN_IP_20030402.1600.02-1-EV1 (Movement/Transport/Specific/Asserted/Positive/Unspecified)
+    tst event CNN_IP_20030402.1600.02-1-EV1 (Movement/Transport/Specific/Asserted/Positive/Unspecified)
+      event score:  1.50000 out of 1.50000
+      Destination ref arg: ID=CNN_IP_20030402.1600.02-1-E77 (GPE/Populat/NAM/SPC), name="Baghdad"
+      Destination tst arg: ID=CNN_IP_20030402.1600.02-1-E77 (GPE/Populat/NAM/SPC), name="Baghdad"
+           Person ref arg: ID=CNN_IP_20030402.1600.02-1-E25 (PER/Group/NOM/USP), head="Americans"
+           Person tst arg: ID=CNN_IP_20030402.1600.02-1-E25 (PER/Group/NOM/USP), head="Americans"
+           Person ref arg: ID=CNN_IP_20030402.1600.02-1-E68 (PER/Group/NOM/SPC), head="forces"
+           Person tst arg: ID=CNN_IP_20030402.1600.02-1-E68 (PER/Group/NOM/SPC), head="forces"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.50000 out of 1.50000
+      ref anchor="march", extent="coalition forces push ahead in their ..."
+      ref anchor="approach", extent="We will approach Baghdad"
+      ref anchor="racing", extent="The Americans are racing towards Baghdad"
+--------
+    ref event CNN_IP_20030402.1600.02-1-EV10 (Conflict/Attack/Generic/Asserted/Positive/Unspecified)
+    tst event CNN_IP_20030402.1600.02-1-EV10 (Conflict/Attack/Generic/Asserted/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000
+      ref anchor="strikes", extent="strikes"
+--------
+    ref event CNN_IP_20030402.1600.02-1-EV11 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+    tst event CNN_IP_20030402.1600.02-1-EV11 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000
+      ref anchor="war", extent="war"
+--------
+    ref event CNN_IP_20030402.1600.02-1-EV2 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+    tst event CNN_IP_20030402.1600.02-1-EV2 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+      event score:  2.00000 out of 2.00000
+         Attacker ref arg: ID=CNN_IP_20030402.1600.02-1-E7 (PER/Group/NOM/SPC), head="soldiers"
+         Attacker tst arg: ID=CNN_IP_20030402.1600.02-1-E7 (PER/Group/NOM/SPC), head="soldiers"
+            Place ref arg: ID=CNN_IP_20030402.1600.02-1-E78 (GPE/Populat/NAM/SPC), name="Karbala"
+            Place tst arg: ID=CNN_IP_20030402.1600.02-1-E78 (GPE/Populat/NAM/SPC), name="Karbala"
+           Target ref arg: ID=CNN_IP_20030402.1600.02-1-E68 (PER/Group/NOM/SPC), head="forces"
+           Target tst arg: ID=CNN_IP_20030402.1600.02-1-E68 (PER/Group/NOM/SPC), head="forces"
+           Target ref arg: ID=CNN_IP_20030402.1600.02-1-E80 (PER/Group/NOM/USP), head="troops"
+           Target tst arg: ID=CNN_IP_20030402.1600.02-1-E80 (PER/Group/NOM/USP), head="troops"
+- in document CNN_IP_20030402.1600.02-1:  score:  2.00000 out of 2.00000
+      ref anchor="resistance", extent="they have encountered some resistance..."
+      ref anchor="fighting", extent="American troops and their superior te..."
+      ref anchor="fighting", extent="soldiers of the U.S. 3rd Infantry, fi..."
+      ref anchor="resistance", extent="resistance"
+--------
+    ref event CNN_IP_20030402.1600.02-1-EV3 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+    tst event CNN_IP_20030402.1600.02-1-EV3 (Conflict/Attack/Specific/Asserted/Positive/Unspecified)
+      event score:  1.50000 out of 1.50000
+         Attacker ref arg: ID=CNN_IP_20030402.1600.02-1-E83 (PER/Group/NOM/SPC), head="British"
+         Attacker tst arg: ID=CNN_IP_20030402.1600.02-1-E83 (PER/Group/NOM/SPC), head="British"
+            Place ref arg: ID=CNN_IP_20030402.1600.02-1-E85 (GPE/Populat/NAM/SPC), name="Basra"
+            Place tst arg: ID=CNN_IP_20030402.1600.02-1-E85 (GPE/Populat/NAM/SPC), name="Basra"
+           Target ref arg: ID=CNN_IP_20030402.1600.02-1-E84 (PER/Group/NOM/USP), head="targets"
+           Target tst arg: ID=CNN_IP_20030402.1600.02-1-E84 (PER/Group/NOM/USP), head="targets"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.50000 out of 1.50000
+      ref anchor="attack", extent="British forces continue their attack ..."
+--------
+    ref event CNN_IP_20030402.1600.02-1-EV4 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event CNN_IP_20030402.1600.02-1-EV4 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+         Attacker ref arg: ID=CNN_IP_20030402.1600.02-1-E83 (PER/Group/NOM/SPC), head="British"
+         Attacker tst arg: ID=CNN_IP_20030402.1600.02-1-E83 (PER/Group/NOM/SPC), head="British"
+           Target ref arg: ID=CNN_IP_20030402.1600.02-1-E31 (FAC/Buildin/NOM/SPC), head="building"
+           Target tst arg: ID=CNN_IP_20030402.1600.02-1-E31 (FAC/Buildin/NOM/SPC), head="building"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref anchor="destroyed", extent="British troops control the outskirts ..."
+--------
+    ref event CNN_IP_20030402.1600.02-1-EV5 (Conflict/Attack/Generic/Other/Positive/Future)
+    tst event CNN_IP_20030402.1600.02-1-EV5 (Conflict/Attack/Generic/Other/Positive/Future)
+      event score:  1.00000 out of 1.00000
+            Place ref arg: ID=CNN_IP_20030402.1600.02-1-E77 (GPE/Populat/NAM/SPC), name="Baghdad"
+            Place tst arg: ID=CNN_IP_20030402.1600.02-1-E77 (GPE/Populat/NAM/SPC), name="Baghdad"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref anchor="fighting", extent="fighting in the capital, 250 miles to..."
+--------
+    ref event CNN_IP_20030402.1600.02-1-EV6 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event CNN_IP_20030402.1600.02-1-EV6 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.20000 out of 1.20000
+         Attacker ref arg: ID=CNN_IP_20030402.1600.02-1-E15 (GPE/Nation/NOM/SPC), head="coalition"
+         Attacker tst arg: ID=CNN_IP_20030402.1600.02-1-E15 (GPE/Nation/NOM/SPC), head="coalition"
+            Place ref arg: ID=CNN_IP_20030402.1600.02-1-E40 (LOC/Land-Re/NOM/SPC), head="hills"
+            Place tst arg: ID=CNN_IP_20030402.1600.02-1-E40 (LOC/Land-Re/NOM/SPC), head="hills"
+           Target ref arg: ID=CNN_IP_20030402.1600.02-1-E43 (LOC/Region-/NOM/USP), head="positions"
+           Target tst arg: ID=CNN_IP_20030402.1600.02-1-E43 (LOC/Region-/NOM/USP), head="positions"
+      Time-Within ref arg: ID=CNN_IP_20030402.1600.02-1-T3 (TIM/---), extent="today"
+      Time-Within tst arg: ID=CNN_IP_20030402.1600.02-1-T3 (TIM/---), extent="today"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.20000 out of 1.20000
+      ref anchor="strikes", extent="the rolling hills of northern Iraq, c..."
+--------
+    ref event CNN_IP_20030402.1600.02-1-EV7 (Conflict/Attack/Specific/Asserted/Negative/Past)
+    tst event CNN_IP_20030402.1600.02-1-EV7 (Conflict/Attack/Specific/Asserted/Negative/Past)
+      event score:  0.00000 out of 0.00000
+- in document CNN_IP_20030402.1600.02-1:  score:  0.00000 out of 0.00000
+      ref anchor="shot", extent="shot"
+--------
+    ref event CNN_IP_20030402.1600.02-1-EV8 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event CNN_IP_20030402.1600.02-1-EV8 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+           Origin ref arg: ID=CNN_IP_20030402.1600.02-1-E55 (LOC/Region-/NOM/SPC), head="checkpoint"
+           Origin tst arg: ID=CNN_IP_20030402.1600.02-1-E55 (LOC/Region-/NOM/SPC), head="checkpoint"
+           Person ref arg: ID=CNN_IP_20030402.1600.02-1-E58 (PER/Group/NOM/SPC), head="soldiers"
+           Person tst arg: ID=CNN_IP_20030402.1600.02-1-E58 (PER/Group/NOM/SPC), head="soldiers"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref anchor="fled", extent="Iraqi soldiers fled these positions"
+--------
+    ref event CNN_IP_20030402.1600.02-1-EV9 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event CNN_IP_20030402.1600.02-1-EV9 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  1.00000 out of 1.00000
+         Attacker ref arg: ID=CNN_IP_20030402.1600.02-1-E15 (GPE/Nation/NOM/SPC), head="coalition"
+         Attacker tst arg: ID=CNN_IP_20030402.1600.02-1-E15 (GPE/Nation/NOM/SPC), head="coalition"
+            Place ref arg: ID=CNN_IP_20030402.1600.02-1-E55 (LOC/Region-/NOM/SPC), head="checkpoint"
+            Place tst arg: ID=CNN_IP_20030402.1600.02-1-E55 (LOC/Region-/NOM/SPC), head="checkpoint"
+- in document CNN_IP_20030402.1600.02-1:  score:  1.00000 out of 1.00000
+      ref anchor="bombing", extent="these positions in a hurry, under the..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Conflic     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.49   0.00   0.00   0.00
+Movemen     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.51   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    90.20   0.00   0.00   0.00
+  Other     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     9.80   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.49   0.00   0.00   0.00
+Transpo     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.51   0.00   0.00   0.00
+  total    11     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Conflict:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.49   0.00   0.00   0.00
+  total     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    75.49   0.00   0.00   0.00
+
+Performance statistics for TYPE = Movement:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.51   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    24.51   0.00   0.00   0.00
+
+Event Type confusion matrix for "broadcast conversation" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     9     0     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     2     0     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "broadcast conversation" sources (for mapped events):
+  type=Confl COUNT......    PERCENT......
+    ref\tst: Attac Demon      Attac Demon 
+     Attack      9     0      100.0   0.0
+Demonstrate      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "broadcast conversation" sources (for mapped events):
+  type=Movem COUNT    PERCENT
+    ref\tst: Trans      Trans 
+  Transport      2      100.0
+
+Event Modality confusion matrix for "broadcast conversation" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted     10     0      100.0   0.0
+      Other      0     1        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=11/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific     Generic 
+        Specific     9/81.8%      -     
+         Generic      -          2/18.2%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=11/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted    10/90.9%      -     
+           Other      -          1/ 9.1%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=11/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive    Negative 
+        Positive    10/90.9%      -     
+        Negative      -          1/ 9.1%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=11/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Attack   Transport 
+          Attack     9/81.8%      -     
+       Transport      -          2/18.2%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=11/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified        Past      Future 
+     Unspecified     5/45.5%      -           -     
+            Past      -          5/45.5%      -     
+          Future      -           -          1/ 9.1%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=11/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Conflict    Movement 
+        Conflict     9/81.8%      -     
+        Movement      -          2/18.2%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=21/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Attacker      Target       Place      Person Destination Time-Within      Origin 
+        Attacker     5/23.8%      -           -           -           -           -           -     
+          Target      -          5/23.8%      -           -           -           -           -     
+           Place      -           -          5/23.8%      -           -           -           -     
+          Person      -           -           -          3/14.3%      -           -           -     
+     Destination      -           -           -           -          1/ 4.8%      -           -     
+     Time-Within      -           -           -           -           -          1/ 4.8%      -     
+          Origin      -           -           -           -           -           -          1/ 4.8%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 CNN_IP_20030402.1600.02-1-T1, ID=CNN_IP_20030402.1600.02-1-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNN_IP_20030402.1600.02-1-T1, ID=CNN_IP_20030402.1600.02-1-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNN_IP_20030402.1600.02-1:
+          mention="2003-04-02T16:00:00-05:00"
+--------
+    ref timex2 CNN_IP_20030402.1600.02-1-T2, ID=CNN_IP_20030402.1600.02-1-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNN_IP_20030402.1600.02-1-T2, ID=CNN_IP_20030402.1600.02-1-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNN_IP_20030402.1600.02-1:
+          mention="today"
+--------
+    ref timex2 CNN_IP_20030402.1600.02-1-T3, ID=CNN_IP_20030402.1600.02-1-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNN_IP_20030402.1600.02-1-T3, ID=CNN_IP_20030402.1600.02-1-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNN_IP_20030402.1600.02-1:
+          mention="today"
+--------
+    ref timex2 CNN_IP_20030402.1600.02-1-T4, ID=CNN_IP_20030402.1600.02-1-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNN_IP_20030402.1600.02-1-T4, ID=CNN_IP_20030402.1600.02-1-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNN_IP_20030402.1600.02-1:
+          mention="now"
+--------
+    ref timex2 CNN_IP_20030402.1600.02-1-T5, ID=CNN_IP_20030402.1600.02-1-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 CNN_IP_20030402.1600.02-1-T5, ID=CNN_IP_20030402.1600.02-1-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document CNN_IP_20030402.1600.02-1:
+          mention="now"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+broadca     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     5/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO     5/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---     5/99.9%
+
+data input:               0.63 secs to load data
+entity eval:              0.11 secs to compute values,    0.02 secs to map,    0.09 secs to score
+relation eval:            0.23 secs to compute values,    0.02 secs to map,    0.05 secs to score
+event eval:               0.03 secs to compute values,    0.00 secs to map,    0.02 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.00 secs to compute values,    0.01 secs to map,    0.00 secs to score
+value eval:               0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+########

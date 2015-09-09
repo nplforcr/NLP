@@ -1,0 +1,1696 @@
+command line (run on 2005 Aug 21 at 10:51:45):  /ldc/projects/ACE/ACE4/ace2005/tools/NIST/ace05-eval/ace05-eval-v07d -a -r /tmp/score80357 -t /tmp/score80357
+
+ Entity scoring is LEVEL weighted
+ Relation/Event mapping is allowed when EITHER criterion is satisfied
+ Arguments contribute to scoring when arguments are OVERLAPPING
+ Argument averaging is ARITHMETIC
+ Scoring mode parameter set is "DEFAULT"
+
+  min acceptable overlap of matching mention heads or names:
+       30.0 percent
+  min acceptable run of matching characters in mention heads:
+       30.0 percent
+  max acceptable extent difference for names and mentions to match:
+          4 chars for text sources
+      0.400 sec for audio sources
+      0.400 cm for image sources
+
+  Entity mention values:
+      1.000 for type NAM
+      0.500 for type NOM
+      0.100 for type PRO
+  Entity value weights for entity types:
+      1.000 for type FAC
+      1.000 for type GPE
+      1.000 for type LOC
+      1.000 for type ORG
+      1.000 for type PER
+      1.000 for type VEH
+      1.000 for type WEA
+  Entity value weights for entity classes:
+      1.000 for class SPC
+      0.000 for class GEN
+      0.000 for class NEG
+      0.000 for class USP
+  Entity value discounts for entity attribute recognition errors:
+      0.750 for CLASS errors
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Entity mention value discounts for mention attribute recognition errors:
+      0.900 for ROLE errors
+      0.900 for STYLE errors
+      0.900 for TYPE errors
+  Entity value (cost) weight for spurious (false alarm) entities: 0.750
+  Entity mention value (cost) weight for spurious entity mentions: 0.750
+  Entity mention value (cost) discount for incorrect coreference: 0.000
+
+  Relation value weights for relation types:
+      1.000 for type ART
+      1.000 for type GEN-AFF
+      1.000 for type METONYMY
+      1.000 for type ORG-AFF
+      1.000 for type PART-WHOLE
+      1.000 for type PER-SOC
+      1.000 for type PHYS
+  Relation value weights for relation modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+      1.000 for modality Unspecified
+  Relation value discounts for relation attribute recognition errors:
+      0.750 for MODALITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Relation value (cost) weight for spurious (false alarm) relations: 0.750
+  Relation value (cost) weight for spurious relation arguments: 0.000
+  Relation argument value (cost) discount for argument role errors: 0.750
+
+  Event value weights for event types:
+      1.000 for type Business
+      1.000 for type Conflict
+      1.000 for type Contact
+      1.000 for type Justice
+      1.000 for type Life
+      1.000 for type Movement
+      1.000 for type Personnel
+      1.000 for type Transaction
+  Event value weights for event modalities:
+      1.000 for modality Asserted
+      1.000 for modality Other
+  Event value discounts for event attribute recognition errors:
+      1.000 for GENERICITY errors
+      0.750 for MODALITY errors
+      1.000 for POLARITY errors
+      0.900 for SUBTYPE errors
+      1.000 for TENSE errors
+      0.500 for TYPE errors
+  Event value (cost) weight for spurious (false alarm) events: 0.750
+  Event value (cost) weight for spurious event arguments: 0.500
+  Event argument value (cost) discount for argument role errors: 0.750
+
+  Timex2 value weights for timex2 types:
+      0.100 for type TIMEX2
+  Timex2 attribute value weights for timex2 attributes:
+      0.250 for type ANCHOR_DIR
+      0.500 for type ANCHOR_VAL
+      0.100 for type MOD
+      0.100 for type SET
+      1.000 for type VAL
+  Timex2 value (cost) weight for spurious (false alarm) timex2's: 0.750
+  Timex2 mention value (cost) weight for spurious timex2 mentions: 0.750
+  Timex2 mention value (cost) discount for incorrect coreference: 0.000
+
+  Value value weights for value types:
+      1.000 for type Contact-Info
+      1.000 for type Crime
+      1.000 for type Illness
+      1.000 for type Job-Title
+      1.000 for type Numeric
+      1.000 for type Sentence
+  Value value discounts for value attribute recognition errors:
+      0.900 for SUBTYPE errors
+      0.500 for TYPE errors
+  Value value (cost) weight for spurious (false alarm) values: 0.750
+  Value mention value (cost) weight for spurious value mentions: 0.750
+  Value mention value (cost) discount for incorrect coreference: 0.000
+
+======== entity mapping ========
+
+--------
+    ref entity NYT_ENG_20030630.0075-E1 (ORG/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E1 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="CIA" (NAM/ORG/LIT)
+      ref mention="offics" (NOM/ORG/LIT)
+         ref name="CIA"
+--------
+    ref entity NYT_ENG_20030630.0075-E10 (ORG/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E10 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="administration" (NOM/ORG/LIT)
+      ref mention="administration" (NOM/ORG/LIT)
+      ref mention="administration" (NOM/ORG/LIT)
+      ref mention="its" (PRO/ORG/LIT)
+      ref mention="administration" (NOM/ORG/LIT)
+      ref mention="We" (PRO/ORG/LIT)
+      ref mention="we" (PRO/ORG/LIT)
+      ref mention="Administration" (NOM/ORG/LIT)
+      ref mention="administration" (NOM/ORG/LIT)
+      ref mention="administration" (NOM/ORG/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E11 (PER/PRO/USP)
+    tst entity NYT_ENG_20030630.0075-E11 (PER/PRO/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (PER/PRO/USP)
+      ref mention="others" (PRO/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E12 (GPE/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E12 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+      ref mention="Palestinian" (NAM/GPE/LIT)
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+         ref name="Palestinian"
+--------
+    ref entity NYT_ENG_20030630.0075-E13 (PER/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E13 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Yasser Arafat" (NAM/PER/LIT)
+         ref name="Yasser Arafat"
+--------
+    ref entity NYT_ENG_20030630.0075-E15 (PER/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E15 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="prime minister" (NOM/PER/LIT)
+      ref mention="Mahmoud Abbas" (NAM/PER/LIT)
+      ref mention="Abbas" (NAM/PER/LIT)
+      ref mention="Abbas" (NAM/PER/LIT)
+         ref name="Mahmoud Abbas"
+         ref name="Abbas"
+         ref name="Abbas"
+--------
+    ref entity NYT_ENG_20030630.0075-E18 (GPE/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E18 (GPE/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (GPE/NOM/USP)
+      ref mention="sources" (NOM/GPE/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E19 (PER/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E19 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="minister" (NOM/PER/LIT)
+      ref mention="Salam Fayyad" (NAM/PER/LIT)
+         ref name="Salam Fayyad"
+--------
+    ref entity NYT_ENG_20030630.0075-E21 (PER/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E21 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="officials" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E23 (LOC/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E23 (LOC/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (LOC/NOM/SPC)
+      ref mention="region" (NOM/LOC/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E24 (GPE/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E24 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israel" (NAM/LOC/LIT)
+      ref mention="Israel" (NAM/GPE/LIT)
+      ref mention="Israel" (NAM/ORG/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+      ref mention="Israel" (NAM/GPE/LIT)
+      ref mention="Israel" (NAM/ORG/LIT)
+      ref mention="Israel" (NAM/GPE/LIT)
+      ref mention="Israeli" (NAM/GPE/LIT)
+         ref name="Israeli"
+         ref name="Israeli"
+         ref name="Israel"
+         ref name="Israel"
+         ref name="Israel"
+         ref name="Israeli"
+         ref name="Israeli"
+         ref name="Israeli"
+         ref name="Israel"
+         ref name="Israel"
+         ref name="Israel"
+         ref name="Israeli"
+--------
+    ref entity NYT_ENG_20030630.0075-E26 (LOC/PRO/SPC)
+    tst entity NYT_ENG_20030630.0075-E26 (LOC/PRO/SPC)
+      entity score:  0.10000 out of 0.10000
+- in document NYT_ENG_20030630.0075:  score:  0.10000 out of 0.10000  (LOC/PRO/SPC)
+      ref mention="much" (PRO/LOC/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E27 (LOC/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E27 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="Gaza Strip" (NAM/LOC/LIT)
+      ref mention="Gaza" (NAM/LOC/LIT)
+         ref name="Gaza Strip"
+         ref name="Gaza"
+--------
+    ref entity NYT_ENG_20030630.0075-E28 (ORG/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E28 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="groups" (NOM/ORG/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E3 (PER/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E3 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="Israelis" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E30 (PER/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E30 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Secretary" (NOM/PER/LIT)
+      ref mention="Colin L. Powell" (NAM/PER/LIT)
+      ref mention="who" (PRO/PER/LIT)
+      ref mention="Powell" (NAM/PER/LIT)
+      ref mention="he" (PRO/PER/LIT)
+      ref mention="Powell" (NAM/PER/LIT)
+         ref name="Colin L. Powell"
+         ref name="Powell"
+         ref name="Powell"
+--------
+    ref entity NYT_ENG_20030630.0075-E32 (GPE/NOM/GEN)
+    tst entity NYT_ENG_20030630.0075-E32 (GPE/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (GPE/NOM/GEN)
+      ref mention="State" (NOM/ORG/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E33 (PER/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E33 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="listeners" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E35 (ORG/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E35 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="groups" (NOM/ORG/LIT)
+      ref mention="groups" (NOM/ORG/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E36 (ORG/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E36 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Hamas" (NAM/ORG/LIT)
+      ref mention="Hamas" (NAM/ORG/LIT)
+         ref name="Hamas"
+         ref name="Hamas"
+--------
+    ref entity NYT_ENG_20030630.0075-E37 (PER/PRO/GEN)
+    tst entity NYT_ENG_20030630.0075-E37 (PER/PRO/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (PER/PRO/GEN)
+      ref mention="you" (PRO/PER/LIT)
+      ref mention="you" (PRO/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E38 (ORG/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E38 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="sides" (NOM/ORG/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E4 (GPE/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E4 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="American" (NAM/GPE/LIT)
+      ref mention="American" (NAM/GPE/LIT)
+      ref mention="American" (NAM/GPE/LIT)
+      ref mention="United States" (NAM/ORG/LIT)
+      ref mention="American" (NAM/GPE/LIT)
+      ref mention="American" (NAM/GPE/LIT)
+      ref mention="American" (NAM/GPE/LIT)
+         ref name="American"
+         ref name="American"
+         ref name="American"
+         ref name="United States"
+         ref name="American"
+         ref name="American"
+         ref name="American"
+--------
+    ref entity NYT_ENG_20030630.0075-E41 (PER/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E41 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="team" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E42 (PER/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E42 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Condoleezza Rice" (NAM/PER/LIT)
+      ref mention="adviser" (NOM/PER/LIT)
+         ref name="Condoleezza Rice"
+--------
+    ref entity NYT_ENG_20030630.0075-E44 (GPE/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E44 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Union" (NAM/GPE/LIT)
+         ref name="Union"
+--------
+    ref entity NYT_ENG_20030630.0075-E45 (GPE/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E45 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="League" (NAM/GPE/LIT)
+         ref name="League"
+--------
+    ref entity NYT_ENG_20030630.0075-E46 (PER/NAM/GEN)
+    tst entity NYT_ENG_20030630.0075-E46 (PER/NAM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (PER/NAM/GEN)
+      ref mention="Arab" (NAM/PER/LIT)
+         ref name="Arab"
+--------
+    ref entity NYT_ENG_20030630.0075-E47 (GPE/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E47 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="European" (NAM/GPE/LIT)
+         ref name="European"
+--------
+    ref entity NYT_ENG_20030630.0075-E54 (LOC/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E54 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="Bethlehem" (NAM/LOC/LIT)
+         ref name="Bethlehem"
+--------
+    ref entity NYT_ENG_20030630.0075-E55 (PER/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E55 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="official" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E56 (GPE/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E56 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Washington" (NAM/ORG/LIT)
+      ref mention="Washington" (NAM/ORG/LIT)
+         ref name="Washington"
+         ref name="Washington"
+--------
+    ref entity NYT_ENG_20030630.0075-E58 (LOC/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E58 (LOC/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (LOC/NOM/USP)
+      ref mention="territories" (NOM/LOC/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E59 (PER/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E59 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="patrols" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E6 (ORG/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E6 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="United Nation" (NAM/ORG/LIT)
+         ref name="United Nation"
+--------
+    ref entity NYT_ENG_20030630.0075-E62 (PER/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E62 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="officials" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E67 (GPE/NOM/GEN)
+    tst entity NYT_ENG_20030630.0075-E67 (GPE/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (GPE/NOM/GEN)
+      ref mention="state" (NOM/GPE/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E69 (PER/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E69 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="official" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E7 (ORG/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E7 (ORG/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (ORG/NOM/USP)
+      ref mention="organizations" (NOM/ORG/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E71 (PER/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E71 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="forces" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E72 (PER/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E72 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="officials" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E75 (PER/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E75 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="3usQects" (NOM/PER/LIT)
+      ref mention="them" (PRO/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E76 (PER/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E76 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="officials" (NOM/PER/LIT)
+      ref mention="they" (PRO/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E78 (PER/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E78 (PER/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (PER/NAM/SPC)
+      ref mention="Bush" (NAM/PER/LIT)
+         ref name="Bush"
+--------
+    ref entity NYT_ENG_20030630.0075-E79 (GPE/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E79 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="Middle East" (NAM/GPE/LIT)
+      ref mention="Middle East" (NAM/GPE/LIT)
+      ref mention="Middle East" (NAM/LOC/LIT)
+         ref name="Middle East"
+         ref name="Middle East"
+         ref name="Middle East"
+--------
+    ref entity NYT_ENG_20030630.0075-E8 (PER/NOM/USP)
+    tst entity NYT_ENG_20030630.0075-E8 (PER/NOM/USP)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (PER/NOM/USP)
+      ref mention="officials" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E80 (PER/NOM/GEN)
+    tst entity NYT_ENG_20030630.0075-E80 (PER/NOM/GEN)
+      entity score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000  (PER/NOM/GEN)
+      ref mention="Palestinians" (NOM/PER/LIT)
+      ref mention="Palestinians" (NOM/PER/LIT)
+      ref mention="Palestinians" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+      ref mention="Palestinians" (NOM/PER/LIT)
+      ref mention="their" (PRO/PER/LIT)
+      ref mention="Palestinians" (NOM/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E81 (ORG/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E81 (ORG/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (ORG/NAM/SPC)
+      ref mention="Palestinian Authority" (NAM/ORG/LIT)
+      ref mention="authority" (NOM/ORG/LIT)
+      ref mention="Authority" (NAM/ORG/LIT)
+      ref mention="Authority" (NAM/ORG/LIT)
+      ref mention="their" (PRO/ORG/LIT)
+      ref mention="Authority" (NAM/ORG/LIT)
+      ref mention="Authority" (NAM/ORG/LIT)
+      ref mention="Authority" (NAM/ORG/LIT)
+      ref mention="authority" (NOM/ORG/LIT)
+      ref mention="Authority" (NAM/ORG/LIT)
+      ref mention="Authority" (NAM/ORG/LIT)
+         ref name="Palestinian Authority"
+         ref name="Authority"
+         ref name="Authority"
+         ref name="Authority"
+         ref name="Authority"
+         ref name="Authority"
+         ref name="Authority"
+         ref name="Authority"
+--------
+    ref entity NYT_ENG_20030630.0075-E82 (GPE/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E82 (GPE/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (GPE/NAM/SPC)
+      ref mention="WASHINGTON" (NAM/LOC/LIT)
+         ref name="WASHINGTON"
+--------
+    ref entity NYT_ENG_20030630.0075-E83 (PER/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E83 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="officials" (NOM/PER/LIT)
+      ref mention="They" (PRO/PER/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E85 (ORG/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E85 (ORG/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (ORG/NOM/SPC)
+      ref mention="apparatus" (NOM/ORG/LIT)
+--------
+    ref entity NYT_ENG_20030630.0075-E86 (LOC/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E86 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="West Bank" (NAM/LOC/LIT)
+      ref mention="Bank" (NAM/LOC/LIT)
+         ref name="West Bank"
+         ref name="Bank"
+--------
+    ref entity NYT_ENG_20030630.0075-E87 (LOC/NAM/SPC)
+    tst entity NYT_ENG_20030630.0075-E87 (LOC/NAM/SPC)
+      entity score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000  (LOC/NAM/SPC)
+      ref mention="Gaza" (NAM/LOC/LIT)
+         ref name="Gaza"
+--------
+    ref entity NYT_ENG_20030630.0075-E9 (PER/NOM/SPC)
+    tst entity NYT_ENG_20030630.0075-E9 (PER/NOM/SPC)
+      entity score:  0.50000 out of 0.50000
+- in document NYT_ENG_20030630.0075:  score:  0.50000 out of 0.50000  (PER/NOM/SPC)
+      ref mention="official" (NOM/PER/LIT)
+      ref mention="official" (NOM/PER/LIT)
+
+======== entity scoring ========
+
+Entity Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    GPE    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.93   0.00   0.00   0.00
+    LOC     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.81   0.00   0.00   0.00
+    ORG    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.90   0.00   0.00   0.00
+    PER    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.36   0.00   0.00   0.00
+  total    54     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ level    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    NAM    24     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    79.04   0.00   0.00   0.00
+    NOM    27     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.62   0.00   0.00   0.00
+    PRO     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.34   0.00   0.00   0.00
+  total    54     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ value    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  <=0.2    19     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.34   0.00   0.00   0.00
+0.2-0.5    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    20.62   0.00   0.00   0.00
+0.5-1.0    23     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    79.04   0.00   0.00   0.00
+  total    54     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ mention  Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ count    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      1    32     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    45.02   0.00   0.00   0.00
+      2    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    29.21   0.00   0.00   0.00
+    3-4     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.87   0.00   0.00   0.00
+    5-8     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.87   0.00   0.00   0.00
+     >8     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.03   0.00   0.00   0.00
+  total    54     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ class    Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+    SPC    36     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+    GEN     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+    USP    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total    54     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    54     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    54     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Contine     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.44   0.00   0.00   0.00
+GPE-Clu     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.31   0.00   0.00   0.00
+Governm     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.03   0.00   0.00   0.00
+  Group    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.59   0.00   0.00   0.00
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.77   0.00   0.00   0.00
+ Nation     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.87   0.00   0.00   0.00
+Non-Gov     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.87   0.00   0.00   0.00
+Populat     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.87   0.00   0.00   0.00
+Region-     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.09   0.00   0.00   0.00
+Region-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.72   0.00   0.00   0.00
+Special     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.44   0.00   0.00   0.00
+  total    54     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GPE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Contine     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.44   0.00   0.00   0.00
+GPE-Clu     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.31   0.00   0.00   0.00
+ Nation     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.87   0.00   0.00   0.00
+Populat     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.87   0.00   0.00   0.00
+Special     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.44   0.00   0.00   0.00
+  total    12     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    30.93   0.00   0.00   0.00
+
+Performance statistics for TYPE = LOC:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Region-     6     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    14.09   0.00   0.00   0.00
+Region-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     1.72   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    15.81   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Governm     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    12.03   0.00   0.00   0.00
+Non-Gov     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     6.87   0.00   0.00   0.00
+  total    10     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    18.90   0.00   0.00   0.00
+
+Performance statistics for TYPE = PER:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ entity   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Group    15     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     8.59   0.00   0.00   0.00
+Indeter     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Individ     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    25.77   0.00   0.00   0.00
+  total    25     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    34.36   0.00   0.00   0.00
+
+Entity Type confusion matrix for "newswire" sources (for mapped entities):
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    12     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0     7     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    10     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    25     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Recognition statistics for attribute CLASS (for mapped elements):
+    Summary (count/percent):  Nref=54/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        SPC         USP         GEN 
+             SPC    36/66.7%      -           -     
+             USP      -         13/24.1%      -     
+             GEN      -           -          5/ 9.3%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=54/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Group  Individual Region-Gene Non-Governm      Nation  Government GPE-Cluster Population-  all others 
+           Group    15/27.8%      -           -           -           -           -           -           -           -     
+      Individual      -          9/16.7%      -           -           -           -           -           -           -     
+  Region-General      -           -          6/11.1%      -           -           -           -           -           -     
+  Non-Government      -           -           -          5/ 9.3%      -           -           -           -           -     
+          Nation      -           -           -           -          5/ 9.3%      -           -           -           -     
+      Government      -           -           -           -           -          5/ 9.3%      -           -           -     
+     GPE-Cluster      -           -           -           -           -           -          3/ 5.6%      -           -     
+  Population-Cen      -           -           -           -           -           -           -          2/ 3.7%      -     
+      all others      -           -           -           -           -           -           -           -          4/ 7.4%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=54/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        PER         GPE         ORG         LOC 
+             PER    25/46.3%      -           -           -     
+             GPE      -         12/22.2%      -           -     
+             ORG      -           -         10/18.5%      -     
+             LOC      -           -           -          7/13.0%
+
+Entity Class confusion matrix for "newswire" sources (for mapped entities):
+               __count__        _percent_
+    ref\tst:   SPC   GEN   NEG   USP        SPC   GEN   NEG   USP
+  SPC           36     0     0     0      100.0   0.0   0.0   0.0
+  GEN            0     5     0     0        0.0 100.0   0.0   0.0
+  NEG            0     0     0     0        0.0   0.0   0.0   0.0
+  USP            0     0     0    13        0.0   0.0   0.0 100.0
+
+Name Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ entity  Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0    42        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0     6        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    12        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    11        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0    71        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ type    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  NAM       0     0        0     0    71        0.0   0.0      0.0   0.0 100.0
+  NOM       0     0        0     0    46        0.0   0.0      0.0   0.0 100.0
+  PRO       0     0        0     0    15        0.0   0.0      0.0   0.0 100.0
+total       0     0        0     0   132        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ style   miss    fa     miss   err  corr       miss    fa     miss   err  corr
+LITER       0     0        0     0   132        0.0   0.0      0.0   0.0 100.0
+METON       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   132        0.0   0.0      0.0   0.0 100.0
+
+Mention Detection and Extent Recognition statistics (for mapped entities):
+ ref     ____________count______________       ____________percent____________
+ mention Detection     Extent_Recognition      Detection     Extent_Recognition
+ role    miss    fa     miss   err  corr       miss    fa     miss   err  corr
+  FAC       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  GPE       0     0        0     0    36        0.0   0.0      0.0   0.0 100.0
+  LOC       0     0        0     0    12        0.0   0.0      0.0   0.0 100.0
+  ORG       0     0        0     0    38        0.0   0.0      0.0   0.0 100.0
+  PER       0     0        0     0    46        0.0   0.0      0.0   0.0 100.0
+  VEH       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+  WEA       0     0        0     0     0        0.0   0.0      0.0   0.0   0.0
+total       0     0        0     0   132        0.0   0.0      0.0   0.0 100.0
+
+Mention Role confusion matrix for "newswire" sources (for mapped mentions)
+  For all mapped mentions:
+               ___________count___________        __________percent__________
+    ref\tst:   FAC   GPE   LOC   ORG   PER   VEH   WEA        FAC   GPE   LOC   ORG   PER   VEH   WEA
+  FAC            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  GPE            0    36     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+  LOC            0     0    12     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+  ORG            0     0     0    38     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  PER            0     0     0     0    46     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  VEH            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  WEA            0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Mention Style confusion matrix for "newswire" sources (for mapped mentions):
+               __count__        _percent_
+    ref\tst:   LIT   MET        LIT   MET
+LITER          132     0      100.0   0.0
+METON            0     0        0.0   0.0
+
+======== relation mapping ========
+
+--------
+    ref relation NYT_ENG_20030630.0075-R1 (METONYMY/Unspecified/Unspecified/---)
+    tst relation NYT_ENG_20030630.0075-R1 (METONYMY/Unspecified/Unspecified/---)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E10 (ORG/Governm/NOM/SPC), head="administration"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E10 (ORG/Governm/NOM/SPC), head="administration"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E56 (GPE/Populat/NAM/SPC), name="Washington"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E56 (GPE/Populat/NAM/SPC), name="Washington"
+- in document NYT_ENG_20030630.0075:  score:  1.50000 out of 1.50000
+--------
+    ref relation NYT_ENG_20030630.0075-R10 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R10 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E15 (PER/Individ/NAM/SPC), name="Mahmoud Abbas"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E15 (PER/Individ/NAM/SPC), name="Mahmoud Abbas"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document NYT_ENG_20030630.0075:  score:  2.00000 out of 2.00000
+      ref extent="a Palestinian prime minister"
+--------
+    ref relation NYT_ENG_20030630.0075-R11 (PART-WHOLE/Geographical/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R11 (PART-WHOLE/Geographical/Asserted/Unspecified)
+      relation score:  1.10000 out of 1.10000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E26 (LOC/Region-/PRO/SPC), head="much"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E26 (LOC/Region-/PRO/SPC), head="much"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E27 (LOC/Region-/NAM/SPC), name="Gaza Strip"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E27 (LOC/Region-/NAM/SPC), name="Gaza Strip"
+- in document NYT_ENG_20030630.0075:  score:  1.10000 out of 1.10000
+      ref extent="much of the Gaza Strip"
+--------
+    ref relation NYT_ENG_20030630.0075-R12 (GEN-AFF/Org-Location/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R12 (GEN-AFF/Org-Location/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E28 (ORG/Non-Gov/NOM/USP), head="groups"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E28 (ORG/Non-Gov/NOM/USP), head="groups"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000
+      ref extent="at least three Palestinian militant g..."
+--------
+    ref relation NYT_ENG_20030630.0075-R13 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R13 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E38 (ORG/Governm/NOM/SPC), head="sides"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E38 (ORG/Governm/NOM/SPC), head="sides"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document NYT_ENG_20030630.0075:  score:  1.50000 out of 1.50000
+      ref extent="the Palestinian and Israeli sides"
+--------
+    ref relation NYT_ENG_20030630.0075-R14 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R14 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E38 (ORG/Governm/NOM/SPC), head="sides"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E38 (ORG/Governm/NOM/SPC), head="sides"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E24 (GPE/Nation/NAM/SPC), name="Israeli"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E24 (GPE/Nation/NAM/SPC), name="Israeli"
+- in document NYT_ENG_20030630.0075:  score:  1.50000 out of 1.50000
+      ref extent="the Palestinian and Israeli sides"
+--------
+    ref relation NYT_ENG_20030630.0075-R15 (PHYS/Located/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R15 (PHYS/Located/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E41 (PER/Group/NOM/SPC), head="team"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E41 (PER/Group/NOM/SPC), head="team"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E79 (GPE/GPE-Clu/NAM/SPC), name="Middle East"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E79 (GPE/GPE-Clu/NAM/SPC), name="Middle East"
+- in document NYT_ENG_20030630.0075:  score:  1.50000 out of 1.50000
+      ref extent="a team visiting the Middle East, led ..."
+--------
+    ref relation NYT_ENG_20030630.0075-R16 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R16 (GEN-AFF/Citizen-Resident-Religion-Ethnicity/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E46 (PER/Group/NAM/GEN), name="Arab"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E46 (PER/Group/NAM/GEN), name="Arab"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E45 (GPE/GPE-Clu/NAM/SPC), name="League"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E45 (GPE/GPE-Clu/NAM/SPC), name="League"
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000
+      ref extent="the Arab League"
+--------
+    ref relation NYT_ENG_20030630.0075-R17 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R17 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E59 (PER/Group/NOM/USP), head="patrols"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E59 (PER/Group/NOM/USP), head="patrols"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E24 (GPE/Nation/NAM/SPC), name="Israeli"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E24 (GPE/Nation/NAM/SPC), name="Israeli"
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000
+      ref extent="joint, Israeli-Palestinian security p..."
+--------
+    ref relation NYT_ENG_20030630.0075-R18 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R18 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E59 (PER/Group/NOM/USP), head="patrols"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E59 (PER/Group/NOM/USP), head="patrols"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000
+      ref extent="joint, Israeli-Palestinian security p..."
+--------
+    ref relation NYT_ENG_20030630.0075-R19 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R19 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E62 (PER/Group/NOM/USP), head="officials"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E62 (PER/Group/NOM/USP), head="officials"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000
+      ref extent="Palestinian, Israeli and American off..."
+--------
+    ref relation NYT_ENG_20030630.0075-R20 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R20 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E62 (PER/Group/NOM/USP), head="officials"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E62 (PER/Group/NOM/USP), head="officials"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E24 (GPE/Nation/NAM/SPC), name="Israeli"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E24 (GPE/Nation/NAM/SPC), name="Israeli"
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000
+      ref extent="Palestinian, Israeli and American off..."
+--------
+    ref relation NYT_ENG_20030630.0075-R21 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R21 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E62 (PER/Group/NOM/USP), head="officials"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E62 (PER/Group/NOM/USP), head="officials"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E4 (GPE/Nation/NAM/SPC), name="United States"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E4 (GPE/Nation/NAM/SPC), name="United States"
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000
+      ref extent="Palestinian, Israeli and American off..."
+--------
+    ref relation NYT_ENG_20030630.0075-R22 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R22 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E69 (PER/Individ/NOM/SPC), head="official"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E69 (PER/Individ/NOM/SPC), head="official"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E4 (GPE/Nation/NAM/SPC), name="United States"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E4 (GPE/Nation/NAM/SPC), name="United States"
+- in document NYT_ENG_20030630.0075:  score:  1.50000 out of 1.50000
+      ref extent="one American official"
+--------
+    ref relation NYT_ENG_20030630.0075-R23 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R23 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E72 (PER/Group/NOM/SPC), head="officials"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E72 (PER/Group/NOM/SPC), head="officials"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E24 (GPE/Nation/NAM/SPC), name="Israeli"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E24 (GPE/Nation/NAM/SPC), name="Israeli"
+- in document NYT_ENG_20030630.0075:  score:  1.50000 out of 1.50000
+      ref extent="Israeli officials"
+--------
+    ref relation NYT_ENG_20030630.0075-R27 (ORG-AFF/Employment/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R27 (ORG-AFF/Employment/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E76 (PER/Group/NOM/USP), head="officials"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E76 (PER/Group/NOM/USP), head="officials"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E4 (GPE/Nation/NAM/SPC), name="United States"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E4 (GPE/Nation/NAM/SPC), name="United States"
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000
+      ref extent="American officials"
+--------
+    ref relation NYT_ENG_20030630.0075-R3 (ORG-AFF/Founder/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R3 (ORG-AFF/Founder/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E78 (PER/Individ/NAM/SPC), name="Bush"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E78 (PER/Individ/NAM/SPC), name="Bush"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E10 (ORG/Governm/NOM/SPC), head="administration"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E10 (ORG/Governm/NOM/SPC), head="administration"
+- in document NYT_ENG_20030630.0075:  score:  1.50000 out of 1.50000
+      ref extent="The Bush administration"
+--------
+    ref relation NYT_ENG_20030630.0075-R4 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R4 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E9 (PER/Individ/NOM/SPC), head="official"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E9 (PER/Individ/NOM/SPC), head="official"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E10 (ORG/Governm/NOM/SPC), head="administration"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E10 (ORG/Governm/NOM/SPC), head="administration"
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000
+      ref extent="an administration official"
+--------
+    ref relation NYT_ENG_20030630.0075-R5 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R5 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  2.00000 out of 2.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E81 (ORG/Governm/NAM/SPC), name="Palestinian Authority"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E81 (ORG/Governm/NAM/SPC), name="Palestinian Authority"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E12 (GPE/Special/NAM/SPC), name="Palestinian"
+- in document NYT_ENG_20030630.0075:  score:  2.00000 out of 2.00000
+      ref extent="the Palestinian Authority"
+      ref extent="the Palestinian Authority"
+      ref extent="the Palestinian Authority"
+      ref extent="the Palestinian Authority"
+      ref extent="the Palestinian Authority"
+      ref extent="The Palestinian Authority"
+      ref extent="the Palestinian Authority"
+--------
+    ref relation NYT_ENG_20030630.0075-R6 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R6 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E21 (PER/Group/NOM/SPC), head="officials"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E21 (PER/Group/NOM/SPC), head="officials"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E10 (ORG/Governm/NOM/SPC), head="administration"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E10 (ORG/Governm/NOM/SPC), head="administration"
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000
+      ref extent="Administration officials"
+--------
+    ref relation NYT_ENG_20030630.0075-R8 (ORG-AFF/Membership/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R8 (ORG-AFF/Membership/Asserted/Unspecified)
+      relation score:  1.00000 out of 1.00000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E83 (PER/Group/NOM/SPC), head="officials"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E83 (PER/Group/NOM/SPC), head="officials"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E10 (ORG/Governm/NOM/SPC), head="administration"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E10 (ORG/Governm/NOM/SPC), head="administration"
+- in document NYT_ENG_20030630.0075:  score:  1.00000 out of 1.00000
+      ref extent="administration officials"
+--------
+    ref relation NYT_ENG_20030630.0075-R9 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+    tst relation NYT_ENG_20030630.0075-R9 (PART-WHOLE/Subsidiary/Asserted/Unspecified)
+      relation score:  1.50000 out of 1.50000
+            Arg-1 ref arg: ID=NYT_ENG_20030630.0075-E85 (ORG/Governm/NOM/SPC), head="apparatus"
+            Arg-1 tst arg: ID=NYT_ENG_20030630.0075-E85 (ORG/Governm/NOM/SPC), head="apparatus"
+            Arg-2 ref arg: ID=NYT_ENG_20030630.0075-E81 (ORG/Governm/NAM/SPC), name="Palestinian Authority"
+            Arg-2 tst arg: ID=NYT_ENG_20030630.0075-E81 (ORG/Governm/NAM/SPC), name="Palestinian Authority"
+- in document NYT_ENG_20030630.0075:  score:  1.50000 out of 1.50000
+      ref extent="the authority's intelligence and secu..."
+
+======== relation scoring ========
+
+Relation Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+GEN-AFF     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.12   0.00   0.00   0.00
+METONYM     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.34   0.00   0.00   0.00
+ORG-AFF    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    55.16   0.00   0.00   0.00
+PART-WH     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.05   0.00   0.00   0.00
+   PHYS     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.34   0.00   0.00   0.00
+  total    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte    21     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    94.66   0.00   0.00   0.00
+Unspeci     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.34   0.00   0.00   0.00
+  total    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.56   0.00   0.00   0.00
+Employm     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    39.15   0.00   0.00   0.00
+Founder     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.34   0.00   0.00   0.00
+Geograp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.91   0.00   0.00   0.00
+Located     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.34   0.00   0.00   0.00
+Members     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.68   0.00   0.00   0.00
+Org-Loc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.56   0.00   0.00   0.00
+Subsidi     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    23.13   0.00   0.00   0.00
+  total    22     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = GEN-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Citizen     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.56   0.00   0.00   0.00
+Org-Loc     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.56   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     7.12   0.00   0.00   0.00
+
+Performance statistics for TYPE = METONYMY:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.34   0.00   0.00   0.00
+
+Performance statistics for TYPE = ORG-AFF:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Employm     9     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    39.15   0.00   0.00   0.00
+Founder     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.34   0.00   0.00   0.00
+Members     3     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    10.68   0.00   0.00   0.00
+  total    13     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    55.16   0.00   0.00   0.00
+
+Performance statistics for TYPE = PART-WHOLE:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Geograp     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.91   0.00   0.00   0.00
+Subsidi     4     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    23.13   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.05   0.00   0.00   0.00
+
+Performance statistics for TYPE = PHYS:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ relation Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Located     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.34   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     5.34   0.00   0.00   0.00
+
+Relation Type confusion matrix for "newswire" sources (for mapped relations):
+             COUNT....................................    PERCENT....................................
+    ref\tst:   ART GEN-A METON ORG-A PART- PER-S  PHYS        ART GEN-A METON ORG-A PART- PER-S  PHYS
+        ART      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    GEN-AFF      0     2     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+   METONYMY      0     0     1     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0
+    ORG-AFF      0     0     0    13     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+ PART-WHOLE      0     0     0     0     5     0     0        0.0   0.0   0.0   0.0 100.0   0.0   0.0
+    PER-SOC      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       PHYS      0     0     0     0     0     0     1        0.0   0.0   0.0   0.0   0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=GEN-A COUNT......    PERCENT......
+    ref\tst: Citiz Org-L      Citiz Org-L 
+Citizen-Res      1     0      100.0   0.0
+Org-Locatio      0     1        0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=METON COUNT    PERCENT
+    ref\tst:      
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=ORG-A COUNT....................................    PERCENT....................................
+    ref\tst: Emplo Found Inves Membe Owner Sport Stude      Emplo Found Inves Membe Owner Sport Stude 
+ Employment      9     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Founder      0     1     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0
+Investor-Sh      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+ Membership      0     0     0     3     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0
+  Ownership      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Sports-Affi      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Student-Alu      0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PART- COUNT............    PERCENT............
+    ref\tst: Artif Geogr Subsi      Artif Geogr Subsi 
+   Artifact      0     0     0        0.0   0.0   0.0
+Geographica      0     1     0        0.0 100.0   0.0
+ Subsidiary      0     0     4        0.0   0.0 100.0
+
+Relation Subtype confusion matrix for "newswire" sources (for mapped relations):
+  type=PHYS  COUNT......    PERCENT......
+    ref\tst: Locat  Near      Locat  Near 
+    Located      1     0      100.0   0.0
+       Near      0     0        0.0   0.0
+
+Relation Modality confusion matrix for "newswire" sources (for mapped relations):
+             COUNT............    PERCENT............
+    ref\tst: Asser Other Unspe      Asser Other Unspe
+   Asserted     21     0     0      100.0   0.0   0.0
+      Other      0     0     0        0.0   0.0   0.0
+Unspecified      0     0     1        0.0   0.0 100.0
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=22/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted Unspecified 
+        Asserted    21/95.5%      -     
+     Unspecified      -          1/ 4.5%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=22/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst: Employment  Subsidiary  Membership     Located Geographica     Founder Org-Locatio Unspecified  all others 
+      Employment     9/40.9%      -           -           -           -           -           -           -           -     
+      Subsidiary      -          4/18.2%      -           -           -           -           -           -           -     
+      Membership      -           -          3/13.6%      -           -           -           -           -           -     
+         Located      -           -           -          1/ 4.5%      -           -           -           -           -     
+    Geographical      -           -           -           -          1/ 4.5%      -           -           -           -     
+         Founder      -           -           -           -           -          1/ 4.5%      -           -           -     
+    Org-Location      -           -           -           -           -           -          1/ 4.5%      -           -     
+     Unspecified      -           -           -           -           -           -           -          1/ 4.5%      -     
+      all others      -           -           -           -           -           -           -           -          1/ 4.5%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=21/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:Unspecified 
+     Unspecified    21/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=22/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    ORG-AFF  PART-WHOLE     GEN-AFF        PHYS    METONYMY 
+         ORG-AFF    13/59.1%      -           -           -           -     
+      PART-WHOLE      -          5/22.7%      -           -           -     
+         GEN-AFF      -           -          2/ 9.1%      -           -     
+            PHYS      -           -           -          1/ 4.5%      -     
+        METONYMY      -           -           -           -          1/ 4.5%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=44/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Arg-2       Arg-1 
+           Arg-2    22/50.0%      -     
+           Arg-1      -         22/50.0%
+
+======== event mapping ========
+
+--------
+    ref event NYT_ENG_20030630.0075-EV1 (Personnel/Elect/Specific/Asserted/Positive/Past)
+    tst event NYT_ENG_20030630.0075-EV1 (Personnel/Elect/Specific/Asserted/Positive/Past)
+      event score:  2.00000 out of 2.00000
+           Person ref arg: ID=NYT_ENG_20030630.0075-E15 (PER/Individ/NAM/SPC), name="Mahmoud Abbas"
+           Person tst arg: ID=NYT_ENG_20030630.0075-E15 (PER/Individ/NAM/SPC), name="Mahmoud Abbas"
+           Person ref arg: ID=NYT_ENG_20030630.0075-E19 (PER/Individ/NAM/SPC), name="Salam Fayyad"
+           Person tst arg: ID=NYT_ENG_20030630.0075-E19 (PER/Individ/NAM/SPC), name="Salam Fayyad"
+- in document NYT_ENG_20030630.0075:  score:  2.00000 out of 2.00000
+      ref anchor="ascension", extent="ascension _ under American pressure _..."
+--------
+    ref event NYT_ENG_20030630.0075-EV2 (Business/End-Org/Specific/Other/Positive/Unspecified)
+    tst event NYT_ENG_20030630.0075-EV2 (Business/End-Org/Specific/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+              Org ref arg: ID=NYT_ENG_20030630.0075-E35 (ORG/Non-Gov/NOM/USP), head="groups"
+              Org tst arg: ID=NYT_ENG_20030630.0075-E35 (ORG/Non-Gov/NOM/USP), head="groups"
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000
+      ref anchor="dismantled", extent="the groups being dismantled"
+--------
+    ref event NYT_ENG_20030630.0075-EV3 (Contact/Meet/Specific/Asserted/Positive/Past)
+    tst event NYT_ENG_20030630.0075-EV3 (Contact/Meet/Specific/Asserted/Positive/Past)
+      event score:  0.20000 out of 0.20000
+      Time-Within ref arg: ID=NYT_ENG_20030630.0075-T10 (TIM/---), extent="last week"
+      Time-Within tst arg: ID=NYT_ENG_20030630.0075-T10 (TIM/---), extent="last week"
+- in document NYT_ENG_20030630.0075:  score:  0.20000 out of 0.20000
+      ref anchor="meetings", extent="meetings last week"
+--------
+    ref event NYT_ENG_20030630.0075-EV4 (Movement/Transport/Specific/Asserted/Positive/Past)
+    tst event NYT_ENG_20030630.0075-EV4 (Movement/Transport/Specific/Asserted/Positive/Past)
+      event score:  1.50000 out of 1.50000
+      Destination ref arg: ID=NYT_ENG_20030630.0075-E79 (GPE/GPE-Clu/NAM/SPC), name="Middle East"
+      Destination tst arg: ID=NYT_ENG_20030630.0075-E79 (GPE/GPE-Clu/NAM/SPC), name="Middle East"
+           Person ref arg: ID=NYT_ENG_20030630.0075-E41 (PER/Group/NOM/SPC), head="team"
+           Person tst arg: ID=NYT_ENG_20030630.0075-E41 (PER/Group/NOM/SPC), head="team"
+- in document NYT_ENG_20030630.0075:  score:  1.50000 out of 1.50000
+      ref anchor="visiting", extent="a team visiting the Middle East, led ..."
+--------
+    ref event NYT_ENG_20030630.0075-EV5 (Contact/Meet/Specific/Other/Positive/Unspecified)
+    tst event NYT_ENG_20030630.0075-EV5 (Contact/Meet/Specific/Other/Positive/Unspecified)
+      event score:  0.00000 out of 0.00000
+           Entity ref arg: ID=NYT_ENG_20030630.0075-E62 (PER/Group/NOM/USP), head="officials"
+           Entity tst arg: ID=NYT_ENG_20030630.0075-E62 (PER/Group/NOM/USP), head="officials"
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000
+      ref anchor="meetings", extent="meetings of Palestinian, Israeli and ..."
+--------
+    ref event NYT_ENG_20030630.0075-EV6 (Conflict/Attack/Specific/Asserted/Positive/Past)
+    tst event NYT_ENG_20030630.0075-EV6 (Conflict/Attack/Specific/Asserted/Positive/Past)
+      event score:  0.00000 out of 0.00000
+- in document NYT_ENG_20030630.0075:  score:  0.00000 out of 0.00000
+      ref anchor="attacks", extent="attacks"
+--------
+    ref event NYT_ENG_20030630.0075-EV7 (Justice/Arrest-Jail/Specific/Asserted/Negative/Past)
+    tst event NYT_ENG_20030630.0075-EV7 (Justice/Arrest-Jail/Specific/Asserted/Negative/Past)
+      event score:  1.70000 out of 1.70000
+            Agent ref arg: ID=NYT_ENG_20030630.0075-E81 (ORG/Governm/NAM/SPC), name="Palestinian Authority"
+            Agent tst arg: ID=NYT_ENG_20030630.0075-E81 (ORG/Governm/NAM/SPC), name="Palestinian Authority"
+           Person ref arg: ID=NYT_ENG_20030630.0075-E75 (PER/Group/NOM/SPC), head="3usQects"
+           Person tst arg: ID=NYT_ENG_20030630.0075-E75 (PER/Group/NOM/SPC), head="3usQects"
+      Time-Within ref arg: ID=NYT_ENG_20030630.0075-T16 (TIM/---), extent="the 1990s"
+      Time-Within tst arg: ID=NYT_ENG_20030630.0075-T16 (TIM/---), extent="the 1990s"
+- in document NYT_ENG_20030630.0075:  score:  1.70000 out of 1.70000
+      ref anchor="arresting", extent="the 1990s, when such information was ..."
+
+======== event scoring ========
+
+Event Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Busines     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Conflic     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+Contact     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.70   0.00   0.00   0.00
+Justice     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    31.48   0.00   0.00   0.00
+Movemen     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.78   0.00   0.00   0.00
+Personn     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    37.04   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ modality Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Asserte     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  Other     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ argument Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ errors   Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+      0     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = ALL:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Arrest-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    31.48   0.00   0.00   0.00
+ Attack     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  Elect     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    37.04   0.00   0.00   0.00
+End-Org     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+   Meet     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.70   0.00   0.00   0.00
+Transpo     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.78   0.00   0.00   0.00
+  total     7     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Business:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+End-Org     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Conflict:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+ Attack     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     0.00   0.00   0.00   0.00
+
+Performance statistics for TYPE = Contact:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+   Meet     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.70   0.00   0.00   0.00
+  total     2     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0     3.70   0.00   0.00   0.00
+
+Performance statistics for TYPE = Justice:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Arrest-     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    31.48   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    31.48   0.00   0.00   0.00
+
+Performance statistics for TYPE = Movement:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+Transpo     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.78   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    27.78   0.00   0.00   0.00
+
+Performance statistics for TYPE = Personnel:
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ event    Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ subtype  Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+  Elect     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    37.04   0.00   0.00   0.00
+  total     1     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0    37.04   0.00   0.00   0.00
+
+Event Type confusion matrix for "newswire" sources (for mapped events):
+             COUNT..........................................    PERCENT..........................................
+    ref\tst: Busin Confl Conta Justi  Life Movem Perso Trans      Busin Confl Conta Justi  Life Movem Perso Trans
+   Business      1     0     0     0     0     0     0     0      100.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Conflict      0     1     0     0     0     0     0     0        0.0 100.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Contact      0     0     2     0     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0   0.0
+    Justice      0     0     0     1     0     0     0     0        0.0   0.0   0.0 100.0   0.0   0.0   0.0   0.0
+       Life      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Movement      0     0     0     0     0     1     0     0        0.0   0.0   0.0   0.0   0.0 100.0   0.0   0.0
+  Personnel      0     0     0     0     0     0     1     0        0.0   0.0   0.0   0.0   0.0   0.0 100.0   0.0
+Transaction      0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Busin COUNT..................    PERCENT..................
+    ref\tst: Decla End-O Merge Start      Decla End-O Merge Start 
+Declare-Ban      0     0     0     0        0.0   0.0   0.0   0.0
+    End-Org      0     1     0     0        0.0 100.0   0.0   0.0
+  Merge-Org      0     0     0     0        0.0   0.0   0.0   0.0
+  Start-Org      0     0     0     0        0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Confl COUNT......    PERCENT......
+    ref\tst: Attac Demon      Attac Demon 
+     Attack      1     0      100.0   0.0
+Demonstrate      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Conta COUNT......    PERCENT......
+    ref\tst:  Meet Phone       Meet Phone 
+       Meet      2     0      100.0   0.0
+Phone-Write      0     0        0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Justi COUNT........................................................................    PERCENT........................................................................
+    ref\tst: Acqui Appea Arres Charg Convi Execu Extra  Fine Pardo Relea Sente   Sue Trial      Acqui Appea Arres Charg Convi Execu Extra  Fine Pardo Relea Sente   Sue Trial 
+     Acquit      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+     Appeal      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Arrest-Jail      0     0     1     0     0     0     0     0     0     0     0     0     0        0.0   0.0 100.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Charge-Indi      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Convict      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+    Execute      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+  Extradite      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+       Fine      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+     Pardon      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Release-Par      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+   Sentence      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+        Sue      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+Trial-Heari      0     0     0     0     0     0     0     0     0     0     0     0     0        0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Movem COUNT    PERCENT
+    ref\tst: Trans      Trans 
+  Transport      1      100.0
+
+Event Subtype confusion matrix for "newswire" sources (for mapped events):
+  type=Perso COUNT..................    PERCENT..................
+    ref\tst: Elect End-P Nomin Start      Elect End-P Nomin Start 
+      Elect      1     0     0     0      100.0   0.0   0.0   0.0
+End-Positio      0     0     0     0        0.0   0.0   0.0   0.0
+   Nominate      0     0     0     0        0.0   0.0   0.0   0.0
+Start-Posit      0     0     0     0        0.0   0.0   0.0   0.0
+
+Event Modality confusion matrix for "newswire" sources (for mapped events):
+             COUNT......    PERCENT......
+    ref\tst: Asser Other      Asser Other
+   Asserted      5     0      100.0   0.0
+      Other      0     2        0.0 100.0
+
+Recognition statistics for attribute GENERICITY (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Specific 
+        Specific     7/99.9%
+
+Recognition statistics for attribute MODALITY (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Asserted       Other 
+        Asserted     5/71.4%      -     
+           Other      -          2/28.6%
+
+Recognition statistics for attribute POLARITY (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:   Positive    Negative 
+        Positive     6/85.7%      -     
+        Negative      -          1/14.3%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Meet       Elect      Attack Arrest-Jail   Transport     End-Org 
+            Meet     2/28.6%      -           -           -           -           -     
+           Elect      -          1/14.3%      -           -           -           -     
+          Attack      -           -          1/14.3%      -           -           -     
+     Arrest-Jail      -           -           -          1/14.3%      -           -     
+       Transport      -           -           -           -          1/14.3%      -     
+         End-Org      -           -           -           -           -          1/14.3%
+
+Recognition statistics for attribute TENSE (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:       Past Unspecified 
+            Past     5/71.4%      -     
+     Unspecified      -          2/28.6%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=7/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Contact   Personnel     Justice    Conflict    Business    Movement 
+         Contact     2/28.6%      -           -           -           -           -     
+       Personnel      -          1/14.3%      -           -           -           -     
+         Justice      -           -          1/14.3%      -           -           -     
+        Conflict      -           -           -          1/14.3%      -           -     
+        Business      -           -           -           -          1/14.3%      -     
+        Movement      -           -           -           -           -          1/14.3%
+
+Recognition statistics for argument ROLE (for mapped elements):
+    Summary (count/percent):  Nref=10/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:     Person Time-Within Destination      Entity         Org       Agent 
+          Person     4/40.0%      -           -           -           -           -     
+     Time-Within      -          2/20.0%      -           -           -           -     
+     Destination      -           -          1/10.0%      -           -           -     
+          Entity      -           -           -          1/10.0%      -           -     
+             Org      -           -           -           -          1/10.0%      -     
+           Agent      -           -           -           -           -          1/10.0%
+
+======== timex2 mapping ========
+
+--------
+    ref timex2 NYT_ENG_20030630.0075-T1, ID=NYT_ENG_20030630.0075-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T1, ID=NYT_ENG_20030630.0075-T1, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="20030630"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T10, ID=NYT_ENG_20030630.0075-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T10, ID=NYT_ENG_20030630.0075-T10, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="last week"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T11, ID=NYT_ENG_20030630.0075-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T11, ID=NYT_ENG_20030630.0075-T11, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="the weekend"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T12, ID=NYT_ENG_20030630.0075-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T12, ID=NYT_ENG_20030630.0075-T12, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="present"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T13, ID=NYT_ENG_20030630.0075-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T13, ID=NYT_ENG_20030630.0075-T13, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="a year"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T14, ID=NYT_ENG_20030630.0075-T14, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T14, ID=NYT_ENG_20030630.0075-T14, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="a week or so"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T15, ID=NYT_ENG_20030630.0075-T15, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T15, ID=NYT_ENG_20030630.0075-T15, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="three years"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T16, ID=NYT_ENG_20030630.0075-T16, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T16, ID=NYT_ENG_20030630.0075-T16, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="the 1990s"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T17, ID=NYT_ENG_20030630.0075-T17, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T17, ID=NYT_ENG_20030630.0075-T17, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="the past"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T2, ID=NYT_ENG_20030630.0075-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T2, ID=NYT_ENG_20030630.0075-T2, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="Monday"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T3, ID=NYT_ENG_20030630.0075-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T3, ID=NYT_ENG_20030630.0075-T3, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="this year"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T4, ID=NYT_ENG_20030630.0075-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T4, ID=NYT_ENG_20030630.0075-T4, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="the past"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T5, ID=NYT_ENG_20030630.0075-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T5, ID=NYT_ENG_20030630.0075-T5, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="Now"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T6, ID=NYT_ENG_20030630.0075-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T6, ID=NYT_ENG_20030630.0075-T6, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="two and a half years"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T7, ID=NYT_ENG_20030630.0075-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T7, ID=NYT_ENG_20030630.0075-T7, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="morning"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T8, ID=NYT_ENG_20030630.0075-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T8, ID=NYT_ENG_20030630.0075-T8, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="Monday"
+--------
+    ref timex2 NYT_ENG_20030630.0075-T9, ID=NYT_ENG_20030630.0075-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+    tst timex2 NYT_ENG_20030630.0075-T9, ID=NYT_ENG_20030630.0075-T9, NON_SPECIFIC=NO, SET=NO, SUBTYPE=---, TYPE=TIMEX2
+      timex2 score:  0.20000 out of 0.20000
+- in document NYT_ENG_20030630.0075:
+          mention="the future"
+
+======== timex2 scoring ========
+
+Timex2 Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total    17     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute NON_SPECIFIC (for mapped elements):
+    Summary (count/percent):  Nref=17/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    17/99.9%
+
+Recognition statistics for attribute SET (for mapped elements):
+    Summary (count/percent):  Nref=17/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:         NO 
+              NO    17/99.9%
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=17/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:        --- 
+             ---    17/99.9%
+
+======== value mapping ========
+
+--------
+    ref value NYT_ENG_20030630.0075-V1, ID=NYT_ENG_20030630.0075-V1, SUBTYPE=Money, TYPE=Numeric
+    tst value NYT_ENG_20030630.0075-V1, ID=NYT_ENG_20030630.0075-V1, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:
+          mention="$300 million"
+--------
+    ref value NYT_ENG_20030630.0075-V2, ID=NYT_ENG_20030630.0075-V2, SUBTYPE=Money, TYPE=Numeric
+    tst value NYT_ENG_20030630.0075-V2, ID=NYT_ENG_20030630.0075-V2, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:
+          mention="$200 million"
+--------
+    ref value NYT_ENG_20030630.0075-V3, ID=NYT_ENG_20030630.0075-V3, SUBTYPE=Money, TYPE=Numeric
+    tst value NYT_ENG_20030630.0075-V3, ID=NYT_ENG_20030630.0075-V3, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:
+          mention="$1 billion"
+--------
+    ref value NYT_ENG_20030630.0075-V4, ID=NYT_ENG_20030630.0075-V4, SUBTYPE=Money, TYPE=Numeric
+    tst value NYT_ENG_20030630.0075-V4, ID=NYT_ENG_20030630.0075-V4, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:
+          mention="a little more than $1 billion"
+--------
+    ref value NYT_ENG_20030630.0075-V5, ID=NYT_ENG_20030630.0075-V5, SUBTYPE=Money, TYPE=Numeric
+    tst value NYT_ENG_20030630.0075-V5, ID=NYT_ENG_20030630.0075-V5, SUBTYPE=Money, TYPE=Numeric
+      value score:  1.00000 out of 1.00000
+- in document NYT_ENG_20030630.0075:
+          mention="$200 million"
+
+======== value scoring ========
+
+Value Detection and Recognition statistics:
+
+ ref      ________Count________     __________Count_(%)__________        ______________Cost_(%)________________       __Unconditioned_Cost_(%)_
+ source   Ent   Detection   Rec     Detection   Rec    Unweighted        Detection   Rec   Value    Value-based       Max      Detection    Rec
+ type     Tot    FA  Miss   Err      FA  Miss   Err    Pre--Rec--F        FA  Miss   Err     (%)    Pre--Rec--F      Value     FA   Miss    Err
+newswir     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+  total     5     0     0     0     0.0   0.0   0.0  100.0100.0100.0     0.0   0.0   0.0   100.0  100.0100.0100.0   100.00   0.00   0.00   0.00
+
+Recognition statistics for attribute SUBTYPE (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:      Money 
+           Money     5/99.9%
+
+Recognition statistics for attribute TYPE (for mapped elements):
+    Summary (count/percent):  Nref=5/100.0%, Nfa=0/0.0%, Nmiss=0/0.0%, Nsub=0/0.0%, Nerr=0/0.0%, P/R/F=100.0%/100.0%/100.0%
+    Confusion matrix for major error contributors (count/percent):
+        ref\tst:    Numeric 
+         Numeric     5/99.9%
+
+data input:               0.58 secs to load data
+entity eval:              0.10 secs to compute values,    0.02 secs to map,    0.08 secs to score
+relation eval:            0.14 secs to compute values,    0.01 secs to map,    0.05 secs to score
+event eval:               0.01 secs to compute values,    0.00 secs to map,    0.02 secs to score
+entity mention eval:      0.00 secs to compute values,    0.00 secs to map,    0.00 secs to score
+timex2 eval:              0.01 secs to compute values,    0.01 secs to map,    0.01 secs to score
+value eval:               0.00 secs to compute values,    0.01 secs to map,    0.00 secs to score
+########
